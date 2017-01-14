@@ -1,0 +1,3 @@
+[submodule "themes/hugo-theme-solit"]
+	path = themes/hugo-theme-solit
+	url = https://github.com/yu-kgr/hugo-theme-solit.git
