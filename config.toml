@@ -2,7 +2,7 @@ languageCode = "jp"
 title = "kglabo.com"
 baseurl = "http://kglabo.com/"
 googleAnalytics = "UA-89893813-1"
-theme = "solit"
+theme = "hugo-theme-solit"
 
 [params]
   dateformat = "Jan 2, 2006" # Optional
