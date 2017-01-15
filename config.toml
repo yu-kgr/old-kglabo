@@ -10,6 +10,3 @@ theme = "hugo-theme-solit"
   googlefonts = "https://fonts.googleapis.com/css?family=Audiowide" # Optional, Include google fonts.
   fontfamily = "Lato,YuGothic,'Hiragino Kaku Gothic Pro',Meiryo,sans-serif" # Optional, Override body font family.
   logofontfamily = "Audiowide" # Optional, Override logo font.
-  ampscripts = """
-<script async src="https://cdn.ampproject.org/v0.js"></script>
-"""
