@@ -11,7 +11,5 @@ theme = "hugo-theme-solit"
   fontfamily = "Lato,YuGothic,'Hiragino Kaku Gothic Pro',Meiryo,sans-serif" # Optional, Override body font family.
   logofontfamily = "Audiowide" # Optional, Override logo font.
   ampscripts = """
-<script async custom-element="amp-twitter" src="https://cdn.ampproject.org/v0/amp-twitter-0.1.js"></script>
-<script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
-<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
 """
