@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>kglabo.com</title>
-    <link>https://yu-kgr.github.io/kglabo/</link>
+    <link>https://yu-kgr.github.io/kglabo/tags/</link>
     <description>Recent content on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>jp</language>
     <lastBuildDate>Sun, 15 Jan 2017 00:52:24 +0900</lastBuildDate>
-    <atom:link href="https://yu-kgr.github.io/kglabo/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yu-kgr.github.io/kglabo/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>My Profile</title>
