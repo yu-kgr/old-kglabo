@@ -1,6 +1,6 @@
 languageCode = "jp"
 title = "kglabo.com"
-baseurl = "https://yu-kgr.github.io/blog.kglabo/"
+baseurl = "https://yu-kgr.github.io/kglabo/"
 googleAnalytics = "UA-89893813-1"
 theme = "hugo-theme-solit"
 
