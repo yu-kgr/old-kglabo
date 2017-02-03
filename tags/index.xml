@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>kglabo.com</title>
-    <link>kglabo.com/tags/</link>
+    <link>https://kglabo.com/tags/</link>
     <description>Recent content on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 03 Feb 2017 06:45:17 +0900</lastBuildDate>
-    <atom:link href="kglabo.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kglabo.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>南町ビアバッシュ#03 デモ</title>
-      <link>/kglabo.com/post/hoge/</link>
+      <link>https://kglabo.com/post/hoge/</link>
       <pubDate>Fri, 03 Feb 2017 06:45:17 +0900</pubDate>
       
-      <guid>/kglabo.com/post/hoge/</guid>
+      <guid>https://kglabo.com/post/hoge/</guid>
       <description>
 
 &lt;h1 id=&#34;ここに見出しが入ります&#34;&gt;ここに見出しが入ります&lt;/h1&gt;
@@ -34,10 +34,10 @@
     
     <item>
       <title>My Profile</title>
-      <link>/kglabo.com/about/about-me/</link>
+      <link>https://kglabo.com/about/about-me/</link>
       <pubDate>Sun, 15 Jan 2017 00:52:24 +0900</pubDate>
       
-      <guid>/kglabo.com/about/about-me/</guid>
+      <guid>https://kglabo.com/about/about-me/</guid>
       <description>&lt;p&gt;どうも、はじめまして:-)&lt;br /&gt;
 最近、新幹線が開通した金沢市にて、フロントエンド周りを中心とした内容から、&lt;br /&gt;
 ディレクションや、マネジメントの真似事やらをやらせて頂いております。&lt;/p&gt;
