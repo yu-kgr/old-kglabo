@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>kglabo.com</title>
-    <link>https://kglabo.com/</link>
-    <description>Recent content on kglabo.com</description>
+    <title>Post on kglabo.com</title>
+    <link>https://kglabo.com/categories/post/</link>
+    <description>Recent content in Post on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Fri, 03 Feb 2017 06:45:17 +0900</lastBuildDate>
-    <atom:link href="https://kglabo.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kglabo.com/categories/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>南町ビアバッシュ#03 デモ</title>
@@ -29,21 +29,6 @@
 &lt;li&gt;リスト3&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>My Profile</title>
-      <link>https://kglabo.com/about/about-me/</link>
-      <pubDate>Sun, 15 Jan 2017 00:52:24 +0900</pubDate>
-      
-      <guid>https://kglabo.com/about/about-me/</guid>
-      <description>&lt;p&gt;どうも、はじめまして:-)&lt;br /&gt;
-最近、新幹線が開通した金沢市にて、フロントエンド周りを中心とした内容から、&lt;br /&gt;
-ディレクションや、マネジメントの真似事やらをやらせて頂いております。&lt;/p&gt;
-
-&lt;p&gt;現在、記事内容を整理しておりますので、&lt;br /&gt;
-そこらへんが整理でき次第、改めて内容を記載したいと思います :-D&lt;/p&gt;
 </description>
     </item>
     

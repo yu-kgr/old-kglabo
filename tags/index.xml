@@ -6,8 +6,31 @@
     <description>Recent content on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 15 Jan 2017 00:52:24 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 03 Feb 2017 06:45:17 +0900</lastBuildDate>
     <atom:link href="https://kglabo.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>南町ビアバッシュ#03 デモ</title>
+      <link>https://kglabo.com/post/hoge/</link>
+      <pubDate>Fri, 03 Feb 2017 06:45:17 +0900</pubDate>
+      
+      <guid>https://kglabo.com/post/hoge/</guid>
+      <description>
+
+&lt;h1 id=&#34;ここに見出しが入ります&#34;&gt;ここに見出しが入ります&lt;/h1&gt;
+
+&lt;p&gt;本文がここにわらわらと Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;リスト1&lt;/li&gt;
+&lt;li&gt;リスト2
+
+&lt;ul&gt;
+&lt;li&gt;リスト3&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>My Profile</title>
