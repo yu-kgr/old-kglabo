@@ -2,19 +2,19 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Abouts on kglabo.com</title>
-    <link>kglabo.com/about/</link>
+    <link>https://yu-kgr.github.io/kglabo/about/</link>
     <description>Recent content in Abouts on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 15 Jan 2017 00:52:24 +0900</lastBuildDate>
-    <atom:link href="kglabo.com/about/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://yu-kgr.github.io/kglabo/about/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>My Profile</title>
-      <link>/kglabo.com/about/about-me/</link>
+      <link>https://yu-kgr.github.io/kglabo/about/about-me/</link>
       <pubDate>Sun, 15 Jan 2017 00:52:24 +0900</pubDate>
       
-      <guid>/kglabo.com/about/about-me/</guid>
+      <guid>https://yu-kgr.github.io/kglabo/about/about-me/</guid>
       <description>&lt;p&gt;どうも、はじめまして:-)&lt;br /&gt;
 最近、新幹線が開通した金沢市にて、フロントエンド周りを中心とした内容から、&lt;br /&gt;
 ディレクションや、マネジメントの真似事やらをやらせて頂いております。&lt;/p&gt;
