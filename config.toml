@@ -1,7 +1,7 @@
 languageCode = "ja"
 hasCJKLanguage = "true"
 title = "kglabo.com"
-baseurl = "kglabo.com"
+baseurl = "https://yu-kgr.github.io/kglabo/"
 googleAnalytics = "UA-89893813-1"
 enableRobotsTXT = "true"
 theme = "hugo-theme-solit"
