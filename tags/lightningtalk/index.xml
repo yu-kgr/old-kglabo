@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>kglabo.com</title>
-    <link>https://kglabo.com/</link>
-    <description>Recent content on kglabo.com</description>
+    <title>Lightningtalk on kglabo.com</title>
+    <link>https://kglabo.com/tags/lightningtalk/</link>
+    <description>Recent content in Lightningtalk on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Mon, 18 Dec 2017 00:37:13 +0900</lastBuildDate>
-    <atom:link href="https://kglabo.com/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kglabo.com/tags/lightningtalk/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>kanazawa.rb meetup #52 に参加してきた。</title>
@@ -142,21 +142,6 @@ Keynote上で作成したURLを知らせれば、そこにアクセスすれば�
 &lt;/ul&gt;
 
 &lt;p&gt;また来月あたり開催します :-)&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>My Profile</title>
-      <link>https://kglabo.com/about/about-me/</link>
-      <pubDate>Sun, 15 Jan 2017 00:52:24 +0900</pubDate>
-      
-      <guid>https://kglabo.com/about/about-me/</guid>
-      <description>&lt;p&gt;どうも、はじめまして:-)&lt;br /&gt;
-最近、新幹線が開通した金沢市にて、フロントエンド周りを中心とした内容から、&lt;br /&gt;
-ディレクションや、マネジメントの真似事やらをやらせて頂いております。&lt;/p&gt;
-
-&lt;p&gt;現在、記事内容を整理しておりますので、&lt;br /&gt;
-そこらへんが整理でき次第、改めて内容を記載したいと思います :-D&lt;/p&gt;
 </description>
     </item>
     
