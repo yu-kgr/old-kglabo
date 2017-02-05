@@ -1,5 +1,5 @@
 +++
-date = "2017-12-18T00:37:13+09:00"
+date = "2016-12-18T00:37:13+09:00"
 draft = "false"
 thumbnail = "images/2016/12/kzrb-52.jpg"
 tags = ["LightningTalk","bearbash"]
