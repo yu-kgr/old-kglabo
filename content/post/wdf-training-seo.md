@@ -1,10 +1,10 @@
 +++
-date = "2016-12-18T00:37:13+09:00"
-draft = "false"
-thumbnail = "images/2016/12/kzrb-52.jpg"
-tags = ["LightningTalk","bearbash"]
-categories = ["Event","kanazawa.rb"]
-title = "kanazawa.rb meetup #52 に参加してきた。"
+draft = "true"
+thumbnail = "images/default.jpg"
+tags = ["LightningTalk"]
+categories = ["Event","WDF"]
+title = "16/01/16_WDF研修「半歩先のSEOで効率よく結果を出す」にLT登壇+参加させて頂きました。"
+date = "2016-01-16T01:30:40+09:00"
 
 +++
 

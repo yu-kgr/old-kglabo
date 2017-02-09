@@ -23,8 +23,7 @@ title = "社内でビアバッシュイベントを開催＆LTしてきた。"
 12名ほどの方に様々なLTをして頂く事が出来ました！
 
 ## 発表した内容はこちら
-<script async class="speakerdeck-embed" data-id="1fb12922de7241e1b998b1316d655a70" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
-
+[雑なまとめをサイト化したら役に立ちそうって話](https://speakerdeck.com/yu_kgr/za-namatomewosaitohua-sitarayi-nili-tisoututehua)
 
 ## 感想
 5分LTで上記の内容を発表したけど、運営準備と資料作成+業務が丁度忙しかったせいで、  
