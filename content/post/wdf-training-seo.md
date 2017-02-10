@@ -1,6 +1,6 @@
 +++
-draft = "true"
-thumbnail = "images/default.jpg"
+draft = "false"
+thumbnail = "images/2016/01/wef-training-seo.jpg"
 tags = ["LightningTalk"]
 categories = ["Event","WDF"]
 title = "16/01/16_WDF研修「半歩先のSEOで効率よく結果を出す」にLT登壇+参加させて頂きました。"
