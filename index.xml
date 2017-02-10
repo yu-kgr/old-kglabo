@@ -166,5 +166,134 @@ Keynote上で作成したURLを知らせれば、そこにアクセスすれば�
 </description>
     </item>
     
+    <item>
+      <title>16/01/16_WDF研修「半歩先のSEOで効率よく結果を出す」にLT登壇&#43;参加させて頂きました。</title>
+      <link>https://kglabo.com/post/wdf-training-seo/</link>
+      <pubDate>Sat, 16 Jan 2016 01:30:40 +0900</pubDate>
+      
+      <guid>https://kglabo.com/post/wdf-training-seo/</guid>
+      <description>
+
+&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+
+&lt;p&gt;HTML / CSS / JavaScriptが関係しそうな文書構造についてのLTをさせて頂いたのですが、&lt;br /&gt;
+実務でコードを書かれてる方が5名ほどしかいないという、中々Awayな状況にてお話させて頂きました。&lt;br /&gt;
+とりあえずクローラーの動きだけでも伝われば満足です…！&lt;/p&gt;
+
+&lt;h2 id=&#34;発表した内容はこちら&#34;&gt;発表した内容はこちら&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://speakerdeck.com/yu_kgr/seotojava-script-wen-shu-gou-zao-totimuto-shi-an&#34;&gt;SEOとJava Script。 〜文書構造とチームと、時々、闇〜&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;内容&#34;&gt;内容&lt;/h2&gt;
+
+&lt;h3 id=&#34;各種検索クエリについての説明&#34;&gt;各種検索クエリについての説明&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;インフォメーションナルクエリ (調べ物を検索する用途) … 全体の85%〜&lt;/strong&gt;&lt;br /&gt;
+気になった事を調べる用途。検索上位に出なくよく、必要に駆られて調べる内容が多い。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;トランザクションクエリ (商品を購入する為の用途) … 全体の10%程度&lt;/strong&gt;&lt;br /&gt;
+主に「この商品を買おう」と決めて「商品名」などを入れて検索する。買う前提で検索してるので、&lt;br /&gt;
+見込み客に対して露出する機会を増やすために、リスティング・バナー広告で狙う。&lt;br /&gt;
+そもそも、ユーザ自身がAmazonや楽天でしか検索していない場合はGoogleに対する必要があるかどうか。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ナビゲーショナルクエリ(既に知っている所にアクセスする用途) &amp;hellip; 全体の5%程度&lt;/strong&gt;&lt;br /&gt;
+知っているサイトに対して行こうとしてアクセスする場合「DMM.com」「DMM FX」など&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;用語について-住さんの用語&#34;&gt;用語について ( 住さんの用語 )&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;コンテンツ&lt;/strong&gt;&lt;br /&gt;
+教養または娯楽に属する著作物。お役たち情報、読み物。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;セリング&lt;/strong&gt;&lt;br /&gt;
+売り込みの為の情報。LP、商品ページ、購入ガイドなど(楽天など)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;データ&lt;/strong&gt;&lt;br /&gt;
+創作物(著作物ではない)。単なる情報。会社情報など&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;インデックス&lt;/strong&gt;&lt;br /&gt;
+目次・カテゴリなど&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;購買行動の段階&#34;&gt;購買行動の段階&lt;/h3&gt;
+
+&lt;p&gt;カスタマージャーニーとかの奴をわかりやすい言葉にすると、&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;そのうち客　(必要も興味もない)&lt;/li&gt;
+&lt;li&gt;おなやみ客　(解決策はなんだろう)&lt;/li&gt;
+&lt;li&gt;いますぐ客　(どこで何かを買おう)&lt;/li&gt;
+&lt;li&gt;いちげん客　(また買うべきかな？)&lt;/li&gt;
+&lt;li&gt;おとくい客　(友達にも進めよう！)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;毛髪が薄い方で例えると、&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;そのうち客 → 自身の毛髪の薄さに気づいてない客&lt;/li&gt;
+&lt;li&gt;おなやみ客 → 自身の毛髪のヤバさに気づいた客&lt;/li&gt;
+&lt;li&gt;いますぐ客 → 育毛剤を買おう。と決めた客&lt;/li&gt;
+&lt;li&gt;いちげん客 → 二ヶ月使ってみたけど、効果があるから買おう。という客&lt;/li&gt;
+&lt;li&gt;おとくい客 → 効果があるから、他にも進めよう。という客&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;いますぐ客から、&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;「育毛剤の種類が微妙だったな…」となった場合は、おなやみ客に戻る。&lt;/li&gt;
+&lt;li&gt;「そもそも育毛剤じゃなくてズラや！」となった場合は、そのうち客に戻って別の方法を調べる。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;対象となるユーザーの状態によって、検索する内容が変動する。&lt;/p&gt;
+
+&lt;h3 id=&#34;ユーザーの段階毎で考えられる対応&#34;&gt;ユーザーの段階毎で考えられる対応&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;そのうち客　(必要も興味もない) → Facebook広告&lt;/li&gt;
+&lt;li&gt;おなやみ客　(解決策はなんだろう) → SEO&lt;/li&gt;
+&lt;li&gt;いますぐ客　(どこで何かを買おう) → PPC・モール&lt;/li&gt;
+&lt;li&gt;いちげん客　(また買うべきかな？) → CRM&lt;/li&gt;
+&lt;li&gt;おとくい客　(友達にも進めよう！) → ソーシャル&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;訪問者は自分自身の事柄に関してしか、興味はない。&lt;/p&gt;
+
+&lt;h3 id=&#34;なぜ昨今-seo-seo-と言われるようになったか&#34;&gt;なぜ昨今、SEO！SEO！と言われるようになったか&lt;/h3&gt;
+
+&lt;p&gt;今までは、いますぐ客に対してのSEO対応だけで良かったが、&lt;br /&gt;
+業界によっては同業他社によって情報が溢れかえりすぎた場合、&lt;br /&gt;
+更なるのびしろを求めて「おなやみ客」の層までを視野にいれるようになった。&lt;/p&gt;
+
+&lt;p&gt;逆に競合他社がいない独自の商品を提供している場合は、
+SEOに対する優先度は高くない。&lt;/p&gt;
+
+&lt;h3 id=&#34;seoに向いている商材とは&#34;&gt;SEOに向いている商材とは&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;購入を決めるまで時間が掛かるもの
+
+&lt;ul&gt;
+&lt;li&gt;不動産や進学先など&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;買い手に知識を要求するもの
+
+&lt;ul&gt;
+&lt;li&gt;趣味のものや、専門性の高いもの&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;そういったものにHITしない情報&lt;br /&gt;
+( 水道が今！壊れているなどの場合は、リスティング等の方が良い )&lt;/p&gt;
+
+&lt;h2 id=&#34;感想&#34;&gt;感想&lt;/h2&gt;
+
+&lt;p&gt;改めてこんな事を思いました。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ユーザの状態によって、必要になる検索ワードが変わる。&lt;/li&gt;
+&lt;li&gt;そもそもSEOが必要のない業界・商材もあるので、SEO対応が必要かどうか考える&lt;/li&gt;
+&lt;li&gt;SEOが必要であれば使い、SEOが向いてない所には費用対効果が悪いので別の方法を考える。&lt;/li&gt;
+&lt;li&gt;やはり検索するユーザーのニーズを満たすコンテンツ作りと機会損失を防ぐ為の制作物の作り方が大事。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
   </channel>
 </rss>
