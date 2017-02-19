@@ -2,8 +2,8 @@
 date = "2017-02-06T00:14:24+09:00"
 draft = "false"
 thumbnail = "images/2017/02/dmm-minami-beerbash03.jpg"
-tags = ["LightningTalk","bearbash"]
-categories = ["Event","南町ビアバッシュ"]
+tags = ["LightningTalk","bearbash","南町ビアバッシュ"]
+categories = ["Event"]
 title = "社内でビアバッシュイベントを開催＆LTしてきた。"
 
 +++

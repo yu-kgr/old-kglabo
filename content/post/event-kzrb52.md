@@ -1,9 +1,9 @@
 +++
 date = "2016-12-18T00:37:13+09:00"
 draft = "false"
-thumbnail = "images/2016/12/kzrb-52.jpg"
-tags = ["LightningTalk","bearbash"]
-categories = ["Event","kanazawa.rb"]
+thumbnail = "images/kzrb/kzrb.jpg"
+tags = ["LightningTalk","bearbash","kanazawa.rb"]
+categories = ["Event"]
 title = "kanazawa.rb meetup #52 に参加してきた。"
 
 +++
