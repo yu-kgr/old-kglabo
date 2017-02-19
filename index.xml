@@ -274,7 +274,7 @@ const notPure2 = (x) =&amp;gt; { console.log(&#39;foo&#39;); return x + 1; };
 
 &lt;p&gt;今回は、&lt;a href=&#34;http://mokumokukai.tumblr.com/&#34;&gt;もくもく会&lt;/a&gt;に参加。&lt;br /&gt;
 会社でTLからから教えてもらった&lt;a href=&#34;http://basic-react.axlight.com/html/&#34;&gt;React基礎&lt;/a&gt;を参考にしながら、&lt;br /&gt;
-趣味の範疇で学習を行った。(ド素人レベル)&lt;/p&gt;
+趣味の範疇で学習を行った。&lt;/p&gt;
 
 &lt;h2 id=&#34;詳細&#34;&gt;詳細&lt;/h2&gt;
 
