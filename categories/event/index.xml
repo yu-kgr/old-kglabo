@@ -6,8 +6,79 @@
     <description>Recent content in Event on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 06 Feb 2017 00:14:24 +0900</lastBuildDate>
+    <lastBuildDate>Sat, 18 Feb 2017 00:37:13 +0900</lastBuildDate>
     <atom:link href="https://kglabo.com/categories/event/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>kanazawa.rb meetup #54 に参加してきた。</title>
+      <link>https://kglabo.com/post/event-kzrb54/</link>
+      <pubDate>Sat, 18 Feb 2017 00:37:13 +0900</pubDate>
+      
+      <guid>https://kglabo.com/post/event-kzrb54/</guid>
+      <description>
+
+&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+
+&lt;p&gt;今回は、&lt;a href=&#34;http://mokumokukai.tumblr.com/&#34;&gt;もくもく会&lt;/a&gt;に参加。&lt;br /&gt;
+会社でTLからから教えてもらった&lt;a href=&#34;http://basic-react.axlight.com/html/&#34;&gt;React基礎&lt;/a&gt;を参考にしながら、&lt;br /&gt;
+趣味の範疇で学習を行った。(ド素人レベル)&lt;/p&gt;
+
+&lt;h2 id=&#34;詳細&#34;&gt;詳細&lt;/h2&gt;
+
+&lt;p&gt;もくもくした内容は、別記事の&lt;a href=&#34;https://kglabo.com/post/react-study-01/&#34;&gt;TIL - ReactStudy#01&lt;/a&gt;に記載。&lt;/p&gt;
+
+&lt;h2 id=&#34;感想&#34;&gt;感想&lt;/h2&gt;
+
+&lt;p&gt;環境構築を行ってES2015と関数型のコーディングについて調べているとタイムオーバーとなった。&lt;/p&gt;
+
+&lt;p&gt;なんだか、最近めっきりコーディング自体から離れていた事もあり、&lt;br /&gt;
+名前だけはよく聞くReact自体を触れる前に、事前に学ぶ必要がある知識が結構ある事が分かったので、&lt;br /&gt;
+時間を作って継続的に触っていく必要があるなーと改めて気付かされる機会になって良かった。&lt;/p&gt;
+
+&lt;p&gt;今、&lt;a href=&#34;http://amzn.asia/eTCvzB0&#34;&gt;アジャイルな見積りと計画づくり&lt;/a&gt;を読んでる途中だけども、&lt;br /&gt;
+途中で積み本になってる、リーダブルコードを先に読んだ方がいい気がしてきた:-(&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;その他&#34;&gt;その他&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://twitter.com/Yukimitsu_Izawa&#34;&gt;@Yukimitsu_Izawa&lt;/a&gt;さんが金沢ITフェスティバルで &lt;em&gt;情報セキュリティ&lt;/em&gt; についてお話するとの事&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;amp-img src=&#34;https://kglabo.com/images/2017/02/kzrb-54-01.jpg&#34; alt=&#34;kanazawa.rb meetup #54 に参加してきた。 images/2017/02/kzrb-54-01.jpg&#34; width=500 height=500 layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+  
+&lt;/figure&gt;
+
+
+&lt;p&gt;新しいITビジネスプラザ4Fのサロンスペースにて開催されるとの事で、&lt;br /&gt;
+キレイでイカしたサロンスペースで、色々な企業の方々が各々の分野の話をされるとの事。&lt;br /&gt;
+無料だし、サロン綺麗だしスケジュールが合えば行きたい。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;二次会&#34;&gt;二次会&lt;/h3&gt;
+
+&lt;p&gt;二次会で途中で金沢大学大野博士が乱入。&lt;br /&gt;
+貴重な &lt;em&gt;ルビジウム原子時計(左の物体)&lt;/em&gt; なるものを見せてもらった。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;居酒屋メニューの上に乗る原子時計&lt;/strong&gt; これはなかなか見れる絵面ではない…。&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;amp-img src=&#34;https://kglabo.com/images/2017/02/kzrb-54-02.jpg&#34; alt=&#34;kanazawa.rb meetup #54 に参加してきた。 images/2017/02/kzrb-54-02.jpg&#34; width=500 height=500 layout=&#34;responsive&#34;&gt;&lt;/amp-img&gt;
+  
+&lt;/figure&gt;
+
+
+&lt;p&gt;LTEの基地局や、電柱に埋まってるらしく、このサイズで15万ほどするらしい。やばい。&lt;br /&gt;
+自分の中で &lt;em&gt;時計&lt;/em&gt; というモノの概念が変化した貴重な経験 :-)&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&#34;イベントレポートはこちら&#34;&gt;イベントレポートはこちら&lt;/h4&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://kzrb.org/meetup/54/report.html&#34;&gt;meetup #54 report&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>社内でビアバッシュイベントを開催＆LTしてきた。</title>
