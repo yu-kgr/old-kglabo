@@ -10,7 +10,7 @@ title = "kanazawa.rb meetup #54 に参加してきた。"
 ## 概要
 今回は、[もくもく会](http://mokumokukai.tumblr.com/)に参加。  
 会社でTLからから教えてもらった[React基礎](http://basic-react.axlight.com/html/)を参考にしながら、  
-趣味の範疇で学習を行った。(ド素人レベル) 
+趣味の範疇で学習を行った。
 
 ## 詳細
 
