@@ -2,7 +2,7 @@
 date = "2017-02-18T00:37:13+09:00"
 draft = "false"
 thumbnail = "images/2017/02/react-study.jpg"
-tags = ["React","ES2015","Today I learned"]
+tags = ["React","ES2015","TIL"]
 categories = ["Develop"]
 title = "TIL - ReactStudy#01"
 
