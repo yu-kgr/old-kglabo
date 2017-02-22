@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Wbs on kglabo.com</title>
+    <link>https://kglabo.com/tags/wbs/</link>
+    <description>Recent content in Wbs on kglabo.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 21 Feb 2017 19:43:25 +0900</lastBuildDate>
+    <atom:link href="https://kglabo.com/tags/wbs/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>TIL - プロジェクトマネジメント研修 ~WBSについて~</title>
+      <link>https://kglabo.com/post/project-management-study-02/</link>
+      <pubDate>Tue, 21 Feb 2017 19:43:25 +0900</pubDate>
+      
+      <guid>https://kglabo.com/post/project-management-study-02/</guid>
+      <description>
+
+&lt;h2 id=&#34;なにこれ&#34;&gt;なにこれ？&lt;/h2&gt;
+
+&lt;p&gt;社内で、 &lt;em&gt;プロジェクトマネジメント研修 ~WBS編~&lt;/em&gt; に参加してきた為、&lt;br /&gt;
+そちらの内容に関してのメモと、個人的に学習した内容を合わせた備忘録。&lt;/p&gt;
+
+&lt;h2 id=&#34;wbsとは&#34;&gt;WBSとは&lt;/h2&gt;
+
+&lt;p&gt;&lt;em&gt;Work Breakdown Structure&lt;/em&gt; の略で、&lt;br /&gt;
+プロジェクトマネジメントで計画を立てる際に用いられる手法の一つ。&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;自転車の開発&lt;/em&gt; で例えると&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;デザイン&lt;/li&gt;
+&lt;li&gt;車体作成
+
+&lt;ul&gt;
+&lt;li&gt;フレーム
+
+&lt;ul&gt;
+&lt;li&gt;部品制作&lt;/li&gt;
+&lt;li&gt;組み立て&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;サドル
+
+&lt;ul&gt;
+&lt;li&gt;部品制作&lt;/li&gt;
+&lt;li&gt;組み立て&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;ペダルとギア
+
+&lt;ul&gt;
+&lt;li&gt;部品制作&lt;/li&gt;
+&lt;li&gt;組み立て&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;ハンドル
+
+&lt;ul&gt;
+&lt;li&gt;部品制作&lt;/li&gt;
+&lt;li&gt;組み立て&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;上記のように作業に必要な工程を&lt;em&gt;要素分解&lt;/em&gt; する事で、&lt;br /&gt;
+&lt;strong&gt;プロジェクト全体で必要な作業を把握出来るようにする手法&lt;/strong&gt;。&lt;/p&gt;
+
+&lt;p&gt;このように要素分解を行う事で、&lt;br /&gt;
+各作業に必要な人員の確保・リソースの計算を行う事ができるようになる為、&lt;br /&gt;
+&lt;em&gt;責任分担が明確化される&lt;/em&gt; 。&lt;/p&gt;
+
+&lt;h2 id=&#34;wbs作成時のポイント&#34;&gt;WBS作成時のポイント&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;作業内容がもれなく記載されている事&lt;/li&gt;
+&lt;li&gt;作業単位が適正に分解されて、分かりやすくなっている事&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;分割する際の軸&#34;&gt;分割する際の軸&lt;/h3&gt;
+
+&lt;p&gt;WEBプロジェクトで主に使いそうなものは以下の3種類が多い。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;成果物&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;時系列&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;場所(担当)&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;成果物-を軸とした場合&#34;&gt;&lt;em&gt;成果物&lt;/em&gt; を軸とした場合&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;仕様&lt;/li&gt;
+&lt;li&gt;デザイン&lt;/li&gt;
+&lt;li&gt;システム&lt;/li&gt;
+&lt;li&gt;プロジェクトマネジメント&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;時系列-を軸とした場合の例&#34;&gt;&lt;em&gt;時系列&lt;/em&gt; を軸とした場合の例&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;要件定義&lt;/li&gt;
+&lt;li&gt;設計フェーズ&lt;/li&gt;
+&lt;li&gt;実装フェーズ&lt;/li&gt;
+&lt;li&gt;検収フェーズ&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;場所-担当-を軸とした場合の例&#34;&gt;&lt;em&gt;場所(担当)&lt;/em&gt; を軸とした場合の例&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;クライアント&lt;/li&gt;
+&lt;li&gt;社内&lt;/li&gt;
+&lt;li&gt;外注&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;など。&lt;/p&gt;
+
+&lt;h2 id=&#34;wbsの型&#34;&gt;WBSの型&lt;/h2&gt;
+
+&lt;h3 id=&#34;ツリー型構造&#34;&gt;ツリー型構造&lt;/h3&gt;
+
+&lt;h4 id=&#34;メリット&#34;&gt;メリット&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;構造や因果関係が理解し易い&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;デメリット&#34;&gt;デメリット&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;詳細を記述しにくい&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;備考&#34;&gt;備考&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;チャート型（Chart form）とも呼ぶ&lt;/li&gt;
+&lt;li&gt;大項目を洗い出す時や、初期タスクの洗い出しやすい&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;一覧型構造&#34;&gt;一覧型構造&lt;/h3&gt;
+
+&lt;h4 id=&#34;メリット-1&#34;&gt;メリット&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;詳細が記述し易い&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;デメリット-1&#34;&gt;デメリット&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;構造がわかりにくい&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;備考-1&#34;&gt;備考&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;表型（Tabular form）とも呼ぶ&lt;/li&gt;
+&lt;li&gt;ある程度大項目がわかっている場合、責任分担やスケジュールを盛り込みやすい&lt;/li&gt;
+&lt;li&gt;WEBプロジェクトでは、こちらが利用されるケースか多い&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;分割された項目&#34;&gt;分割された項目&lt;/h2&gt;
+
+&lt;p&gt;どういった軸で分解するか決めた後、&lt;br /&gt;
+更に細分化して項目を分解していく必要がある。&lt;/p&gt;
+
+&lt;h3 id=&#34;レベル毎の分解&#34;&gt;レベル毎の分解&lt;/h3&gt;
+
+&lt;p&gt;分割された項目は、&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;大項目（1レベル）&lt;/em&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;中項目（2レベル）&lt;/em&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;小項目（3レベル）&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;といった階層構造で整理していく。&lt;/p&gt;
+
+&lt;h3 id=&#34;各担当の必要な分解レベル&#34;&gt;各担当の必要な分解レベル&lt;/h3&gt;
+
+&lt;p&gt;WBSを閲覧する担当者によって、&lt;em&gt;「分割された項目」&lt;/em&gt; つまり、&lt;br /&gt;
+WBSの分解が必要なレベルは異なる。&lt;/p&gt;
+
+&lt;p&gt;オーナーレベル（事業責任者等）であれば、2レベル程度で良いが、&lt;br /&gt;
+作業者レベルの場合は、6レベルあたり(作業単位で分解されている方が良い)&lt;/p&gt;
+
+&lt;h3 id=&#34;ワーク-パッケージ&#34;&gt;ワーク・パッケージ&lt;/h3&gt;
+
+&lt;p&gt;尚、最小単位まで分解された作業単位は「&lt;strong&gt;ワーク・パッケージ&lt;/strong&gt;」と呼ばれて、&lt;br /&gt;
+PMBOKでは「&lt;strong&gt;最下位レベルの要素成果物&lt;/strong&gt;」と定義されている。&lt;/p&gt;
+
+&lt;p&gt;どこまで分解するかの指標としては、以下のような形が良いとされている。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;経験が浅い・新規プロジェクト など&lt;/em&gt;
+
+&lt;ul&gt;
+&lt;li&gt;不確実性な要素が存在しているケースは、なるべく細かくブレークダウンしたほうが良い&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;経験がある・スキルが高いメンバーがアサインしている など&lt;/em&gt;
+
+&lt;ul&gt;
+&lt;li&gt;安定している場合はそこまで細かくブレークダウンしなくても良い&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ワーク-パッケージの内容が適切かどうか&#34;&gt;ワーク・パッケージの内容が適切かどうか&lt;/h3&gt;
+
+&lt;p&gt;分解されたワーク・パッケージの内容が適切かどうか確認するには、&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ひとつのワーク・パッケージに複数の人が担当者に任命されている
+
+&lt;ul&gt;
+&lt;li&gt;適切な作業分解ができていない&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;ワーク・パッケージ内の &lt;em&gt;各作業間に長い空き時間にある&lt;/em&gt;
+
+&lt;ul&gt;
+&lt;li&gt;待機工数が発生している&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;ワーク・パッケージ内の &lt;em&gt;作業の一部に特化したリスクがあり、切り分けが必要&lt;/em&gt;
+
+&lt;ul&gt;
+&lt;li&gt;適切な作業分解ができていない&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;ワーク・パッケージの &lt;em&gt;内容を明確に理解していないステークホルダーがいる&lt;/em&gt;
+
+&lt;ul&gt;
+&lt;li&gt;追加項目が発生する可能性がある
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;などを確認すると良い。&lt;/p&gt;
+
+&lt;h2 id=&#34;作成時の注意点&#34;&gt;作成時の注意点&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;WBSで最重要のものは「チーム全員でレビューをおこなう事」
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;不確実性の程度認識&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;管理の強弱を知る&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;不確実性とは&#34;&gt;不確実性とは&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;時間に制約がある&lt;/li&gt;
+&lt;li&gt;特殊なリソース調達が必要&lt;/li&gt;
+&lt;li&gt;アウトプット結果が具体的に見えないタスク&lt;/li&gt;
+&lt;li&gt;アウトプットの完成度が不透明&lt;/li&gt;
+&lt;li&gt;技術麺での新規性が高い&lt;/li&gt;
+&lt;li&gt;経験者がいない技術&lt;/li&gt;
+&lt;li&gt;前提、仮定が狂いやすい作業&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;管理の強弱とは&#34;&gt;管理の強弱とは&lt;/h3&gt;
+
+&lt;p&gt;内製で行う作業なのか、ベンダーに発注を行う作業なのか？&lt;br /&gt;
+ベンター作業との細かい &lt;em&gt;依存関係を明確に認識&lt;/em&gt; しておく為。&lt;/p&gt;
+
+&lt;h3 id=&#34;レビュー時の観点&#34;&gt;レビュー時の観点&lt;/h3&gt;
+
+&lt;p&gt;以下の点に注意して内容を確認する。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;要素成果物に抜けがないか&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ブレークダウンは適切か&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;責任は明確化されているか&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;wbs更新時のルール策定&#34;&gt;WBS更新時のルール策定&lt;/h2&gt;
+
+&lt;p&gt;メンバーの解釈・裁量で期限設定やチケットの追加等を行われた場合、&lt;br /&gt;
+WBSの管理が難しくなりWBSの信用性がなくなる。&lt;br /&gt;
+結果として円滑なプロジェクト進行が難しくなる為、以下の点に注意する。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;WBSの管理者・更新者をチームで決めてルール化する&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;更新後の周知ルールを定める&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;備考-2&#34;&gt;備考&lt;/h2&gt;
+
+&lt;p&gt;一般的にはWBSは、&lt;em&gt;4つ程度の1レベルが存在&lt;/em&gt; している程度が適正だと言われている。&lt;/p&gt;
+
+&lt;p&gt;既に利用しているWBSのテンプレートが存在している場合は、&lt;br /&gt;
+&lt;em&gt;新たにWBSを作成するプロジェクトがそのフォーマットに適しているのか&lt;/em&gt; を考えて引っ張られないようにする。&lt;/p&gt;
+
+&lt;p&gt;WBSは作成した後、その情報を元として後々の作業で利用される事が多い。&lt;br /&gt;
+主にスケジュール管理に使用される事が多いため、&lt;em&gt;各要素にユニークな識別子&lt;/em&gt; を振り分ける事が一般的。&lt;br /&gt;
+&lt;em&gt;識別子&lt;/em&gt; は、&lt;em&gt;スケジュール&lt;/em&gt; / &lt;em&gt;予算見積書&lt;/em&gt; など、&lt;em&gt;様々な文書に利用できる&lt;/em&gt; 為、&lt;br /&gt;
+識別子が一致していれば会計処理がスムーズにする事も可能。&lt;br /&gt;
+コスト削減する場合にも、どの作業を削れば良いかが分かりやすくメリットがある。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
