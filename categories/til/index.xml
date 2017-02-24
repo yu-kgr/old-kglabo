@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Wbs on kglabo.com</title>
-    <link>https://kglabo.com/tags/wbs/</link>
-    <description>Recent content in Wbs on kglabo.com</description>
+    <title>Til on kglabo.com</title>
+    <link>https://kglabo.com/categories/til/</link>
+    <description>Recent content in Til on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
     <lastBuildDate>Tue, 21 Feb 2017 19:43:25 +0900</lastBuildDate>
-    <atom:link href="https://kglabo.com/tags/wbs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://kglabo.com/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>TIL - プロジェクトマネジメント研修 ~WBSについて~</title>
