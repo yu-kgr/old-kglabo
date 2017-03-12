@@ -5,6 +5,7 @@ thumbnail = "images/2017/02/dmm-minami-beerbash03.jpg"
 tags = ["LightningTalk","bearbash","南町ビアバッシュ"]
 categories = ["Event"]
 title = "社内でビアバッシュイベントを開催＆LTしてきた。"
+description = "2017/02/03（金）に社内のスキルアップを目的として「南町ビアバッシュ」という名の社内イベントを開催しました。"
 
 +++
 

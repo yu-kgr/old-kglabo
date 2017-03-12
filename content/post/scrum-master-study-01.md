@@ -5,7 +5,7 @@ tags = ["ScrumMaster"]
 categories = ["TIL"]
 thumbnail = "images/til/til.jpg"
 title = "TIL - スクラムマスターの勉強#01"
-
+description = "スクラム開発について学習した内容の備忘録。スクラムとは開発プロセスではなく問題に対応する為のフレームワークである。価値の高いプロダクトやサービスを生産性高く・クリエイティブに届ける為のフレームワークです。"
 +++
 
 # なにこれ？

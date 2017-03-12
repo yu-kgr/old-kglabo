@@ -5,6 +5,7 @@ thumbnail = "images/kzrb/kzrb.jpg"
 tags = ["もくもく会","kanazawa.rb"]
 categories = ["Event"]
 title = "kanazawa.rb meetup #54 に参加してきた。"
+description = "2017/02/18(土)に開催された「kanazawa.rb meetup#54」でもくもく会に参加してReactの勉強をして来ました。"
 
 +++
 ## 概要

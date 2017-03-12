@@ -5,6 +5,7 @@ draft = "false"
 thumbnail = "images/til/til.jpg"
 tags = ["WBS","ProjectManagement"]
 categories = ["Event","TIL"]
+description = "2017/02/17(金)に社内で「プロジェクトマネジメント研修 ~WBS編~」に参加してきたので、WBS（Work Breakdown Structure：作業分解構成図）について学んできた内容をメモしました。"
 
 +++
 

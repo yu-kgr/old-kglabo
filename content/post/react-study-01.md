@@ -5,7 +5,7 @@ thumbnail = "images/2017/02/react-study.jpg"
 tags = ["React","ES2015","TIL"]
 categories = ["Develop"]
 title = "TIL - ReactStudy#01"
-
+description = "Reactについて勉強した内容についての備忘録。主にES2015(ES6)について"
 +++
 ## 概要
 [React基礎](http://basic-react.axlight.com/html/)を参考にしての学習。

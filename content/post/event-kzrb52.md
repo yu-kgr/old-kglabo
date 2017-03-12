@@ -5,7 +5,7 @@ thumbnail = "images/kzrb/kzrb.jpg"
 tags = ["LightningTalk","bearbash","kanazawa.rb"]
 categories = ["Event"]
 title = "kanazawa.rb meetup #52 に参加してきた。"
-
+description = "2016/12/17（土）に開催された「kanazawa.rb meetup#52」でLT大会があったので一年間やった事の振り返りを兼ねてLTをしてきました。"
 +++
 
 ## 概要
