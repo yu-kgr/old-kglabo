@@ -1,8 +1,8 @@
 +++
-categories = [""]
+categories = ["TIL"]
 date = "2017-05-08T19:33:32+09:00"
 description = "リポジトリにssh接続でgit cloneする為にssh-keygen -f hogehogeで、別名pubファイルを作ったら永遠にcloneできなかったので、なんとかした。"
-draft = "true"
+draft = "false"
 tags = ["mokumoku"]
 thumbnail = "images/til/til.jpg"
 title = "リポジトリにssh接続でgit cloneする為にssh-keygen -f hogehogeで、別名pubファイルを作ったら永遠にcloneできなかった話"
