@@ -6,8 +6,65 @@
     <description>Recent content in Posts on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 08 May 2017 19:33:32 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 13 Jul 2017 13:20:00 +0900</lastBuildDate>
     <atom:link href="https://kglabo.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>エンジニアの稼働率と工数管理について</title>
+      <link>https://kglabo.com/post/til-man-hour-managa/</link>
+      <pubDate>Thu, 13 Jul 2017 13:20:00 +0900</pubDate>
+      
+      <guid>https://kglabo.com/post/til-man-hour-managa/</guid>
+      <description>
+
+&lt;h2 id=&#34;なにこれ&#34;&gt;なにこれ&lt;/h2&gt;
+
+&lt;p&gt;主にウォーターフォール時に各タスクの工数を算出したり作業分解したタスクをどう割り振るのか考える時に役に立つであろう情報。&lt;/p&gt;
+
+&lt;h2 id=&#34;稼働率&#34;&gt;稼働率&lt;/h2&gt;
+
+&lt;p&gt;稼働率 is 働ける割合。&lt;/p&gt;
+
+&lt;p&gt;稼働率は、1日あたり8時間となるので、&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;8h ＝ 480min ＝ 100%&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;60min = 12.5%&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;て、1hにつき &lt;code&gt;12.5%&lt;/code&gt; となる。&lt;/p&gt;
+
+&lt;h3 id=&#34;例&#34;&gt;例&lt;/h3&gt;
+
+&lt;p&gt;5時間掛かる作業の場合は、&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;12.5*5 = 62.5%&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;これを「何日かけて対応するか」で日数分で割る。&lt;br /&gt;
+「何日かけて対応するか」はメンバーの空き稼働率の状況で判断する。&lt;/p&gt;
+
+&lt;h2 id=&#34;役割毎の稼働率の違い&#34;&gt;役割毎の稼働率の違い&lt;/h2&gt;
+
+&lt;p&gt;末端作業者と管理層では一日の作業に費やすことができる稼働率が異なる。&lt;br /&gt;
+一般的には末端作業者は &lt;code&gt;70~80%&lt;/code&gt; が限度。&lt;/p&gt;
+
+&lt;p&gt;例えば、会議や雑務の割合が多くて、&lt;br /&gt;
+1日あたり4hは管理系業務で時間が取られている場合は、&lt;/p&gt;
+
+&lt;p&gt;8hのうち、4hしか作業時間を確保できない為、&lt;br /&gt;
+&lt;code&gt;8h - 4h = 4h&lt;/code&gt; で、作業割合 &lt;code&gt;50%（12.5 ✕ 4）&lt;/code&gt; が上限となる。&lt;/p&gt;
+
+&lt;p&gt;管理者は自分自身の稼働率がどの程度なのか確認しておくと良い。&lt;/p&gt;
+
+&lt;h2 id=&#34;補足&#34;&gt;補足&lt;/h2&gt;
+
+&lt;p&gt;期間と作業割合がわかっているタスクに関しては、&lt;br /&gt;
+逆算して初期見積入れておいても良い。
+※ 単純にタスクに何時間かけるか分かるようになるだけだが‥&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>リポジトリにssh接続でgit cloneする為にssh-keygen -f hogehogeで、別名pubファイルを作ったら永遠にcloneできなかった話</title>
