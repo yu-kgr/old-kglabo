@@ -6,8 +6,236 @@
     <description>Recent content in Til on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 13 Jul 2017 13:20:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 16 Oct 2017 13:20:00 +0900</lastBuildDate>
     <atom:link href="https://kglabo.com/categories/til/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>[TIL]UX研修 Day2 - 他社UI調査/インタビュー設計</title>
+      <link>https://kglabo.com/post/til-user-experience-training-02/</link>
+      <pubDate>Mon, 16 Oct 2017 13:20:00 +0900</pubDate>
+      
+      <guid>https://kglabo.com/post/til-user-experience-training-02/</guid>
+      <description>
+
+&lt;h2 id=&#34;なにこれ&#34;&gt;なにこれ&lt;/h2&gt;
+
+&lt;p&gt;社内でのUX研修で学んだ事のメモ&lt;/p&gt;
+
+&lt;h2 id=&#34;研修内容&#34;&gt;研修内容&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;他社UI調査&lt;/li&gt;
+&lt;li&gt;インタビュー設計&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;問いを立てる&#34;&gt;問いを立てる&lt;/h2&gt;
+
+&lt;p&gt;実際に競合他社と比較して問いを立てる（20分）&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;こうだと思うけど（仮説）&lt;/li&gt;
+&lt;li&gt;こうなっているのは（現実）&lt;/li&gt;
+&lt;li&gt;なぜだろう（問い）&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;仮説ではなく問いを立てる&#34;&gt;仮説ではなく問いを立てる&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;仮説では質問者の考え（バイアス）が掛かるため、純粋に知りたい問いを探す&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;定量調査と定性調査&#34;&gt;定量調査と定性調査&lt;/h2&gt;
+
+&lt;h3 id=&#34;定量調査&#34;&gt;定量調査&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ログ重視/結果重視&lt;/li&gt;
+&lt;li&gt;広く浅い情報を取り扱う&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;定性調査&#34;&gt;定性調査&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ログ化されていない情報の収集&lt;/li&gt;
+&lt;li&gt;新しい価値の発見/狭く深い情報を取り扱う&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;定量調査と定性調査の組み合わせが大事&#34;&gt;定量調査と定性調査の組み合わせが大事&lt;/h4&gt;
+
+&lt;p&gt;現状何が起きているのかを定量調査で確認して、&lt;br /&gt;
+定性調査でどうしてそうなっているのかプロセスを確認して行って施策の成果を定量調査で確認する。&lt;/p&gt;
+
+&lt;h4 id=&#34;定性調査の種類&#34;&gt;定性調査の種類&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;エスノグラフィ
+
+&lt;ul&gt;
+&lt;li&gt;被験者の実際の利用現場に赴きも場合によっては調査者自身も被験者と一体となり調査する&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;コンテクスチュアルインクワイアリー
+
+&lt;ul&gt;
+&lt;li&gt;被験者が自分の行動や思いを説明しながら、サービスやプロダクトを普段通りに利用してもらう&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;オブザベーション
+
+&lt;ul&gt;
+&lt;li&gt;調査側が用意した手順に沿ってサービスやプロダクトを利用してもらい、観察をする&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;インタビュー
+
+&lt;ul&gt;
+&lt;li&gt;双方向のやり取りを交えて、被験者に話を聞く&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;アンケート
+
+&lt;ul&gt;
+&lt;li&gt;一方的に示した問に対して、情報を収集する&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;インタビューの種類&#34;&gt;インタビューの種類&lt;/h4&gt;
+
+&lt;p&gt;今回はインタビューについて深掘り・学習する。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;非構造化インタビュー
+
+&lt;ul&gt;
+&lt;li&gt;事前に設問を決めずに、その場に合わせて質問する。予想だにしてなかった発見があるが、時間がかかる。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;半構造化インタビュー
+
+&lt;ul&gt;
+&lt;li&gt;事前に決めた設問に沿って進めつつ、必要な箇所は深掘りをしていく。時間的に効率よく進められ深掘りもできるが、バイアスがかかる懸念。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;構造化インタビュー
+
+&lt;ul&gt;
+&lt;li&gt;事前に決めておいた設問のみ質問する。短時間で終わるが深掘りができない。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;インタビュー設計&#34;&gt;インタビュー設計&lt;/h2&gt;
+
+&lt;p&gt;インタビューをどうやって行うかの設計。&lt;/p&gt;
+
+&lt;h2 id=&#34;調査の目的を明らかにする&#34;&gt;調査の目的を明らかにする&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;調査で、何を明らかにしたいのかを決める&lt;/li&gt;
+&lt;li&gt;調査結果を何に、どのように使うのかを決める&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;被験者集め-リクルーティング&#34;&gt;被験者集め（リクルーティング）&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;被験者の条件を決定&lt;/li&gt;
+&lt;li&gt;話を聞くべき人の条件を洗い出す ※複数のセグメントを設定することもできる&lt;/li&gt;
+&lt;li&gt;被験者の数を決定
+
+&lt;ul&gt;
+&lt;li&gt;最低でも３人、一般的には５人&lt;/li&gt;
+&lt;li&gt;※ただしセグメントごとにこの人数が必要&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;被験者候補の抽出
+
+&lt;ul&gt;
+&lt;li&gt;人づて（知り合い、知り合いの知り合い）&lt;/li&gt;
+&lt;li&gt;スクリーニングアンケート&lt;/li&gt;
+&lt;li&gt;外部の調査会社に依頼&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;実査の調整
+
+&lt;ul&gt;
+&lt;li&gt;セグメントと照合しているか直接確認&lt;/li&gt;
+&lt;li&gt;日程調整&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;インタビュー設計-1&#34;&gt;インタビュー設計&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ラポールの形成
+
+&lt;ul&gt;
+&lt;li&gt;リラックスしてもらい、本音を言いやすい空気を作る ※挨拶の応答や雑談で会話をし、被験者にも声を出してもらう&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;インフォームドコンセント
+
+&lt;ul&gt;
+&lt;li&gt;安心して意見を言えるように、調査について伝える ※調査目的、個人情報の取り扱い、任意参加である点などを伝える&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;基本情報の質問
+
+&lt;ul&gt;
+&lt;li&gt;本題に入る前に、周辺状況や利用の背景について質問する&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;本題の質問&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;本題の質問&#34;&gt;本題の質問&lt;/h4&gt;
+
+&lt;p&gt;インタビュー内容の設計手順&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;知りたいことを答えてもらえる質問にする&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;１．明らかにしたいことを洗い出す
+２．明らかにしたいことを精査し優先度をつけ、高いものをピックアップする
+３．明らかにしたいことを知るために、何をどのように聞くべきかを検討する
+４．設問を並べ、答えが得られやすいような順番を検討する&lt;/p&gt;
+
+&lt;h3 id=&#34;インタビュー内容の設計tips&#34;&gt;インタビュー内容の設計TIPS&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;被験者が「はい / いいえ」で答えられない、回答が膨らむような質問にしましょう
+
+&lt;ul&gt;
+&lt;li&gt;はい、いいえで終わるとそれ以上の情報が得られません。被験者が自ら説明してくれるような質問が理想です。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;被験者が利用する状況や背景、理由などが明らかになる質問をしましょう
+
+&lt;ul&gt;
+&lt;li&gt;被験者の行為や結果だけではなく、なぜその結果に至ったのかという点が最も重要です。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;答えやすい質問を先に、答えにくい質問を後に回しましょう
+
+&lt;ul&gt;
+&lt;li&gt;被験者が話しやすい順序を工夫しましょう。場合によっては用意した順序を入れ替えてもかまいません。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;質問者の思い込みが入り、被験者の答えが偏るような質問はやめましょう
+
+&lt;ul&gt;
+&lt;li&gt;自分が持っている仮説を検証するような質問ではなく、被験者のありのままの情報を収集すると理解が深まります。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;情報が引き出せない場合、初めての利用や直近の利用を質問してみましょう
+
+&lt;ul&gt;
+&lt;li&gt;初めての利用や直近の利用は記憶に残りやすいです。足がかりとして被験者の情報を引き出すことができます。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;インタビュー項目の設計&#34;&gt;インタビュー項目の設計&lt;/h2&gt;
+
+&lt;p&gt;インタビュー項目の設計を実際に行う（20分）&lt;br /&gt;
+設計する際の順番は、先に作成した問いに対して下記の事を意識して作成する。&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;優先度をつける&lt;/li&gt;
+&lt;li&gt;何をどのように聞くべきか検討する&lt;/li&gt;
+&lt;li&gt;答えが得られやすいような順番を検討する&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+&lt;li&gt;10分程度のインタビューだと適正数は3~4つの問い&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>エンジニアの稼働率と工数管理について</title>
