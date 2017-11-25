@@ -1,12 +1,16 @@
 +++
-draft = "false"
-thumbnail = "images/wdf/wdf.jpg"
-tags = ["LightningTalk","WDF"]
-categories = ["Event"]
-title = "16/01/16_WDF研修「半歩先のSEOで効率よく結果を出す」にLT登壇+参加させて頂きました。"
-date = "2016-01-16T01:30:40+09:00"
+author = "@yu-kgr"
+categories = ["EventReport"]
+date = "2016-01-16"
 description = "2016/01/16（土）に開催されたWDF研修「半歩先のSEOで効率よく結果を出す」でマークアップとGoogleのクローラについてのLTをさせて頂きました。"
+featured = "wdf.jpg"
+featuredalt = "wdf"
+featuredpath = "date"
+linktitle = ""
+title = "2016/01/16_WDF研修「半歩先のSEOで効率よく結果を出す」にLT登壇+参加させて頂きました。"
+type = "post"
 +++
+
 
 ## 概要
 

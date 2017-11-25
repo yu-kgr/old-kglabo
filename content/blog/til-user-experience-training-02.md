@@ -1,13 +1,17 @@
 +++
+author = "@yu-kgr"
 categories = ["TIL"]
-date = "2017-10-16T13:20:00+09:00"
-description = "[TIL]UX研修 Day2 - 他社UI調査/インタビュー設計"
-draft = "false"
-tags = ["ux"]
-thumbnail = "images/til/til.jpg"
-title = "[TIL]UX研修 Day2 - 他社UI調査/インタビュー設計"
-
+date = "2017-10-16"
+description = "社内勉強会「UX研修」で学んだ、他社UI調査とインタビュー設計についての走り書き"
+featured = "/img/til/til.jpg"
+featuredalt = "til"
+featuredpath = "https://kglabo.com"
+linktitle = ""
+title = "TIL - UX研修 - 他社UI調査/インタビュー設計"
+type = "post"
 +++
+
+
 
 ## なにこれ
 社内でのUX研修で学んだ事のメモ

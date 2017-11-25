@@ -1,13 +1,16 @@
 +++
-title = "TIL - プロジェクトマネジメント研修 ~WBSについて~"
-date = "2017-02-21T19:43:25+09:00"
-draft = "false"
-thumbnail = "images/til/til.jpg"
-tags = ["WBS","ProjectManagement"]
-categories = ["Event","TIL"]
+author = "@yu-kgr"
+categories = ["TIL"]
+date = "2017-02-21"
 description = "2017/02/17(金)に社内で「プロジェクトマネジメント研修 ~WBS編~」に参加してきたので、WBS（Work Breakdown Structure：作業分解構成図）について学んできた内容をメモしました。"
-
+featured = "/img/til/til.jpg"
+featuredalt = "til"
+featuredpath = "https://kglabo.com"
+linktitle = ""
+title = "TIL - プロジェクトマネジメント研修 ~WBSについて~"
+type = "post"
 +++
+
 
 ## なにこれ？
 社内で、 *プロジェクトマネジメント研修 ~WBS編~* に参加してきた為、  

@@ -1,14 +1,168 @@
+baseurl = "https://kglabo.com/"
 languageCode = "ja"
 hasCJKLanguage = "true"
 title = "kglabo.com"
-baseurl = "https://kglabo.com/"
+theme = "hugo-future-imperfect"
+preserveTaxonomyNames = true
+paginate = 3
+disqusShortname = "kglabo-com"
 googleAnalytics = "UA-89893813-1"
-enableRobotsTXT = "true"
-theme = "hugo-theme-solit"
+pluralizeListTitles = false
 
 [params]
-  dateformat = "Jan 2, 2006" # Optional
-  # Fonts settings.
-  googlefonts = "https://fonts.googleapis.com/css?family=Audiowide" # Optional, Include google fonts.
-  fontfamily = "Lato,YuGothic,'Hiragino Kaku Gothic Pro',Meiryo,sans-serif" # Optional, Override body font family.
-  logofontfamily = "Audiowide" # Optional, Override logo font.
+  # メタタグの説明を設定します
+  description          = "kanazawa"
+  # ナビゲーションバーの左上に表示されるnavbarTitleを設定します
+  navbarTitle          = "kglabo.com"
+  #「投稿をもっと見る」リンクの設定
+  viewMorePostLink     = "/blog/"
+
+# Optional Params
+  # ウェブサイトのセクションに合わせてnavbarTitleを設定します
+  dynamicTitles        = true
+  # ソーシャルメディアボタンを使ってサイドバーにRSSアイコンを表示するように設定する
+  rssAppearAtTop       = false
+  rssAppearAtBottom    = false
+  # ソーシャルメディアアイコンをサイドバーに表示するように設定する
+  socialAppearAtTop    = true
+  socialAppearAtBottom = true
+  # アルファベットではなくポストの数でソートするようにカテゴリを設定する
+  categoriesByCount    = true
+  # ポストヘッダに表示される予定の読み込み時間を設定する
+  includeReadingTime   = true
+  # サイトのファビコンとバージョンを設定します。デフォルトのサポートは
+  # apple-touch-icon-precomposed.png、favicon.png、favicon.ico、およびmstile.png。
+  # これらはfaviconフォルダに保存されています。詳細については、以下を参照してください。
+  # https://github.com/audreyr/favicon-cheat-sheet
+  loadFavicon          = false
+  faviconVersion       = ""
+  # 投稿に表示されるソーシャルシェアリンクを設定する
+  socialShare          = true
+  # カスタムCSSまたはJavaScriptファイルを読み込みます。変数は配列なので、
+  # 必要に応じて複数のファイルを読み込むことができます。標準テーマを読み込むこともできます
+  # ファイルに "default"という値を追加します。
+  # customCSS            = ["default", "/path/to/file"]
+  # customJS             = ["default", "/path/to/file"]
+  customCSS            = ["default", "/static/css/add-on.css"]
+  customJS             = ["default", "/static/css/add-on.js"]
+
+# DisqusはStaticman（github.com/eduardoboucas/staticman）よりも優先されます。
+# その使いやすさのために。両方をチェックして、あなたが何をするか決めるのはどうぞ
+# 使用することを好む。その他の設定については、Staticman.ymlを参照してください。
+[params.staticman]
+  # Statimanをアクティブに設定します
+  staticman = false
+  # 接続するStaticmanの場所を設定します
+  username  = ""
+  repo      = ""
+  branch    = ""
+
+  # これらは、サイドバーに関連するオプションのパラメータです。彼らはお勧めですが、そうではありません
+  # 適切な機能が必要です。 HTMLはparams内でサポートされています。
+[params.intro]
+  header    = "KGLABO.COM"
+
+  paragraph = "なんとなく気になった事や、学習した内容のメモなど置いてあります。"
+
+  about     = "金沢に生息している@yu_kgrのチラシの裏です。<br>最近はコードを書く機会が減ってきてディレションやマネジメントの割合が多め。<br>座右の銘は「みんなで楽(ラク)したい」。<br>どうすれば楽を出来るのか日々、模索してます。"
+
+  # params.intro.headerの上のサイドバーの上部に表示されます。
+  # デザインの観点からは、100px未満の幅が推奨されます。
+  [params.intro.pic]
+    src       = "/img/main/logo.jpg"
+    # イメージをcirlceに設定する
+    circle    = false
+    # イメージを六角形に設定する
+    imperfect = true
+    width     = ""
+    alt       = "kglabo.com"
+
+[params.postAmount]
+# サイドバーに表示する最近の投稿の数を設定します。デフォルト値は5です。
+    sidebar = 5
+
+# ナビゲーションバーのメニュー項目を設定します
+# Identifierは、メニュー項目にFont Awesomeアイコンを付加します。
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  identifier = "fa fa-home"
+  weight = 1
+
+[[menu.main]]
+  name = "About"
+  url = "https://www.wantedly.com/users/5271802"
+  identifier = "fa fa-window-restore"
+  # identifier = "fa fa-id-card-o"
+  weight = 2
+
+[[menu.main]]
+  name = "Blog"
+  url = "/blog/"
+  identifier = "fa fa-newspaper-o"
+  weight = 3
+
+# [[menu.main]]
+#   name = "Itemized"
+#   url = "/itemized/"
+#   identifier = "fa fa-list"
+#   weight = 4
+
+[[menu.main]]
+  name = "Categories"
+  url = "/categories/"
+  identifier = "fa fa-sitemap"
+  weight = 4
+
+[[menu.main]]
+  name = "Contact"
+  url = "https://twitter.com/yu_kgr"
+  identifier = "fa fa-twitter"
+  weight = 5
+
+# ソーシャルメディアアイコンを表示し、あなたのアカウントにリンクするよう設定します。値はあなたのものでなければなりません。
+# 特に指定のない限り、#usernameの形で入力します。
+# これらは socialAppearAtTop と socialAppearAtBottom の影響を受けるアイコンです
+[social]
+  # Coding Communities
+  
+  github          = "yu-kgr"
+  # gitlab          = ""
+  # stackoverflow   = "" # User Number
+  # bitbucket       = ""
+  # jsfiddle        = ""
+  # codepen         = ""
+  # # Visual Art Communities
+  # deviantart      = ""
+  # flickr          = "example"
+  # behance         = ""
+  # dribbble        = ""
+  # # Publishing Communities
+  # wordpress       = ""
+  # medium          = ""
+  # # Professional/Business Oriented Communities
+  # linkedin        = "example"
+  # foursquare      = ""
+  # xing            = ""
+  # slideshare      = ""
+  # # Social Networks
+  facebook        = "yk.kgr"
+  # googleplus      = ""
+  # reddit          = "example"
+  # quora           = ""
+  # youtube         = ""
+  # vimeo           = ""
+  # whatsapp        = "" # WhatsApp Number
+  #   # WeChat and QQ need testing.
+  #   wechat          = ""
+  #   qq              = "" # User ID Number
+  instagram       = "yu_kgr"
+  # tumblr          = ""
+  twitter         = "yu_kgr"
+  # skype           = ""
+  # snapchat        = ""
+  # pinterest       = "example"
+  # telegram        = "example"
+  # vine            = ""
+  # # Email
+  # email           = "example"

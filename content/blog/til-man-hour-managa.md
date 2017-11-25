@@ -1,12 +1,14 @@
 +++
+author = "@yu-kgr"
 categories = ["TIL"]
-date = "2017-07-13T13:20:00+09:00"
-description = "エンジニアの稼働率と工数管理について"
-draft = "false"
-tags = ["projectmanagement"]
-thumbnail = "images/til/til.jpg"
-title = "エンジニアの稼働率と工数管理について"
-
+date = "2017-07-13"
+description = "エンジニアの稼働率と工数管理について、どうやって見積もれば良いのかのメモ"
+featured = "/img/til/til.jpg"
+featuredalt = "til"
+featuredpath = "https://kglabo.com"
+linktitle = ""
+title = "TIL - エンジニアの稼働率と工数管理について"
+type = "post"
 +++
 
 ## なにこれ

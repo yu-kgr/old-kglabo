@@ -1,13 +1,16 @@
 +++
-date = "2017-02-06T00:14:24+09:00"
-draft = "false"
-thumbnail = "images/2017/02/dmm-minami-beerbash03.jpg"
-tags = ["LightningTalk","bearbash","南町ビアバッシュ"]
-categories = ["Event"]
-title = "社内でビアバッシュイベントを開催＆LTしてきた。"
-description = "2017/02/03（金）に社内のスキルアップを目的として「南町ビアバッシュ」という名の社内イベントを開催しました。"
-
+author = "@yu-kgr"
+categories = ["EventReport"]
+date = "2017-02-06"
+description = "リポジトリにssh接続でgit cloneする為にssh-keygen -f hogehogeで、別名pubファイルを作ったら永遠にcloneできなかったので、なんとかした。"
+featured = "dmm-minami-beerbash03.jpg"
+featuredalt = "beerbash"
+featuredpath = "date"
+linktitle = ""
+title = "2017/02/03（金）に社内のスキルアップを目的として「南町ビアバッシュ」という名の社内イベントを開催しました"
+type = "post"
 +++
+
 
 ## 概要
 2017/02/03（金）に「南町ビアバッシュ」という名で社内ビアバッシュイベントを開催してきました。  

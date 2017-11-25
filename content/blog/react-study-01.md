@@ -1,12 +1,16 @@
 +++
-date = "2017-02-18T00:37:13+09:00"
-draft = "false"
-thumbnail = "images/2017/02/react-study.jpg"
-tags = ["React","ES2015","TIL"]
-categories = ["Develop"]
-title = "TIL - ReactStudy#01"
+author = "@yu-kgr"
+categories = ["TIL"]
+date = "2017-02-18"
 description = "Reactについて勉強した内容についての備忘録。主にES2015(ES6)について"
+featured = "react-study.jpg"
+featuredalt = "ReactStudy"
+featuredpath = "date"
+linktitle = ""
+title = "TIL - ReactStudy#01"
+type = "post"
 +++
+
 ## 概要
 [React基礎](http://basic-react.axlight.com/html/)を参考にしての学習。
 

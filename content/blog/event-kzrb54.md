@@ -1,13 +1,17 @@
 +++
-date = "2017-02-18T00:37:13+09:00"
-draft = "false"
-thumbnail = "images/kzrb/kzrb.jpg"
-tags = ["もくもく会","kanazawa.rb"]
-categories = ["Event"]
-title = "kanazawa.rb meetup #54 に参加してきた。"
+author = "@yu-kgr"
+categories = ["EventReport"]
+date = "2017-02-18"
 description = "2017/02/18(土)に開催された「kanazawa.rb meetup#54」でもくもく会に参加してReactの勉強をして来ました。"
-
+featured = "kzrb.jpg"
+featuredalt = "kzrb"
+featuredpath = "date"
+linktitle = ""
+title = "kanazawa.rb meetup #54 に参加してきた。"
+type = "post"
 +++
+
+
 ## 概要
 今回は、[もくもく会](http://mokumokukai.tumblr.com/)に参加。  
 会社でTLから教えてもらった[React基礎](http://basic-react.axlight.com/html/)を参考にしながら、  

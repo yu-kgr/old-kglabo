@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import url('https://fonts.googleapis.com/earlyaccess/notosansjapanese.css');
+
+body, input, select, textarea {
+    font-family: Lato,YuGothic,'Hiragino Kaku Gothic Pro',Meiryo,sans-serif;
+}
+#intro header h2 {
+    font-family: 'Audiowide', cursive;
+}
+.mini-post header .published {
+    font-size: 0.8em;
+    letter-spacing: 0.1em;
+    text-transform: none;
+}
+.author, .format {
+    font-size: 0.8em;
+    font-family: Lato,YuGothic,'Hiragino Kaku Gothic Pro',Meiryo,sans-serif;
+    letter-spacing: 0;
+    font-weight: bold;
+    text-transform: none;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: Lato,YuGothic,'Hiragino Kaku Gothic Pro',Meiryo,sans-serif;
+    letter-spacing: 0.1em;
+    text-transform: none;
+}
+
+.post h2 {
+    padding: 0.5rem 0;
+    border-bottom: 2px solid #eceff1;
+}
+
+h3 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin: 1.5rem 0;
+}
+.mini-post header {
+    padding: 1.25em 1.25em 0.1em 1.25em;
+}
+.mini-post header h3 {
+    font-size: 0.9em;
+}
+
+h4 {
+    border-left: solid .25rem #00acc1;
+    padding: 0 .8rem;
+    font-size: 1em;
+}
+
+
+header p {
+    letter-spacing: 0.1em;
+    line-height: 2;
+    text-transform: none;
+}
+
+#content blockquote, #content p, #content ul {
+    line-height: 2;
+}
+
+.hljs {
+    color: #fafafa;
+    background: #263238;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+}
+strong, b {
+    box-shadow: 0 -0.5rem 0 0 #ffd54f inset;
+}
+
+.post > footer .stats li,
+input[type="submit"], input[type="reset"], input[type="button"], .button {
+    text-transform: none;
+    font-family: Lato,YuGothic,'Hiragino Kaku Gothic Pro',Meiryo,sans-serif;
+    letter-spacing: 0.1em;
+}

@@ -1,12 +1,16 @@
 +++
-date = "2016-12-18T00:37:13+09:00"
-draft = "false"
-thumbnail = "images/kzrb/kzrb.jpg"
-tags = ["LightningTalk","bearbash","kanazawa.rb"]
-categories = ["Event"]
-title = "kanazawa.rb meetup #52 に参加してきた。"
+author = "@yu-kgr"
+categories = ["EventReport"]
+date = "2016-12-18"
 description = "2016/12/17（土）に開催された「kanazawa.rb meetup#52」でLT大会があったので一年間やった事の振り返りを兼ねてLTをしてきました。"
+featured = "kzrb.jpg"
+featuredalt = "kzrb"
+featuredpath = "date"
+linktitle = ""
+title = "kanazawa.rb meetup #52 に参加してきた。"
+type = "post"
 +++
+
 
 ## 概要
 2016/12/17（土）に開催された、kanazawa.rb meetup #52で、  

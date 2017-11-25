@@ -1,12 +1,16 @@
 +++
-date = "2017-02-24T13:14:24+09:00"
-draft = "true"
-tags = ["ScrumMaster"]
+author = "@yu-kgr"
 categories = ["TIL"]
-thumbnail = "images/til/til.jpg"
-title = "TIL - スクラムマスターの勉強#01"
-description = "スクラム開発について学習した内容の備忘録。スクラムとは開発プロセスではなく問題に対応する為のフレームワークである。価値の高いプロダクトやサービスを生産性高く・クリエイティブに届ける為のフレームワークです。"
+date = "2017-02-24"
+description = "スクラム開発について学習した内容の備忘録。スクラムとは開発プロセスではなく問題に対応する為のフレームワークである。価値の高いプロダクトやサービスを生産性高く・クリエイティブに届ける為のフレームワーク"
+featured = "/img/til/til.jpg"
+featuredalt = "til"
+featuredpath = "https://kglabo.com"
+linktitle = ""
+title = "TIL - スクラムマスターについての勉強"
+type = "post"
 +++
+
 
 # スクラムの基礎知識
 
