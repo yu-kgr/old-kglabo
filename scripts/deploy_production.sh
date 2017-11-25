@@ -12,7 +12,6 @@ fi
 
 GIT_REPO="git@github.com:${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}.git"
 
-git rm --cached themes/hugo-theme-solit
 git submodule init
 git submodule update
 
