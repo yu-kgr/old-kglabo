@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Til on kglabo.com</title>
+    <title>TIL on kglabo.com</title>
     <link>https://kglabo.com/categories/til/</link>
-    <description>Recent content in Til on kglabo.com</description>
+    <description>Recent content in TIL on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 16 Oct 2017 13:20:00 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 16 Oct 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kglabo.com/categories/til/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>[TIL]UX研修 Day2 - 他社UI調査/インタビュー設計</title>
-      <link>https://kglabo.com/post/til-user-experience-training-02/</link>
-      <pubDate>Mon, 16 Oct 2017 13:20:00 +0900</pubDate>
+      <title>TIL - UX研修 - 他社UI調査/インタビュー設計</title>
+      <link>https://kglabo.com/blog/til-user-experience-training-02/</link>
+      <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://kglabo.com/post/til-user-experience-training-02/</guid>
+      <guid>https://kglabo.com/blog/til-user-experience-training-02/</guid>
       <description>
 
 &lt;h2 id=&#34;なにこれ&#34;&gt;なにこれ&lt;/h2&gt;
@@ -242,11 +242,11 @@
     </item>
     
     <item>
-      <title>エンジニアの稼働率と工数管理について</title>
-      <link>https://kglabo.com/post/til-man-hour-managa/</link>
-      <pubDate>Thu, 13 Jul 2017 13:20:00 +0900</pubDate>
+      <title>TIL - エンジニアの稼働率と工数管理について</title>
+      <link>https://kglabo.com/blog/til-man-hour-managa/</link>
+      <pubDate>Thu, 13 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://kglabo.com/post/til-man-hour-managa/</guid>
+      <guid>https://kglabo.com/blog/til-man-hour-managa/</guid>
       <description>
 
 &lt;h2 id=&#34;なにこれ&#34;&gt;なにこれ&lt;/h2&gt;
@@ -300,10 +300,10 @@
     
     <item>
       <title>リポジトリにssh接続でgit cloneする為にssh-keygen -f hogehogeで、別名pubファイルを作ったら永遠にcloneできなかった話</title>
-      <link>https://kglabo.com/post/another-name-ssh-keygen/</link>
-      <pubDate>Mon, 08 May 2017 19:33:32 +0900</pubDate>
+      <link>https://kglabo.com/blog/another-name-ssh-keygen/</link>
+      <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://kglabo.com/post/another-name-ssh-keygen/</guid>
+      <guid>https://kglabo.com/blog/another-name-ssh-keygen/</guid>
       <description>
 
 &lt;h2 id=&#34;発生した問題&#34;&gt;発生した問題&lt;/h2&gt;
@@ -336,11 +336,262 @@ Host github.com
     </item>
     
     <item>
-      <title>TIL - プロジェクトマネジメント研修 ~WBSについて~</title>
-      <link>https://kglabo.com/post/project-management-study-02/</link>
-      <pubDate>Tue, 21 Feb 2017 19:43:25 +0900</pubDate>
+      <title>TIL - スクラムマスターについての勉強</title>
+      <link>https://kglabo.com/blog/scrum-master-study-01/</link>
+      <pubDate>Fri, 24 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://kglabo.com/post/project-management-study-02/</guid>
+      <guid>https://kglabo.com/blog/scrum-master-study-01/</guid>
+      <description>
+
+&lt;h1 id=&#34;スクラムの基礎知識&#34;&gt;スクラムの基礎知識&lt;/h1&gt;
+
+&lt;h2 id=&#34;なにこれ&#34;&gt;なにこれ？&lt;/h2&gt;
+
+&lt;p&gt;Schooで「はじめてのスクラムマスター」という講座があったので、&lt;br /&gt;
+そちらの講座での学習した内容の備忘録。&lt;/p&gt;
+
+&lt;h2 id=&#34;前置き&#34;&gt;前置き&lt;/h2&gt;
+
+&lt;p&gt;スクラムの生みの親、Jeff Sutherland と Ken Schwaberによるスクラムのガイドがある。&lt;br /&gt;
+&lt;strong&gt;現在も更新されているので、スクラムに関わる機会がある方はかならず読むこと。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.scrumguides.org/docs/scrumguide/v2016/2016-Scrum-Guide-Japanese.pdf&#34;&gt;スクラムガイド 2016（PDF）&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;スクラムの定義&#34;&gt;スクラムの定義&lt;/h2&gt;
+
+&lt;h3 id=&#34;スクラムとは&#34;&gt;スクラムとは&lt;/h3&gt;
+
+&lt;p&gt;スクラムとは &lt;em&gt;開発プロセスではなく問題に対応する為のフレームワーク&lt;/em&gt; であり、&lt;br /&gt;
+価値の高いプロダクトやサービスを、&lt;br /&gt;
+&lt;strong&gt;生産性高く、クリエイティブに届ける為のフレームワーク&lt;/strong&gt; です。&lt;/p&gt;
+
+&lt;h3 id=&#34;スクラムの定義-1&#34;&gt;スクラムの定義&lt;/h3&gt;
+
+&lt;p&gt;スクラムとは、以下の様なものである。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;軽量&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;理解が容易&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;習得は困難&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;スクラムを採用するべき開発プロセスモデル&#34;&gt;スクラムを採用するべき開発プロセスモデル&lt;/h2&gt;
+
+&lt;p&gt;採用すべき対象としては、&lt;br /&gt;
+今まで経験した内容で開発全体が安定しているものではなく、&lt;br /&gt;
+今まで経験した事がなく、 &lt;em&gt;試行・検査・適応&lt;/em&gt; していくしかないものに対して有効。&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;複雑で変化があるようなものに対して最適&lt;/strong&gt; だと言われている。&lt;/p&gt;
+
+&lt;h2 id=&#34;スクラムの理論と柱&#34;&gt;スクラムの理論と柱&lt;/h2&gt;
+
+&lt;p&gt;スクラムの理論としては、
+実際に経験していく事によって判断を繰り返し行う事になるので、&lt;br /&gt;
+結果として知識が蓄積されて行き、リスクの予測ができるようになっていく。&lt;/p&gt;
+
+&lt;h3 id=&#34;抑えるべき要点&#34;&gt;抑えるべき要点&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;実際の経験 - A&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;即知に基づく判断 - B&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;知識 - C&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;予測可能性の最適化 - D&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;リスクマネジメント - E&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;具体的な理論&#34;&gt;具体的な理論&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;経験に基づいて（A）、&lt;br /&gt;
+わかったことに対して対処していき（B/C）、&lt;br /&gt;
+リスクに対応できるように行く（D/E）&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;守るべき柱&#34;&gt;守るべき柱&lt;/h3&gt;
+
+&lt;p&gt;スクラムを行う上で、大切な柱は以下の3点。&lt;/p&gt;
+
+&lt;h4 id=&#34;透明性&#34;&gt;&lt;em&gt;透明性&lt;/em&gt;&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;コンセンサスをとって認識齟齬を起こさないようにする。&lt;/li&gt;
+&lt;li&gt;物事に対して共通認識を持つ。&lt;/li&gt;
+&lt;li&gt;達成すべきゴールを一致させる。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;検査&#34;&gt;&lt;em&gt;検査&lt;/em&gt;&lt;/h4&gt;
+
+&lt;h4 id=&#34;適応&#34;&gt;&lt;em&gt;適応&lt;/em&gt;&lt;/h4&gt;
+
+&lt;h2 id=&#34;スクラムのスプリント&#34;&gt;スクラムのスプリント&lt;/h2&gt;
+
+&lt;p&gt;タイムボックスと呼ぶ。&lt;br /&gt;
+開発の反復を行う期間を固定する。これがとても大事
+ウォーターフォールはそのまま流れ作業を行う。&lt;/p&gt;
+
+&lt;p&gt;一度決めたタイムボックスを仮に2週間で決めた場合は、
+タイムボックス毎にフィードバックが出るのでメリットとして、&lt;br /&gt;
+ユーザや発注者に対しての期待値をコントロールできる。&lt;/p&gt;
+
+&lt;p&gt;開発にリズムができるので利害関係者に対して、&lt;br /&gt;
+次のスプリントに結果が確認できるという結果が提供できる。&lt;br /&gt;
+この事により、横槍が入りづらくなるメリットがある。&lt;/p&gt;
+
+&lt;h2 id=&#34;スクラムのイベント&#34;&gt;スクラムのイベント&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;検査&lt;/li&gt;
+&lt;li&gt;適用&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;何かを行って開発を進めていくにあたって、&lt;br /&gt;
+状況を確認する為のチェックポイントを作る。&lt;/p&gt;
+
+&lt;p&gt;うまくいっている所は引き続きやっていく。
+何か問題が発生している場合は改善する。&lt;/p&gt;
+
+&lt;p&gt;それを行う為の仕組みとして、&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;スプリントプランニング&lt;/li&gt;
+&lt;li&gt;デイリースクラム&lt;/li&gt;
+&lt;li&gt;スプリントレビュー&lt;/li&gt;
+&lt;li&gt;レトロスペクティブ（振り返り）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;タイムボックスで回した作業にて成果物が出来る。&lt;/p&gt;
+
+&lt;h3 id=&#34;1-スプリントプランニング-スプリント計画会議&#34;&gt;1.スプリントプランニング（スプリント計画会議）&lt;/h3&gt;
+
+&lt;p&gt;期間が決められたプロジェクトにあたる為、計画を行う。
+* 何を作るのか
+* それによって今の価値のあるプロダクトがどう変わるのか？&lt;/p&gt;
+
+&lt;p&gt;期間を固定する。&lt;/p&gt;
+
+&lt;h3 id=&#34;2-デイリースクラム&#34;&gt;2.デイリースクラム&lt;/h3&gt;
+
+&lt;h4 id=&#34;参加するロール&#34;&gt;参加するロール&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;毎日、会議を行う（朝会とも言う）&lt;/li&gt;
+&lt;li&gt;開発チーム内で毎日行う作業。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;期間を固定する。&lt;/p&gt;
+
+&lt;p&gt;スプリントのゴールに対して&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;昨日、何をしたのか。&lt;/li&gt;
+&lt;li&gt;今日、何をするのか&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;デイリースクラム自体もタイムボックスに入っているので、15分で終わらせる。
+開発は難しいので、2週間という計画を立ててもその通りになるとは限らないので、
+軌道修正・調整の為にデイリースクラムを行う。
+朝じゃなくてもいいが、毎日同じ時間に同じ場所で同じメンバーで行うのが良い。&lt;/p&gt;
+
+&lt;h3 id=&#34;3-スプリントレビュー&#34;&gt;3. スプリントレビュー&lt;/h3&gt;
+
+&lt;p&gt;どういった機能を作るのか？という所に対して、&lt;br /&gt;
+ちゃんと機能を満たしているかどうかについて共有する。&lt;/p&gt;
+
+&lt;h3 id=&#34;4-レトロスペクティブ-ふりかえり&#34;&gt;4. レトロスペクティブ（ふりかえり）&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;良かった事を共有して継続する&lt;/li&gt;
+&lt;li&gt;悪かった事は改善点を考えて共有する&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;期間を固定する。&lt;/p&gt;
+
+&lt;h2 id=&#34;スクラムチーム&#34;&gt;スクラムチーム&lt;/h2&gt;
+
+&lt;p&gt;以下のロールの人員が集まって、スクラムチームと呼ぶ。&lt;/p&gt;
+
+&lt;h3 id=&#34;ロール&#34;&gt;ロール&lt;/h3&gt;
+
+&lt;p&gt;大前提として、下記のロールには上下関係はなく全員が同じ立場である。
+注意点として、プロダクトオーナー・スクラムマスターが従来のマネージャーやリーダーが行うケースが行う場合が多く、&lt;/p&gt;
+
+&lt;h4 id=&#34;スクラムマスター-sm-1名&#34;&gt;スクラムマスター（SM）- 1名&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;全体を俯瞰して、スクラムが逸脱していないか・横槍が入らないかを確認・調整する&lt;/li&gt;
+&lt;li&gt;スクラムとはどういうやり方なのかを説明して理解してもらう&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;プロダクトオーナー-po-1名&#34;&gt;プロダクトオーナー（PO）- 1名&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;プロダクトバックログで何をどの優先度で作るのか？という事を決定する&lt;/li&gt;
+&lt;li&gt;開発チームが成果を出して、プロダクトをリリースするまでの責務を追う&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;開発チーム-devterm-6-3名&#34;&gt;開発チーム（DevTerm） - 6±3名&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;スプリントの中で実際に開発を行う&lt;/li&gt;
+&lt;li&gt;スプリントのプランニングにも関わり、実際に作業の見積もりを行う。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;スクラムチームの特徴として&lt;br /&gt;
+&lt;em&gt;自己組織化チーム&lt;/em&gt; であり、&lt;br /&gt;
+&lt;em&gt;機能横断的チーム&lt;/em&gt; である。&lt;/p&gt;
+
+&lt;h3 id=&#34;自己組織化チームとは&#34;&gt;自己組織化チームとは&lt;/h3&gt;
+
+&lt;p&gt;スクラムチームに関しては&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;やり方の問題を解決したり&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;&lt;em&gt;うまくいくように立ち向かっていく事に関しては、外部の支援なしで行う自立したチーム&lt;/em&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;機能横断的チームとは&#34;&gt;機能横断的チームとは&lt;/h3&gt;
+
+&lt;p&gt;&lt;em&gt;開発に必要な全ての事が行えるチーム&lt;/em&gt; でいる事。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;データベースの専門家がいない為、データベースの機能が実装ができません。&lt;/li&gt;
+&lt;li&gt;チーム内では実装できないので、他から専門家を借りてくる。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;というケースはNG。&lt;/p&gt;
+
+&lt;p&gt;いろんなスキルセットのメンバーが色々な知恵を出して保管し合って、&lt;br /&gt;
+&lt;strong&gt;チームの中だけで完結して物事を達成していくチーム&lt;/strong&gt; である事。&lt;/p&gt;
+
+&lt;p&gt;ただし個々が、スペシャリストである必要はない。
+大事なのはチームで保管し合う事。&lt;/p&gt;
+
+&lt;h3 id=&#34;チームの人員について&#34;&gt;チームの人員について&lt;/h3&gt;
+
+&lt;p&gt;開発チームはできるだけ、 6±3名が良い。&lt;/p&gt;
+
+&lt;h4 id=&#34;理由&#34;&gt;理由&lt;/h4&gt;
+
+&lt;p&gt;&lt;em&gt;3人未満だと、相互作用がおきづらい。&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;9人を超えると自己組織的に動きづらい。&lt;/em&gt;
+* 理由としては同じマインドじゃない方がいたり、MTGの予定をあわせるのが難しくなったりする為。&lt;/p&gt;
+
+&lt;p&gt;人数が超える場合は、2つのチームに分ける等をしたほうが良い。&lt;/p&gt;
+
+&lt;p&gt;期間を2週間（仮）と区切る事で、期待をコントロールできる。
+* クライアント / ユーザ 次の二週間後にフィードバックがかえってくる。という信頼感につながる。&lt;/p&gt;
+
+&lt;p&gt;手を動かす人が、自分で見積もる。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TIL - プロジェクトマネジメント研修 ~WBSについて~</title>
+      <link>https://kglabo.com/blog/project-management-study-02/</link>
+      <pubDate>Tue, 21 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://kglabo.com/blog/project-management-study-02/</guid>
       <description>
 
 &lt;h2 id=&#34;なにこれ&#34;&gt;なにこれ？&lt;/h2&gt;
@@ -625,6 +876,259 @@ WBSの管理が難しくなりWBSの信用性がなくなる。&lt;br /&gt;
 &lt;em&gt;識別子&lt;/em&gt; は、&lt;em&gt;スケジュール&lt;/em&gt; / &lt;em&gt;予算見積書&lt;/em&gt; など、&lt;em&gt;様々な文書に利用できる&lt;/em&gt; 為、&lt;br /&gt;
 識別子が一致していれば会計処理がスムーズにする事も可能。&lt;br /&gt;
 コスト削減する場合にも、どの作業を削れば良いかが分かりやすくメリットがある。&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TIL - ReactStudy#01</title>
+      <link>https://kglabo.com/blog/react-study-01/</link>
+      <pubDate>Sat, 18 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://kglabo.com/blog/react-study-01/</guid>
+      <description>
+
+&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&#34;http://basic-react.axlight.com/html/&#34;&gt;React基礎&lt;/a&gt;を参考にしての学習。&lt;/p&gt;
+
+&lt;h2 id=&#34;参考にしたサイト&#34;&gt;参考にしたサイト&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://basic-react.axlight.com/html/&#34;&gt;React基礎&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://postd.cc/learn-raw-react-no-jsx-flux-es6-webpack/&#34;&gt;生のReactを知ろう – JSX、Flux、ES6、Webpackを使わず…&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;学習内容&#34;&gt;学習内容&lt;/h2&gt;
+
+&lt;p&gt;以下、&lt;a href=&#34;http://basic-react.axlight.com/html/&#34;&gt;React基礎&lt;/a&gt;より引用（個人用メモ）&lt;/p&gt;
+
+&lt;h3 id=&#34;前置き&#34;&gt;前置き&lt;/h3&gt;
+
+&lt;p&gt;Reactでコーディングする先は、&lt;strong&gt;ES2015(ES6)&lt;/strong&gt;を使うと便利になる。&lt;br /&gt;
+んで、ES2015を利用する際は&lt;strong&gt;トランスパイル&lt;/strong&gt;が必要。&lt;br /&gt;
+後々、&lt;strong&gt;JSX&lt;/strong&gt; を使うし相対的にES2015の敷居下がるよね？ 覚えよ？って記載されてた。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ES2015(ES6)&lt;/strong&gt; - &lt;a href=&#34;http://qiita.com/tuno-tky/items/74ca595a9232bcbcd727&#34;&gt;コチラ&lt;/a&gt;によると、&lt;em&gt;ECMAScript6thEdition&lt;/em&gt; == &lt;em&gt;ES6&lt;/em&gt; の事。
+
+&lt;ul&gt;
+&lt;li&gt;当初は ES6の名前で発表されたらしいが、正式名称が*ECMAScript2015*になった事もあり、ES2015と呼ばれているとの事&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;トランスパイル&lt;/strong&gt; - ソースコードからソースコードへのコンパイル&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;JSX&lt;/strong&gt; - &lt;a href=&#34;http://qiita.com/ConquestArrow/items/29fc478f48862a4d14fb&#34;&gt;コチラ&lt;/a&gt;によると、ReactのJXSとAltJSのJSXとAdobeJSXがあるらしい
+
+&lt;ul&gt;
+&lt;li&gt;つまりどういうことだってばよ？&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;es2015について&#34;&gt;ES2015について&lt;/h3&gt;
+
+&lt;p&gt;ES2015でよく使う文法についての解説されていた。&lt;/p&gt;
+
+&lt;h4 id=&#34;const-let&#34;&gt;const/let&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;const&lt;/code&gt; - 再代入しない&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;let&lt;/code&gt; - 再代入できる&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;const x = 1;
+let y = 2;
+y = 3;
+
+const z = { a: 4, b: 5 };
+z.a = 6;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;var&lt;/code&gt;は消えた模様。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&#34;object-shorthand&#34;&gt;object shorthand&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;オブジェクトのプロパティ名と値の変数名が同じ場合、省略記法を使える&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;const foo = &#39;abc&#39;;
+const bar = { foo }; // same as { foo: foo }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&#34;destructuring-object&#34;&gt;destructuring object&lt;/h4&gt;
+
+&lt;p&gt;&lt;em&gt;destructuring assignment&lt;/em&gt; という簡便な記法が利用できる&lt;br /&gt;
+特にオブジェクトについての記法を紹介されていた。&lt;br /&gt;
+変数への代入だけでなく、関数のパラメータ宣言でも用いられるとの事。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;const obj = { first: &#39;Ebisu&#39;, last: &#39;JS&#39; };
+const { first, last } = obj;
+// first === &#39;Ebisu&#39;, last === &#39;JS&#39;
+
+function printName({ first, last }) { console.log(first, last); }
+printName(obj);
+
+// same as
+// function printName(name) { console.log(name.first, name.last); }
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&#34;アロー関数&#34;&gt;アロー関数&lt;/h4&gt;
+
+&lt;p&gt;アロー関数
+&lt;code&gt;() =&amp;gt; ...&lt;/code&gt; って言う記法。詳しくは&lt;a href=&#34;https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/arrow_functions&#34;&gt;こちら&lt;/a&gt;&lt;br /&gt;
+&lt;code&gt;this&lt;/code&gt;を一旦置いとくと、アロー関数は通常の関数の省力記法と考える事ができるとの事。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;const f1 = function(x) { console.log(x); };
+const f2 = (x) =&amp;gt; { console.log(x); };
+// f1 and f2 is almost the same
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;code&gt;return&lt;/code&gt; 文が一つだけの場合は、文そのものを省略できる&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;const f3 = (x) =&amp;gt; { return (x + 1); };
+const f4 = (x) =&amp;gt; (x + 1);
+// f3 and f4 is the same
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;カッコの省略も可能（任意）&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;const f5 = x =&amp;gt; x + 1;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;Coffee Script&lt;/code&gt;で言うと、 &lt;code&gt;hoge = -&amp;gt;&lt;/code&gt;みたいなもん？&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;関数型のコーディングについて&#34;&gt;関数型のコーディングについて&lt;/h3&gt;
+
+&lt;p&gt;Reactでコンポーネントを書く際には、&lt;strong&gt;関数型コーディング&lt;/strong&gt; の方が楽らしい。&lt;br /&gt;
+その前提を前置きした上で、このプログラム中によく使う文法について説明されている。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;関数型コーディング&lt;/strong&gt;  - &lt;a href=&#34;http://qiita.com/stkdev/items/5c021d4e5d54d56b927c&#34;&gt;関数型プログラミングはまず考え方から理解しよう&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;pure-function&#34;&gt;pure function&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;一般的に副作用がない関数&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;const pureFunc = (x) =&amp;gt; { let y = x + 1; return y; };
+
+let y;
+const notPure = (x) =&amp;gt; { y = x + 1; return y; };
+
+const notPure2 = (x) =&amp;gt; { console.log(&#39;foo&#39;); return x + 1; };
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&#34;logical-operators&#34;&gt;logical operators&lt;/h4&gt;
+
+&lt;p&gt;論理演算子には &lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt; , &lt;code&gt;||&lt;/code&gt; , &lt;code&gt;!&lt;/code&gt; の3つがある。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;x &amp;amp;&amp;amp; y&lt;/code&gt; は、xが &lt;strong&gt;falsy&lt;/strong&gt; の場合はx、違う場合はyになる
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;falsy&lt;/strong&gt;とは、 &lt;code&gt;false&lt;/code&gt; , &lt;code&gt;null&lt;/code&gt; , &lt;code&gt;0&lt;/code&gt; , &lt;code&gt;&#39;&#39;&lt;/code&gt; などの値。詳しくは&lt;a href=&#34;https://developer.mozilla.org/ja/docs/Glossary/Falsy&#34;&gt;こちら&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;x || y&lt;/code&gt; という表現は、 &lt;code&gt;x&lt;/code&gt; が &lt;code&gt;falsy&lt;/code&gt; の場合は &lt;code&gt;y&lt;/code&gt; 、違う場合は &lt;code&gt;x&lt;/code&gt; になる&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;!x&lt;/code&gt; という表現は、 &lt;code&gt;x&lt;/code&gt; が &lt;code&gt;falsy&lt;/code&gt; の場合は &lt;code&gt;true&lt;/code&gt; 、違う場合は &lt;code&gt;false&lt;/code&gt; になる
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;x&lt;/code&gt; は真偽値(boolean)でなくてもよいです&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;0 &amp;amp;&amp;amp; 1
+// 0
+
+1 &amp;amp;&amp;amp; 2
+// 2
+
+0 || 1
+// 1
+
+1 || 2
+// 1
+
+!0
+// true
+
+!1
+// false
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&#34;ternary-operator&#34;&gt;ternary operator&lt;/h4&gt;
+
+&lt;p&gt;三項演算子はよく使うとの事&lt;br /&gt;
+&lt;code&gt;x ? y : z&lt;/code&gt; は &lt;code&gt;x&lt;/code&gt; がfalsyの場合はzであり、そうでない場合はyになります。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;0 ? 1 : 2
+// 2
+
+3 ? 4 : 5
+// 4
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&#34;filter&#34;&gt;filter&lt;/h4&gt;
+
+&lt;p&gt;Array.filterは配列から部分配列を作る関数&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/filter&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;引数で与えたテスト関数がtruthy(つまりfalsyでない)を返す要素の配列を返す。&lt;br /&gt;
+配列は新しく作られますが、要素はコピーされない。&lt;br /&gt;
+テスト関数にはアロー関数を使うと簡便に書くことができます。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[1, 2, 3, 4].filter((x) =&amp;gt; (x &amp;gt; 2))
+// [3, 4]
+
+[&#39;a&#39;, &#39;ab&#39;, &#39;abc&#39;, &#39;abcd&#39;].filter((x) =&amp;gt; (x.length &amp;lt;= 2))
+// [&#39;a&#39;, &#39;ab&#39;]
+
+[0, 1, 2, &#39;&#39;, &#39;a&#39;, false, true].filter((x) =&amp;gt; (x));
+// [1, 2, &#39;a&#39;, true]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
+
+&lt;h4 id=&#34;map&#34;&gt;map&lt;/h4&gt;
+
+&lt;p&gt;Array.mapは配列から要素ごとに変換して新しい配列を作る関数&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/map&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;引数で与えられた変換関数で返される値を要素にもつ配列を返します。&lt;br /&gt;
+配列は新しく作られる。要素数は変化しない。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[1, 2, 3, 4].map((x) =&amp;gt; (x * 2))
+// [2, 4, 6, 8]
+
+[&#39;a&#39;, &#39;ab&#39;, &#39;abc&#39;, &#39;abcd&#39;].map((x) =&amp;gt; (x.length))
+// [1, 2, 3, 4]
+
+[1, 2, &#39;a&#39;, &#39;b&#39;].map((x) =&amp;gt; (&#39;あ&#39; + x))
+// [&#39;あ1&#39;, &#39;あ2&#39;, &#39;あa&#39;, &#39;あb&#39;]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;hr /&gt;
 </description>
     </item>
     

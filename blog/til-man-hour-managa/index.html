@@ -1,19 +1,11 @@
-
-
-
-    
-        
-    
-
-
-
-
 <!DOCTYPE HTML>
 
 <html>
     <head>
         
-            <title>TIL Posts - kglabo.com</title>
+            
+                <title>TIL - エンジニアの稼働率と工数管理について</title>
+            
         
 
         <meta charset="utf-8" />
@@ -23,33 +15,51 @@
 
 
         
+            <meta name="author" content="@yu-kgr">
         
-            
-                <meta name="description" content="kanazawa">
-            
         
-
+            <meta name="description" content="エンジニアの稼働率と工数管理について、どうやって見積もれば良いのかのメモ">
         
-        <meta property="og:title" content="TIL" />
-<meta property="og:description" content="kanazawa" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://kglabo.com/categories/til/" />
-
-
-<meta property="og:updated_time" content="2017-10-16T00:00:00&#43;00:00"/>
-
-
-
-
-
-
-
-
 
         
-<meta itemprop="name" content="TIL">
-<meta itemprop="description" content="kanazawa">
 
+  <meta name="twitter:card" content="summary"/>
+
+
+
+<meta name="twitter:title" content="TIL - エンジニアの稼働率と工数管理について"/>
+<meta name="twitter:description" content="エンジニアの稼働率と工数管理について、どうやって見積もれば良いのかのメモ"/>
+<meta name="twitter:site" content="@yu_kgr"/>
+
+
+        <meta property="og:title" content="TIL - エンジニアの稼働率と工数管理について" />
+<meta property="og:description" content="エンジニアの稼働率と工数管理について、どうやって見積もれば良いのかのメモ" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kglabo.com/blog/til-man-hour-managa/" />
+
+
+<meta property="og:updated_time" content="2017-07-13T00:00:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+        
+<meta itemprop="name" content="TIL - エンジニアの稼働率と工数管理について">
+<meta itemprop="description" content="エンジニアの稼働率と工数管理について、どうやって見積もれば良いのかのメモ">
+
+
+<meta itemprop="dateModified" content="2017-07-13T00:00:00&#43;00:00" />
+<meta itemprop="wordCount" content="445">
+
+
+
+<meta itemprop="keywords" content="EventReport,TIL," />
 
         
 
@@ -86,6 +96,7 @@ ga('send', 'pageview');
       
       <div id="wrapper">
 
+    
     
 <header id="header">
     
@@ -129,6 +140,10 @@ ga('send', 'pageview');
     </nav>
     <nav class="main">
         <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
             
             <li class="search">
                 <a class="fa-search" href="#search">Search</a>
@@ -405,106 +420,92 @@ ga('send', 'pageview');
         
 </section>
 
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+<li>
+  <a href="//twitter.com/share?url=https%3a%2f%2fkglabo.com%2fblog%2ftil-man-hour-managa%2f&text=TIL%20-%20%e3%82%a8%e3%83%b3%e3%82%b8%e3%83%8b%e3%82%a2%e3%81%ae%e7%a8%bc%e5%83%8d%e7%8e%87%e3%81%a8%e5%b7%a5%e6%95%b0%e7%ae%a1%e7%90%86%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6&via=yu_kgr" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//plus.google.com/share?url=https%3a%2f%2fkglabo.com%2fblog%2ftil-man-hour-managa%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fkglabo.com%2fblog%2ftil-man-hour-managa%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//reddit.com/submit?url=https%3a%2f%2fkglabo.com%2fblog%2ftil-man-hour-managa%2f&title=TIL%20-%20%e3%82%a8%e3%83%b3%e3%82%b8%e3%83%8b%e3%82%a2%e3%81%ae%e7%a8%bc%e5%83%8d%e7%8e%87%e3%81%a8%e5%b7%a5%e6%95%b0%e7%ae%a1%e7%90%86%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fkglabo.com%2fblog%2ftil-man-hour-managa%2f&title=TIL%20-%20%e3%82%a8%e3%83%b3%e3%82%b8%e3%83%8b%e3%82%a2%e3%81%ae%e7%a8%bc%e5%83%8d%e7%8e%87%e3%81%a8%e5%b7%a5%e6%95%b0%e7%ae%a1%e7%90%86%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fkglabo.com%2fblog%2ftil-man-hour-managa%2f&title=TIL%20-%20%e3%82%a8%e3%83%b3%e3%82%b8%e3%83%8b%e3%82%a2%e3%81%ae%e7%a8%bc%e5%83%8d%e7%8e%87%e3%81%a8%e5%b7%a5%e6%95%b0%e7%ae%a1%e7%90%86%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fkglabo.com%2fblog%2ftil-man-hour-managa%2f&description=TIL%20-%20%e3%82%a8%e3%83%b3%e3%82%b8%e3%83%8b%e3%82%a2%e3%81%ae%e7%a8%bc%e5%83%8d%e7%8e%87%e3%81%a8%e5%b7%a5%e6%95%b0%e7%ae%a1%e7%90%86%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" target="_blank" class="share-btn pinterest">
+    <i class="fa fa-pinterest-p"></i>
+    <p>Pinterest</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by %40yu-kgr&body=https%3a%2f%2fkglabo.com%2fblog%2ftil-man-hour-managa%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+        </ul>
+    </section>
+</section>
+
     
     <div id="main">
-        <h1>TIL</h1>
         
         
-            <article class="post">
-    <header>
+        <article class="post">
+  <header>
     <div class="title">
         
-            <h2><a href="/blog/til-user-experience-training-02/">TIL - UX研修 - 他社UI調査/インタビュー設計</a></h2>
-        
-        
-            <p>社内勉強会「UX研修」で学んだ、他社UI調査とインタビュー設計についての走り書き</p>
-        
-    </div>
-    <div class="meta">
-        
-
-        <time class="published"
-            datetime='2017-10-16'>
-            October 16, 2017</time>
-        <span class="author">@yu-kgr</span>
-        
-            <p>4 minute read</p>
-        
-        
-    </div>
-</header>
-
-    
-    
-
-    
-        
-        
-
-
-
-
-
-
-    
-
-
-        
-        
-        
-
-        <a href="/blog/til-user-experience-training-02/" class="image featured">
-            <img src="https://kglabo.com//img/til/til.jpg" alt="">
-        </a>
-    
-
-
-    <p>なにこれ 社内でのUX研修で学んだ事のメモ 研修内容 他社UI調査 インタビュー設計 問いを立てる 実際に競合他社と比較して問いを立てる（20分） こうだ</p>
-
-    <footer>
-        <ul class="actions">
-            <li><a href="/blog/til-user-experience-training-02/" class="button big">Continue Reading</a></li>
-        </ul>
-        <ul class="stats">
-    
-        
-
-        
-        
-            <li>
-                
-                
-                    
-
-                    
-
-                    
-                        <i class="fa fa-sitemap">&nbsp;</i>
-                    
-
-                    
-                        Category
-                    
-                
-            </li>
-        
-    
-
-    
-    
-        <li><a href='/categories/til'>TIL</a></li>
-    
-</ul>
-
-    </footer>
-</article>
-
-        
-            <article class="post">
-    <header>
-    <div class="title">
-        
-            <h2><a href="/blog/til-man-hour-managa/">TIL - エンジニアの稼働率と工数管理について</a></h2>
+            <h1><a href="/blog/til-man-hour-managa/">TIL - エンジニアの稼働率と工数管理について</a></h1>
+            
         
         
             <p>エンジニアの稼働率と工数管理について、どうやって見積もれば良いのかのメモ</p>
@@ -524,7 +525,81 @@ ga('send', 'pageview');
     </div>
 </header>
 
-    
+
+  
+    <section id="social-share">
+      <ul class="icons">
+        
+
+
+<li>
+  <a href="//twitter.com/share?url=https%3a%2f%2fkglabo.com%2fblog%2ftil-man-hour-managa%2f&text=TIL%20-%20%e3%82%a8%e3%83%b3%e3%82%b8%e3%83%8b%e3%82%a2%e3%81%ae%e7%a8%bc%e5%83%8d%e7%8e%87%e3%81%a8%e5%b7%a5%e6%95%b0%e7%ae%a1%e7%90%86%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6&via=yu_kgr" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//plus.google.com/share?url=https%3a%2f%2fkglabo.com%2fblog%2ftil-man-hour-managa%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fkglabo.com%2fblog%2ftil-man-hour-managa%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//reddit.com/submit?url=https%3a%2f%2fkglabo.com%2fblog%2ftil-man-hour-managa%2f&title=TIL%20-%20%e3%82%a8%e3%83%b3%e3%82%b8%e3%83%8b%e3%82%a2%e3%81%ae%e7%a8%bc%e5%83%8d%e7%8e%87%e3%81%a8%e5%b7%a5%e6%95%b0%e7%ae%a1%e7%90%86%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fkglabo.com%2fblog%2ftil-man-hour-managa%2f&title=TIL%20-%20%e3%82%a8%e3%83%b3%e3%82%b8%e3%83%8b%e3%82%a2%e3%81%ae%e7%a8%bc%e5%83%8d%e7%8e%87%e3%81%a8%e5%b7%a5%e6%95%b0%e7%ae%a1%e7%90%86%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fkglabo.com%2fblog%2ftil-man-hour-managa%2f&title=TIL%20-%20%e3%82%a8%e3%83%b3%e3%82%b8%e3%83%8b%e3%82%a2%e3%81%ae%e7%a8%bc%e5%83%8d%e7%8e%87%e3%81%a8%e5%b7%a5%e6%95%b0%e7%ae%a1%e7%90%86%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fkglabo.com%2fblog%2ftil-man-hour-managa%2f&description=TIL%20-%20%e3%82%a8%e3%83%b3%e3%82%b8%e3%83%8b%e3%82%a2%e3%81%ae%e7%a8%bc%e5%83%8d%e7%8e%87%e3%81%a8%e5%b7%a5%e6%95%b0%e7%ae%a1%e7%90%86%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6" target="_blank" class="share-btn pinterest">
+    <i class="fa fa-pinterest-p"></i>
+    <p>Pinterest</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by %40yu-kgr&body=https%3a%2f%2fkglabo.com%2fblog%2ftil-man-hour-managa%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+      </ul>
+    </section>
+  
+
+  
     
 
     
@@ -549,13 +624,60 @@ ga('send', 'pageview');
     
 
 
-    <p>なにこれ 主にウォーターフォール時に各タスクの工数を算出したり作業分解したタスクをどう割り振るのか考える時に役に立つであろう情報。 稼働率 稼働率</p>
+  <div id="content">
+    
 
-    <footer>
-        <ul class="actions">
-            <li><a href="/blog/til-man-hour-managa/" class="button big">Continue Reading</a></li>
-        </ul>
-        <ul class="stats">
+<h2 id="なにこれ">なにこれ</h2>
+
+<p>主にウォーターフォール時に各タスクの工数を算出したり作業分解したタスクをどう割り振るのか考える時に役に立つであろう情報。</p>
+
+<h2 id="稼働率">稼働率</h2>
+
+<p>稼働率 is 働ける割合。</p>
+
+<p>稼働率は、1日あたり8時間となるので、</p>
+
+<ul>
+<li><code>8h ＝ 480min ＝ 100%</code></li>
+<li><code>60min = 12.5%</code></li>
+</ul>
+
+<p>て、1hにつき <code>12.5%</code> となる。</p>
+
+<h3 id="例">例</h3>
+
+<p>5時間掛かる作業の場合は、</p>
+
+<ul>
+<li><code>12.5*5 = 62.5%</code></li>
+</ul>
+
+<p>これを「何日かけて対応するか」で日数分で割る。<br />
+「何日かけて対応するか」はメンバーの空き稼働率の状況で判断する。</p>
+
+<h2 id="役割毎の稼働率の違い">役割毎の稼働率の違い</h2>
+
+<p>末端作業者と管理層では一日の作業に費やすことができる稼働率が異なる。<br />
+一般的には末端作業者は <code>70~80%</code> が限度。</p>
+
+<p>例えば、会議や雑務の割合が多くて、<br />
+1日あたり4hは管理系業務で時間が取られている場合は、</p>
+
+<p>8hのうち、4hしか作業時間を確保できない為、<br />
+<code>8h - 4h = 4h</code> で、作業割合 <code>50%（12.5 ✕ 4）</code> が上限となる。</p>
+
+<p>管理者は自分自身の稼働率がどの程度なのか確認しておくと良い。</p>
+
+<h2 id="補足">補足</h2>
+
+<p>期間と作業割合がわかっているタスクに関しては、<br />
+逆算して初期見積入れておいても良い。
+※ 単純にタスクに何時間かけるか分かるようになるだけだが‥</p>
+
+  </div>
+
+  <footer>
+    <ul class="stats">
     
         
 
@@ -586,112 +708,41 @@ ga('send', 'pageview');
     
 </ul>
 
-    </footer>
+  </footer>
+
 </article>
 
-        
-            <article class="post">
-    <header>
-    <div class="title">
-        
-            <h2><a href="/blog/another-name-ssh-keygen/">リポジトリにssh接続でgit cloneする為にssh-keygen -f hogehogeで、別名pubファイルを作ったら永遠にcloneできなかった話</a></h2>
-        
-        
-            <p>リポジトリにssh接続でgit cloneする為にssh-keygen -f hogehogeで、別名pubファイルを作ったら永遠にcloneできなかったので、なんとかした。</p>
-        
-    </div>
-    <div class="meta">
-        
+    <article class="post">
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'kglabo-com';
+    var disqus_identifier = 'https:\/\/kglabo.com\/blog\/til-man-hour-managa\/';
+    var disqus_title = 'TIL - エンジニアの稼働率と工数管理について';
+    var disqus_url = 'https:\/\/kglabo.com\/blog\/til-man-hour-managa\/';
 
-        <time class="published"
-            datetime='2017-05-08'>
-            May 8, 2017</time>
-        <span class="author">@yu-kgr</span>
-        
-            <p>1 minute read</p>
-        
-        
-    </div>
-</header>
-
-    
-    
-
-    
-        
-        
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </article>
 
 
-
-
-
-
-    
-
-
-        
-        
-        
-
-        <a href="/blog/another-name-ssh-keygen/" class="image featured">
-            <img src="https://kglabo.com//img/til/til.jpg" alt="">
-        </a>
-    
-
-
-    <p>発生した問題 githubの既存リポジトリから、sshでgit cloneしたかったので、 お前らのSSH Keysの作り方は間違っているを参考にし</p>
-
-    <footer>
-        <ul class="actions">
-            <li><a href="/blog/another-name-ssh-keygen/" class="button big">Continue Reading</a></li>
-        </ul>
-        <ul class="stats">
-    
-        
-
-        
-        
-            <li>
-                
-                
-                    
-
-                    
-
-                    
-                        <i class="fa fa-sitemap">&nbsp;</i>
-                    
-
-                    
-                        Category
-                    
-                
-            </li>
-        
-    
-
-    
-    
-        <li><a href='/categories/til'>TIL</a></li>
-    
-</ul>
-
-    </footer>
-</article>
-
-        
-
-        
 <ul class="actions pagination">
     
-        <li><a href="#" class="disabled button big previous">Previous Page</a></li>
+        <li><a href="/blog/another-name-ssh-keygen/"
+                class="button big previous">リポジトリにssh接続でgit cloneする為にssh-keygen -f hogehogeで、別名pubファイルを作ったら永遠にcloneできなかった話</a></li>
     
 
     
-        <li><a href="/categories/til/page/2/"
-                class="button big next">Next Page</a></li>
+        <li><a href="/blog/til-user-experience-training-02/"
+                class="button big next">TIL - UX研修 - 他社UI調査/インタビュー設計</a></li>
     
 </ul>
+
 
     </div>
     
