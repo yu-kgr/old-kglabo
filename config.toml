@@ -43,8 +43,7 @@ pluralizeListTitles = false
   # ファイルに "default"という値を追加します。
   # customCSS            = ["default", "/path/to/file"]
   # customJS             = ["default", "/path/to/file"]
-  customCSS            = ["default", "/static/css/add-on.css"]
-  customJS             = ["default", "/static/js/add-on.js"]
+  customJS             = ["default", "/js/add-on.js"]
 
 # DisqusはStaticman（github.com/eduardoboucas/staticman）よりも優先されます。
 # その使いやすさのために。両方をチェックして、あなたが何をするか決めるのはどうぞ
