@@ -55,7 +55,7 @@
 
 
 <meta itemprop="dateModified" content="2017-11-30T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1100">
+<meta itemprop="wordCount" content="1109">
 
 
 
@@ -637,38 +637,31 @@ ga('send', 'pageview');
 
 <p>JavaScriptでWebサイトを動的に書き換えるには、Document Object Model（DOM）という仕組みを利用する</p>
 
-<hr />
-
 <h2 id="document-object-model-dom-とは">Document Object Model（DOM）とは</h2>
 
 <p>JavaScriptで記述されたプログラムから、HTMLページにアクセスして、HTMLページを操作する方法を提供している。</p>
-
-<hr />
 
 <h2 id="domツリー">DOMツリー</h2>
 
 <p>DOMツリーとは、HTMLドキュメントやXMLドキュメントをツリー構造として表現したもの。</p>
 
-<pre><code>&lt;!DOCTYPE html&gt;
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
 &lt;head&gt;
-    &lt;title&gt;Document&lt;/title&gt;
+  &lt;title&gt;Document&lt;/title&gt;
 &lt;/head&gt;
 &lt;body&gt;
-	&lt;h1&gt;大見出し&lt;/h1&gt;
-	&lt;h2&gt;中見出し&lt;/h2&gt;
-	&lt;p&gt;DOMツリーとは、HTMLドキュメントやXMLドキュメントを&lt;strong&gt;ツリー構造&lt;/strong&gt;として表現したもの。&lt;/p&gt;
+&lt;h1&gt;大見出し&lt;/h1&gt;
+&lt;h2&gt;中見出し&lt;/h2&gt;
+&lt;p&gt;DOMツリーとは、HTMLドキュメントやXMLドキュメントを&lt;strong&gt;ツリー構造&lt;/strong&gt;として表現したもの。&lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-
 </code></pre>
 
 <ul>
 <li>Document
 
 <ul>
-<li><html>
-
-<ul>
+<li><html></li>
 <li><head>
 
 <ul>
@@ -679,17 +672,11 @@ ga('send', 'pageview');
 <ul>
 <li><h1> - 見出し</li>
 <li><h2> - 見出し</li>
-<li><p> - DOMツリーとは、HTMLドキュメントやXMLドキュメントをツリー構造として表現したもの。
-
-<ul>
+<li><p> - DOMツリーとは、HTMLドキュメントやXMLドキュメントをツリー構造として表現したもの。</li>
 <li><strong> - ツリー構造</li>
 </ul></li>
 </ul></li>
-</ul></li>
-</ul></li>
 </ul>
-
-<hr />
 
 <h2 id="ノード">ノード</h2>
 
@@ -700,8 +687,6 @@ ga('send', 'pageview');
 <li>属性ノード</li>
 <li>テキストノード</li>
 </ul>
-
-<hr />
 
 <h2 id="dom仕様策定について">DOM仕様策定について</h2>
 
@@ -718,8 +703,6 @@ ga('send', 'pageview');
 </ul></li>
 </ul>
 
-<hr />
-
 <h2 id="ブラウザオブジェクトの階層構造">ブラウザオブジェクトの階層構造</h2>
 
 <ul>
@@ -728,9 +711,7 @@ ga('send', 'pageview');
 <ul>
 <li>screen</li>
 <li>document</li>
-<li>location
-
-<ul>
+<li>location</li>
 <li>form
 
 <ul>
@@ -738,13 +719,10 @@ ga('send', 'pageview');
 </ul></li>
 <li>anchor</li>
 <li>Images</li>
-</ul></li>
 <li>navigator</li>
 <li>history</li>
 </ul></li>
 </ul>
-
-<hr />
 
 <h2 id="window-オブジェクト">window オブジェクト</h2>
 
@@ -796,7 +774,7 @@ ga('send', 'pageview');
 <h2 id="anchor-オブジェクト">Anchor オブジェクト</h2>
 
 <ul>
-<li>ページ上のアンカー（<a>）に関する情報を取得できる</li>
+<li>ページ上のアンカー（<code>&lt;a&gt;</code>）に関する情報を取得できる</li>
 </ul>
 
 <h2 id="images-オブジェクト">Images オブジェクト</h2>
@@ -813,7 +791,7 @@ ga('send', 'pageview');
 <li>例</li>
 </ul>
 
-<pre><code>&lt;p&gt;hogefuga&lt;/p&gt; 
+<pre><code class="language-html">&lt;p&gt;hogefuga&lt;/p&gt;
 </code></pre>
 
   </div>

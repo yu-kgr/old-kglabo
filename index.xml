@@ -21,38 +21,31 @@
 
 &lt;p&gt;JavaScriptでWebサイトを動的に書き換えるには、Document Object Model（DOM）という仕組みを利用する&lt;/p&gt;
 
-&lt;hr /&gt;
-
 &lt;h2 id=&#34;document-object-model-dom-とは&#34;&gt;Document Object Model（DOM）とは&lt;/h2&gt;
 
 &lt;p&gt;JavaScriptで記述されたプログラムから、HTMLページにアクセスして、HTMLページを操作する方法を提供している。&lt;/p&gt;
-
-&lt;hr /&gt;
 
 &lt;h2 id=&#34;domツリー&#34;&gt;DOMツリー&lt;/h2&gt;
 
 &lt;p&gt;DOMツリーとは、HTMLドキュメントやXMLドキュメントをツリー構造として表現したもの。&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;
 &amp;lt;head&amp;gt;
-    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;
+  &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;
 &amp;lt;/head&amp;gt;
 &amp;lt;body&amp;gt;
-	&amp;lt;h1&amp;gt;大見出し&amp;lt;/h1&amp;gt;
-	&amp;lt;h2&amp;gt;中見出し&amp;lt;/h2&amp;gt;
-	&amp;lt;p&amp;gt;DOMツリーとは、HTMLドキュメントやXMLドキュメントを&amp;lt;strong&amp;gt;ツリー構造&amp;lt;/strong&amp;gt;として表現したもの。&amp;lt;/p&amp;gt;
+&amp;lt;h1&amp;gt;大見出し&amp;lt;/h1&amp;gt;
+&amp;lt;h2&amp;gt;中見出し&amp;lt;/h2&amp;gt;
+&amp;lt;p&amp;gt;DOMツリーとは、HTMLドキュメントやXMLドキュメントを&amp;lt;strong&amp;gt;ツリー構造&amp;lt;/strong&amp;gt;として表現したもの。&amp;lt;/p&amp;gt;
 &amp;lt;/body&amp;gt;
 &amp;lt;/html&amp;gt;
-
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Document
 
 &lt;ul&gt;
-&lt;li&gt;&lt;html&gt;
-
-&lt;ul&gt;
+&lt;li&gt;&lt;html&gt;&lt;/li&gt;
 &lt;li&gt;&lt;head&gt;
 
 &lt;ul&gt;
@@ -63,17 +56,11 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;h1&gt; - 見出し&lt;/li&gt;
 &lt;li&gt;&lt;h2&gt; - 見出し&lt;/li&gt;
-&lt;li&gt;&lt;p&gt; - DOMツリーとは、HTMLドキュメントやXMLドキュメントをツリー構造として表現したもの。
-
-&lt;ul&gt;
+&lt;li&gt;&lt;p&gt; - DOMツリーとは、HTMLドキュメントやXMLドキュメントをツリー構造として表現したもの。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt; - ツリー構造&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;hr /&gt;
 
 &lt;h2 id=&#34;ノード&#34;&gt;ノード&lt;/h2&gt;
 
@@ -84,8 +71,6 @@
 &lt;li&gt;属性ノード&lt;/li&gt;
 &lt;li&gt;テキストノード&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;hr /&gt;
 
 &lt;h2 id=&#34;dom仕様策定について&#34;&gt;DOM仕様策定について&lt;/h2&gt;
 
@@ -102,8 +87,6 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;hr /&gt;
-
 &lt;h2 id=&#34;ブラウザオブジェクトの階層構造&#34;&gt;ブラウザオブジェクトの階層構造&lt;/h2&gt;
 
 &lt;ul&gt;
@@ -112,9 +95,7 @@
 &lt;ul&gt;
 &lt;li&gt;screen&lt;/li&gt;
 &lt;li&gt;document&lt;/li&gt;
-&lt;li&gt;location
-
-&lt;ul&gt;
+&lt;li&gt;location&lt;/li&gt;
 &lt;li&gt;form
 
 &lt;ul&gt;
@@ -122,13 +103,10 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;anchor&lt;/li&gt;
 &lt;li&gt;Images&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
 &lt;li&gt;navigator&lt;/li&gt;
 &lt;li&gt;history&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;hr /&gt;
 
 &lt;h2 id=&#34;window-オブジェクト&#34;&gt;window オブジェクト&lt;/h2&gt;
 
@@ -180,7 +158,7 @@
 &lt;h2 id=&#34;anchor-オブジェクト&#34;&gt;Anchor オブジェクト&lt;/h2&gt;
 
 &lt;ul&gt;
-&lt;li&gt;ページ上のアンカー（&lt;a&gt;）に関する情報を取得できる&lt;/li&gt;
+&lt;li&gt;ページ上のアンカー（&lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;）に関する情報を取得できる&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;h2 id=&#34;images-オブジェクト&#34;&gt;Images オブジェクト&lt;/h2&gt;
@@ -197,7 +175,7 @@
 &lt;li&gt;例&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;hogefuga&amp;lt;/p&amp;gt; 
+&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;p&amp;gt;hogefuga&amp;lt;/p&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
