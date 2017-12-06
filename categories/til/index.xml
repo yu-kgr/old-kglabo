@@ -6,8 +6,201 @@
     <description>Recent content in TIL on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 16 Oct 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 30 Nov 2017 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kglabo.com/categories/til/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>TIL - JavaScript - DOMオブジェクトについて</title>
+      <link>https://kglabo.com/blog/javascript-study-01/</link>
+      <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://kglabo.com/blog/javascript-study-01/</guid>
+      <description>
+
+&lt;h2 id=&#34;javascript-domオブジェクトについて&#34;&gt;JavaScript - DOMオブジェクトについて&lt;/h2&gt;
+
+&lt;p&gt;JavaScriptでWebサイトを動的に書き換えるには、Document Object Model（DOM）という仕組みを利用する&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;document-object-model-dom-とは&#34;&gt;Document Object Model（DOM）とは&lt;/h2&gt;
+
+&lt;p&gt;JavaScriptで記述されたプログラムから、HTMLページにアクセスして、HTMLページを操作する方法を提供している。&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;domツリー&#34;&gt;DOMツリー&lt;/h2&gt;
+
+&lt;p&gt;DOMツリーとは、HTMLドキュメントやXMLドキュメントをツリー構造として表現したもの。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+	&amp;lt;h1&amp;gt;大見出し&amp;lt;/h1&amp;gt;
+	&amp;lt;h2&amp;gt;中見出し&amp;lt;/h2&amp;gt;
+	&amp;lt;p&amp;gt;DOMツリーとは、HTMLドキュメントやXMLドキュメントを&amp;lt;strong&amp;gt;ツリー構造&amp;lt;/strong&amp;gt;として表現したもの。&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Document
+
+&lt;ul&gt;
+&lt;li&gt;&lt;html&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;head&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;title&gt; - Document&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;body&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;h1&gt; - 見出し&lt;/li&gt;
+&lt;li&gt;&lt;h2&gt; - 見出し&lt;/li&gt;
+&lt;li&gt;&lt;p&gt; - DOMツリーとは、HTMLドキュメントやXMLドキュメントをツリー構造として表現したもの。
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt; - ツリー構造&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;ノード&#34;&gt;ノード&lt;/h2&gt;
+
+&lt;p&gt;文章を構成する要素、属性、テキストといったオブジェクトをノードと呼ぶ。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;要素ノード&lt;/li&gt;
+&lt;li&gt;属性ノード&lt;/li&gt;
+&lt;li&gt;テキストノード&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;dom仕様策定について&#34;&gt;DOM仕様策定について&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;DOMの仕様は、Level1~4がW3Cにより策定。
+
+&lt;ul&gt;
+&lt;li&gt;W3Cとは、WEBで使用される各種技術の標準化を推進する為に設立された団体。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;最新版は、WHATWG（Web Hypertext Application Technology Working Group）というコミュニティーがLiving Standardとして定義。
+
+&lt;ul&gt;
+&lt;li&gt;Living Standardとは常に改良が加えられているゆるい規格のようなもの。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;ブラウザオブジェクトの階層構造&#34;&gt;ブラウザオブジェクトの階層構造&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;window
+
+&lt;ul&gt;
+&lt;li&gt;screen&lt;/li&gt;
+&lt;li&gt;document&lt;/li&gt;
+&lt;li&gt;location
+
+&lt;ul&gt;
+&lt;li&gt;form
+
+&lt;ul&gt;
+&lt;li&gt;Element&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;anchor&lt;/li&gt;
+&lt;li&gt;Images&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;navigator&lt;/li&gt;
+&lt;li&gt;history&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;window-オブジェクト&#34;&gt;window オブジェクト&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ブラウザを操作するための機能を集めたオブジェクト&lt;/li&gt;
+&lt;li&gt;ブラウザオブジェクトの階層構造の最上位に位置する&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;document-オブジェクト&#34;&gt;document オブジェクト&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Windowオブジェクト内に表示された、HTMLで表現されているコンテンツを保持しているオブジェクト&lt;/li&gt;
+&lt;li&gt;Window内に表示されたドキュメントを操作するのは、Documentオブジェクトの役割。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;location-オブジェクト&#34;&gt;Location オブジェクト&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;現在表示されているページのロケーションに関する情報を提供する&lt;/li&gt;
+&lt;li&gt;現在の表示URLアドレスに関する情報を取得できる&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;history-オブジェクト&#34;&gt;history オブジェクト&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ブラウザの履歴の操作&lt;/li&gt;
+&lt;li&gt;画面上に表示しているページの移動などの操作&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;navigator-オブジェクト&#34;&gt;Navigator オブジェクト&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ブラウザ名やバージョンなど、ブラウザ固有の情報を提供する&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;screen-オブジェクト&#34;&gt;screen オブジェクト&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ディスプレイに関する情報を提供する&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;form-オブジェクト&#34;&gt;form オブジェクト&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Formに関する情報を提供&lt;/li&gt;
+&lt;li&gt;Formの操作&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;anchor-オブジェクト&#34;&gt;Anchor オブジェクト&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ページ上のアンカー（&lt;a&gt;）に関する情報を取得できる&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;images-オブジェクト&#34;&gt;Images オブジェクト&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;画像に関する情報の提供&lt;/li&gt;
+&lt;li&gt;画像を操作する機能の提供&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;elements-オブジェクト&#34;&gt;Elements オブジェクト&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;HTMLドキュメントやXMLドキュメントにおける、要素（タグ）の事&lt;/li&gt;
+&lt;li&gt;例&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;lt;p&amp;gt;hogefuga&amp;lt;/p&amp;gt; 
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>TIL - UX研修 - 他社UI調査/インタビュー設計</title>
