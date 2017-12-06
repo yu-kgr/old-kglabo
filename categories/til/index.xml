@@ -45,19 +45,19 @@
 &lt;li&gt;Document
 
 &lt;ul&gt;
-&lt;li&gt;&lt;html&gt;&lt;/li&gt;
-&lt;li&gt;&lt;head&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;title&gt; - Document&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; - Document&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;body&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;h1&gt; - 見出し&lt;/li&gt;
-&lt;li&gt;&lt;h2&gt; - 見出し&lt;/li&gt;
-&lt;li&gt;&lt;p&gt; - DOMツリーとは、HTMLドキュメントやXMLドキュメントをツリー構造として表現したもの。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt; - ツリー構造&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; - 見出し&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;h2&amp;gt;&lt;/code&gt; - 見出し&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; - DOMツリーとは、HTMLドキュメントやXMLドキュメントをツリー構造として表現したもの。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; - ツリー構造&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
