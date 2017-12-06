@@ -34,14 +34,14 @@ DOMツリーとは、HTMLドキュメントやXMLドキュメントをツリー�
 ```
 
 * Document
-  * <html>
-    * <head>
-      * <title> - Document
-    * <body>
-      * <h1> - 見出し
-      * <h2> - 見出し
-      * <p> - DOMツリーとは、HTMLドキュメントやXMLドキュメントをツリー構造として表現したもの。
-        * <strong> - ツリー構造
+  * `<html>`
+    * `<head>`
+      * `<title>` - Document
+    * `<body>`
+      * `<h1>` - 見出し
+      * `<h2>` - 見出し
+      * `<p>` - DOMツリーとは、HTMLドキュメントやXMLドキュメントをツリー構造として表現したもの。
+        * `<strong>` - ツリー構造
 
 ## ノード
 
