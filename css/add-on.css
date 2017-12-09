@@ -28,12 +28,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .post h2 {
-    padding: 0.5rem 0;
+    font-size: 1.4rem;
+    padding: 1rem 0 0.5rem;
     border-bottom: 2px solid #eceff1;
 }
 
 h3 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     line-height: 1.5rem;
     margin: 1.5rem 0;
 }
@@ -46,10 +47,16 @@ h3 {
 
 h4 {
     border-left: solid .25rem #00acc1;
+    padding: 0 .9rem;
+    margin-top: 1.5rem;
+    font-size: 1.1em;
+}
+h5 {
+    border-left: solid .25rem #00ac25;
     padding: 0 .8rem;
+    margin-top: 1.5rem;
     font-size: 1em;
 }
-
 
 header p {
     letter-spacing: 0.1em;
@@ -76,4 +83,8 @@ input[type="submit"], input[type="reset"], input[type="button"], .button {
     text-transform: none;
     font-family: Lato,YuGothic,'Hiragino Kaku Gothic Pro',Meiryo,sans-serif;
     letter-spacing: 0.1em;
+}
+
+em, i {
+    font-size: 0.8em;
 }
