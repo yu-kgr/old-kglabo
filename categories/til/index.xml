@@ -6,8 +6,69 @@
     <description>Recent content in TIL on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 30 Nov 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Mar 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kglabo.com/categories/til/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>TIL - ReactStudy#02</title>
+      <link>https://kglabo.com/blog/react-study-02/</link>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kglabo.com/blog/react-study-02/</guid>
+      <description>
+
+&lt;h2 id=&#34;やった事&#34;&gt;やった事&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;create-react-app
+
+&lt;ul&gt;
+&lt;li&gt;テンプレ作成&lt;/li&gt;
+&lt;li&gt;テンプレ編集&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Babel
+
+&lt;ul&gt;
+&lt;li&gt;es2015からの変換(トランスパイル)&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;必要なパッケージのインストール
+
+&lt;ul&gt;
+&lt;li&gt;babel-cli&lt;/li&gt;
+&lt;li&gt;babel-preset-env&lt;/li&gt;
+&lt;li&gt;babel-preset-react&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;わかった事&#34;&gt;わかった事&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Babel使うとコードの記述がものすごい楽。&lt;/li&gt;
+&lt;li&gt;JSX使わなくてもReactは書けるけど、クソ面倒くさいから使ったほうが楽。というか普通は使う。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;次にやること&#34;&gt;次にやること&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ReactでComponentを作成する&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;備考&#34;&gt;備考&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;babel-preset-env&lt;/code&gt;がECMAScriptのサポート環境に応じたプラグインを設定するプリセットパッケージ。という説明だったがあんまりピンと来てないのでそのうち調べる。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;リポジトリ&#34;&gt;リポジトリ&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/yu-kgr/learn-react-app&#34;&gt;yu-kgr/learn-react-app&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/yu-kgr/learn-react-app/commit/eb59019dd89bae478e4db7494b6adff278ec66f2&#34;&gt;該当コミットログ&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>TIL - JavaScript - DOMオブジェクトについて</title>
@@ -503,69 +564,6 @@ Host github.com
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;上記の設定を加える事で、無事問題なくcloneする事ができた。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>TIL - ReactStudy#02</title>
-      <link>https://kglabo.com/blog/react-study-02/</link>
-      <pubDate>Tue, 28 Mar 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://kglabo.com/blog/react-study-02/</guid>
-      <description>
-
-&lt;h1 id=&#34;react-study-02&#34;&gt;React Study #02&lt;/h1&gt;
-
-&lt;h2 id=&#34;やった事&#34;&gt;やった事&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;create-react-app
-
-&lt;ul&gt;
-&lt;li&gt;テンプレ作成&lt;/li&gt;
-&lt;li&gt;テンプレ編集&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Babel
-
-&lt;ul&gt;
-&lt;li&gt;es2015からの変換(トランスパイル)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;必要なパッケージのインストール
-
-&lt;ul&gt;
-&lt;li&gt;babel-cli&lt;/li&gt;
-&lt;li&gt;babel-preset-env&lt;/li&gt;
-&lt;li&gt;babel-preset-react&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;わかった事&#34;&gt;わかった事&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Babel使うとコードの記述がものすごい楽。&lt;/li&gt;
-&lt;li&gt;JSX使わなくてもReactは書けるけど、クソ面倒くさいから使ったほうが楽。というか普通は使う。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;次にやること&#34;&gt;次にやること&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ReactでComponentを作成する&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;備考&#34;&gt;備考&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;babel-preset-env~がECMAScriptのサポート環境に応じたプラグインを設定するプリセットパッケージ。という説明だったがあんまりピンと来てないのでそのうち調べる。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;リポジトリ&#34;&gt;リポジトリ&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/yu-kgr/learn-react-app&#34;&gt;yu-kgr/learn-react-app&lt;/a&gt;
-*&lt;a href=&#34;https://github.com/yu-kgr/learn-react-app/commit/eb59019dd89bae478e4db7494b6adff278ec66f2&#34;&gt;コミットログ - 41Pまで&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     
