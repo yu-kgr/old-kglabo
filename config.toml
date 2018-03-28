@@ -11,7 +11,7 @@ pluralizeListTitles = false
 
 [params]
   # メタタグの説明を設定します
-  description          = "kanazawa"
+  description          = "金沢のWebDev.yu-kgrのチラシの裏。学んだ事をアウトプットしてます。座右の銘は「みんなで楽したい」"
   # ナビゲーションバーの左上に表示されるnavbarTitleを設定します
   navbarTitle          = "kglabo.com"
   #「投稿をもっと見る」リンクの設定
