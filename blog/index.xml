@@ -6,8 +6,120 @@
     <description>Recent content in Blog on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 28 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 May 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kglabo.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2018/05 - Second week I Learned</title>
+      <link>https://kglabo.com/blog/til-201805-second-week/</link>
+      <pubDate>Fri, 18 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kglabo.com/blog/til-201805-second-week/</guid>
+      <description>
+
+&lt;!--tags = [ “git”, “submodule”, “CLI”, ”npx”, “名刺”, “回線速度” ]--&gt;
+
+&lt;h2 id=&#34;今週-知った-学んだこと&#34;&gt;今週、知った/学んだこと&lt;/h2&gt;
+
+&lt;h3 id=&#34;2018-05-14-learned&#34;&gt;2018/05/14 - Learned&lt;/h3&gt;
+
+&lt;h4 id=&#34;gitについて&#34;&gt;Gitについて&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git push origin HEAD&lt;/code&gt; で、pushした場合は毎回、現在のCurrent branch　でpushする事ができる。
+
+&lt;ul&gt;
+&lt;li&gt;毎回、&lt;code&gt;git push origin feature/HOGEHOGE/FUGAFUGA-1001&lt;/code&gt; みたいなの入力してたのでかなり楽になって良い。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;gitconfigで指定されているuser.name等がgitに記録されるタイミングは &lt;code&gt;git commit&lt;/code&gt;をしたタイミング。
+
+&lt;ul&gt;
+&lt;li&gt;違うユーザアカウントでpushしてしまった為、gittconfigを書き換えて治そうとしたが、再度commitしないと治らなかった為、判明。&lt;/li&gt;
+&lt;li&gt;個人のuser.nameで業務リポジトリにpushされてちょっと恥ずかしかった。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;2018-05-15-learned&#34;&gt;2018/05/15 - Learned&lt;/h3&gt;
+
+&lt;h4 id=&#34;gitについて-1&#34;&gt;Gitについて&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ブログのテーマがsubmodule化されているが、毎回読み込みの仕方を忘れる
+
+&lt;ul&gt;
+&lt;li&gt;gitのsubmoduleは、メインのリポジトリで&lt;code&gt;git submodule update -i&lt;/code&gt;とすると、submoduleの取り込みを行う。&lt;/li&gt;
+&lt;li&gt;git submodule foreach git pull origin master` で最新のsubmodule側のリポジトリの状態に更新してくれる&lt;/li&gt;
+&lt;li&gt;尚、上記コマンドを入力する所は、メインのリポジトリのrootで大゛勝負な模様。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;2018-05-16-learnded&#34;&gt;2018/05/16 - Learnded&lt;/h3&gt;
+
+&lt;h4 id=&#34;回線速度調査の手法&#34;&gt;回線速度調査の手法&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CLIから回線速度のテストが出来るようにするfast-cliというものがあるらしい。
+
+&lt;ul&gt;
+&lt;li&gt;Nodeで動くので &lt;code&gt;npm install --global fast-cli&lt;/code&gt;でインストールしたら、fastコマンドで動作するようになる。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/suin/items/8398f0b07299a3cc194f&#34;&gt;参考 : 回線速度のテストができる「fast」コマンドが便利だった - Qiita&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;CLIでnpxを活用して自己紹介をする方法があった。
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/akameco/items/e0af9e3cdf1cdb6fca61&#34;&gt;名刺の代わりにCLIアプリを書く - Qiita&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;2018-05-17-learnded&#34;&gt;2018/05/17 - Learnded&lt;/h3&gt;
+
+&lt;h4 id=&#34;知識メモ&#34;&gt;知識メモ&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ハインリッヒの法則というものがある。
+
+&lt;ul&gt;
+&lt;li&gt;内容としては、 1つの重大事故の背後には29の軽微な事故があり、その背景には300の異常が存在するというもの。&lt;/li&gt;
+&lt;li&gt;つまり、重大な事故がX件ある場合は、29倍の軽微な事故・災害があって、300倍のヒヤリ・ハットがあるという事。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;セキュリティ対策&#34;&gt;セキュリティ対策&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;セキュリティ対策は重要だという話。
+
+&lt;ul&gt;
+&lt;li&gt;ハッカーは脆弱性の隙間を突いて、最終的にサーバのrootをハッキングする為の行動を取る。&lt;/li&gt;
+&lt;li&gt;Ubuntu + Drupal構成のサーバがあった場合は、&lt;/li&gt;
+&lt;li&gt;利用しているポートを確認。&lt;/li&gt;
+&lt;li&gt;Drupalのバージョン確認 → 脆弱性を確認してアタック&lt;/li&gt;
+&lt;li&gt;Drupalのアカウントを作成&lt;/li&gt;
+&lt;li&gt;Drupal上でPHPを実行可能にするPluginを導入&lt;/li&gt;
+&lt;li&gt;phpinfoでサーバ情報を取得 → サーバのバージョンを確認&lt;/li&gt;
+&lt;li&gt;サーバの脆弱性をアタックしてrootユーザのパスワードを取得&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;2018-05-18-learnded&#34;&gt;2018/05/18 - Learnded&lt;/h3&gt;
+
+&lt;h4 id=&#34;ユーザテストについて&#34;&gt;ユーザテストについて&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ここ数日、某サービスのユーザテストの被験者として体験して思った事。&lt;/li&gt;
+&lt;li&gt;サービス利用に至った背景や、テスト開始時点での状況説明を適切に行う必要がある。&lt;/li&gt;
+&lt;li&gt;その説明を怠ると、そもそも把握している前提条件の元でテストを行っているつもりが、違う所で躓いてしまって求める問いと異なるテスト結果になりそうな為。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>TIL - ReactStudy#02</title>

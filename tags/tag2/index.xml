@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>tag2 on kglabo.com</title>
+    <link>https://kglabo.com/tags/tag2/</link>
+    <description>Recent content in tag2 on kglabo.com</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 08 May 2017 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://kglabo.com/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>リポジトリにssh接続でgit cloneする為にssh-keygen -f hogehogeで、別名pubファイルを作ったら永遠にcloneできなかった話</title>
+      <link>https://kglabo.com/blog/another-name-ssh-keygen/</link>
+      <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://kglabo.com/blog/another-name-ssh-keygen/</guid>
+      <description>
+
+&lt;h2 id=&#34;発生した問題&#34;&gt;発生した問題&lt;/h2&gt;
+
+&lt;p&gt;githubの既存リポジトリから、sshでgit cloneしたかったので、&lt;br /&gt;
+&lt;a href=&#34;http://qiita.com/suthio/items/2760e4cff0e185fe2db9&#34;&gt;お前らのSSH Keysの作り方は間違っている&lt;/a&gt;を参考にして暗号強度を高めつつ、&lt;br /&gt;
+&lt;code&gt;ssh-keygen -f github_id_rsa&lt;/code&gt; で別名のpubファイルを作成してcloneした所、&lt;br /&gt;
+下記のようなエラーが発生した。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Warning: Permanently added the RSA host key for IP address &#39;***.***.***.**&#39; to the list of known hosts.
+Permission denied (publickey).
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;対処方法&#34;&gt;対処方法&lt;/h2&gt;
+
+&lt;p&gt;GitHub へのアクセス時に、 &lt;code&gt;~/.ssh/id_rsa&lt;/code&gt; や &lt;code&gt;~/.ssh/id_dsa&lt;/code&gt; ではなく、&lt;br /&gt;
+別名で認証鍵を作成した場合は、 &lt;code&gt;~/.ssh/config&lt;/code&gt; ファイルを作成して、&lt;br /&gt;
+下記設定を記述する必要がある。&lt;/p&gt;
+
+&lt;p&gt;また、configファイルに関しては、Permissionを600にする必要がある。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# ~/.ssh/config
+
+Host github.com
+    IdentityFile ~/.ssh/github_id_rsa
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;上記の設定を加える事で、無事問題なくcloneする事ができた。&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
