@@ -1,5 +1,6 @@
 +++
 author = "@yu-kgr"
+tags = [ "tag1", "tag2" ]
 categories = ["TIL"]
 date = "2017-05-08"
 description = "リポジトリにssh接続でgit cloneする為にssh-keygen -f hogehogeで、別名pubファイルを作ったら永遠にcloneできなかったので、なんとかした。"
