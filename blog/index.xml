@@ -6,8 +6,259 @@
     <description>Recent content in Blog on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 18 May 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 May 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kglabo.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2018/05 - Thaad week I Learned</title>
+      <link>https://kglabo.com/blog/til-201805-thaad-week/</link>
+      <pubDate>Fri, 25 May 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kglabo.com/blog/til-201805-thaad-week/</guid>
+      <description>
+
+&lt;h1 id=&#34;今週-知った-学んだこと&#34;&gt;今週、知った/学んだこと&lt;/h1&gt;
+
+&lt;!-- tags = [ &#34;slackbot&#34;, &#34;MD5&#34;, &#34;SHA256&#34;, &#34;Atomic Design&#34;, &#34;Linuxコマンド&#34;,&#34;Storybook&#34;, &#34;npx&#34;, &#34;webpack&#34; &#34;require&#34;] --&gt;
+
+&lt;h2 id=&#34;2018-05-21-learned&#34;&gt;2018/05/21 - Learned&lt;/h2&gt;
+
+&lt;p&gt;5月21日（月）のToday I Leaned&lt;/p&gt;
+
+&lt;h3 id=&#34;slackbotについて&#34;&gt;SlackBotについて&lt;/h3&gt;
+
+&lt;p&gt;SlackBotを作る際に利用するSlack API Tokenには種類がある。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Slackのほぼすべての機能を使えるレガシートークン
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/ykhirao/items/0d6b9f4a0cc626884dbb&#34;&gt;Slack APIのTokenの取得・場所&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;流出した場合は、チャンネルの削除から何からやり放題。必要な機能にしかアクセス権を与えないトークン&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/ykhirao/items/3b19ee6a1458cfb4ba21&#34;&gt;Slack API 推奨Tokenについて - Qiita&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;流出しても必要最低限の権限しか与えられていない。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;暗号化について&#34;&gt;暗号化について&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;MD5よりSHA256のほうが安全らしい
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/t-mochizuki/items/5ab21b6ae9b1941122ab&#34;&gt;md5とsha256を使ってみた - Qiita&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2018-05-22-learned&#34;&gt;2018/05/22 - Learned&lt;/h2&gt;
+
+&lt;p&gt;5月22日（火）のToday I Leaned&lt;/p&gt;
+
+&lt;h3 id=&#34;atomic-designについて&#34;&gt;Atomic Designについて&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;パーツ・コンポーネント単位で定義していく UI デザイン手法。&lt;/li&gt;
+&lt;li&gt;アプローチ / 考え方
+
+&lt;ul&gt;
+&lt;li&gt;エディトリアル / グラフィックからではなく、マークアップ / コーディングからUI設計を行っていく手法で、メリットとしてUIが一定の品質でテンプレ化される事によって、非デザイナーでも一定水準の品質のプロダクトデザインを担保する事が可能。&lt;/li&gt;
+&lt;li&gt;参考 : &lt;a href=&#34;http://design.dena.com/design/atomic-design-%E3%82%92%E5%88%86%E3%81%8B%E3%81%A3%E3%81%9F%E3%81%A4%E3%82%82%E3%82%8A%E3%81%AB%E3%81%AA%E3%82%8B/&#34;&gt;Atomic Design を 分かったつもりになる&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;# 構成要素
+- atoms / 原子（あとむす）
+  - UI部品の最小単位
+- molecules / 分子（もれきゅーる）
+  - 機能的なまとまり
+- organisms / 生体（おーがにずむす）
+  - ページ内のセクション
+- templates / テンプレート（てんぷれーと）
+  - ワイヤーフレームとなるもの
+- pages / ページ
+  - テンプレートに内容を入れた、実際表示される状態
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;考え方としてはBootstrapに近い。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2018-05-23-learned&#34;&gt;2018/05/23 - Learned&lt;/h2&gt;
+
+&lt;p&gt;5月23日（水）のToday I Leaned&lt;/p&gt;
+
+&lt;h3 id=&#34;next-jsについて&#34;&gt;Next.jsについて&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;とても楽に React の web application を開発する事が可能。
+
+&lt;ul&gt;
+&lt;li&gt;ReactをSSR（Server Side Rendering）し、Babelで書くことが出来、buildもしてくれつつ、Universal JavaScript Web Applicationを作成する事ができるOSSのWeb Framework。&lt;/li&gt;
+&lt;li&gt;Reactの学習をした後、Next.jsを使えばShadow DOMの修学は問題ない&lt;/li&gt;
+&lt;li&gt;仕様が明確で拡張性も高い。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2018-05-24-learned&#34;&gt;2018/05/24 - Learned&lt;/h2&gt;
+
+&lt;p&gt;5月24日（木）のToday I Leaned&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;金沢の最高気温は19/7度、最低気温は16.7度。&lt;/li&gt;
+&lt;li&gt;体調不良にてしんでおりました。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2018-05-25-learned&#34;&gt;2018/05/25 - Learned&lt;/h2&gt;
+
+&lt;p&gt;5月25日（金）のToday I Leaned&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;1.5hほどもくもくする時間を確保。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;linuxコマンドについて&#34;&gt;Linuxコマンドについて&lt;/h3&gt;
+
+&lt;h4 id=&#34;mkdir&#34;&gt;mkdir&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;mkdir hoge fuga&lt;/code&gt; で 複数ディレクトリを同時作成する事が可能&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mkdir -p hoge/fuga piyo/foo&lt;/code&gt; で多階層ディレクトリを作成する事が可能&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;touch&#34;&gt;touch&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;touch&lt;/code&gt; コマンド自体は指定したファイルのタイムスタンプを変更するコマンド。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;touch -t [[CC]YY]MMDDhhmm[.ss]&lt;/code&gt; で指定したタイムスタンプに変更できる。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;touch hoge&lt;/code&gt; でファイルが存在していない場合は0サイズのファイルを作成する事ができる。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;pdcopy&#34;&gt;pdcopy&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;pdcoby&lt;/code&gt; で、ターミナルの出力をクリップボードにコピーしてくれる
+
+&lt;ul&gt;
+&lt;li&gt;入力を終える場合は&lt;code&gt;Ctrl +D&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cat ~/.ssh/id_rsa.pub | pbcopy&lt;/code&gt; とかで利用すると便利。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;storybookについて&#34;&gt;Storybookについて&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;React / Raact Native / Vue向けのUI開発環境。&lt;/li&gt;
+&lt;li&gt;サンドボックス環境を構築してコンポーネントの挙動やコンポーネントを一望できる&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;使いみち&#34;&gt;使いみち&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;自作コンポーネントのライブラリー（一覧）や状態込みのスタイルガイド&lt;/li&gt;
+&lt;li&gt;ページの作成中、適切なコンポーネントを素早く選び出す&lt;/li&gt;
+&lt;li&gt;開発中・開発後にコンポーネントの UI をテストする&lt;/li&gt;
+&lt;li&gt;コンポーネントや API のドキュメント&lt;/li&gt;
+&lt;li&gt;エンジニアやデザイナー間のコミュニケーション&lt;/li&gt;
+&lt;li&gt;アプリケーションの仕様書&lt;/li&gt;
+&lt;li&gt;参考 : &lt;a href=&#34;https://storybook.js.org/examples/&#34;&gt;https://storybook.js.org/examples/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;npxについて&#34;&gt;npxについて&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Node.jsを8.2.0以上にアップデートすると利用する事が可能。&lt;/li&gt;
+&lt;li&gt;できる事
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;npm i&lt;/code&gt; で インストールしたパッケージを &lt;code&gt;npx {パッケージ名}&lt;/code&gt; で実行する事が可能。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;これまでの実行方法
+
+&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;./node_modules/.bin/(パッケージ名)&lt;/code&gt; で実行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$(npm bin)/(パッケージ名)&lt;/code&gt; で実行&lt;/li&gt;
+&lt;li&gt;package.jsonにnpm-scriptを記述して実行&lt;/li&gt;
+&lt;/ol&gt;&lt;/li&gt;
+&lt;li&gt;おまけ
+
+&lt;ul&gt;
+&lt;li&gt;ローカルにインストールしていないパッケージを&lt;code&gt;npx {パッケージ名}&lt;/code&gt; で実行する事が可能（↓こんなかんじ）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;$ npx cowsay nyarnしか書けねえ体にしてやろうか！
+
+npx: 10個のパッケージを2.106秒でインストールしました。
+ _____________________________________
+&amp;lt; nyarnしか書けねえ体にしてやろうか！ &amp;gt;
+ -------------------------------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;webpackについて&#34;&gt;Webpackについて&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;モジュールバンドラーとは、モジュールをひとまとめにするツールであり、JSのモジュール各種をまとめて依存関係を解決してひとつのファイルにしてくれるツール。&lt;/li&gt;
+&lt;li&gt;もともとはNode.jsの&lt;code&gt;require()&lt;/code&gt;というモジュール読み込みの仕組み。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;entry&#34;&gt;Entry&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;読み込みを行うモジュールの 依存関係を解決する為のエントリポイント&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;output&#34;&gt;Output&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;バンドルされたファイルのアウトプット先。&lt;/li&gt;
+&lt;li&gt;出力先は絶対パスじゃないとだめ。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;requireの歴史&#34;&gt;requireの歴史&lt;/h3&gt;
+
+&lt;h4 id=&#34;commonjs&#34;&gt;CommonJS&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;JS便利だからブラウザ以外でも使おうぜ。サーバサイドとか。&lt;/li&gt;
+&lt;li&gt;でもブラウザ上で動かす為のものだから動かないよね。&lt;/li&gt;
+&lt;li&gt;困るから、ServerSideの標準仕様を定めようぜ → commonJS&lt;/li&gt;
+&lt;li&gt;外部ライブラリの参照は各JSをモジュール化して、&lt;code&gt;require()&lt;/code&gt;で読み込みしよう → commonJSの仕様として出てきた。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;node-js&#34;&gt;Node.js&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;サーバサイドでJSを利用できるようにしたもの。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;require()&lt;/code&gt; は独自拡張されたらしい。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;npm install&lt;/code&gt; したパッケージは &lt;code&gt;require()&lt;/code&gt; で読み込む事が可能。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;requirejs&#34;&gt;RequireJS&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;クライアントサイドでも&lt;code&gt;reauire()&lt;/code&gt;を使う為に作られたライブラリ。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;webpack&#34;&gt;WebPack&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;RequireJSをもっと強くしたもの。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;reauire()&lt;/code&gt; の対象範囲をJSのモジュールだけではなく、
+
+&lt;ul&gt;
+&lt;li&gt;altJSのコンパイル&lt;/li&gt;
+&lt;li&gt;CSS / HTMLファイル取り込み&lt;/li&gt;
+&lt;li&gt;JSファイルの取り込み&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;参考  : &lt;a href=&#34;https://qiita.com/uryyyyyyy/items/b10b012703b5396ded5a&#34;&gt;require()とは何か？何が便利なのか - Qiita&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>2018/05 - Second week I Learned</title>
@@ -17,13 +268,15 @@
       <guid>https://kglabo.com/blog/til-201805-second-week/</guid>
       <description>
 
+&lt;h1 id=&#34;今週-知った-学んだこと&#34;&gt;今週、知った/学んだこと&lt;/h1&gt;
+
 &lt;!--tags = [ “git”, “submodule”, “CLI”, ”npx”, “名刺”, “回線速度” ]--&gt;
 
-&lt;h2 id=&#34;今週-知った-学んだこと&#34;&gt;今週、知った/学んだこと&lt;/h2&gt;
+&lt;h2 id=&#34;2018-05-14-learned&#34;&gt;2018/05/14 - Learned&lt;/h2&gt;
 
-&lt;h3 id=&#34;2018-05-14-learned&#34;&gt;2018/05/14 - Learned&lt;/h3&gt;
+&lt;p&gt;5月14日（月）のToday I Leaned&lt;/p&gt;
 
-&lt;h4 id=&#34;gitについて&#34;&gt;Gitについて&lt;/h4&gt;
+&lt;h3 id=&#34;gitについて&#34;&gt;Gitについて&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;git push origin HEAD&lt;/code&gt; で、pushした場合は毎回、現在のCurrent branch　でpushする事ができる。
@@ -39,11 +292,11 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;hr /&gt;
+&lt;h2 id=&#34;2018-05-15-learned&#34;&gt;2018/05/15 - Learned&lt;/h2&gt;
 
-&lt;h3 id=&#34;2018-05-15-learned&#34;&gt;2018/05/15 - Learned&lt;/h3&gt;
+&lt;p&gt;5月15（火）日のToday I Leaned。&lt;/p&gt;
 
-&lt;h4 id=&#34;gitについて-1&#34;&gt;Gitについて&lt;/h4&gt;
+&lt;h3 id=&#34;gitについて-1&#34;&gt;Gitについて&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ブログのテーマがsubmodule化されているが、毎回読み込みの仕方を忘れる
@@ -55,11 +308,11 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;hr /&gt;
+&lt;h2 id=&#34;2018-05-16-learnded&#34;&gt;2018/05/16 - Learnded&lt;/h2&gt;
 
-&lt;h3 id=&#34;2018-05-16-learnded&#34;&gt;2018/05/16 - Learnded&lt;/h3&gt;
+&lt;p&gt;5月16（水）日のToday I Leaned&lt;/p&gt;
 
-&lt;h4 id=&#34;回線速度調査の手法&#34;&gt;回線速度調査の手法&lt;/h4&gt;
+&lt;h3 id=&#34;回線速度調査の手法&#34;&gt;回線速度調査の手法&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;CLIから回線速度のテストが出来るようにするfast-cliというものがあるらしい。
@@ -75,11 +328,11 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;hr /&gt;
+&lt;h2 id=&#34;2018-05-17-learnded&#34;&gt;2018/05/17 - Learnded&lt;/h2&gt;
 
-&lt;h3 id=&#34;2018-05-17-learnded&#34;&gt;2018/05/17 - Learnded&lt;/h3&gt;
+&lt;p&gt;5月17（木）日のToday I Leaned&lt;/p&gt;
 
-&lt;h4 id=&#34;知識メモ&#34;&gt;知識メモ&lt;/h4&gt;
+&lt;h3 id=&#34;知識メモ&#34;&gt;知識メモ&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ハインリッヒの法則というものがある。
@@ -90,7 +343,7 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&#34;セキュリティ対策&#34;&gt;セキュリティ対策&lt;/h4&gt;
+&lt;h3 id=&#34;セキュリティ対策&#34;&gt;セキュリティ対策&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;セキュリティ対策は重要だという話。
@@ -107,11 +360,11 @@
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;hr /&gt;
+&lt;h2 id=&#34;2018-05-18-learnded&#34;&gt;2018/05/18 - Learnded&lt;/h2&gt;
 
-&lt;h3 id=&#34;2018-05-18-learnded&#34;&gt;2018/05/18 - Learnded&lt;/h3&gt;
+&lt;p&gt;5月18（木）日のToday I Leaned&lt;/p&gt;
 
-&lt;h4 id=&#34;ユーザテストについて&#34;&gt;ユーザテストについて&lt;/h4&gt;
+&lt;h3 id=&#34;ユーザテストについて&#34;&gt;ユーザテストについて&lt;/h3&gt;
 
 &lt;ul&gt;
 &lt;li&gt;ここ数日、某サービスのユーザテストの被験者として体験して思った事。&lt;/li&gt;
