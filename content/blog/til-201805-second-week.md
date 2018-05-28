@@ -8,15 +8,17 @@ featuredalt = "til"
 featuredpath = "https://kglabo.com"
 title = "2018/05 - Second week I Learned"
 type = "post"
-
+draft = "false"
 +++
+# 今週、知った/学んだこと
+
 <!--tags = [ “git”, “submodule”, “CLI”, ”npx”, “名刺”, “回線速度” ]-->
 
-## 今週、知った/学んだこと
+## 2018/05/14 - Learned
 
-### 2018/05/14 - Learned
+5月14日（月）のToday I Leaned
 
-#### Gitについて
+### Gitについて
 
 - `git push origin HEAD` で、pushした場合は毎回、現在のCurrent branch　でpushする事ができる。
   - 毎回、`git push origin feature/HOGEHOGE/FUGAFUGA-1001` みたいなの入力してたのでかなり楽になって良い。
@@ -24,22 +26,22 @@ type = "post"
   - 違うユーザアカウントでpushしてしまった為、gittconfigを書き換えて治そうとしたが、再度commitしないと治らなかった為、判明。
   - 個人のuser.nameで業務リポジトリにpushされてちょっと恥ずかしかった。
 
----
+## 2018/05/15 - Learned
 
-### 2018/05/15 - Learned
+5月15（火）日のToday I Leaned。
 
-#### Gitについて
+### Gitについて
 
 - ブログのテーマがsubmodule化されているが、毎回読み込みの仕方を忘れる
   - gitのsubmoduleは、メインのリポジトリで`git submodule update -i`とすると、submoduleの取り込みを行う。
   - git submodule foreach git pull origin master` で最新のsubmodule側のリポジトリの状態に更新してくれる
   - 尚、上記コマンドを入力する所は、メインのリポジトリのrootで大゛勝負な模様。
 
----
+## 2018/05/16 - Learnded
 
-### 2018/05/16 - Learnded
+5月16（水）日のToday I Leaned
 
-#### 回線速度調査の手法
+### 回線速度調査の手法
 
 - CLIから回線速度のテストが出来るようにするfast-cliというものがあるらしい。
   - Nodeで動くので `npm install --global fast-cli`でインストールしたら、fastコマンドで動作するようになる。
@@ -47,17 +49,17 @@ type = "post"
 - CLIでnpxを活用して自己紹介をする方法があった。
   - [名刺の代わりにCLIアプリを書く - Qiita](https://qiita.com/akameco/items/e0af9e3cdf1cdb6fca61)
 
----
+## 2018/05/17 - Learnded
 
-### 2018/05/17 - Learnded
+5月17（木）日のToday I Leaned
 
-#### 知識メモ
+### 知識メモ
 
 - ハインリッヒの法則というものがある。
   - 内容としては、 1つの重大事故の背後には29の軽微な事故があり、その背景には300の異常が存在するというもの。
   - つまり、重大な事故がX件ある場合は、29倍の軽微な事故・災害があって、300倍のヒヤリ・ハットがあるという事。
 
-#### セキュリティ対策
+### セキュリティ対策
 
 - セキュリティ対策は重要だという話。
   - ハッカーは脆弱性の隙間を突いて、最終的にサーバのrootをハッキングする為の行動を取る。
@@ -69,11 +71,12 @@ type = "post"
     - phpinfoでサーバ情報を取得 → サーバのバージョンを確認
     - サーバの脆弱性をアタックしてrootユーザのパスワードを取得
 
----
+## 2018/05/18 - Learnded
 
-### 2018/05/18 - Learnded
+5月18（木）日のToday I Leaned
 
-#### ユーザテストについて
+### ユーザテストについて
+
 - ここ数日、某サービスのユーザテストの被験者として体験して思った事。
 - サービス利用に至った背景や、テスト開始時点での状況説明を適切に行う必要がある。
 - その説明を怠ると、そもそも把握している前提条件の元でテストを行っているつもりが、違う所で躓いてしまって求める問いと異なるテスト結果になりそうな為。
