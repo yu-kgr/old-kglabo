@@ -1,0 +1,1799 @@
+<!DOCTYPE HTML>
+
+<html>
+    <head>
+        
+            
+                <title>2018/05 - four week I Learned</title>
+            
+        
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="generator" content="Hugo 0.16" />
+        
+
+
+        
+            <meta name="author" content="@yu-kgr">
+        
+        
+            
+                <meta name="description" content="金沢のWebDev.yu-kgrのチラシの裏。学んだ事をアウトプットしてます。座右の銘は「みんなで楽したい」">
+            
+        
+
+        
+
+  <meta name="twitter:card" content="summary"/>
+
+
+
+<meta name="twitter:title" content="2018/05 - four week I Learned"/>
+<meta name="twitter:description" content="今週、知った/学んだこと 2018/05/28 - Learned 5月28日（月）のToday I Leaned. ElasticSearchについて Javaで記述された全文検索ソフトウェア。 あ"/>
+<meta name="twitter:site" content="@yu_kgr"/>
+
+
+        <meta property="og:title" content="2018/05 - four week I Learned" />
+<meta property="og:description" content="今週、知った/学んだこと 2018/05/28 - Learned 5月28日（月）のToday I Leaned. ElasticSearchについて Javaで記述された全文検索ソフトウェア。 あ" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://kglabo.com/blog/til-201805-four-week/" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+<meta itemprop="name" content="2018/05 - four week I Learned">
+<meta itemprop="description" content="今週、知った/学んだこと 2018/05/28 - Learned 5月28日（月）のToday I Leaned. ElasticSearchについて Javaで記述された全文検索ソフトウェア。 あ">
+
+
+
+<meta itemprop="wordCount" content="5228">
+
+
+
+<meta itemprop="keywords" content="Advent Calendar,EventReport,TIL,tag1,tag2," />
+
+        
+
+        
+            
+        
+
+        
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,800,900|Source+Sans+Pro:400,700">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.css">
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/add-on.css">
+        
+
+        
+
+      
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-89893813-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+    </head>
+    <body>
+
+      
+      <div id="wrapper">
+
+    
+    
+<header id="header">
+    
+      <h1><a href="/">kglabo.com</a></h1>
+    
+
+    <nav class="links">
+        <ul>
+            
+                <li>
+                    <a href="/">
+                            <i class="fa fa-home">&nbsp;</i>Home
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://www.wantedly.com/users/5271802">
+                            <i class="fa fa-window-restore">&nbsp;</i>About
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/blog/">
+                            <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="/categories/">
+                            <i class="fa fa-sitemap">&nbsp;</i>Categories
+                    </a>
+                </li>
+            
+                <li>
+                    <a href="https://twitter.com/yu_kgr">
+                            <i class="fa fa-twitter">&nbsp;</i>Contact
+                    </a>
+                </li>
+            
+        </ul>
+    </nav>
+    <nav class="main">
+        <ul>
+            
+            <li id="share-nav" class="share-menu" style="display:none;">
+                <a class="fa-share-alt" href="#share-menu">Share</a>
+            </li>
+            
+            <li class="search">
+                <a class="fa-search" href="#search">Search</a>
+                <form id="search" method="get" action="//google.com/search">
+                    <input type="text" name="q" placeholder="Search" />
+                    <input type="hidden" name="as_sitesearch" value="https://kglabo.com/">
+                </form>
+            </li>
+            <li class="menu">
+                <a class="fa-bars" href="#menu">Menu</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+<section id="menu">
+
+    
+        <section>
+            <form class="search" method="get" action="//google.com/search">
+                <input type="text" name="q" placeholder="Search" />
+                <input type="hidden" name="as_sitesearch" value="https://kglabo.com/">
+            </form>
+        </section>
+
+    
+        <section>
+            <ul class="links">
+                
+                    <li>
+                        <a href="/">
+                            <h3>
+                                <i class="fa fa-home">&nbsp;</i>Home
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://www.wantedly.com/users/5271802">
+                            <h3>
+                                <i class="fa fa-window-restore">&nbsp;</i>About
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/blog/">
+                            <h3>
+                                <i class="fa fa-newspaper-o">&nbsp;</i>Blog
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="/categories/">
+                            <h3>
+                                <i class="fa fa-sitemap">&nbsp;</i>Categories
+                            </h3>
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="https://twitter.com/yu_kgr">
+                            <h3>
+                                <i class="fa fa-twitter">&nbsp;</i>Contact
+                            </h3>
+                        </a>
+                    </li>
+                
+            </ul>
+        </section>
+
+    
+        <section id="recent-posts">
+            <div class="mini-posts">
+                <header>
+                    <h3>Recent Posts</h3>
+                </header>
+                
+
+                
+                    
+                
+
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/til-201805-thaad-week/">2018/05 - Thaad week I Learned</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-05-25'>
+                                    May 25, 2018</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+    
+
+
+        
+        
+        
+
+        <a href="/blog/til-201805-thaad-week/" class="image featured">
+            <img src="https://kglabo.com//img/til/til.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/til-201805-second-week/">2018/05 - Second week I Learned</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-05-18'>
+                                    May 18, 2018</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+    
+
+
+        
+        
+        
+
+        <a href="/blog/til-201805-second-week/" class="image featured">
+            <img src="https://kglabo.com//img/til/til.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/react-study-02/">TIL - ReactStudy#02</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2018-03-28'>
+                                    March 28, 2018</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+    
+
+
+        
+        
+        
+
+        <a href="/blog/react-study-02/" class="image featured">
+            <img src="https://kglabo.com//img/2017/02/react-study.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/team-bilding/">良いモノを創る為にチームビルドを頑張る話</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-12-10'>
+                                    December 10, 2017</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+    
+
+
+        
+        
+        
+
+        <a href="/blog/team-bilding/" class="image featured">
+            <img src="https://kglabo.com//img/til/til.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+                        <article class="mini-post">
+                            <header>
+                                <h3><a href="/blog/javascript-study-01/">TIL - JavaScript - DOMオブジェクトについて</a></h3>
+                                
+                                <time class="published" datetime=
+                                    '2017-11-30'>
+                                    November 30, 2017</time>
+                            </header>
+                            
+    
+
+    
+        
+        
+
+
+
+
+
+
+    
+
+
+        
+        
+        
+
+        <a href="/blog/javascript-study-01/" class="image featured">
+            <img src="https://kglabo.com//img/til/til.jpg" alt="">
+        </a>
+    
+
+
+                        </article>
+                
+
+                
+                    <a href=
+                        
+                            /blog/
+                        
+                        class="button">View more posts</a>
+                
+            </div>
+        </section>
+
+    
+        
+</section>
+
+    <section id="share-menu">
+    <section id="social-share-nav">
+        <ul class="links">
+            <header>
+                <h3>Share this post <i class="fa fa-smile-o"></i></h3>
+            </header>
+            
+
+
+<li>
+  <a href="//twitter.com/share?url=https%3a%2f%2fkglabo.com%2fblog%2ftil-201805-four-week%2f&text=2018%2f05%20-%20four%20week%20I%20Learned&via=yu_kgr" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//plus.google.com/share?url=https%3a%2f%2fkglabo.com%2fblog%2ftil-201805-four-week%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fkglabo.com%2fblog%2ftil-201805-four-week%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//reddit.com/submit?url=https%3a%2f%2fkglabo.com%2fblog%2ftil-201805-four-week%2f&title=2018%2f05%20-%20four%20week%20I%20Learned" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fkglabo.com%2fblog%2ftil-201805-four-week%2f&title=2018%2f05%20-%20four%20week%20I%20Learned" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fkglabo.com%2fblog%2ftil-201805-four-week%2f&title=2018%2f05%20-%20four%20week%20I%20Learned" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fkglabo.com%2fblog%2ftil-201805-four-week%2f&description=2018%2f05%20-%20four%20week%20I%20Learned" target="_blank" class="share-btn pinterest">
+    <i class="fa fa-pinterest-p"></i>
+    <p>Pinterest</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by %40yu-kgr&body=https%3a%2f%2fkglabo.com%2fblog%2ftil-201805-four-week%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+        </ul>
+    </section>
+</section>
+
+    
+    <div id="main">
+        
+        
+        <article class="post">
+  <header>
+    <div class="title">
+        
+            <h1><a href="/blog/til-201805-four-week/">2018/05 - four week I Learned</a></h1>
+            
+        
+        
+    </div>
+    <div class="meta">
+        
+
+        <time class="published"
+            datetime='0001-01-01'>
+            January 1, 0001</time>
+        <span class="author">@yu-kgr</span>
+        
+            <p>11 minute read</p>
+        
+        
+    </div>
+</header>
+
+
+  
+    <section id="social-share">
+      <ul class="icons">
+        
+
+
+<li>
+  <a href="//twitter.com/share?url=https%3a%2f%2fkglabo.com%2fblog%2ftil-201805-four-week%2f&text=2018%2f05%20-%20four%20week%20I%20Learned&via=yu_kgr" target="_blank" class="share-btn twitter">
+    <i class="fa fa-twitter"></i>
+    <p>Twitter</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//plus.google.com/share?url=https%3a%2f%2fkglabo.com%2fblog%2ftil-201805-four-week%2f" target="_blank" class="share-btn google-plus">
+    <i class="fa fa-google-plus"></i>
+    <p>Google+</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fkglabo.com%2fblog%2ftil-201805-four-week%2f" target="_blank" class="share-btn facebook">
+    <i class="fa fa-facebook"></i>
+    <p>Facebook</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//reddit.com/submit?url=https%3a%2f%2fkglabo.com%2fblog%2ftil-201805-four-week%2f&title=2018%2f05%20-%20four%20week%20I%20Learned" target="_blank" class="share-btn reddit">
+    <i class="fa fa-reddit-alien"></i>
+    <p>Reddit</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fkglabo.com%2fblog%2ftil-201805-four-week%2f&title=2018%2f05%20-%20four%20week%20I%20Learned" target="_blank" class="share-btn linkedin">
+      <i class="fa fa-linkedin"></i>
+      <p>LinkedIn</p>
+    </a>
+</li>
+
+
+<li>
+  <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fkglabo.com%2fblog%2ftil-201805-four-week%2f&title=2018%2f05%20-%20four%20week%20I%20Learned" target="_blank" class="share-btn stumbleupon">
+    <i class="fa fa-stumbleupon"></i>
+    <p>StumbleUpon</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fkglabo.com%2fblog%2ftil-201805-four-week%2f&description=2018%2f05%20-%20four%20week%20I%20Learned" target="_blank" class="share-btn pinterest">
+    <i class="fa fa-pinterest-p"></i>
+    <p>Pinterest</p>
+  </a>
+</li>
+
+
+<li>
+  <a href="mailto:?subject=Check out this post by %40yu-kgr&body=https%3a%2f%2fkglabo.com%2fblog%2ftil-201805-four-week%2f" target="_blank" class="share-btn email">
+    <i class="fa fa-envelope"></i>
+    <p>Email</p>
+  </a>
+</li>
+
+      </ul>
+    </section>
+  
+
+  
+    
+
+    
+        
+        
+
+
+
+
+
+
+    
+
+
+        
+        
+        
+
+        <a href="/blog/til-201805-four-week/" class="image featured">
+            <img src="https://kglabo.com//img/til/til.jpg" alt="">
+        </a>
+    
+
+
+  <div id="content">
+    
+
+<h1 id="今週-知った-学んだこと">今週、知った/学んだこと</h1>
+
+<!-- tags = [ "ElasticSearch", "javaScript", "npm script", "webpack", "ES2015","マイクロワイヤーフレーム"] -->
+
+<h2 id="2018-05-28-learned">2018/05/28 - Learned</h2>
+
+<p>5月28日（月）のToday I Leaned.</p>
+
+<h3 id="elasticsearchについて">ElasticSearchについて</h3>
+
+<p>Javaで記述された全文検索ソフトウェア。<br />
+あらかじめ蓄積した大量のデータから指定したキーワードを探し出す機能を持っており、javaのクラスライブラリとして提供されている。</p>
+
+<h4 id="oracleやmysqlじゃだめなの">OracleやMySQLじゃだめなの？</h4>
+
+<ul>
+<li>DBによって得意不得意があって、全てのケースに対応しているものが存在しない為、使うと便利。</li>
+</ul>
+
+<h4 id="dbの種類">DBの種類</h4>
+
+<ul>
+<li><p>MySQL</p>
+
+<ul>
+<li>矛盾なく永続化することに特化したデータベース</li>
+<li>メリット: SQL と言う高度なクエリ言語、検索トラフィックに対するシステムの拡張は得意</li>
+<li>デメリット: データ量の増加や書き込み速度の拡張は苦手</li>
+</ul></li>
+
+<li><p>Redshift(AWS)：データウェアハウス系のデータベース</p>
+
+<ul>
+<li>メリット: 大規模なデータの蓄積・分析は得意</li>
+<li>デメリット: 不特定多数のクライアントから同時に利用され、検索リクエストが大規模なユースケースには不向き</li>
+</ul></li>
+
+<li><p>DynamoDB(AWS)：NoSQL</p>
+
+<ul>
+<li>メリット: 幅広い種類の膨大な量のデータを高速かつ動的に整理し分析することが可能</li>
+<li>デメリット: 非リレーショナルな広域分散データベースシステムです。その反面複雑なクエリやソートなどが苦手</li>
+</ul></li>
+</ul>
+
+<h4 id="elasticsearchが得意なこと">ElasticSearchが得意なこと</h4>
+
+<ul>
+<li>高度なリアルタイム分析</li>
+<li>大規模分散</li>
+<li>高可用性</li>
+<li>マルチテナンシー</li>
+<li>全文検索</li>
+<li>ドキュメント指向</li>
+<li>スキーマフリー</li>
+<li>RESTfulAPI</li>
+<li>データ保護機能</li>
+<li>形態素解析や n-gram など自然言語的な解析</li>
+<li>簡単にスケールアウト</li>
+<li>kibanaと連携する事によって図で表示する事も可能！</li>
+</ul>
+
+<h4 id="npm-scriptについて">npm scriptについて</h4>
+
+<ul>
+<li>package.jsonのscriptフィールドにスクリプトを記載すると、コマンドのエイリアスを作成できる。</li>
+</ul>
+
+<pre><code class="language-json">&quot;scripts&quot; : {
+  &quot;build:dev&quot; : &quot;webpack --mode development&quot;
+}
+</code></pre>
+
+<h4 id="webpack">webpack</h4>
+
+<ul>
+<li><a href="https://kglabo.com/blog/til-201805-thaad-week/#webpack%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6">これの続き</a></li>
+</ul>
+
+<h5 id="loader">Loader</h5>
+
+<ul>
+<li>Loaderを利用する事で、JavaScript以外のファイルもstaticファイルも同時にbundleする事が可能。</li>
+<li><a href="https://webpack.js.org/loaders/">いろいろな種類のloader</a>が存在する</li>
+</ul>
+
+<h2 id="2018-05-29-learned">2018/05/29 - Learned</h2>
+
+<p>5月29日（火）のToday I Leaned</p>
+
+<h4 id="webpack-1">webpack</h4>
+
+<ul>
+<li>上記の続き</li>
+</ul>
+
+<h5 id="plagin">Plagin</h5>
+
+<ul>
+<li>Loaderはファイルの依存関係であった、モジュールタイプの変更に使えたが、PluginはLoaderで賄えない幅広いタスクの実行が可能になる。</li>
+<li>Pluginを利用する場合は、Moduleをrequireした後、new演算子を使ってインスタンス化する必要がある。</li>
+</ul>
+
+<h4 id="es2015">ES2015</h4>
+
+<p>なんか前にも学習してた気がするけど、間が空いてしまって忘れつつあるので、<br />
+改めて備忘録と後々見返す事を兼ねて記載く。</p>
+
+<h5 id="ブロックスコープ">ブロックスコープ</h5>
+
+<ul>
+<li>varは関数定義の<code>{</code>と<code>}</code>内じゃないとスコープが作られないので、スコープを作りたい場合は即時関数を利用する必要がある。</li>
+</ul>
+
+<pre><code class="language-JavaScript">// 普通に{}でスコープ作った場合
+{
+  var a = &quot;foo&quot;;
+}
+
+if(true){
+  var b = &quot;bar&quot;;
+}
+
+for(var i = 0; i &lt; 1; i++){
+  var c = &quot;buz&quot;;
+}
+
+console.log(a); // &quot;foo&quot;
+console.log(b); // &quot;bar&quot;
+console.log(c); // &quot;buz&quot;
+
+// 即時関数を作った場合（スコープ作られる）
+(function(){
+  var a = &quot;foo&quot;;
+})();
+
+console.log(a); // ReferenceError: a is not defined
+
+</code></pre>
+
+<ul>
+<li>let/constは、varとは異なりブロックスコープ（<code>{</code>と<code>}</code>で囲まれた内部）でしか変数/関数の参照ができない
+
+<ul>
+<li>メリット 定義した変数・関数の影響範囲が明確化される</li>
+</ul></li>
+</ul>
+
+<pre><code class="language-JavaScript">{
+  let   a = &quot;foo&quot;;
+  const B = &quot;bar&quot;;
+
+  console.log(a); // &quot;foo&quot;
+  console.log(B); // &quot;bar&quot;
+}
+
+console.log(a);
+// ReferenceError: a is not defined
+console.log(B);
+// ReferenceError: B is not defined
+</code></pre>
+
+<h4 id="テンプレートリテラル">テンプレートリテラル</h4>
+
+<ul>
+<li>文字列の連結の為に<code>+</code>や<code>concat()</code>を利用する必要があったが、下記の形で変数名を参照する事が可能。</li>
+</ul>
+
+<pre><code class="language-JavaScript">const user = { name: 'Taro'};
+console.log(\`${user.name}が入室しました。\`); // &quot;Taroが入室しました、&quot;
+</code></pre>
+
+<ul>
+<li>計算式を入れる事も可能。変数が存在しない場合は<code>||</code>を入れることで分岐される事も可能。</li>
+</ul>
+
+<pre><code class="language-JavaScript">console.log(\`${user.name||&quot;匿名&quot;}が入室しました。\`); // &quot;匿名が入室しました、&quot;
+
+const user = {name: 'Taro'};
+console.log(\`${user.name||&quot;匿名&quot;}が入室しました。\`); // &quot;Taroが入室しました、&quot;
+</code></pre>
+
+<h4 id="デフォルト引数">デフォルト引数</h4>
+
+<ul>
+<li>ES2015からは引数定義の箇所でデフォルト値を設定可能</li>
+</ul>
+
+<pre><code class="language-JavaScript">function joinChannel(name = &quot;匿名&quot;) {
+  console.log('${name}さんが入室しました。')
+}
+
+// 匿名さんが入室しました。
+joinChannel();
+
+// 太郎さんが入室しました。
+joinChannel(&quot;太郎&quot;);
+</code></pre>
+
+<h4 id="アロー関数">アロー関数</h4>
+
+<ul>
+<li>関数定義を省略して書く事が可能。</li>
+</ul>
+
+<pre><code class="language-JavaScript">// 従来の記法
+const add = function (a,b) {
+  return a + b;
+}
+
+// functionを省略可能
+const add = (a,b) =&gt; {
+  return a + b;
+}
+
+// 波括弧とreturnも省略できる場合
+const add = (a,b) =&gt; a + b;
+</code></pre>
+
+<h2 id="2018-05-30-learned">2018/05/30 - Learned</h2>
+
+<p>5月30日（水）のToday I Leaned</p>
+
+<ul>
+<li>理解度に合わせて基礎をいったり来たり。</li>
+</ul>
+
+<h4 id="javascript">JavaScript</h4>
+
+<ul>
+<li>PrototypeとClass定義について</li>
+</ul>
+
+<h5 id="prototypeについて">Prototypeについて</h5>
+
+<ul>
+<li>ES2015以前は、classという概念がなかったのでJSの仕様でなんとかclassっぽい事を実現する為に運用でカバーしていたらしい。</li>
+<li><a href="https://qiita.com/howdy39/items/35729490b024ca295d6c">図で理解するJavaScriptのプロトタイプチェーン</a></li>
+</ul>
+
+<h5 id="class定義">class定義</h5>
+
+<ul>
+<li>これまではクラス定義がなかったのでprototypeにメソッドを追加して対応していた。</li>
+</ul>
+
+<pre><code class="language-JavaScript">var Parson = function(id, name) {
+  this.id = id;
+  this.name = name;
+}
+
+Paeson.prototype.printName(){
+  console.log(this.name);
+}
+
+var person = newPerson(1,太郎);
+person.printName();
+
+</code></pre>
+
+<h2 id="2018-05-31-learned">2018/05/31 - Learned</h2>
+
+<p>5月31日（木）のToday I Leaned</p>
+
+<h4 id="javascript-1">JavaScript</h4>
+
+<ul>
+<li>prototypeやclass定義の所で一旦、JavaScript自体について知ったほうが良い気がした為一旦もどる。</li>
+<li>出てくる名称や独自仕様について。</li>
+</ul>
+
+<h5 id="イベントとイベントハンドラ">イベントとイベントハンドラ</h5>
+
+<ul>
+<li>HTML要素に対してかかる（かける）名をイベントと呼び、そりによって起こる現象をイベントハンドラと呼ぶ。</li>
+<li>&lt;要素名 onイベント名=“イベントハンドラ”&gt;&lt;/要素名&gt;</li>
+</ul>
+
+<h6 id="ホイスティング-巻き上げ">ホイスティング（巻き上げ）</h6>
+
+<ul>
+<li>JavaScriptには変数を指定した時点、その宣言されたスコープ内で巻き上げ（ホイスティング）という現象が発生する仕様。
+
+<ul>
+<li><a href="https://qiita.com/cocottejs/items/143f70e806c61ffafe28">参考:関数の場合の変数の巻き上げ問題について</a></li>
+<li><a href="https://qiita.com/39_isao/items/d9d80e98b5bd1938bc1d">参考:やっとわかったjsの「巻き上げ」</a></li>
+</ul></li>
+</ul>
+
+<pre><code class="language-JavaScript">console.log(x) // ReferenceError: x is not defined（そんなもんねーよ）
+</code></pre>
+
+<pre><code class="language-JavaScript">console.log(x) // undefined（1かはわからんけど、xは存在してるよ）
+var x = 1;
+
+// ↓ 内部ではこんな事（ホイスティング）が起きてる
+var x;
+console.log(x);
+x = 1;
+</code></pre>
+
+<h5 id="関数定義について">関数定義について</h5>
+
+<ul>
+<li>関数定義の方法が「関数宣言文」と「関数定義式」の二種類ある。
+
+<ul>
+<li>本質的な違いは「式（Expression）」か「文（Statement)」なのかの違い。</li>
+<li><a href="https://wp-p.info/tpl_rep.php?cat=js-intermediate&amp;fl=r9">参考:ホスティング宣言の巻き上げについて</a></li>
+<li><a href="https://wp-p.info/tpl_rep.php?cat=js-intermediate&amp;fl=r10">参考:無名関数 関数式と関数宣言</a></li>
+<li><a href="https://qiita.com/tomcky/items/988fc5f56d019e9dc097">参考:【JavaScript】関数定義いろいろ</a></li>
+</ul></li>
+</ul>
+
+<pre><code class="language-JavaScript">// 関数宣言文
+function hoge(){
+  // ここに処理
+}
+
+// 関数定義式（関数リテラル）
+var hoge = function (){
+  // ここに処理
+};
+</code></pre>
+
+<ul>
+<li>関数宣言文の場合は、関数宣言の前に関数を実行してもエラーにならない。</li>
+<li>なぜなら、関数宣言文の場合はブラウザでのレンダリングが完了した時点で関数が生成されている為、宣言する前に実行可能。</li>
+</ul>
+
+<pre><code class="language-JavaScript">// 関数宣言文を実行した場合
+hoge(); // 先に呼ばれてるけど &quot;hoge&quot;と表示される
+
+function hoge(){ // 関数宣言した場合は、レンダリングが完了した時点で関数生成済み
+  console.log(&quot;hoge&quot;);
+}
+</code></pre>
+
+<ul>
+<li>関数定義式（関数リテラル）の場合は、関数定義の前に関数を実行するとエラーになる。</li>
+<li>なぜなら、関数定義式の場合は変数に対して代入処理が行われた時点で初めて関数定義される為、代入後じゃないと実行不可能。</li>
+</ul>
+
+<pre><code class="language-JavaScript">hoge(); // Uncaught TypeError: hoge is not a function
+
+var hoge = function (){
+  console.log(&quot;hoge&quot;);
+};
+</code></pre>
+
+<h4 id="マイクロワイヤーフレーム">マイクロワイヤーフレーム</h4>
+
+<ul>
+<li>マイクロワイヤーフレームという従来のワイヤーフレームを小さく（100px~300pxぐらいでサイズ決める）して良さを濃集したものがあるらしい。
+
+<ul>
+<li><a href="http://uxmilk.jp/66066">参考:次世代のワイヤーフレーム「マイクロフレーム」とは</a></li>
+<li>効能 : つくるのはやい / わかりやすい / 忠実制が少ないので混乱しづらい</li>
+</ul></li>
+</ul>
+
+<h5 id="利点">利点</h5>
+
+<ul>
+<li>はやい
+
+<ul>
+<li>スケッチと同じくらい早く作ることができる</li>
+<li>簡単に作業を繰り返すことができる</li>
+<li>すぐに結果共有が可能</li>
+</ul></li>
+<li>わかりやすい
+
+<ul>
+<li>プランや要件をわかりやすく伝えることができる</li>
+<li>顧客と協力して同じ視点で作業を反復することが可能</li>
+<li>WFのように捨ててしまう作品に時間をかけすぎない</li>
+</ul></li>
+<li>忠実性が低いので混乱が少ない
+
+<ul>
+<li>めっちゃ最小化されているので、完成品とのギャップを感じづらい</li>
+</ul></li>
+</ul>
+
+<h2 id="2018-6-01-learned">2018/6/01 - Learned</h2>
+
+<p>6月01日（金）のToday I Leaned</p>
+
+<ul>
+<li>なんだか今週はJavaScript Week。</li>
+</ul>
+
+<h4 id="javascript-2">JavaScript</h4>
+
+<ul>
+<li>関数オブジェクトやらコンストラクタ・インスタンス・クロージャ・プロトタイプなど</li>
+</ul>
+
+<h5 id="関数の即時実行と受け渡し">関数の即時実行と受け渡し</h5>
+
+<ul>
+<li>javaScriptでは関数の即時実行が可能。</li>
+<li><a href="https://qiita.com/fewzio/items/a502defb516e75d7e81b">参考:久しぶりにJavaScriptを思い出す(関数オブジェクト、クロージャ）</a></li>
+</ul>
+
+<pre><code class="language-JavaScript">// 普通に定義して実行する場合
+var a = function(){ console.log(&quot;TEST&quot;) };
+a(); // var aへの参照と実行 &quot;TEST&quot; と表示される
+</code></pre>
+
+<pre><code class="language-JavaScript">// 即時実行する場合
+var a = function(){ console.log(&quot;TEST&quot;) }(); // var aへの参照と実行 &quot;TEST&quot; と表示される
+</code></pre>
+
+<ul>
+<li>ただ上記は、aに対して何のリテラルも代入しているわけではないので、<code>&quot;TEST&quot;</code>がコンソールに表示された後、<code>undefined</code> が出力される。</li>
+</ul>
+
+<pre><code class="language-JavaScript">// 即時実行する場合
+var a = function(){ console.log(&quot;TEST&quot;) }(); // &quot;TEST&quot;
+console.log(a); // aには何も代入されていないのでundefined
+</code></pre>
+
+<ul>
+<li>a自体に値を代入したい場合は<code>return</code>を利用すると戻り値に1が返ってくる。</li>
+</ul>
+
+<pre><code class="language-JavaScript">// 即時実行する場合
+var a = function(){ return 1; }(); // aに1が代入される
+console.log(a); // 1
+</code></pre>
+
+<ul>
+<li>JavaScriptでは関数を値と同じように受け渡しができるので、下記のように戻り値に関数を定義する事も可能。</li>
+</ul>
+
+<pre><code class="language-JavaScript">// 戻り値を関数にした場合
+var a = function () {
+  return function () { // 関数を実行した結果、後ろの関数がaに代入される
+    console.log(&quot;TEST&quot;);
+  }
+}();
+
+a(); // &quot;TEST&quot; &amp; 上記の場合はaには何も代入されていないのでundefined（ややこしい）
+
+</code></pre>
+
+<ul>
+<li><code>return</code>内にプロパティを定義したうえで関数を定義する事も可能。</li>
+</ul>
+
+<pre><code class="language-JavaScript">// 戻り値を関数にした場合
+var a = function () {
+  return {
+    propA: function () { console.log(&quot;A&quot;); },
+    propB: function () { console.log(&quot;B&quot;); },
+  }
+}();
+
+a.propA(); //&quot;A&quot;
+a.propB(); //&quot;B&quot;
+</code></pre>
+
+<h5 id="クロージャ">クロージャ</h5>
+
+<ul>
+<li>関数内部で定義した関数を、代入した変数（オブジェクト）では、中の変数の値も保持し続ける。</li>
+<li>この変数値も保持し続ける関数をクロージャと呼ぶ。プライベート変数みたいなものらしい。</li>
+</ul>
+
+<pre><code class="language-JavaScript">var module = function() {
+  var count = 0; //module関数の中で保持される変数（クロージャ）
+
+  return {
+    increment: function() {
+      count++;
+    },
+    show: function() {
+      console.log(count);
+    }
+  };
+
+}();
+
+module.show(); // 0
+module.increment(); // countを+1する
+module.show(); // 1
+</code></pre>
+
+<h5 id="オブジェクト">オブジェクト</h5>
+
+<ul>
+<li><a href="https://qiita.com/yoshi389111/items/245df2d642e49d2acf3a">参考:[JavaScript] オブジェクトの基礎</a></li>
+<li>JavaScriptにおけるオブジェクトは、<code>{key: value}</code>形式の入れ物（他言語の場合はハッシュテーブルとか連想配列というらしい）で関数も配列もオブジェクト。</li>
+<li>オブジェクトを生成してkey:valueを登録する場合は下記のように行える。</li>
+</ul>
+
+<pre><code class="language-JavaScript">var obj = new Object();
+
+// &quot;hoge&quot; というkeyに &quot;hello&quot; というvalueを登録
+obj.hoge = &quot;hello&quot;;
+
+// &quot;func&quot; というkeyに &quot;world&quot; という関数（オブジェクト）を登録
+obj.func = function() {
+  console.log(&quot;world&quot;;)
+}
+
+// ドット演算子
+console.log(obj.hoge); // &quot;hello&quot;
+obj.func(); // &quot;world&quot;
+
+// 連想配列風にもアクセス可能
+console.log(obj[&quot;hoge&quot;]); // &quot;hello&quot;
+obj.[&quot;func&quot;](); // &quot;world&quot;
+</code></pre>
+
+<ul>
+<li>valueが関数の場合は<code>メソッド</code>と呼び、それ以外のオブジェクトの場合は<code>プロパティ</code>と呼ぶ。</li>
+
+<li><p>配列もオブジェクトだけど、特別なプロパティ・メソッドが存在している（<a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array">必要な時にggる</a>）</p></li>
+
+<li><p>ちなみにオブジェクトはオブジェクトリテラルで作成する事も可能</p></li>
+
+<li><p><code>{}</code>は<code>new Object()</code>シンタックスシュガー（糖衣構文）</p></li>
+</ul>
+
+<pre><code class="language-JavaScript">// new演算子でオブジェクトを作成した例
+var obj = new Object();
+obj.name = &quot;Taro&quot;;
+
+// リテラルでオブジェクトを作成した場合
+var obj = {name: &quot;Taro&quot;};
+</code></pre>
+
+<h5 id="インスタンスとコンストラクタ">インスタンスとコンストラクタ</h5>
+
+<ul>
+<li>コンストラクタは関数オブジェクトで、インスタンスはコンストラクタを元に作成された空のオブジェクトの事。</li>
+<li>関数オブジェクト（コンストラクタ）を元に新しいオブジェクトを初期化して作成（インスタンス化）すると空のオブジェクト（インスタンス）ができる。</li>
+<li><a href="https://qiita.com/takeharu/items/010752b1427773558f7c">参考:JavaScriptのクラス？コンストラクタ？？</a></li>
+<li><a href="http://uxmilk.jp/30348">参考:JavaScriptのコンストラクタによるインスタンス生成</a></li>
+</ul>
+
+<pre><code class="language-JavaScript">//空のコンストラクタを定義
+var Animal = function(){};
+
+//コンストラクタから空のインスタンスを生成
+var dog = new Animal();
+</code></pre>
+
+<pre><code class="language-JavaScript">//コンストラクタを定義
+function Animal = function(name,cry){
+  this.name = name;
+  this.bark = function() {
+    console.log(cry);
+  };
+};
+
+//コンストラクタから空のインスタンスを生成
+var dog = new Animal('ポチ', 'ワン');
+console.log(dog.name); // &quot;ポチ&quot;
+dog.bark(); // ワン
+
+var cat = new Animal('タマ','にゃー');
+console.log(cat.name); // &quot;タマ&quot;
+cat.bark(); // &quot;にゃー&quot;
+</code></pre>
+
+<h5 id="プロトタイプ">プロトタイプ</h5>
+
+<ul>
+<li>コンストラクタを定義すると、コンストラクタごとに関連付けられた<strong>「プロトタイプオブジェクト」</strong>が暗黙的に作成される。</li>
+<li>同じコンストラクタから生成されたインスタンスは、プロトタイプオブジェクトを共有する。</li>
+<li><a href="http://javascript.keicode.com/lang/prototypes.php">参考:JavaScript入門 | プロトタイプとは？</a></li>
+<li><a href="https://qiita.com/howdy39/items/35729490b024ca295d6c">参考:図で理解するJavaScriptのプロトタイプチェーン</a></li>
+</ul>
+
+<pre><code class="language-JavaScript">//コンストラクタを定義
+function Animal = function(name){
+  this.name = name;
+};
+
+var dog = new Animal('ポチ');
+var cat = new Animal('タマ');
+
+if (dog === cat) {
+  // false
+}
+
+if (dog.prototype === cat.prototype) {
+  // true
+}
+</code></pre>
+
+<h5 id="よく使われる謎コード">よく使われる謎コード</h5>
+
+<ul>
+<li><a href="http://www.f-sp.com/entry/2016/11/18/190732">参考:JavaScriptの謎コードまとめ</a>
+
+<ul>
+<li><code>!!x</code> - 二重論理否定の意。二重論理否定には任意の型をBoolean型に変換する副作用がある。Boolean型のへの変更。よく使うらしい。</li>
+<li><code>x||0</code> - 論理和の意。左辺値をBoolean型として評価して、trueなら左辺値。falseなら右辺値を評価値とする。左か右のどちらかがそのまま返ってくる。よく使うらしい。</li>
+</ul></li>
+</ul>
+
+  </div>
+
+  <footer>
+    <ul class="stats">
+    
+        
+
+        
+        
+            <li>
+                
+                
+                    
+
+                    
+
+                    
+                        <i class="fa fa-sitemap">&nbsp;</i>
+                    
+
+                    
+                        Category
+                    
+                
+            </li>
+        
+    
+
+    
+    
+        <li><a href='/categories/til'>TIL</a></li>
+    
+</ul>
+
+  </footer>
+
+</article>
+
+    <article class="post">
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'kglabo-com';
+    var disqus_identifier = 'https:\/\/kglabo.com\/blog\/til-201805-four-week\/';
+    var disqus_title = '2018\/05 - four week I Learned';
+    var disqus_url = 'https:\/\/kglabo.com\/blog\/til-201805-four-week\/';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </article>
+
+
+<ul class="actions pagination">
+    
+
+    
+        <li><a href="/blog/wdf-training-seo/"
+                class="button big next">2016/01/16_WDF研修「半歩先のSEOで効率よく結果を出す」にLT登壇&#43;参加させて頂きました。</a></li>
+    
+</ul>
+
+
+    </div>
+    
+<section id="sidebar">
+
+  
+  <section id="intro">
+    
+    
+      
+        <a href='/' class="logo"><img src="/img/main/logo.jpg" alt="kglabo.com" /></a>
+      
+    
+    
+      <header>
+        <h2>KGLABO.COM</h2>
+        <p>なんとなく気になった事や、学習した内容のメモなど置いてあります。</p>
+      </header>
+    
+    
+      <ul class="icons">
+        
+        
+  <li><a href="//github.com/yu-kgr" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//facebook.com/yk.kgr" target="_blank" title="Facebook" class="fa fa-facebook"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//instagram.com/yu_kgr" target="_blank" title="Instagram" class="fa fa-instagram"></a></li>
+
+
+
+
+
+  <li><a href="//twitter.com/yu_kgr" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    
+  </section>
+
+  
+  <section id="recent-posts">
+    <div class="mini-posts">
+      <header>
+        <h3>Recent Posts</h3>
+      </header>
+      <div class="posts-container">
+        
+
+        
+          
+        
+
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/til-201805-thaad-week/">2018/05 - Thaad week I Learned</a>
+              </h3>
+              
+              <time class="published" datetime='2018-05-25'>
+                May 25, 2018
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+    
+
+
+        
+        
+        
+
+        <a href="/blog/til-201805-thaad-week/" class="image featured">
+            <img src="https://kglabo.com//img/til/til.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/til-201805-second-week/">2018/05 - Second week I Learned</a>
+              </h3>
+              
+              <time class="published" datetime='2018-05-18'>
+                May 18, 2018
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+    
+
+
+        
+        
+        
+
+        <a href="/blog/til-201805-second-week/" class="image featured">
+            <img src="https://kglabo.com//img/til/til.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/react-study-02/">TIL - ReactStudy#02</a>
+              </h3>
+              
+              <time class="published" datetime='2018-03-28'>
+                March 28, 2018
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+    
+
+
+        
+        
+        
+
+        <a href="/blog/react-study-02/" class="image featured">
+            <img src="https://kglabo.com//img/2017/02/react-study.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/team-bilding/">良いモノを創る為にチームビルドを頑張る話</a>
+              </h3>
+              
+              <time class="published" datetime='2017-12-10'>
+                December 10, 2017
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+    
+
+
+        
+        
+        
+
+        <a href="/blog/team-bilding/" class="image featured">
+            <img src="https://kglabo.com//img/til/til.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+          <article class="mini-post">
+            <header>
+              <h3>
+                <a href="/blog/javascript-study-01/">TIL - JavaScript - DOMオブジェクトについて</a>
+              </h3>
+              
+              <time class="published" datetime='2017-11-30'>
+                November 30, 2017
+              </time>
+            </header>
+            
+    
+
+    
+        
+        
+
+
+
+
+
+
+    
+
+
+        
+        
+        
+
+        <a href="/blog/javascript-study-01/" class="image featured">
+            <img src="https://kglabo.com//img/til/til.jpg" alt="">
+        </a>
+    
+
+
+          </article>
+        
+      </div>
+
+      
+        <a href=
+          
+            /blog/
+          
+        class="button">View more posts</a>
+      
+    </div>
+  </section>
+
+  
+  
+  
+  
+    <section id="categories">
+      <header>
+        <h3>
+          <a href="/categories/">Categories</a>
+        </h3>
+      </header>
+        
+          
+        
+
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/til/">TIL</a>
+                <span style="float:right;">11</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/eventreport/">EventReport</a>
+                <span style="float:right;">4</span>
+              
+            </header>
+          </article>
+        </p>
+        
+        <p>
+          <article>
+            <header>
+              
+                <a href="/categories/advent-calendar/">Advent Calendar</a>
+                <span style="float:right;">1</span>
+              
+            </header>
+          </article>
+        </p>
+        
+    </section>
+  
+
+  
+  
+    <section id="mini-bio">
+      <h3>About</h1>
+      <p>金沢に生息している@yu_kgrのチラシの裏です。<br>最近はコードを書く機会が減ってきてディレションやマネジメントの割合が多め。<br>座右の銘は「みんなで楽(ラク)したい」。<br>どうすれば楽を出来るのか日々、模索してます。</p>
+      <a href="/about/" class="button">Learn More</a>
+    </section>
+  
+
+  
+  <section id="footer">
+    
+      <ul class="icons">
+        
+        
+  <li><a href="//github.com/yu-kgr" target="_blank" title="GitHub" class="fa fa-github"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//facebook.com/yk.kgr" target="_blank" title="Facebook" class="fa fa-facebook"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <li><a href="//instagram.com/yu_kgr" target="_blank" title="Instagram" class="fa fa-instagram"></a></li>
+
+
+
+
+
+  <li><a href="//twitter.com/yu_kgr" target="_blank" title="Twitter" class="fa fa-twitter"></a></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    
+    <p class="copyright">
+      
+        &copy; 2018
+        
+          kglabo.com
+        
+      .
+      Powered by <a href="//gohugo.io" target="_blank">Hugo</a>
+    </p>
+  </section>
+</section>
+
+    </div>
+    <a id="back-to-top" href="#" class="fa fa-arrow-up fa-border fa-2x"></a>
+    
+
+    
+      
+    
+
+    
+    
+      <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/skel/3.0.1/skel.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.25/jquery.fancybox.min.js"></script>
+      <script src="/js/util.js"></script>
+      <script src="/js/main.js"></script>
+      <script src="/js/backToTop.js"></script>
+    
+
+    
+
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+
