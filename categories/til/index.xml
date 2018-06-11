@@ -6,8 +6,513 @@
     <description>Recent content in TIL on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 01 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 08 Jun 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kglabo.com/categories/til/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2018/06 - one week I Learned</title>
+      <link>https://kglabo.com/blog/til-201806-one-week/</link>
+      <pubDate>Fri, 08 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kglabo.com/blog/til-201806-one-week/</guid>
+      <description>
+
+&lt;h1 id=&#34;今週-知った-学んだこと&#34;&gt;今週、知った/学んだこと&lt;/h1&gt;
+
+&lt;!-- tags = [ &#34;JavaScript&#34;, &#34;プロトタイプ&#34;, &#34;UJIターン&#34;, &#34;オブジェクト指向&#34;, &#34;プロトタイプチェイン&#34;, &#34;ECMA Script&#34;, &#34;prototype&#34;, &#34;__proto__&#34;, &#34;AWS&#34;, &#34;IAM&#34;, &#34;チェンジマネジメント&#34;, &#34;レンダリングエンジン&#34;, &#34;JavaScriptエンジン&#34;] --&gt;
+
+&lt;h2 id=&#34;2018-06-04-learned&#34;&gt;2018/06/04 - Learned&lt;/h2&gt;
+
+&lt;p&gt;6月4日（月）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;ターン現象の種類&#34;&gt;ターン現象の種類&lt;/h3&gt;
+
+&lt;h4 id=&#34;下記をまとめてujiターン現象というらしい&#34;&gt;下記をまとめてUJIターン現象というらしい&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Uターン現象: 地方から都市へ移住したあと、再び地方へ移住&lt;/li&gt;
+&lt;li&gt;Jターン現象: 地方から大規模な都市へ移住したあと、地方近くの中規模な都市へ移住&lt;/li&gt;
+&lt;li&gt;Iターン現象: 地方から都市へ、または都市から地方へ移住&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;javascript&#34;&gt;JavaScript&lt;/h3&gt;
+
+&lt;h4 id=&#34;プロトタイプベースのオブジェクト指向言語&#34;&gt;プロトタイプベースのオブジェクト指向言語&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;オブジェクト指向言語と総称されるプログラミング言語のうち、&lt;strong&gt;プロトタイプを基礎（ベース）として&lt;/strong&gt;オブジェクトを取り扱うもの。インスタンスベースとも呼ぶ。一方、クラスでおこなっているものをクラスベースとよぶ。
+
+&lt;ul&gt;
+&lt;li&gt;クラスベースは、オブジェクトの雛形として必ずクラスが存在。クラスをインスタンス化する事でオブジェクトが生成される。&lt;/li&gt;
+&lt;li&gt;プロトタイプベースは、既存のオブジェクトを元（プロトタイプ）として、ユニークな特徴を付与する事で存在する。要は新しいオブジェクトを生成した時点で、すでに別のオブジェクト（プロトタイプ）を元に作られているという事。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;javaScriptはプロトタイプベースでオブジェクト指向を実現している言語。
+
+&lt;ul&gt;
+&lt;li&gt;ES2015でクラス構文が実装されて、クラスベースっぽくコードを記載する事ができるようになったが、これは糖衣構文（シンタックスシュガー）であり、プロトタイプベースの言語である事に変わりはない。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://ja.wikipedia.org/wiki/%E3%83%97%E3%83%AD%E3%83%88%E3%82%BF%E3%82%A4%E3%83%97%E3%83%99%E3%83%BC%E3%82%B9&#34;&gt;参考:プロトタイプベースとは&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://teratail.com/questions/77753&#34;&gt;参考:プロトタイプベースのオブジェクト指向言語が広く使われていない理由は?&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;厳密に言うと、JavaScriptは他のプロトタイプベースのオブジェクト指向言語と比較すると特殊らしく、その表現も少し異なるらしいが一般的にはプロトタイプヘースのオブジェクト指向言語と呼ばれている。&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;a href=&#34;http://jsstudy.hatenablog.com/entry/2017/03/29/181613&#34;&gt;参考:JavaScriptはプロトタイプベースのオブジェクト指向プログラミング言語ではない！？&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;プロトタイプチェインとは&#34;&gt;プロトタイプチェインとは&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;自身のオブジェクトにないメソッド（機能）/ プロパティ（属性）を &lt;code&gt;__proto__&lt;/code&gt; に格納されている別のオブジェクトから連鎖的に検索して呼び出す仕組み。&lt;/li&gt;
+&lt;li&gt;別のオブジェクト（プロトタイプ）にお願い（移譲）して特性（機能・属性）を持ってくる。
+-&lt;a href=&#34;https://www.slideshare.net/yuka2py/javascript-23768378&#34;&gt;参考:最強オブジェクト指向言語 JavaScript 再入門！&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-JavaScript&#34;&gt;// 元となるオブジェクト（プロトタイプ）
+var objA = {
+  name: &#39;Taro&#39;,
+  say: function(){
+    console.log(this.name + &#39;is My Dog&#39;);
+  }
+}
+
+var objB = { name: &#39;Pochi&#39;};
+
+// プロトタイプを参照
+objB.__proto__ = objA; // __proto__でのアクセスは非推奨
+objB = Object.create(objA); // こっちが推奨
+
+// プロトタイプを参照
+var objC = {}; // __proto__でのアクセスは非推奨
+objC.__proto__ = objB; // こっちが推奨
+
+objC.say(); // Pochi is My Dog
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;プロトタイプ系のキーワード&#34;&gt;プロトタイプ系のキーワード&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ややこしい。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;プロトタイプ&#34;&gt;プロトタイプ&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;仕様上の概念 / 仕組みそのものを示す&lt;/li&gt;
+&lt;li&gt;全てのオブジェクトは内部プロパティ&lt;code&gt;[[Prototype]]&lt;/code&gt;を持つ。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;prototype&#34;&gt;prototype&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;関数式（function）で生成されるオブジェクトが持つプロパティのこと&lt;/li&gt;
+&lt;li&gt;最上位の&lt;code&gt;Object.protorype&lt;/code&gt;までプロパティを探索する特性をもつ。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;prototype&lt;/code&gt;プロパティには何らかのオブジェクトが格納されている&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;プロトタイプチェインでは利用されない。&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;proto&#34;&gt;&lt;strong&gt;proto&lt;/strong&gt;&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Object.prototypeから継承されるアクセサメソッド
+
+&lt;ul&gt;
+&lt;li&gt;アクセサメソッドとは、オブジェクト内部のメンバ変数(属性、プロパティ)に外部からアクセスするために用意されたメソッドで、メンバ変数をオブジェクト内部に隠蔽し、外部から直接参照させないようにする。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;最上位の&lt;code&gt;Object.prototype.__proto__&lt;/code&gt;までプロパティを探索する&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Object.prototype&lt;/code&gt;の&lt;code&gt;__proto__&lt;/code&gt;は&lt;code&gt;null&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;new でインスタンスを生成したとき、関数（コンストラクタ）の prototype へのアドレスを格納する&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;プロトタイプチェインでは利用されるけど、呼び出し時は非推奨&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;ecma-scriptについて&#34;&gt;ECMA Scriptについて&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ざっくり言うと、&lt;strong&gt;標準化されたJavaScriptのバージョン&lt;/strong&gt;。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://azu.github.io/slide-what-is-ecmascript/&#34;&gt;参考:ECMAScriptとは何か？&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;es-next&#34;&gt;ES.next&lt;/h4&gt;
+
+&lt;p&gt;次期ECMAScriptの事をECMAScript nextや、ES.nextと言ったりするらしい。&lt;/p&gt;
+
+&lt;h2 id=&#34;2018-06-05-learned&#34;&gt;2018/06/05 - Learned&lt;/h2&gt;
+
+&lt;p&gt;6月5日（火）のToday I Leaned&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;死んでました。最近、目を酷使しすぎての死亡パターンが多いので対策を考えたい。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2018-06-06-learned&#34;&gt;2018/06/06 - Learned&lt;/h2&gt;
+
+&lt;p&gt;6月6日（水）のToday I Leaned&lt;/p&gt;
+
+&lt;h3 id=&#34;aws&#34;&gt;AWS&lt;/h3&gt;
+
+&lt;h4 id=&#34;iam設定について&#34;&gt;IAM設定について&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;rootユーザーで触り続けるのも危険なので、適切な権限を付与したIAMユーザー及びグループを作成したい。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.aws.amazon.com/ja_jp/IAM/latest/UserGuide/getting-started_create-admin-group.html&#34;&gt;参考:最初の IAM 管理者のユーザーおよびグループの作成&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;チェンジマネジメント&#34;&gt;チェンジマネジメント&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;組織を変える基本・変革を成功させるチェンジ・マネジメントに必要な要因。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Vision（先への見通し・構想）
+
+&lt;ul&gt;
+&lt;li&gt;「Vision（先への見通し・構想）」がない場合は「CONFUSION（混乱）」が起きる。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Skills（技術）
+
+&lt;ul&gt;
+&lt;li&gt;「Skills（技術）」がない場合は「ANXUETY（不安）」が起きる。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Incentives（人々の意思決定や行動を変化させるような要因）
+
+&lt;ul&gt;
+&lt;li&gt;「Incentives（人々の意思決定や行動を変化させるような要因）」がない場合は「RESISTANCE（抵抗）」が起きる&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Resources（資産、財産）
+
+&lt;ul&gt;
+&lt;li&gt;「Resources（資産、財産）」がない場合は「FRUSTRATION（失望）」が起きる&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;ActionPlan（行動計画）
+
+&lt;ul&gt;
+&lt;li&gt;「ActionPlan（行動計画）」がない場合は「FALSE SATRT（誤った開始）」が起きる&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ul&gt;
+&lt;li&gt;上記の要因が全てあれば、正しくチェンジしていく事が可能。&lt;/li&gt;
+&lt;li&gt;このtopicについては「経営学 / ミクロ経済」などが該当するらしい。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;javascript-1&#34;&gt;JavaScript&lt;/h3&gt;
+
+&lt;h4 id=&#34;プロトタイプについて&#34;&gt;プロトタイプについて&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;prototype継承を利用したClass的実装を行った事がない方は、あまり意識した事がない可能性があるらしい。&lt;/li&gt;
+&lt;li&gt;オブジェクトのプロパティとしてもメソッドは実装できてしまう為、prototypeでなければいけないということは原則無い&lt;/li&gt;
+&lt;li&gt;ただし、ネイティブのメソッドや、他人が作ったオブジェクトのメソッド参照する時に、prototypeで遡ると、そのオブジェクトがどういう機能を有しているか認識できるというメリットがある。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/uupaa/WebModule/wiki/WebModulePattern&#34;&gt;参考:WebModulePattern（ES5でのプロトタイプ継承 - ベストプラクティス）&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;オブジェクトの生成&#34;&gt;オブジェクトの生成&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;new演算子とコンストラクタ関数によるオブジェクト生成。&lt;/li&gt;
+&lt;li&gt;JavaScriptにおけるオブジェクト生成でよく見られるコード&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+&lt;li&gt;コンストラクタ関数の定義を行う&lt;/li&gt;
+&lt;li&gt;prototypeの拡張を行う&lt;/li&gt;
+&lt;li&gt;上記で用意したものを利用する&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-JavaScript&#34;&gt;(function(){
+
+// 1. コンストラクタ関数の定義
+var Person = function (name) {
+  this.name = name;
+}
+
+// 2. prototypeの拡張
+Person.prototype.name = &#39;nanashi&#39;;
+Person.prototype.say = function() {
+  console.log(&#39;こんにちわ。私は&#39; + this.name + &#39;です。&#39;);
+}
+/* 1+2で下記のPerson.prototypeオブジェクトが作成される *//*
+Person {
+ prototype : {
+   name: &#39;nanashi&#39;,
+   say: function(){
+     console.log(..（省略）..);
+   }
+ }
+}*/
+
+// こんな感じで呼び出し可能
+console.log(Person.prototype.name); // &amp;quot;nanashi&amp;quot;
+Person.prototype.say(); // &amp;quot;こんにちわ。私はnanashiです。&amp;quot;
+
+// 利用
+var japanese = new Person(&#39;Tanaka&#39;);
+// 下記のような初期化が行われる
+
+/*
+//1. 新しいオブジェクトの生成
+var japanese = {};
+
+//2. プロトタイプのオブジェクトの参照を代入
+// Person.prototypeオブジェクトの機能が、japaneseで利用できるようになる
+japanese.__proto__ = Person.prototype;
+
+//3. japaneseをthisに、コンストラクタ関数を実行
+Person.apply(japanese, [&#39;Tanaka&#39;]);
+
+//4. 完成したオブジェクトを返す
+return japanese;
+
+---
+
+// 結果として、新しいオブジェクト japanese の __proto__は、
+// Person.prototypeに入っているオブジェクトの参照を持つ
+
+japanese: {
+  name: &#39;Tanaka&#39;
+  __proto__: {
+    name: &#39;nanashi&#39;
+    say: function(){...} // ※①
+  }
+}
+
+*/
+
+// Person.prototype が japanese.__proto__に代入された直後の為、同一性比較はtrue
+console.log(japanese.__proto__ === Person.prototype); // true
+
+// Callされるが、japanese上にはsayがない為
+// __proto__を遡り、上記（※①）のsayを見つける。
+// name は japanese上で見つける。
+japanese.say(); // &amp;quot;こんにちわ。私はTanakaです。&amp;quot;
+
+japanese.name = &#39;Satou&#39;; // japanes e のnameを更新
+japanese.say(); // &amp;quot;こんにちわ。私はSatouです。&amp;quot;
+
+Person.prototype.name = &#39;Suzuki&#39;; // Person.prototype.nameを変更
+japanese.say(); // &amp;quot;こんにちわ。私はSatouです。&amp;quot;
+// name は japanese で見つかるので結果に変更はない
+
+delete japanese.name; // japanese自身のnameを削除
+japanese.say(); // &amp;quot;こんにちわ。私はSuzukiです。&amp;quot;
+// japanese自身がnameを持っていない為、say / name 共に __proto__から検索される
+
+})();
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;proto-1&#34;&gt;&lt;strong&gt;proto&lt;/strong&gt;&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;プロトタイプチェインで検索されるプロトタイプオブジェクトが入っている。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;プロトタイプチェイン&lt;/strong&gt;で利用されるもの&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;prototype-1&#34;&gt;prototype&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;プロトタイプオブジェクトの控室&lt;/li&gt;
+&lt;li&gt;newとコンストラクタ関数でオブジェクトを生成する際、&lt;code&gt;__proto__&lt;/code&gt;に代入される。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;オブジェクト生成&lt;/strong&gt;で利用されるもの&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2018-06-07-learned&#34;&gt;2018/06/07 - Learned&lt;/h2&gt;
+
+&lt;p&gt;6月7日（木）のToday I Leaned&lt;/p&gt;
+
+&lt;h3 id=&#34;es2015&#34;&gt;ES2015&lt;/h3&gt;
+
+&lt;h4 id=&#34;class構文&#34;&gt;class構文&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;前日のptrototypeでのオブジェクト指向実装をclassに置き換えしてみる&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-JavaScript&#34;&gt;var Person = function(name) {
+  this.name = name;
+}
+Person.prototype.
+
+
+---
+
+class Person {
+  constructor (name) {
+    this.name = name;
+  }
+  say(){
+    console.log(`こんにちわ。私は ${this.name} です。`);
+  }
+}
+
+var japanese = new Person(&#39;Tanaka&#39;);
+japanese.say();
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ES5の時、prototypeの場合はnameメソッドをPeson関数に追加しているが、同様の事をclassでやるときってどうするのか？&lt;/li&gt;
+&lt;li&gt;そもそもPersonをインスタンス化しないで追加したnameメソッドを参照できるのにClassの場合は同様の事が出来ない？
+
+&lt;ul&gt;
+&lt;li&gt;classの場合は、インスタンス化せずに呼び足す場合は&lt;code&gt;static&lt;/code&gt; メソッドを活用する他ない。&lt;/li&gt;
+&lt;li&gt;prototypeは割となんでもあり感が強いので、オブジェクトのプロパティにしてしまうとか。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2018-06-08-learned&#34;&gt;2018/06/08 - Learned&lt;/h2&gt;
+
+&lt;p&gt;6月8日（金）のToday I Leaned&lt;/p&gt;
+
+&lt;h3 id=&#34;javascript-2&#34;&gt;JavaScript&lt;/h3&gt;
+
+&lt;h4 id=&#34;thisの性質について&#34;&gt;thisの性質について&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;thisは特別な変数であり、利用される場所や呼び出し方によって中身が変化する。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+&lt;li&gt;関数コール時にその関数が所属していたオブジェクトが&lt;code&gt;this&lt;/code&gt;になる。&lt;/li&gt;
+&lt;li&gt;ただの関数で呼び出しした場合は、所属しているオブジェクトがないので、グローバルオブジェクトを呼出（ブラウザの場合は&lt;code&gt;windows&lt;/code&gt;オブジェクトが呼出）&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;thisの性質を操る方法&#34;&gt;thisの性質を操る方法&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;thisは標準的な利用方法だと上記の使い方になるが、呼び出し元でthisを操る事が可能メソッドが存在する&lt;/li&gt;
+&lt;li&gt;関数オブジェクトにはthisをコントロールする事が可能な3つのメソッドが存在する（関数オブジェクトのみ）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;callメソッド&#34;&gt;callメソッド&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;こんなかんじ。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-JavaScript&#34;&gt;call(
+  object, // objectが関数内でのthisになり
+  arg1, atg2, ... // その後の引数は関数呼び出し時に与える引数になる
+  )
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;callとapplyは関数を実行する&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-JavaScript&#34;&gt;var Person = function(name){
+  this.name = name;
+}
+
+function say(arg1, arg2){
+  alert(arg1 + this.name + atg2);
+}
+
+var person = new Person(&#39;Tanaka&#39;);
+
+// callの第一引数がthisになり、第二引数以降がsay関数の引数になる
+say.call(person, &#39;Hello&#39;,&#39;san&#39;);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;関数はオブジェクトに束縛されていない為、他のオブジェクトのメンバ（ローカル変数）だったとしても関係がない&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;applyメソッド&#34;&gt;applyメソッド&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;こんなかんじ&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-JavaScript&#34;&gt;apply(
+  object, // objectが関数内でのthisになり
+  Array // その後の因数は関数呼び出し時に与える因数になる
+  )
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;callとapplyは関数を実行する&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-JavaScript&#34;&gt;var Person = function(name){
+  this.name = name;
+}
+
+function say(arg1, arg2){
+  alert(arg1 + this.name + atg2);
+}
+
+var person = new Person(&#39;Tanaka&#39;);
+
+// applyの第一引数がthisになり、第二引数以降がsay関数の引数になる
+say.apply(person, [&#39;Hello&#39;,&#39;san&#39;]);
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;関数はオブジェクトに束縛されていない為、他のオブジェクトのメンバ（ローカル変数）だったとしても関係がない&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;bindメソッド&#34;&gt;bindメソッド&lt;/h5&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-JavaScript&#34;&gt;bind(
+  object, // objectが関数内でのthisになり
+  arg1, atg2, ... // その後の因数は関数呼び出し時に与える因数になる
+  )
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;bindは関数に値を束縛する&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-JavaScript&#34;&gt;var Person = function(name){
+  this.name = name;
+}
+
+function say(arg1, arg2){
+  alert(arg1 + this.name + atg2);
+}
+
+var person = new Person(&#39;Tanaka&#39;);
+
+var say2 = say.bind(person); // personをthisにthisに束縛した新しい関数オブジェクトを返す
+say2(&#39;Hello &#39;, &#39;san&#39;) // say2関数の呼び出しでは常にpersonがthisになる。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;javascriptエンジン&#34;&gt;JavaScriptエンジン&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;主要なブラウザのレンダリングエンジンとJavaScriptのエンジンは2018/06現在は下記の通り。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;google-chrome&#34;&gt;Google Chrome&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;レンダリングエンジン : Blink&lt;/li&gt;
+&lt;li&gt;JavaScriptエンジン : V8&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;safari&#34;&gt;Safari&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;レンダリングエンジン : Webkit&lt;/li&gt;
+&lt;li&gt;JavaScriptエンジン : JavaScriptCore&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;firefox&#34;&gt;Firefox&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;レンダリングエンジン : Gecko&lt;/li&gt;
+&lt;li&gt;JavaScriptエンジン : SpiderMonkey&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;internet-explorer&#34;&gt;Internet Explorer&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;レンダリングエンジン : Trident&lt;/li&gt;
+&lt;li&gt;JavaScriptエンジン : Chakra&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>2018/05 - four week I Learned</title>
