@@ -8,12 +8,12 @@ featuredalt = "til"
 featuredpath = "https://kglabo.com"
 title = "2018/06 - one week I Learned"
 type = "post"
-draft = "true"
+draft = "false"
 +++
 
 # 今週、知った/学んだこと
 
-<!-- tags = [ "JavaScript", "プロトタイプ", "UJIターン", "オブジェクト指向", "プロトタイプチェイン", "ECMA Script" ] -->
+<!-- tags = [ "JavaScript", "プロトタイプ", "UJIターン", "オブジェクト指向", "プロトタイプチェイン", "ECMA Script", "prototype", "__proto__", "AWS", "IAM", "チェンジマネジメント", "レンダリングエンジン", "JavaScriptエンジン"] -->
 
 ## 2018/06/04 - Learned
 
@@ -167,6 +167,7 @@ objC.say(); // Pochi is My Dog
 var Person = function (name) {
   this.name = name;
 }
+
 // 2. prototypeの拡張
 Person.prototype.name = 'nanashi';
 Person.prototype.say = function() {
@@ -253,24 +254,170 @@ japanese.say(); // "こんにちわ。私はSuzukiです。"
 - newとコンストラクタ関数でオブジェクトを生成する際、`__proto__`に代入される。
 - **オブジェクト生成**で利用されるもの
 
-1. JavaScriptで似たオブジェクトの量産・生成を行う場合は、持っていない特性を別のオブジェクト（プロトタイプ）からデリゲート（お願い）する事によって解決している。なぜならプロトタイプベースの言語の為。
-2. JavaScriptではオブジェクトを作成した際に、prototype属性
-
-
 ## 2018/06/07 - Learned
 
 6月7日（木）のToday I Leaned
 
-### タイトル
+### ES2015
 
-#### 詳細
+#### class構文
+
+- 前日のptrototypeでのオブジェクト指向実装をclassに置き換えしてみる
+
+```JavaScript
+var Person = function(name) {
+  this.name = name;
+}
+Person.prototype.
+
 
 ---
+
+class Person {
+  constructor (name) {
+    this.name = name;
+  }
+  say(){
+    console.log(`こんにちわ。私は ${this.name} です。`);
+  }
+}
+
+var japanese = new Person('Tanaka');
+japanese.say();
+```
+
+- ES5の時、prototypeの場合はnameメソッドをPeson関数に追加しているが、同様の事をclassでやるときってどうするのか？
+- そもそもPersonをインスタンス化しないで追加したnameメソッドを参照できるのにClassの場合は同様の事が出来ない？
+  - classの場合は、インスタンス化せずに呼び足す場合は`static` メソッドを活用する他ない。
+  - prototypeは割となんでもあり感が強いので、オブジェクトのプロパティにしてしまうとか。
+
 
 ## 2018/06/08 - Learned
 
 6月8日（金）のToday I Leaned
 
-### タイトル
+### JavaScript
 
-#### 詳細
+#### thisの性質について
+
+- thisは特別な変数であり、利用される場所や呼び出し方によって中身が変化する。
+
+1. 関数コール時にその関数が所属していたオブジェクトが`this`になる。
+2. ただの関数で呼び出しした場合は、所属しているオブジェクトがないので、グローバルオブジェクトを呼出（ブラウザの場合は`windows`オブジェクトが呼出）
+
+#### thisの性質を操る方法
+
+- thisは標準的な利用方法だと上記の使い方になるが、呼び出し元でthisを操る事が可能メソッドが存在する
+- 関数オブジェクトにはthisをコントロールする事が可能な3つのメソッドが存在する（関数オブジェクトのみ）
+
+##### callメソッド
+
+- こんなかんじ。
+
+```JavaScript
+call(
+  object, // objectが関数内でのthisになり
+  arg1, atg2, ... // その後の引数は関数呼び出し時に与える引数になる
+  )
+```
+
+- callとapplyは関数を実行する
+
+```JavaScript
+var Person = function(name){
+  this.name = name;
+}
+
+function say(arg1, arg2){
+  alert(arg1 + this.name + atg2);
+}
+
+var person = new Person('Tanaka');
+
+// callの第一引数がthisになり、第二引数以降がsay関数の引数になる
+say.call(person, 'Hello','san');
+```
+
+- 関数はオブジェクトに束縛されていない為、他のオブジェクトのメンバ（ローカル変数）だったとしても関係がない
+
+##### applyメソッド
+
+- こんなかんじ
+
+```JavaScript
+apply(
+  object, // objectが関数内でのthisになり
+  Array // その後の因数は関数呼び出し時に与える因数になる
+  )
+```
+
+- callとapplyは関数を実行する
+
+
+```JavaScript
+var Person = function(name){
+  this.name = name;
+}
+
+function say(arg1, arg2){
+  alert(arg1 + this.name + atg2);
+}
+
+var person = new Person('Tanaka');
+
+// applyの第一引数がthisになり、第二引数以降がsay関数の引数になる
+say.apply(person, ['Hello','san']);
+```
+
+- 関数はオブジェクトに束縛されていない為、他のオブジェクトのメンバ（ローカル変数）だったとしても関係がない
+
+
+##### bindメソッド
+
+```JavaScript
+bind(
+  object, // objectが関数内でのthisになり
+  arg1, atg2, ... // その後の因数は関数呼び出し時に与える因数になる
+  )
+```
+
+- bindは関数に値を束縛する
+
+```JavaScript
+var Person = function(name){
+  this.name = name;
+}
+
+function say(arg1, arg2){
+  alert(arg1 + this.name + atg2);
+}
+
+var person = new Person('Tanaka');
+
+var say2 = say.bind(person); // personをthisにthisに束縛した新しい関数オブジェクトを返す
+say2('Hello ', 'san') // say2関数の呼び出しでは常にpersonがthisになる。
+```
+
+#### JavaScriptエンジン
+
+- 主要なブラウザのレンダリングエンジンとJavaScriptのエンジンは2018/06現在は下記の通り。
+
+##### Google Chrome
+
+- レンダリングエンジン : Blink
+- JavaScriptエンジン : V8
+
+##### Safari
+
+- レンダリングエンジン : Webkit
+- JavaScriptエンジン : JavaScriptCore
+
+##### Firefox
+
+- レンダリングエンジン : Gecko
+- JavaScriptエンジン : SpiderMonkey
+
+##### Internet Explorer
+
+- レンダリングエンジン : Trident
+- JavaScriptエンジン : Chakra
