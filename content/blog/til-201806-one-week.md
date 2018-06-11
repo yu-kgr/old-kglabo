@@ -421,3 +421,12 @@ say2('Hello ', 'san') // say2関数の呼び出しでは常にpersonがthisに�
 
 - レンダリングエンジン : Trident
 - JavaScriptエンジン : Chakra
+
+---
+
+### 雑感
+
+今週は、JavaScriptのObjectやprototypeベースでのオブジェクト指向、__proto__やプロトタイプチェイン。  
+prototypeを利用したクラスの作成方法について学習。合わせてES2015のclass構文について少々。
+
+別途、Reactのチュートリアルを進行中。
