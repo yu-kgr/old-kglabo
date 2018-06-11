@@ -511,6 +511,15 @@ say2(&#39;Hello &#39;, &#39;san&#39;) // say2関数の呼び出しでは常にpe
 &lt;li&gt;レンダリングエンジン : Trident&lt;/li&gt;
 &lt;li&gt;JavaScriptエンジン : Chakra&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&#34;雑感&#34;&gt;雑感&lt;/h3&gt;
+
+&lt;p&gt;今週は、JavaScriptのObjectやprototypeベースでのオブジェクト指向、&lt;strong&gt;proto&lt;/strong&gt;やプロトタイプチェイン。&lt;br /&gt;
+prototypeを利用したクラスの作成方法について学習。合わせてES2015のclass構文について少々。&lt;/p&gt;
+
+&lt;p&gt;別途、Reactのチュートリアルを進行中。&lt;/p&gt;
 </description>
     </item>
     
