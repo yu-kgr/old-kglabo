@@ -13,7 +13,7 @@ draft = "true"
 
 # 今週、知った/学んだこと
 
-<!-- tags = [ "git", ""] -->
+<!-- tags = [ "git", "ヘッドレスブラウザ"] -->
 
 ## 2018/06/11 - Learned
 
@@ -72,9 +72,71 @@ draft = "true"
 
 6月12日（火）のToday I Leaned.
 
-### カテゴリ2
+- 昨日出ていたPhantomJSのリポジトリがアーカイブされた模様。
+  - [参考:JSer.info - PhantomJSの開発が終了しリポジトリがアーカイブ化された](https://jser.info/2018/06/11/phantomjs-ended/)
+  - しかし、昨今はヘッドレスChromeやヘッドレスFirefoxを各社ブラウザベンダーが公式配布している模様。
+    - [参考:ヘッドレスChrome ことはじめ](https://developers.google.com/web/updates/2017/04/headless-chrome?hl=ja)
+    - [参考:ヘッドレスChromeの自動化ツール「Chromeless」を使って自動テストを実施する](https://dev.classmethod.jp/client-side/browser/chromeless/)
 
-#### 子カテゴリ2
+
+### AWSに関するもの
+
+#### MultiAZとは一体
+
+- なんかサーバの[冗長化](https://www.idcf.jp/words/redundant.html)だったり[ディザスタリカバリ](https://www.idcf.jp/words/dr.html)に関係するものの模様。
+- [参考:リージョンとアベイラビリティーゾーン](https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/using-regions-availability-zones.html)
+- [参考:AWSのMultiAZについて調べたので残しておく](http://natural-hokke.hateblo.jp/entry/2014/10/24/133205)
+
+##### リージョンついて
+
+- 世界中の各地方に分散して用意された単一のデーターセンターが置いてある地域のこと（同じ国に複数ある事もある）
+- {{地名}}リージョンみたいな呼び方する（東京リージョン / オレゴンリージョン）
+  - 2018年2月頃、[大阪リージョンも出来た模様。](https://dev.classmethod.jp/cloud/release-osaka-local-region/)
+- [参考:グローバルインフラストラクチャ](https://aws.amazon.com/jp/about-aws/global-infrastructure/)
+
+##### Availability Zone（AZ）ついて
+
+- 各リージョン（Tokyo/Oregon/Frankfurtなど）内で、物理的に離れた箇所にあるデータセンターのこと。
+- Tokyoリージョン内にも複数のAvailabilityZoneが存在する。
+- 各ユーザーが利用するリージョンが同じものになるとは限らない。
+  - ユーザAは`ap-northeast-1a`が利用されたが、ユーザBは`ap-northeast-1b`を利用される…等。
+
+```Markdown
+# Tokyo リージョンの場合
+
+- ap-northeast-1a
+- ap-northeast-1b
+- ap-northeast-1c
+- ap-northeast-1d
+```
+
+##### Multi-AZについて
+
+- サービスを１つのAZで構成したもの（EC2/RDS/ELB等）は`Single-AZ`と呼び、ービスを複数のAZで構成したものを`Multi-AZ`と呼ぶ。
+  - AZ自体に障害があり、利用しているAZが死んだ場合にもサービスに影響を与えないようにする為に複数のAZで構築して障害耐性を上げる。
+- 車の任意保険みたいなもの。AZが複数ある分、その分のコストはかかる。その代わりに…
+  - EC2（Amazon Elastic Compute Cloud）       : 障害が起きてないAZが応答するのでダウンタイムが発生しない
+  - RDS（Amazon Relational Database Service） : 勝手に切り替わる（自動フェイルオーバー）。1~6分程度かかる。インスタンスが2つなのでお金は2倍かかる
+  - ELB（Amazon Elastic Load Balancing）      : CrossZone-LoadBalancingという設定を有効にしないとインスタンス数が違う場合、autoScaling時に負荷が偏るので注意。
+- AZ単位の障害はメンテとか細かい不具合とか？ / リージョンでの障害はもはや大災害。
+  - [AWS でいままで起きた大規模障害を振り返る](https://qiita.com/saitotak/items/07931343bcb703b101f8)
+
+
+#### Amazon Elastic Container Registry
+
+- 通称、Amazon ECR。Dockerのコンテナイメージを保存しておく為のレジストリ（設定情報のDB）。
+- ECRに保存されているコンテナイメージは後述のECSなどのサービスにデプロイする事が可能。
+- コンテナのイメージ操作はDockerCLIから行う事が可能で、イメージ自体はS3に保存されている。
+- [参考:Amazon Elastic Container Registryとは](https://aws.amazon.com/jp/ecr/)
+
+### Amazon Elastic Container Service
+
+- コンテナ管理サービス。簡単にDockerコンテナを実行・停止・管理する事が可能。
+- ざっくり言うと、クラスタ（複数のEC2インスタンスの上）で、FrontサーバとAPIサーバごとの役割に分けた個別のService（Dockerコンテナ）が動くかんじ。
+- あとでちゃんと知ったほうが良さげな奴 : Cluster（クラスター）/ Task（タスク）/ Service（サービス）
+- [参考:Amazon Elastic Container Service とは](https://docs.aws.amazon.com/ja_jp/AmazonECS/latest/developerguide/Welcome.html)
+- [参考:Amazon EC2 Container Service(ECS)の概念整理](https://qiita.com/NewGyu/items/9597ed2eda763bd504d7)
+- [参考:ECSの概念を理解しよう](http://www.mpon.me/entry/2017/11/19/200000)
 
 ---
 
