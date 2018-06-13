@@ -81,6 +81,8 @@ draft = "true"
 
 ### AWSに関するもの
 
+- Amazon Web Serviceゥゥゥ！
+
 #### MultiAZとは一体
 
 - なんかサーバの[冗長化](https://www.idcf.jp/words/redundant.html)だったり[ディザスタリカバリ](https://www.idcf.jp/words/dr.html)に関係するものの模様。
@@ -144,11 +146,66 @@ draft = "true"
 
 6月13日（水）のToday I Leaned.
 
-### カテゴリ3
+- 梅雨突入にもかかわらず奇跡的に天気予報が一週間連続で雨ではない金沢…！（奇跡か）
+- ゼルダBoWやってて、トロッコ重ねて空中浮遊してたら、ハイラル城のてっぺんに到着してしまい、道中のザコ敵・中ボス全てすっ飛ばしてガノンと戦う羽目になる事案が発生。意図せぬエンドロールを見る羽目に。
 
-#### 子カテゴリ3
+### JavaScript
 
----
+#### SEOについて
+
+- GoogleはJSによるクライアントサイドのnoindex処理を非推奨としているので、表示したくないコンテンツがある場合はHTML自体に`noindex`をちゃんと入れよう。
+- 現状、GooglebotはWebサイトを2回クロールしているが、1度目のクロールではJSレンダリングの解析はされず、2度目のクロールで解析されている。
+- [参考:JavaScriptによるnoindex挿入をGoogleは推奨せず、JSレンダリングはセカンドウェーブのインデックス](https://www.suzukikenichi.com/blog/adding-noindex-tag-with-javascript-isnt-recommended/)
+
+#### DOMContentLoadedイベント
+
+- `window.onload` の場合は、`字句解析 -> 構文解析 -> DOM構築 -> 画像ファイル・サブフレームの読込み`完了後に実行するが、`DOMContentLoaded イベント`を利用した場合は、DOM構築したタイミングで処理を実行する。
+- 結果としてDOM解析が完了した時点で実行しても良い処理の場合は処理速度の向上が見込めるので最適なイベントを選択しよう。
+
+```JavaScript
+// window.onload
+window.onload = function() {
+  return console.log('全ての画像とサブフレームのロードが完了後に処理');
+};
+
+// DOMContentLoaded
+document.addEventListener("DOMContentLoaded", function(event) {
+  return console.log('DOM構築が完了後に処理');
+}
+```
+
+### Docker
+
+- Dockerはアプリケーションを開発（developing）・移動（shipping）・実行（running）するための、コンテナ型の仮想環境プラットフォーム
+- VirtualBoxみたいにホストOS上で仮想マシンを立ち上げてゲストOSを動かすのではなく、ホストマシンのカーネルを共有する事で、ホスト側仮想化ソフト -> ゲストOSの分のいろいろな手間がかからない。
+- 環境をコード化して、共有することで複数人での同一な環境構築の手間が短縮できる・楽（雑）
+- [参考:仮想環境についてまとめてみる](https://qiita.com/9en/items/f4eab2f61485a9f3885a)
+- [参考:dockerで何ができるの？なんで使うの？を初心者がまとめる](https://qiita.com/hogehoge1234/items/b68e78cc4acb42cdca3d)
+  - TODO:カーネルを個別に変えたい場合ってどんなケースなの？
+- [参考:Docker-docs-ja](http://docs.docker.jp/engine/articles/dockerfile_best-practice.html)
+
+### AWS
+
+#### Key Management Service
+
+- データキーをを使ってデータを暗号化できるが、データキーを紛失すると暗号化データが復号化されてしまうので、データキー自体を暗号化したマスターキーを用意。マスターキーはAWS側に保存できるよ。っていうサービス。
+- リージョン毎にキーを管理する仕様。キーごとにアクセス範囲を設定可能。
+- [参考:10分でわかるKey Management Serviceの仕組み #cmdevio](https://www.slideshare.net/torazuka/10key-management-service)
+- TODO:暗号化するべきデータの基準とは一体…。
+
+### Terminal
+
+#### nodebrewのinstall-binaryについて
+
+- 〈毎回忘れるのでメモ〉node.jsのバージョンマネージャーnodebrewについて。
+- `nodebrew install <version>`にするとコンパイルありで、`nodebrew install-binary <version>` にするとコンパイルないことによってインストールする時間が高速になる（およそ1/15程度の時間差があるとの事）
+- [参考:Nodebrewを使ってNode.jsを超高速にインストールする方法](https://qiita.com/yn-misaki/items/e92a47c662ea6d1236c1)
+- ここまで調べて思った事「自分のPC環境は全て、anyenvで統一されているのでndenvでござった・・・:(」
+
+#### pbcopyが非常に便利
+
+- `cat <filName> | pbcopy` で指定したファイルの中身をコピペできる
+- `cat ~/.ssh/id_rsa.pub | pbcopy` で公開鍵をコピーしたり、中身を共有したいファイルをコピペする時に便利。
 
 ## 2018/06/14 - Learned
 
