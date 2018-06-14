@@ -211,9 +211,35 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 6月14日（木）のToday I Leaned.
 
-### カテゴリ4
+- 梅雨なのに金沢晴れてる！すげー！
+- 尚、当TILのスタンスとしては個人的に「◯◯ってなんだっけ」って思った時に見返す備忘録用。
 
-#### 子カテゴリ4
+### Shell Command
+
+- 今日知った、気になったコマンドたち。
+
+#### jqコマンド
+
+- `brew install jq` で仲間入りしてくれる、JSONから簡単に値を抜き出したり、集計したり、整形して表示したりできるJSON用のgrepとかawkみたいなコマンド（らしい）
+- [参考:jq コマンドを使う日常のご紹介](https://qiita.com/takeshinoda@github/items/2dec7a72930ec1f658af)
+  - TODO:今度JSONファイルになんかする時に利用してみる
+
+#### tail -F コマンド
+
+
+- ファイルの末尾をCLI上で表示してくれるコマンドだけど、`-F`をつける事によって中身が更新されたりしても、そのまま続きを表示してくれる。
+- error.logなどのファイルを見て問題解決を行いたい時に使うととても便利っぽい。
+- [参考:tailコマンドのオプション「f」と「F」](https://qiita.com/sakito/items/7f65e16f10b3d754f307)
+
+### TODO
+
+追々ちゃんと理解したいもの。
+
+- リバースプロキシについて | [参考:リバースプロキシ|「分かりそう」で「分からない」でも「分かった」気になれるIT用語辞典](http://wa3.i-3-i.info/word1755.html)
+- KVS（Key-Value Store）について | [参考:KVS（Key-Value Store）とは](https://qiita.com/uenohara/items/23eb6ee1259f8a927445)
+- Redisについて [参考:Redisの特徴と活用方法について](https://www.slideshare.net/yujiotani16/redis-76504393)
+- Promiseとasync/awaiteについて | [参考:Promise と async/await を始めからていねいに](https://qiita.com/nabepon/items/1be1e83b0d17ee4f42a9)
+
 
 ---
 
