@@ -6,8 +6,465 @@
     <description>Recent content in Blog on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 08 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kglabo.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2018/06 - second week I Learned</title>
+      <link>https://kglabo.com/blog/til-201806-second-week/</link>
+      <pubDate>Fri, 15 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kglabo.com/blog/til-201806-second-week/</guid>
+      <description>
+
+&lt;h1 id=&#34;今週-知った-学んだこと&#34;&gt;今週、知った/学んだこと&lt;/h1&gt;
+
+&lt;!-- tags = [ &#34;git&#34;, &#34;ヘッドレスブラウザ&#34;] --&gt;
+
+&lt;h2 id=&#34;2018-06-11-learned&#34;&gt;2018/06/11 - Learned&lt;/h2&gt;
+
+&lt;p&gt;6月11日（月）のToday I Leaned.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ついに金沢も梅雨に入りました。そろそろ除湿機がほしい。&lt;/li&gt;
+&lt;li&gt;そういえばRSSで購読してるTECHNICAL-CREATORブログさんで、今ちょうど読み勧めているフロントエンド・パンダ本について記事書かれてた。
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://technical-creator.com/first-frontend-dev/&#34;&gt;テクニカルクリエイター.com - はじめてのフロントエンド開発」を読みました。JSフレームワークに今触れるならコレ&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;gitについて&#34;&gt;gitについて&lt;/h3&gt;
+
+&lt;h4 id=&#34;コミットした時のコメント内容を修正&#34;&gt;コミットした時のコメント内容を修正&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git commit -m &amp;quot;typo comment&amp;quot;&lt;/code&gt; した後は、 &lt;code&gt;git commit --amend -m &amp;quot;correct comment&amp;quot;&lt;/code&gt; で修正できる`&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;直近のコメントをまとめたい&#34;&gt;直近のコメントをまとめたい&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git rebase -i HEAD~2&lt;/code&gt; で、 最新2件のコミットをまとめる事ができる。
+　&lt;/p&gt;
+
+&lt;h4 id=&#34;指定したブランチを追従して-コミットを適用し直す&#34;&gt;指定したブランチを追従して、コミットを適用し直す&lt;/h4&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;&lt;code&gt;git rebase origin/master&lt;/code&gt; でOK。&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;phantomjsとcasperjs&#34;&gt;PhantomJSとCasperJS&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ヘッドレスブラウザとそれを簡単に動かす為のものらしい。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;phantomjsとは&#34;&gt;PhantomJSとは&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;JavaScriptを使用してスクリプトを作成できるヘッドレスWebブラウザ。マルチプラットフォームに対応している。&lt;/li&gt;
+&lt;li&gt;GUIがないだけで、ブラウザでできる事は一通り行う事が可能『PhantomJS（CUIブラウザ）』&lt;/li&gt;
+&lt;li&gt;主にテストフレームワーク（Mochaとか）と組み合わせ利用される事が多い。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/uest_kensington/items/82cd6978b4ac7afa6fdf&#34;&gt;参考:PhantomJSとは&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://phantomjs.org/&#34;&gt;参考:PhantomJS - Scriptable Headless Browser&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;casperjsとは&#34;&gt;CasperJSとは&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;上記のPhamtomJSを簡単に利用する事ができるようにするライブラリ&lt;/li&gt;
+&lt;li&gt;Phantom（幽霊・亡霊）に対して1995年/アメリカ映画に出てくる少年ゴーストと同名な所が捻られてて面白い。&lt;/li&gt;
+&lt;li&gt;別のヘッドレスブラウザのSlimerJS（Firefox/Gecko）にも対応している。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/a-kane/items/a5d4b8345bc9c5d2c15c&#34;&gt;参考:CasperJSでブラウザ操作を自動化しよう&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.tam-tam.co.jp/tipsnote/javascript/post8686.html&#34;&gt;参考:PhantomJS と CasperJS で複数ページを一括キャプチャする&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;cheerio-httpcliについて&#34;&gt;cheerio-httpcliについて&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Node.jsで静的サイトをスクレイピング/解析を行う事ができるモジュール。&lt;/li&gt;
+&lt;li&gt;jQueryライクに操作可能 / UTF-8に自動変換 / ブラウザ指定でのUser-Agent切替可能。&lt;/li&gt;
+&lt;li&gt;ただ、対応しているNode.jsのバージョンが古いのと動的解析はできないので注意&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/ktty1220/items/e9e42247ede476d04ce2&#34;&gt;参考:Node.js用のスクレイピングモジュール「cheerio-httpcli」の紹介&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/ktty1220/cheerio-httpcli&#34;&gt;参考:cheerio-httpcli - Node.js用WEBスクレイピングモジュール&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;2018-06-12-learned&#34;&gt;2018/06/12 - Learned&lt;/h2&gt;
+
+&lt;p&gt;6月12日（火）のToday I Leaned.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;昨日出ていたPhantomJSのリポジトリがアーカイブされた模様。
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://jser.info/2018/06/11/phantomjs-ended/&#34;&gt;参考:JSer.info - PhantomJSの開発が終了しリポジトリがアーカイブ化された&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;しかし、昨今はヘッドレスChromeやヘッドレスFirefoxを各社ブラウザベンダーが公式配布している模様。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://developers.google.com/web/updates/2017/04/headless-chrome?hl=ja&#34;&gt;参考:ヘッドレスChrome ことはじめ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://dev.classmethod.jp/client-side/browser/chromeless/&#34;&gt;参考:ヘッドレスChromeの自動化ツール「Chromeless」を使って自動テストを実施する&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;awsに関するもの&#34;&gt;AWSに関するもの&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Amazon Web Serviceゥゥゥ！&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;multiazとは一体&#34;&gt;MultiAZとは一体&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;なんかサーバの&lt;a href=&#34;https://www.idcf.jp/words/redundant.html&#34;&gt;冗長化&lt;/a&gt;だったり&lt;a href=&#34;https://www.idcf.jp/words/dr.html&#34;&gt;ディザスタリカバリ&lt;/a&gt;に関係するものの模様。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/using-regions-availability-zones.html&#34;&gt;参考:リージョンとアベイラビリティーゾーン&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://natural-hokke.hateblo.jp/entry/2014/10/24/133205&#34;&gt;参考:AWSのMultiAZについて調べたので残しておく&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;リージョンついて&#34;&gt;リージョンついて&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;世界中の各地方に分散して用意された単一のデーターセンターが置いてある地域のこと（同じ国に複数ある事もある）&lt;/li&gt;
+&lt;li&gt;{{地名}}リージョンみたいな呼び方する（東京リージョン / オレゴンリージョン）
+
+&lt;ul&gt;
+&lt;li&gt;2018年2月頃、&lt;a href=&#34;https://dev.classmethod.jp/cloud/release-osaka-local-region/&#34;&gt;大阪リージョンも出来た模様。&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/jp/about-aws/global-infrastructure/&#34;&gt;参考:グローバルインフラストラクチャ&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;availability-zone-az-ついて&#34;&gt;Availability Zone（AZ）ついて&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;各リージョン（Tokyo/Oregon/Frankfurtなど）内で、物理的に離れた箇所にあるデータセンターのこと。&lt;/li&gt;
+&lt;li&gt;Tokyoリージョン内にも複数のAvailabilityZoneが存在する。&lt;/li&gt;
+&lt;li&gt;各ユーザーが利用するリージョンが同じものになるとは限らない。
+
+&lt;ul&gt;
+&lt;li&gt;ユーザAは&lt;code&gt;ap-northeast-1a&lt;/code&gt;が利用されたが、ユーザBは&lt;code&gt;ap-northeast-1b&lt;/code&gt;を利用される…等。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-Markdown&#34;&gt;# Tokyo リージョンの場合
+
+- ap-northeast-1a
+- ap-northeast-1b
+- ap-northeast-1c
+- ap-northeast-1d
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h5 id=&#34;multi-azについて&#34;&gt;Multi-AZについて&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;サービスを１つのAZで構成したもの（EC2/RDS/ELB等）は&lt;code&gt;Single-AZ&lt;/code&gt;と呼び、ービスを複数のAZで構成したものを&lt;code&gt;Multi-AZ&lt;/code&gt;と呼ぶ。
+
+&lt;ul&gt;
+&lt;li&gt;AZ自体に障害があり、利用しているAZが死んだ場合にもサービスに影響を与えないようにする為に複数のAZで構築して障害耐性を上げる。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;車の任意保険みたいなもの。AZが複数ある分、その分のコストはかかる。その代わりに…
+
+&lt;ul&gt;
+&lt;li&gt;EC2（Amazon Elastic Compute Cloud）       : 障害が起きてないAZが応答するのでダウンタイムが発生しない&lt;/li&gt;
+&lt;li&gt;RDS（Amazon Relational Database Service） : 勝手に切り替わる（自動フェイルオーバー）。1~6分程度かかる。インスタンスが2つなのでお金は2倍かかる&lt;/li&gt;
+&lt;li&gt;ELB（Amazon Elastic Load Balancing）      : CrossZone-LoadBalancingという設定を有効にしないとインスタンス数が違う場合、autoScaling時に負荷が偏るので注意。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;AZ単位の障害はメンテとか細かい不具合とか？ / リージョンでの障害はもはや大災害。
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/saitotak/items/07931343bcb703b101f8&#34;&gt;AWS でいままで起きた大規模障害を振り返る&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;amazon-elastic-container-registry&#34;&gt;Amazon Elastic Container Registry&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;通称、Amazon ECR。Dockerのコンテナイメージを保存しておく為のレジストリ（設定情報のDB）。&lt;/li&gt;
+&lt;li&gt;ECRに保存されているコンテナイメージは後述のECSなどのサービスにデプロイする事が可能。&lt;/li&gt;
+&lt;li&gt;コンテナのイメージ操作はDockerCLIから行う事が可能で、イメージ自体はS3に保存されている。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://aws.amazon.com/jp/ecr/&#34;&gt;参考:Amazon Elastic Container Registryとは&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;amazon-elastic-container-service&#34;&gt;Amazon Elastic Container Service&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;コンテナ管理サービス。簡単にDockerコンテナを実行・停止・管理する事が可能。&lt;/li&gt;
+&lt;li&gt;ざっくり言うと、クラスタ（複数のEC2インスタンスの上）で、FrontサーバとAPIサーバごとの役割に分けた個別のService（Dockerコンテナ）が動くかんじ。&lt;/li&gt;
+&lt;li&gt;あとでちゃんと知ったほうが良さげな奴 : Cluster（クラスター）/ Task（タスク）/ Service（サービス）&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://docs.aws.amazon.com/ja_jp/AmazonECS/latest/developerguide/Welcome.html&#34;&gt;参考:Amazon Elastic Container Service とは&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/NewGyu/items/9597ed2eda763bd504d7&#34;&gt;参考:Amazon EC2 Container Service(ECS)の概念整理&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://www.mpon.me/entry/2017/11/19/200000&#34;&gt;参考:ECSの概念を理解しよう&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&#34;2018-06-13-learned&#34;&gt;2018/06/13 - Learned&lt;/h2&gt;
+
+&lt;p&gt;6月13日（水）のToday I Leaned.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;梅雨突入にもかかわらず奇跡的に天気予報が一週間連続で雨ではない金沢…！（奇跡か）&lt;/li&gt;
+&lt;li&gt;ゼルダBoWやってて、トロッコ重ねて空中浮遊してたら、ハイラル城のてっぺんに到着してしまい、道中のザコ敵・中ボス全てすっ飛ばしてガノンと戦う羽目になる事案が発生。意図せぬエンドロールを見る羽目に。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;javascript&#34;&gt;JavaScript&lt;/h3&gt;
+
+&lt;h4 id=&#34;seoについて&#34;&gt;SEOについて&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;GoogleはJSによるクライアントサイドのnoindex処理を非推奨としているので、表示したくないコンテンツがある場合はHTML自体に&lt;code&gt;noindex&lt;/code&gt;をちゃんと入れよう。&lt;/li&gt;
+&lt;li&gt;現状、GooglebotはWebサイトを2回クロールしているが、1度目のクロールではJSレンダリングの解析はされず、2度目のクロールで解析されている。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.suzukikenichi.com/blog/adding-noindex-tag-with-javascript-isnt-recommended/&#34;&gt;参考:JavaScriptによるnoindex挿入をGoogleは推奨せず、JSレンダリングはセカンドウェーブのインデックス&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;domcontentloadedイベント&#34;&gt;DOMContentLoadedイベント&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;window.onload&lt;/code&gt; の場合は、&lt;code&gt;字句解析 -&amp;gt; 構文解析 -&amp;gt; DOM構築 -&amp;gt; 画像ファイル・サブフレームの読込み&lt;/code&gt;完了後に実行するが、&lt;code&gt;DOMContentLoaded イベント&lt;/code&gt;を利用した場合は、DOM構築したタイミングで処理を実行する。&lt;/li&gt;
+&lt;li&gt;結果としてDOM解析が完了した時点で実行しても良い処理の場合は処理速度の向上が見込めるので最適なイベントを選択しよう。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-JavaScript&#34;&gt;// window.onload
+window.onload = function() {
+  return console.log(&#39;全ての画像とサブフレームのロードが完了後に処理&#39;);
+};
+
+// DOMContentLoaded
+document.addEventListener(&amp;quot;DOMContentLoaded&amp;quot;, function(event) {
+  return console.log(&#39;DOM構築が完了後に処理&#39;);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&#34;docker&#34;&gt;Docker&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Dockerはアプリケーションを開発（developing）・移動（shipping）・実行（running）するための、コンテナ型の仮想環境プラットフォーム&lt;/li&gt;
+&lt;li&gt;VirtualBoxみたいにホストOS上で仮想マシンを立ち上げてゲストOSを動かすのではなく、ホストマシンのカーネルを共有する事で、ホスト側仮想化ソフト -&amp;gt; ゲストOSの分のいろいろな手間がかからない。&lt;/li&gt;
+&lt;li&gt;環境をコード化して、共有することで複数人での同一な環境構築の手間が短縮できる・楽（雑）&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/9en/items/f4eab2f61485a9f3885a&#34;&gt;参考:仮想環境についてまとめてみる&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/hogehoge1234/items/b68e78cc4acb42cdca3d&#34;&gt;参考:dockerで何ができるの？なんで使うの？を初心者がまとめる&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;TODO:カーネルを個別に変えたい場合ってどんなケースなの？&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://docs.docker.jp/engine/articles/dockerfile_best-practice.html&#34;&gt;参考:Docker-docs-ja&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;aws&#34;&gt;AWS&lt;/h3&gt;
+
+&lt;h4 id=&#34;key-management-service&#34;&gt;Key Management Service&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;データキーをを使ってデータを暗号化できるが、データキーを紛失すると暗号化データが復号化されてしまうので、データキー自体を暗号化したマスターキーを用意。マスターキーはAWS側に保存できるよ。っていうサービス。&lt;/li&gt;
+&lt;li&gt;リージョン毎にキーを管理する仕様。キーごとにアクセス範囲を設定可能。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.slideshare.net/torazuka/10key-management-service&#34;&gt;参考:10分でわかるKey Management Serviceの仕組み #cmdevio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;TODO:暗号化するべきデータの基準とは一体…。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;terminal&#34;&gt;Terminal&lt;/h3&gt;
+
+&lt;h4 id=&#34;nodebrewのinstall-binaryについて&#34;&gt;nodebrewのinstall-binaryについて&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;〈毎回忘れるのでメモ〉node.jsのバージョンマネージャーnodebrewについて。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;nodebrew install &amp;lt;version&amp;gt;&lt;/code&gt;にするとコンパイルありで、&lt;code&gt;nodebrew install-binary &amp;lt;version&amp;gt;&lt;/code&gt; にするとコンパイルないことによってインストールする時間が高速になる（およそ1/15程度の時間差があるとの事）&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/yn-misaki/items/e92a47c662ea6d1236c1&#34;&gt;参考:Nodebrewを使ってNode.jsを超高速にインストールする方法&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;ここまで調べて思った事「自分のPC環境は全て、anyenvで統一されているのでndenvでござった・・・:(」&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;pbcopyが非常に便利&#34;&gt;pbcopyが非常に便利&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cat &amp;lt;filName&amp;gt; | pbcopy&lt;/code&gt; で指定したファイルの中身をコピペできる&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cat ~/.ssh/id_rsa.pub | pbcopy&lt;/code&gt; で公開鍵をコピーしたり、中身を共有したいファイルをコピペする時に便利。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2018-06-14-learned&#34;&gt;2018/06/14 - Learned&lt;/h2&gt;
+
+&lt;p&gt;6月14日（木）のToday I Leaned.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;梅雨なのに金沢晴れてる！すげー！&lt;/li&gt;
+&lt;li&gt;このTILのスタンスとしては個人的に「◯◯ってなんだっけ」って思った時に見返す備忘録用。&lt;/li&gt;
+&lt;li&gt;また、性格診断による私のタイプは、&lt;a href=&#34;https://www.16personalities.com/ja/esfp%E5%9E%8B%E3%81%AE%E6%80%A7%E6%A0%BC&#34;&gt;エンターテイナー型&lt;/a&gt;らしい&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;shell-command&#34;&gt;Shell Command&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;今日知った、気になったコマンドたち。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;jqコマンド&#34;&gt;jqコマンド&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;brew install jq&lt;/code&gt; で仲間入りしてくれる、JSONから簡単に値を抜き出したり、集計したり、整形して表示したりできるJSON用のgrepとかawkみたいなコマンド（らしい）&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/takeshinoda@github/items/2dec7a72930ec1f658af&#34;&gt;参考:jq コマンドを使う日常のご紹介&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;TODO:今度JSONファイルになんかする時に利用してみる&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;tail-f-コマンド&#34;&gt;tail -F コマンド&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ファイルの末尾をCLI上で表示してくれるコマンドだけど、&lt;code&gt;-F&lt;/code&gt;をつける事によって中身が更新されたりしても、そのまま続きを表示してくれる。&lt;/li&gt;
+&lt;li&gt;error.logなどのファイルを見て問題解決を行いたい時に使うととても便利っぽい。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/sakito/items/7f65e16f10b3d754f307&#34;&gt;参考:tailコマンドのオプション「f」と「F」&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;todo&#34;&gt;TODO&lt;/h3&gt;
+
+&lt;p&gt;追々ちゃんと理解したいもの。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;リバースプロキシについて | &lt;a href=&#34;http://wa3.i-3-i.info/word1755.html&#34;&gt;参考:リバースプロキシ|「分かりそう」で「分からない」でも「分かった」気になれるIT用語辞典&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;KVS（Key-Value Store）について | &lt;a href=&#34;https://qiita.com/uenohara/items/23eb6ee1259f8a927445&#34;&gt;参考:KVS（Key-Value Store）とは&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Redisについて &lt;a href=&#34;https://www.slideshare.net/yujiotani16/redis-76504393&#34;&gt;参考:Redisの特徴と活用方法について&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Promiseとasync/awaiteについて | &lt;a href=&#34;https://qiita.com/nabepon/items/1be1e83b0d17ee4f42a9&#34;&gt;参考:Promise と async/await を始めからていねいに&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2018-06-15-learned&#34;&gt;2018/06/15 - Learned&lt;/h2&gt;
+
+&lt;p&gt;6月15日（金）のToday I Leaned.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Terminal/ShellCommandと表記ブレしてたが、そもそもこれはLinuxCommandという名称が正しいのではないか説&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;docker-1&#34;&gt;Docker&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Dockerもっとわかりやすそうな資料あるやん！の巻
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://morizyun.github.io/docker/about-docker-command.html&#34;&gt;参考:Dockerでよく使うコマンドまとめ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/aild_arch_bfmv/items/d47caf37b79e855af95f&#34;&gt;参考:&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;dockerとdocker-composeの違い&#34;&gt;dockerとdocker-composeの違い&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;dockerはコンテナの元になるイメージから、コンテナを作成する。
+
+&lt;ul&gt;
+&lt;li&gt;コンストラクタからインスタンス作成するイメージ&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;react&#34;&gt;React&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Reactが推奨するコンポーネントの種類
+
+&lt;ul&gt;
+&lt;li&gt;コンテナーコンポーネント&lt;/li&gt;
+&lt;li&gt;ロジック/処理を持つ事ができ、下記のプレゼンテーショナルコンポーネントを格納する。&lt;/li&gt;
+&lt;li&gt;プレゼンテーショナルコンポーネント&lt;/li&gt;
+&lt;li&gt;ロジックは持たず、状態毎のDOM（コンポーネント）をもつ。コンテナに格納される。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2018-06-16-learned&#34;&gt;2018/06/16 - Learned&lt;/h2&gt;
+
+&lt;p&gt;6月15日（土）のToday I Leaned.&lt;br /&gt;
+&lt;a href=&#34;https://kzrb.doorkeeper.jp/events/73677&#34;&gt;kanazawa.rb meetup #70&lt;/a&gt; に参加してきたので、ここ数日で出たTODOについて調べたりともくもくしてきました。&lt;/p&gt;
+
+&lt;h3 id=&#34;todoをひたすら調べる&#34;&gt;TODOをひたすら調べる！&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;下記、調べた &amp;amp; 人に聞いた（ありがとうございやす）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;docker-カーネルを個別に変えたい場合ってどんなケースなのか&#34;&gt;Docker - カーネルを個別に変えたい場合ってどんなケースなのか？&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ケース: ホストOS自体を変えたい場合だったり、レジストリ自体を変えたい場合など&lt;/li&gt;
+&lt;li&gt;結　論: 自分のように手元で開発環境を作りたいという用途くらいであれば、基本的には気にしなくて良さそうな感じだった。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;aws-key-management-service-kvs-で暗号化するべきデータとは一体&#34;&gt;AWS Key Management Service（KVS）で暗号化するべきデータとは一体&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;各サービスを特定するような個人情報に該当するもの。
+
+&lt;ul&gt;
+&lt;li&gt;id・pass / 認証情報 / 秘密鍵など&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;わかりやすく言うと「この◯◯はgithubに公開しちゃったら第三者に悪用されます」みたいなデータは該当（なるほど）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;httpie&#34;&gt;HTTPie&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CLIからいい感じにJSONとかを利用する事ができるらしい（？）&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/ytabuchi/items/02fa15ac209823a4d19f&#34;&gt;curlに変わる便利コマンドHTTPieを使ってみた&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;civic-hackとawsの話&#34;&gt;CIVIC HACKとAWSの話&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CIVICHACKとは、主にレガシーかつ封建的な環境に対してTechアプローチを入れることでいい感じに問題解決を図ろうぜって言うやつ。
+
+&lt;ul&gt;
+&lt;li&gt;うちの経営企画室に近い匂いを感じる。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;今回のAWSのイベントでは、各企業のプロダクトの紹介がされているショーケースの横にAmazon IoT Enterprise Buttonがあって、その場で「FBのいいね」ができるようになっていた模様。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;ruby2-6-0について&#34;&gt;Ruby2.6.0について&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;現在はプレビュー版らしくおそらく年末あたりにリリース予定。&lt;/li&gt;
+&lt;li&gt;終端なしRange（endless range）という機能が便利そう。
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;(1..10)&lt;/code&gt;  endress range じゃない今までの終端ありのRange&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;(1..)&lt;/code&gt; # endress range&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;今までは冗長的な記述を行う必要があったが少ない記述量で実現したい事が実行できるようになるとの事。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;vue-vuex-nuxt&#34;&gt;vue+vuex+nuxt&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Local-Storageを使う際は、&lt;/li&gt;
+&lt;li&gt;NuxtのデフォルトサーバーはCache-controlしないのでCDNと組みわせるとやばい。
+
+&lt;ul&gt;
+&lt;li&gt;Nuxtで組み上げるとどれ使いますか？って聞かれるので別のもの（Koaとか）を使うと良いらしい。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h5 id=&#34;promise-async-await&#34;&gt;Promise - async/await&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ちょうどこれからPromise, async/awaitを学習はじめる所なので参考にしよう。
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/nabepon/items/1be1e83b0d17ee4f42a9&#34;&gt;参考:Promise と async/await を始めからていねいに&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://aligach.net/diary/20180526.html#p01&#34;&gt;ES2017のasync/awaitのキソ練習&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;運用ブレスト聞きながら思ったこと&#34;&gt;運用ブレスト聞きながら思ったこと&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;具体的な内容を記載するのは避けるけど…参考にしたい所が多い:-)
+
+&lt;ul&gt;
+&lt;li&gt;仕組み・運用づくりがうまい&lt;/li&gt;
+&lt;li&gt;質問の仕方だったり説明の仕方がうまい&lt;/li&gt;
+&lt;li&gt;結論として落とし所を見つけるのかうまい&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;（ただ個人的に、どこまでの人が権限を持って運営してるのあんまりわかっていない）
+
+&lt;ul&gt;
+&lt;li&gt;後ほど聞いた所、5名くらいらしい（なるほど）&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>2018/06 - one week I Learned</title>
@@ -3379,111 +3836,6 @@ const notPure2 = (x) =&amp;gt; { console.log(&#39;foo&#39;); return x + 1; };
 &lt;h4 id=&#34;イベントレポートはこちら&#34;&gt;イベントレポートはこちら&lt;/h4&gt;
 
 &lt;p&gt;&lt;a href=&#34;http://kzrb.org/meetup/54/report.html&#34;&gt;meetup #54 report&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>2017/02/03（金）に社内のスキルアップを目的として「南町ビアバッシュ」という名の社内イベントを開催しました</title>
-      <link>https://kglabo.com/blog/dmm-minimi-beerbash03/</link>
-      <pubDate>Mon, 06 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://kglabo.com/blog/dmm-minimi-beerbash03/</guid>
-      <description>
-
-&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-
-&lt;p&gt;2017/02/03（金）に「南町ビアバッシュ」という名で社内ビアバッシュイベントを開催してきました。&lt;br /&gt;
-とりあえず業務に役立ちそうな内容ならなんでもOKという名目で、&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;登壇者のプレゼン力向上&lt;/li&gt;
-&lt;li&gt;勉強会参加への敷居低下&lt;/li&gt;
-&lt;li&gt;参加者ごとの職域範囲外の知識取得&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;を目的としてやってます :-)&lt;br /&gt;
-(追々は社外の勉強会でも気軽にLTして欲しい)&lt;/p&gt;
-
-&lt;p&gt;今回は3回目の開催となるんですが、LT登壇者ナンパのかいもあって、&lt;br /&gt;
-12名ほどの方に様々なLTをして頂く事が出来ました！&lt;/p&gt;
-
-&lt;h2 id=&#34;発表した内容はこちら&#34;&gt;発表した内容はこちら&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://speakerdeck.com/yu_kgr/za-namatomewosaitohua-sitarayi-nili-tisoututehua&#34;&gt;雑なまとめをサイト化したら役に立ちそうって話&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;感想&#34;&gt;感想&lt;/h2&gt;
-
-&lt;p&gt;5分LTで上記の内容を発表したけど、運営準備と資料作成+業務が丁度忙しかったせいで、&lt;br /&gt;
-完成したブツは5分どころではなく10分モノだった＼(^o^)／&lt;/p&gt;
-
-&lt;p&gt;今度はもうちょっとライトにした内容の5分版と、&lt;br /&gt;
-デモありの10分版を用意しようかなーと思いました　まる。&lt;/p&gt;
-
-&lt;p&gt;今回、tilリポジトリについて紹介するLTもあって、&lt;br /&gt;
-前から名前ぐらいは知ってたんだけど、&lt;br /&gt;
-改めてどういう使い方をすればよいのかわかって良かった。&lt;/p&gt;
-
-&lt;p&gt;あとは管理職の方々も発表してくれたので、チームビルディング系のLTも聞けて非常に勉強になった。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;タックマンモデル
-
-&lt;ul&gt;
-&lt;li&gt;チームがどういう状態があり、どういう事をするべきか。という内容であったり、&lt;br /&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;チームのメンバーの知識がどういった時には、&lt;br /&gt;
-どういった事をしてあければよいか？というのをフロー図で説明した内容など…。&lt;/p&gt;
-
-&lt;p&gt;ついでにKeynoteの設定いじってたら、Keynote syncとか言う機能があるのを発見して、&lt;br /&gt;
-Keynote上で作成したURLを知らせれば、そこにアクセスすればリアルタイムにプレゼンできる。&lt;br /&gt;
-みたいな機能っぽいので、次回のビアバッシュで場所にとらわれず東京のメンバーからも、&lt;br /&gt;
-それを利用して遠隔でLTしたりできないかなーとか思った。&lt;/p&gt;
-
-&lt;h3 id=&#34;反省点&#34;&gt;反省点&lt;/h3&gt;
-
-&lt;h4 id=&#34;運営するとき&#34;&gt;運営するとき&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;大体、みんな遅れる&lt;/li&gt;
-&lt;li&gt;開始直前にPCがフリーズして開始時間が遅れる
-
-&lt;ul&gt;
-&lt;li&gt;結果として休憩時間を省く&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;以外とピザとビールが一瞬でなくなる
-
-&lt;ul&gt;
-&lt;li&gt;買い足しすると参加費を超える&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;ltするとき&#34;&gt;LTするとき&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;デモ中に自分のサイトERRORで落とす→治らない
-
-&lt;ul&gt;
-&lt;li&gt;LTでデモする時はデモも事前に検証する&lt;/li&gt;
-&lt;li&gt;ある意味、新しいLTのネタ出来た&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;気になったもの&#34;&gt;気になったもの&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;チームビルディングの理論の一つ&lt;a href=&#34;http://heart-quake.com/article.php?p=396&#34;&gt;タックマンモデル&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://amzn.asia/eWFfIhb&#34;&gt;パフォーマンス・マネジメント&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;また来月あたり開催します :-)&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h5 id=&#34;来週末誕生日なのでプレゼントお待ちしております&#34;&gt;来週末誕生日なのでプレゼントお待ちしております！&lt;/h5&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://amzn.asia/4ck0SJL&#34;&gt;yu-kgrは欲しがってる&lt;/a&gt;&lt;/p&gt;
 </description>
     </item>
     
