@@ -212,7 +212,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 6月14日（木）のToday I Leaned.
 
 - 梅雨なのに金沢晴れてる！すげー！
-- 尚、当TILのスタンスとしては個人的に「◯◯ってなんだっけ」って思った時に見返す備忘録用。
+- このTILのスタンスとしては個人的に「◯◯ってなんだっけ」って思った時に見返す備忘録用。
+- また、性格診断による私のタイプは、[エンターテイナー型](https://www.16personalities.com/ja/esfp%E5%9E%8B%E3%81%AE%E6%80%A7%E6%A0%BC)らしい
 
 ### Shell Command
 
@@ -241,16 +242,90 @@ document.addEventListener("DOMContentLoaded", function(event) {
 - Promiseとasync/awaiteについて | [参考:Promise と async/await を始めからていねいに](https://qiita.com/nabepon/items/1be1e83b0d17ee4f42a9)
 
 
----
-
 ## 2018/06/15 - Learned
 
-6月15日（水）のToday I Leaned.
+6月15日（金）のToday I Leaned.
 
-### カテゴリ5
+### Docker
 
-#### 子カテゴリ5
+- Dockerもっとわかりやすそうな資料あるやん！の巻
+  - [参考:Dockerでよく使うコマンドまとめ](https://morizyun.github.io/docker/about-docker-command.html)
+  - [参考:](https://qiita.com/aild_arch_bfmv/items/d47caf37b79e855af95f)
 
----
+#### dockerとdocker-composeの違い
 
-### 雑感
+- dockerはコンテナの元になるイメージから、コンテナを作成する。
+  - コンストラクタからインスタンス作成するイメージ
+
+#### Linux Command
+
+- Terminal/ShellCommandと表記ブレしてたが、そもそもこれはLinuxCommandという名称が正しいのではないか説
+
+#### React
+
+- Reactが推奨するコンポーネントの種類
+  - コンテナーコンポーネント
+    - ロジック/処理を持つ事ができる
+  - プレゼンテーショナルコンポーネント == プレゼンテーショナルコンポーネント
+    - 
+
+## 2018/06/16 - Learned
+
+6月15日（土）のToday I Leaned.
+
+### TODOをひたすら調べる
+
+#### Docker - カーネルを個別に変えたい場合ってどんなケースなのか？
+
+- ケース: ホストOS自体を変えたい場合だったり、レジストリ自体を変えたい場合など
+- 結　論: 自分のように手元で開発環境を作りたいという用途くらいであれば、基本的には気にしなくて良さそうな感じだった。
+
+#### AWS Key Management Service（KVS）で暗号化するべきデータとは一体
+
+- 各サービスを特定するような個人情報に該当するもの。
+  - id・pass / 認証情報 / 秘密鍵など
+- わかりやすく言うと「この◯◯はgithubに公開しちゃったら第三者に悪用されます」みたいなデータは該当（なるほど）
+
+### kzrb#70 is TIL
+
+- [kanazawa.rb meetup #70](https://kzrb.doorkeeper.jp/events/73677) is 参加してきたので知ったものなどなど。
+
+#### httPie
+
+- いい感じにJSONとかを利用する事ができるらしい。
+- [curlに変わる便利コマンドHTTPieを使ってみた](https://qiita.com/ytabuchi/items/02fa15ac209823a4d19f)
+
+#### CIVIC HACKとAWSの話
+
+- CIVICHACKとは、主にレガシーかつ封建的な環境に対してTechアプローチを入れることでいい感じに問題解決を図ろうぜって言うやつ。
+  - 弊社の経営企画室に近い匂いを感じる。
+- 今回のAWSのイベントでは、各企業のプロダクトの紹介がされているショーケースの横にAmazon IoT Enterprise Buttonがあって、その場で「FBのいいね」ができるようになっていた模様。
+
+#### Ruby2.6.0について
+
+- 現在はプレビュー版らしくおそらく年末あたりにリリース予定。
+- 終端なしRange（endless range）という機能が便利そう。
+  - `(1..10)`  endress range じゃない今までの終端ありのRange
+  - `(1..)` # endress range
+- 今までは冗長的な記述を行う必要があったが少ない記述量で実現したい事が実行できるようになるとの事。
+
+### vue+vuex+nuxt
+
+1. Local-Storageを使う際は、
+2. NuxtのデフォルトサーバーはCache-controlしないのでCDNと組みわせるとやばい。
+  - Nuxtで組み上げるとどれ使いますか？って聞かれるので別のもの（Koaとか）を使うと良いらしい。
+
+##### Promise - async/await
+
+- ちょうどこれからPromise, async/awaitを学習はじめる所なので参考にしよう。
+  - [参考:Promise と async/await を始めからていねいに](https://qiita.com/nabepon/items/1be1e83b0d17ee4f42a9)
+  - [ES2017のasync/awaitのキソ練習](http://aligach.net/diary/20180526.html#p01)
+
+#### 運用ブレスト聞きながら思ったこと
+
+- 具体的な内容を記載するのは避けるけど…参考にしたい所が多い:-)
+  - 仕組み・運用づくりがうまい
+  - 質問の仕方だったり説明の仕方がうまい
+  - 結論として落とし所を見つけるのかうまい
+- （ただ個人的に、どこまでの人が権限を持って運営してるのあんまりわかっていない）
+  - 後ほど聞いた所、5名くらいらしい（なるほど）
