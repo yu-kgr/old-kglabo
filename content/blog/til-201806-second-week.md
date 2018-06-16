@@ -246,6 +246,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 6月15日（金）のToday I Leaned.
 
+- Terminal/ShellCommandと表記ブレしてたが、そもそもこれはLinuxCommandという名称が正しいのではないか説
+
 ### Docker
 
 - Dockerもっとわかりやすそうな資料あるやん！の巻
@@ -257,23 +259,22 @@ document.addEventListener("DOMContentLoaded", function(event) {
 - dockerはコンテナの元になるイメージから、コンテナを作成する。
   - コンストラクタからインスタンス作成するイメージ
 
-#### Linux Command
-
-- Terminal/ShellCommandと表記ブレしてたが、そもそもこれはLinuxCommandという名称が正しいのではないか説
-
-#### React
+### React
 
 - Reactが推奨するコンポーネントの種類
   - コンテナーコンポーネント
-    - ロジック/処理を持つ事ができる
-  - プレゼンテーショナルコンポーネント == プレゼンテーショナルコンポーネント
-    - 
+    - ロジック/処理を持つ事ができ、下記のプレゼンテーショナルコンポーネントを格納する。
+  - プレゼンテーショナルコンポーネント
+    - ロジックは持たず、状態毎のDOM（コンポーネント）をもつ。コンテナに格納される。
 
 ## 2018/06/16 - Learned
 
-6月15日（土）のToday I Leaned.
+6月15日（土）のToday I Leaned.  
+[kanazawa.rb meetup #70](https://kzrb.doorkeeper.jp/events/73677) に参加してきたので、ここ数日で出たTODOについて調べたりともくもくしてきました。
 
-### TODOをひたすら調べる
+### TODOをひたすら調べる！
+
+- 下記、調べた & 人に聞いた（ありがとうございやす）
 
 #### Docker - カーネルを個別に変えたい場合ってどんなケースなのか？
 
@@ -286,19 +287,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
   - id・pass / 認証情報 / 秘密鍵など
 - わかりやすく言うと「この◯◯はgithubに公開しちゃったら第三者に悪用されます」みたいなデータは該当（なるほど）
 
-### kzrb#70 is TIL
+#### HTTPie
 
-- [kanazawa.rb meetup #70](https://kzrb.doorkeeper.jp/events/73677) is 参加してきたので知ったものなどなど。
-
-#### httPie
-
-- いい感じにJSONとかを利用する事ができるらしい。
+- CLIからいい感じにJSONとかを利用する事ができるらしい（？）
 - [curlに変わる便利コマンドHTTPieを使ってみた](https://qiita.com/ytabuchi/items/02fa15ac209823a4d19f)
 
 #### CIVIC HACKとAWSの話
 
 - CIVICHACKとは、主にレガシーかつ封建的な環境に対してTechアプローチを入れることでいい感じに問題解決を図ろうぜって言うやつ。
-  - 弊社の経営企画室に近い匂いを感じる。
+  - うちの経営企画室に近い匂いを感じる。
 - 今回のAWSのイベントでは、各企業のプロダクトの紹介がされているショーケースの横にAmazon IoT Enterprise Buttonがあって、その場で「FBのいいね」ができるようになっていた模様。
 
 #### Ruby2.6.0について
