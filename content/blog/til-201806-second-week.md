@@ -13,7 +13,8 @@ draft = "false"
 
 # 今週、知った/学んだこと
 
-<!-- tags = [ "git", "ヘッドレスブラウザ"] -->
+<!-- tags = [ "git", "ヘッドレスブラウザ", "MultiAZ", "リージョン", "Availability Zone", "Amazon Elastic Container Registry", "Amazon Elastic Container Service", "DOMContentLoadedイベント", "Docker", "Key Management Service", "pbcopy", "jq", "tail", "kzrb"] -->
+
 
 ## 2018/06/11 - Learned
 
@@ -308,7 +309,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 ### vue+vuex+nuxt
 
-1. Local-Storageを使う際は、
+1. Local-Storageを使う際はなにかに注意しろ！（忘れた）
 2. NuxtのデフォルトサーバーはCache-controlしないのでCDNと組みわせるとやばい。
   - Nuxtで組み上げるとどれ使いますか？って聞かれるので別のもの（Koaとか）を使うと良いらしい。
 
