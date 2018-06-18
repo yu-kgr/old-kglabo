@@ -19,7 +19,7 @@
 
 &lt;h1 id=&#34;今週-知った-学んだこと&#34;&gt;今週、知った/学んだこと&lt;/h1&gt;
 
-&lt;!-- tags = [ &#34;git&#34;, &#34;ヘッドレスブラウザ&#34;] --&gt;
+&lt;!-- tags = [ &#34;git&#34;, &#34;ヘッドレスブラウザ&#34;, &#34;MultiAZ&#34;, &#34;リージョン&#34;, &#34;Availability Zone&#34;, &#34;Amazon Elastic Container Registry&#34;, &#34;Amazon Elastic Container Service&#34;, &#34;DOMContentLoadedイベント&#34;, &#34;Docker&#34;, &#34;Key Management Service&#34;, &#34;pbcopy&#34;, &#34;jq&#34;, &#34;tail&#34;, &#34;kzrb&#34;] --&gt;
 
 &lt;h2 id=&#34;2018-06-11-learned&#34;&gt;2018/06/11 - Learned&lt;/h2&gt;
 
@@ -428,7 +428,7 @@ document.addEventListener(&amp;quot;DOMContentLoaded&amp;quot;, function(event) 
 &lt;h3 id=&#34;vue-vuex-nuxt&#34;&gt;vue+vuex+nuxt&lt;/h3&gt;
 
 &lt;ol&gt;
-&lt;li&gt;Local-Storageを使う際は、&lt;/li&gt;
+&lt;li&gt;Local-Storageを使う際はなにかに注意しろ！（忘れた）&lt;/li&gt;
 &lt;li&gt;NuxtのデフォルトサーバーはCache-controlしないのでCDNと組みわせるとやばい。
 
 &lt;ul&gt;
