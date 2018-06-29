@@ -6,8 +6,135 @@
     <description>Recent content in TIL on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 15 Jun 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 22 Jun 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kglabo.com/categories/til/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2018/06 - Thaad week I Learned</title>
+      <link>https://kglabo.com/blog/til-201806-thaad-week/</link>
+      <pubDate>Fri, 22 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kglabo.com/blog/til-201806-thaad-week/</guid>
+      <description>
+
+&lt;h1 id=&#34;今週-知った-学んだこと&#34;&gt;今週、知った/学んだこと&lt;/h1&gt;
+
+&lt;!-- tags = [&#34;スタートアップ&#34;, &#34;hjson&#34;, &#34;Linux Command&#34;, &#34;ルーティング&#34;, &#34;&#34;] --&gt;
+
+&lt;h2 id=&#34;2018-06-18-learned&#34;&gt;2018/06/18 - Learned&lt;/h2&gt;
+
+&lt;p&gt;6月18日（月）のToday I Leaned.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;なんか少しずつ新しく知った知見をまとめつ思ったのが、一旦小さくてもいいからアプリケーションをゼロから構築したほうが「あ、あれは◯◯でやった奴や」的な進研ゼミ的な体験が出来る気がしてきたので作って見ようかと思う。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ベンチャー企業とスタートアップ企業の違い&#34;&gt;ベンチャー企業とスタートアップ企業の違い&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;なんとなく思ってたので、あらためて「ほほう、そうなのか。」と思った事案。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://blog.btrax.com/jp/2013/04/22/startup-2/&#34;&gt;参考:ベンチャー企業とスタートアップの違い&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;これで言うと最近のレシート10円買い取りサービスの「ONE」はスタートアップな気がする。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;ベンチャー企業&#34;&gt;ベンチャー企業&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ベンチャー・キャピタル（ハイリターンを狙ったアグレッシブな投資を行う投資会社）から投資を受けた企業の事を示すが、日本では新しく出来た小さな会社を示している事が多い。&lt;/li&gt;
+&lt;li&gt;そもそも日本人が作った和製英語であり、外国では通じない。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;スタートアップ企業&#34;&gt;スタートアップ企業&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;新しいビジネスモデルを開発し、ごく短時間のうちに急激な成長とエクジットを狙う事で一獲千金を狙う人々の一時的な集合体。
+
+&lt;ul&gt;
+&lt;li&gt;存在意義は「今までに無いイノベーションを通じ、人々の生活と世の中を変える事」&lt;/li&gt;
+&lt;li&gt;主に「全員が攻めに徹する“完全ぶっこみ型カミカゼチーム”」で構成される。&lt;/li&gt;
+&lt;li&gt;最初の仕事は「ビジネスモデルを見つける事」&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;hjson-人が読めるjsonファイル&#34;&gt;hjson - 人が読めるjsonファイル&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://co.bsnws.net/article/131&#34;&gt;参考:コメントが書ける新しいjsonフォーマット「hjson」&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;hjsonとは、人が読めるようにコメントアウトが記述可能なjsonファイル&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Human JavaScript Object Notation&lt;/code&gt;の略らしい。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;過去、json内にkey名を重複される事でコメントを入れるという力技で処理していたので、もっと早くにこれを知りたかった。。。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;ネットワーク-インフラ関係&#34;&gt;ネットワーク/インフラ関係&lt;/h3&gt;
+
+&lt;h4 id=&#34;ルーティング&#34;&gt;ルーティング&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ルータがルーティングテーブルを参照してデータを正しい所に判断・誘導する仕組みをルーティングという。
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://wa3.i-3-i.info/word1498.html&#34;&gt;参考:ルーティング (routing)とは&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&#34;各フレームワークでのルーティング&#34;&gt;各フレームワークでのルーティング&lt;/h5&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Reactの場合はこんなかんじ - &lt;a href=&#34;https://qiita.com/nakamura_hikaru/items/288ddc802b00ca1d191e&#34;&gt;React.jsでルーティングします。&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Expressの場合はこんなかんじ - &lt;a href=&#34;http://expressjs.com/ja/starter/basic-routing.html&#34;&gt;Expressの基本的なルーティング&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;linux-command&#34;&gt;Linux Command&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;touch {ファイル名}&lt;/code&gt;でファイルが存在しない場合はファイルを生成できる&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;echo {記載したい内容} &amp;gt;&amp;gt; {ファイル名}&lt;/code&gt; で該当ファイルに対して、文字を追加出来る&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;echo {記載したい内容} &amp;gt; {ファイル名}&lt;/code&gt;でbashの場合は該当ファイルの中身を上書き。
+
+&lt;ul&gt;
+&lt;li&gt;zshの場合はoverwriteする際は、&lt;code&gt;&amp;gt;&lt;/code&gt;ではなく&lt;code&gt;&amp;gt;!&lt;/code&gt;になる&lt;/li&gt;
+&lt;li&gt;またzshの場合、文字列&lt;code&gt;[]&lt;/code&gt; がコマンド認識されて&lt;code&gt;no matches found:が返ってくるので&lt;/code&gt;&amp;rdquo;&amp;rdquo;`で囲む必要あり&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cat {fileName}&lt;/code&gt; でファイル内容を表示可能。
+
+&lt;ul&gt;
+&lt;li&gt;前に記載していた pbcopyをパイプでつないで併用すると便利。 &lt;code&gt;cat {fileName} | pbcopy&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2018-06-19-learned&#34;&gt;2018/06/19 - Learned&lt;/h2&gt;
+
+&lt;p&gt;6月19日（火）のToday I Leaned.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;喉がいがいがするなぁと思ったら風邪。風邪だと認識した時既に遅し。もっと早く気付ける仕組みがほしい。人間の体調も監視したい。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;組織の話&#34;&gt;組織の話&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://tinyurl.com/yb4rup4e&#34;&gt;参考:メルカリの小泉さんと組織の課題について話したら恐ろしい程勉強になった話&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;http://konifar.hatenablog.com/entry/2018/06/14/173716&#34;&gt;参考:Kyashに入社して半年くらい経ちました&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;なんかこういうの見てると「いろいろあるけどみんなでエモくガンガンいこうぜ。なんとかなるさ」って感想が出る（雑）&lt;/li&gt;
+&lt;li&gt;みんな松岡修造見習っていくといいのではないかというひとつの結論が・・・！&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;備考&#34;&gt;備考&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;これ以降、6/27日までしばらく肺炎にてダウンしたのでおやすみタイム。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>2018/06 - second week I Learned</title>
