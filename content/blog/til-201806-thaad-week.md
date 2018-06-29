@@ -8,7 +8,7 @@ featuredalt = "til"
 featuredpath = "https://kglabo.com"
 title = "2018/06 - Thaad week I Learned"
 type = "post"
-draft = "true"
+draft = "false"
 +++
 
 # 今週、知った/学んだこと
@@ -55,7 +55,7 @@ draft = "true"
 
 ##### 各フレームワークでのルーティング
 
-- Reactの場合はこんなかんじ - [React.jsでルーティングします。](http://expressjs.com/ja/starter/basic-routing.html)
+- Reactの場合はこんなかんじ - [React.jsでルーティングします。](https://qiita.com/nakamura_hikaru/items/288ddc802b00ca1d191e)
 - Expressの場合はこんなかんじ - [Expressの基本的なルーティング](http://expressjs.com/ja/starter/basic-routing.html)
 
 ### Linux Command
@@ -72,46 +72,15 @@ draft = "true"
 
 6月19日（火）のToday I Leaned.
 
-- コメント
+- 喉がいがいがするなぁと思ったら風邪。風邪だと認識した時既に遅し。もっと早く気付ける仕組みがほしい。人間の体調も監視したい。
 
-### 大カテゴリ
+### 組織の話
 
-#### 中カテゴリ
+- [参考:メルカリの小泉さんと組織の課題について話したら恐ろしい程勉強になった話](https://tinyurl.com/yb4rup4e)
+- [参考:Kyashに入社して半年くらい経ちました](http://konifar.hatenablog.com/entry/2018/06/14/173716)
+  - なんかこういうの見てると「いろいろあるけどみんなでエモくガンガンいこうぜ。なんとかなるさ」って感想が出る（雑）
+  - みんな松岡修造見習っていくといいのではないかというひとつの結論が・・・！
 
-##### 小カテゴリ
+## 備考
 
-## 2018/06/20 - Learned
-
-6月20日（水）のToday I Leaned.
-
--コメント
-
-### 大カテゴリ
-
-#### 中カテゴリ
-
-##### 小カテゴリ
-
-## 2018/06/21 - Learned
-
-6月21日（木）のToday I Leaned.
-
--コメント
-
-### 大カテゴリ
-
-#### 中カテゴリ
-
-##### 小カテゴリ
-
-## 2018/06/22 - Learned
-
-6月22日（金）のToday I Leaned.
-
--コメント
-
-### 大カテゴリ
-
-#### 中カテゴリ
-
-##### 小カテゴリ
+- これ以降、6/27日までしばらく肺炎にてダウンしたのでおやすみタイム。
