@@ -19,19 +19,42 @@ draft = "true"
 
 7月2日（月）のToday I Leaned.
 
-### 大カテゴリ
+### ssh接続時のPermissionErrorについて
 
-#### 中カテゴリ
+- ssh keyのパーミッションがなんらかの理由で足りなくなる事があるらしいので、ちゃんと600設定してあげないといけない
+- 複数のssh keyがある場合に発生する模様？
+- [参考:MacのSSH接続でPermission denied (publickey)が出た時のおまじない](https://qiita.com/midasmn/items/5295f6799aa407f0fdcf)
 
----
 
 ## 2018/07/03 - Learned
 
 7月3日（火）のToday I Leaned.
 
-### 大カテゴリ
+### gitのmargeとrebaseについて
 
-#### 中カテゴリ
+- そういえば、branchを切ってからは基本的にPR飛ばしてからguthubやbitbucket側でmergeしてたから、margeとrebaseした事ない。
+- hogeブランチとmasterブランチがある場合で考える。
+
+####  margeの場合
+
+- masterブランチにhogeブランチを差し出すスタイル。
+- masterブランチのケツにhogeブランチコミットを乗せる。
+
+#### rebaceの場合
+
+- masterブランチの内容をhogeブランチに持ってくるスタイル。
+- 名前の通り、hogeブランチ側の最初に最新のmasterブランチの内容をもってきて改変する
+
+#### 備考
+
+- チームの運用ルールにもよるが、rebaseは不要なコミットログをひとまとめにする際に利用されるケースが多そう。
+
+
+### progateとcodeprepについて
+
+- progateは実際に書かせる奴で、codeprepは穴埋めドリルやらせる奴。
+- 個人的にはprogateで感覚掴んで、udemyで更になるほど感を高めた上でなんか作ってみるのが一番スムーズな気がする
+
 
 ----
 
