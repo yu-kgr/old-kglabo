@@ -19,11 +19,44 @@
 
 &lt;h1 id=&#34;今週-知った-学んだこと&#34;&gt;今週、知った/学んだこと&lt;/h1&gt;
 
-&lt;!-- tags = [&#34;&#34;] --&gt;
+&lt;!-- tags = [&#34;VSCode&#34;] --&gt;
 
 &lt;h2 id=&#34;2018-07-09-learned&#34;&gt;2018/07/09 - Learned&lt;/h2&gt;
 
 &lt;p&gt;7月9日（月）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;vscodeで独自のsyntaxhighlightを作る方法&#34;&gt;VSCodeで独自のSyntaxHighlightを作る方法&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;結論 : テンプレートエンジン&lt;code&gt;ect&lt;/code&gt;のSyntaxHighlightがSublimeText / Atomにはあるにも関わらず、VSCodeにはなかったので自作した。
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/yu-kgr/vscode-ect-syntax-highlight&#34;&gt;ect-highlight&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://prius.hateblo.jp/entry/2016/10/15/121707&#34;&gt;参考:Visual Studio CodeでPlane Text(.txt)で自分独自記法のハイライト表示&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://blog.kondoumh.com/entry/2018/01/12/084409&#34;&gt;参考:VS Code の ChangeLog 用 Extension を作成する&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+&lt;li&gt;ect.tmLanguageファイルを作成
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/peppage/language-ect&#34;&gt;atom用の設定ファイルを参考&lt;/a&gt;に用意。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;The Yo Code Visual Studio Code Extension Generator&lt;/code&gt;を使って、VS Code用にコンバートしつつ、生成されたファイルを微修正。&lt;/li&gt;
+&lt;li&gt;VS Codeの指定箇所に配置する&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;所管&#34;&gt;所管&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;HTMLで表示していたのでHTMLLinterがエラー検知してやっかいだったのがでなくなって満足！&lt;/li&gt;
+&lt;li&gt;尚、VS CodeのMarketへの公開方法はいまいちわからなかった。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2018-07-10-learned&#34;&gt;2018/07/10 - Learned&lt;/h2&gt;
+
+&lt;p&gt;7月10日（火）のToday I Leaned.&lt;/p&gt;
 
 &lt;h3 id=&#34;大カテゴリ&#34;&gt;大カテゴリ&lt;/h3&gt;
 
@@ -31,9 +64,9 @@
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;2018-07-10-learned&#34;&gt;2018/07/10 - Learned&lt;/h2&gt;
+&lt;h2 id=&#34;2018-07-11-learned&#34;&gt;2018/07/11 - Learned&lt;/h2&gt;
 
-&lt;p&gt;7月10日（火）のToday I Leaned.&lt;/p&gt;
+&lt;p&gt;7月11日（水）のToday I Leaned.&lt;/p&gt;
 
 &lt;h3 id=&#34;大カテゴリ-1&#34;&gt;大カテゴリ&lt;/h3&gt;
 
@@ -41,9 +74,9 @@
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;2018-07-11-learned&#34;&gt;2018/07/11 - Learned&lt;/h2&gt;
+&lt;h2 id=&#34;2018-07-12-learned&#34;&gt;2018/07/12 - Learned&lt;/h2&gt;
 
-&lt;p&gt;7月11日（水）のToday I Leaned.&lt;/p&gt;
+&lt;p&gt;7月12日（木）のToday I Leaned.&lt;/p&gt;
 
 &lt;h3 id=&#34;大カテゴリ-2&#34;&gt;大カテゴリ&lt;/h3&gt;
 
@@ -51,23 +84,13 @@
 
 &lt;hr /&gt;
 
-&lt;h2 id=&#34;2018-07-12-learned&#34;&gt;2018/07/12 - Learned&lt;/h2&gt;
-
-&lt;p&gt;7月12日（木）のToday I Leaned.&lt;/p&gt;
-
-&lt;h3 id=&#34;大カテゴリ-3&#34;&gt;大カテゴリ&lt;/h3&gt;
-
-&lt;h4 id=&#34;中カテゴリ-3&#34;&gt;中カテゴリ&lt;/h4&gt;
-
-&lt;hr /&gt;
-
 &lt;h2 id=&#34;2018-07-13-learned&#34;&gt;2018/07/13 - Learned&lt;/h2&gt;
 
 &lt;p&gt;7月13日（金）のToday I Leaned.&lt;/p&gt;
 
-&lt;h3 id=&#34;大カテゴリ-4&#34;&gt;大カテゴリ&lt;/h3&gt;
+&lt;h3 id=&#34;大カテゴリ-3&#34;&gt;大カテゴリ&lt;/h3&gt;
 
-&lt;h4 id=&#34;中カテゴリ-4&#34;&gt;中カテゴリ&lt;/h4&gt;
+&lt;h4 id=&#34;中カテゴリ-3&#34;&gt;中カテゴリ&lt;/h4&gt;
 </description>
     </item>
     
