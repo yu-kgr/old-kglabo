@@ -13,7 +13,7 @@ draft = "true"
 
 # 今週、知った/学んだこと
 
-<!-- tags = ["ssh", "PermissionError", "git", "marge", "rebase", "学習サービス", ""] -->
+<!-- tags = ["ssh", "PermissionError", "git", "marge", "rebase", "学習サービス", "docker"] -->
 
 ## 2018/07/02 - Learned
 
@@ -60,15 +60,13 @@ draft = "true"
 7月4日（水）のToday I Leaned.
 
 - stylishというGoogle拡張があり「webページのstyleを個人的に変更するだけ」なんだけど、何に使えるのやらとずっと思ってた所、ブラウザベースで利用するようなアプリケーションとかでサービスとしてはとても優秀だけど「ちょっと見づらい・使いにくい」をこっちで勝手に解決しちゃうという使い方が出来る事が判明。これは便利。
-
-### Linux コマンド
-
-#### 
+  - 便利。と思った瞬間、ユーザー情報を勝手に取得しているという記事が湧いててできたので代替アプリのstylusに変更した。
 
 ### docker
 
 - 様々な用途に利用されるサーバの環境を簡単に用意できるやつ。
 - 僕/みんなの考えた最強のサーバ環境みたいなテンプレ（dockerイメージ）を元にして、手元に同じ環境（dockerコンテナ）を簡単に用意する事が出来る。
+  - ちなみに環境をDockerに閉じ込める事をDockerizeというらしい
 
 #### ザックリしたdokcer / docker-conposeの違い
 
@@ -82,7 +80,14 @@ draft = "true"
 - 構成された環境をまとめて立ち上げる処理等に関しては`docker-compose ***`を行う
   - `docker ***` コマンドで個別に立ち上げていく事も可能だが、それぞれのコンテナを起動する時に適切なオプションを指定してあげないととうまく連携しない。めんどくさい。
   - `docker-compose.yml`というファイルを用意して、起動時のオプションを記述しておく事でそれを起動時に参照していい感じに処理してくれる。
-  
+
+#### Dockerコンテナを作りかた
+
+1. Dockerfileを元にDockerイメージを作成
+  a. DockerHubからもってくる場合は、既に用意されているDockerイメージがあるのでDockerfileは不要
+2. Dockerイメージを元にDockerコンテナを作成
+3. 出来た！
+
 #### Dockerコンテナの性質
 
 `docker run --name sample1 -p 8090:80 -d nginx` のひと文でnginxサーバーが構築できちゃう。すごい。
@@ -100,26 +105,6 @@ draft = "true"
 
 #### WebサーバとしてHTML表示してみる
 
-- nginxで指定されているwebサーバのドキュメントルートとローカルのディレクトリのパスを関連付ける
+- nginxで指定されているwebサーバのドキュメントルートとローカルのディレクトリのパスを関連付けると表示出来る。
   - `docker run --name sample1 -p 8090:80 -v $PWD/web:/usr/share/nginx/html -d nginx`
   - `-v $PWD/web:use/share/nginx/html` の箇所で `-v [自PC側のファイルパス]:[Docker側のファイルパス]`で穴を開ける（`$PWD` は現時点で自分がいるディレクトリらしい）
-
----
-
-## 2018/07/05 - Learned
-
-7月5日（木）のToday I Leaned.
-
-### 大カテゴリ
-
-#### 中カテゴリ
-
----
-
-## 2018/07/06 - Learned
-
-7月6日（金）のToday I Leaned.
-
-### 大カテゴリ
-
-#### 中カテゴリ
