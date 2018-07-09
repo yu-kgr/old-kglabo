@@ -8,7 +8,7 @@ featuredalt = "til"
 featuredpath = "https://kglabo.com"
 title = "2018/07 - Second week I Learned"
 type = "post"
-draft = "flase"
+draft = "false"
 +++
 
 # 今週、知った/学んだこと
