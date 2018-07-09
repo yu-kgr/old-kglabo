@@ -13,17 +13,28 @@ draft = "false"
 
 # 今週、知った/学んだこと
 
-<!-- tags = [""] -->
+<!-- tags = ["VSCode"] -->
 
 ## 2018/07/09 - Learned
 
 7月9日（月）のToday I Leaned.
 
-### 大カテゴリ
+### VSCodeで独自のSyntaxHighlightを作る方法
 
-#### 中カテゴリ
+- 結論 : テンプレートエンジン`ect`のSyntaxHighlightがSublimeText / Atomにはあるにも関わらず、VSCodeにはなかったので自作した。
+  - [ect-highlight](https://github.com/yu-kgr/vscode-ect-syntax-highlight)
+  - [参考:Visual Studio CodeでPlane Text(.txt)で自分独自記法のハイライト表示](https://prius.hateblo.jp/entry/2016/10/15/121707)
+  - [参考:VS Code の ChangeLog 用 Extension を作成する](https://blog.kondoumh.com/entry/2018/01/12/084409)
 
----
+1. ect.tmLanguageファイルを作成
+  - [atom用の設定ファイルを参考](https://github.com/peppage/language-ect)に用意。
+2. `The Yo Code Visual Studio Code Extension Generator`を使って、VS Code用にコンバートしつつ、生成されたファイルを微修正。
+3. VS Codeの指定箇所に配置する
+
+#### 所管
+
+- HTMLで表示していたのでHTMLLinterがエラー検知してやっかいだったのがでなくなって満足！
+- 尚、VS CodeのMarketへの公開方法はいまいちわからなかった。
 
 ## 2018/07/10 - Learned
 
