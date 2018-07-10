@@ -47,7 +47,7 @@
 &lt;li&gt;VS Codeの指定箇所に配置する&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h4 id=&#34;所管&#34;&gt;所管&lt;/h4&gt;
+&lt;h4 id=&#34;所感&#34;&gt;所感&lt;/h4&gt;
 
 &lt;ul&gt;
 &lt;li&gt;HTMLで表示していたのでHTMLLinterがエラー検知してやっかいだったのがでなくなって満足！&lt;/li&gt;
@@ -58,9 +58,64 @@
 
 &lt;p&gt;7月10日（火）のToday I Leaned.&lt;/p&gt;
 
-&lt;h3 id=&#34;大カテゴリ&#34;&gt;大カテゴリ&lt;/h3&gt;
+&lt;h3 id=&#34;command-line&#34;&gt;Command Line&lt;/h3&gt;
 
-&lt;h4 id=&#34;中カテゴリ&#34;&gt;中カテゴリ&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://prog-8.com/lessons/commandline/study/1&#34;&gt;参考:progate コマンドライン学習コース&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;（よくわかってなかったCommandだけ抜粋。）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;pwd-command&#34;&gt;pwd Command&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Print Working Directory&lt;/code&gt; の略。現在いるディレクトリがどこかを返してくれる&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;ls-command&#34;&gt;ls Command&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;list&lt;/code&gt;の略。カレントディレクトリ内のディレクトリやファイルが一覧で表示される&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;mv-command&#34;&gt;mv Command&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;move&lt;/code&gt; の略。ファイルの移動及び、同じディレクトリに違う名前で移動する事が可能。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mv  {移動させたいファイル名} {移動先のディレクトリ名}&lt;/code&gt; または、 &lt;code&gt;mv  {移動させたいディレクトリ名} {移動先のディレクトリ名}&lt;/code&gt; でデータを移動する事が出来る。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mv {リネームしたいファイル名}&lt;/code&gt; &lt;code&gt;リネーム後のファイル名&lt;/code&gt; で、データの名称を変更する事も可能。&lt;/li&gt;
+&lt;li&gt;moveなのになんで名前変更できるねん。ってツッコミに対してはコチラの記事が参考になった。
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/junjis0203/items/9e8f642b04d9754f1139&#34;&gt;参考:mvでリネームができるわけをどこまで深く話せますか&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;cp-command&#34;&gt;cp Command&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;copy&lt;/code&gt; の略。ファイルのコピーを行う。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;cp {コピーするファイル名} {コピーされる新しいファイル名}&lt;/code&gt; でファイルをコピーする事ができる。&lt;/li&gt;
+&lt;li&gt;同様に&lt;code&gt;cp -r {コピーするディレクトリ名} {コピーされる新しいディレクトリ名}&lt;/code&gt; でディレクトリ単位でコピーする事ができる。
+
+&lt;ul&gt;
+&lt;li&gt;ディレクトリは&lt;code&gt;-r&lt;/code&gt;をつけないとコピーが実行されないので注意。&lt;/li&gt;
+&lt;li&gt;尚、 &lt;code&gt;-r&lt;/code&gt;は&lt;code&gt;--recursive&lt;/code&gt;の略でコピー元にディレクトリを指定した場合、再帰的に（サブディレクトリも含めて）コピーするという意味らしい。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;rm-command&#34;&gt;rm Command&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;remove&lt;/code&gt; の略。ファイルの削除を行う。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rm {削除するファイル名}&lt;/code&gt;でファイルを削除する事ができる。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;rm -r {削除するディレクトリ名}&lt;/code&gt; でディレクトリを削除する事ができる。
+
+&lt;ul&gt;
+&lt;li&gt;こちらもディレクトリは&lt;code&gt;-r&lt;/code&gt;をつけないと削除が実行されないので注意。
+
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
@@ -68,9 +123,9 @@
 
 &lt;p&gt;7月11日（水）のToday I Leaned.&lt;/p&gt;
 
-&lt;h3 id=&#34;大カテゴリ-1&#34;&gt;大カテゴリ&lt;/h3&gt;
+&lt;h3 id=&#34;大カテゴリ&#34;&gt;大カテゴリ&lt;/h3&gt;
 
-&lt;h4 id=&#34;中カテゴリ-1&#34;&gt;中カテゴリ&lt;/h4&gt;
+&lt;h4 id=&#34;中カテゴリ&#34;&gt;中カテゴリ&lt;/h4&gt;
 
 &lt;hr /&gt;
 
@@ -78,9 +133,9 @@
 
 &lt;p&gt;7月12日（木）のToday I Leaned.&lt;/p&gt;
 
-&lt;h3 id=&#34;大カテゴリ-2&#34;&gt;大カテゴリ&lt;/h3&gt;
+&lt;h3 id=&#34;大カテゴリ-1&#34;&gt;大カテゴリ&lt;/h3&gt;
 
-&lt;h4 id=&#34;中カテゴリ-2&#34;&gt;中カテゴリ&lt;/h4&gt;
+&lt;h4 id=&#34;中カテゴリ-1&#34;&gt;中カテゴリ&lt;/h4&gt;
 
 &lt;hr /&gt;
 
@@ -88,9 +143,9 @@
 
 &lt;p&gt;7月13日（金）のToday I Leaned.&lt;/p&gt;
 
-&lt;h3 id=&#34;大カテゴリ-3&#34;&gt;大カテゴリ&lt;/h3&gt;
+&lt;h3 id=&#34;大カテゴリ-2&#34;&gt;大カテゴリ&lt;/h3&gt;
 
-&lt;h4 id=&#34;中カテゴリ-3&#34;&gt;中カテゴリ&lt;/h4&gt;
+&lt;h4 id=&#34;中カテゴリ-2&#34;&gt;中カテゴリ&lt;/h4&gt;
 </description>
     </item>
     
