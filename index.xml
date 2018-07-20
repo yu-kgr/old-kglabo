@@ -181,8 +181,19 @@
 
 &lt;h4 id=&#34;設計時に考える事&#34;&gt;設計時に考える事&lt;/h4&gt;
 
+&lt;ul&gt;
+&lt;li&gt;Componentの分割とStateを誰に持たせるのかを事前に考えるたほうが良い。&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;ol&gt;
-&lt;li&gt;何を&lt;/li&gt;
+&lt;li&gt;何をしたら、どういった事が実現されるのかを決める&lt;/li&gt;
+&lt;li&gt;実現する為にどんなコンポーネントがいるのかを考える
+
+&lt;ul&gt;
+&lt;li&gt;大枠としてappコンポーネントがあり、その中に内包されるコンポーネントを考える&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;それぞれのコンポーネントに対して、どのような情報（ステート）が必要なのかを考える&lt;/li&gt;
+&lt;li&gt;コンポーネントから、情報（ステート）がどういう形で渡されていくのかを考える&lt;/li&gt;
 &lt;/ol&gt;
 </description>
     </item>
