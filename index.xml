@@ -6,8 +6,186 @@
     <description>Recent content on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 13 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Jul 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kglabo.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2018/07 - thaad week I Learned</title>
+      <link>https://kglabo.com/blog/til-201807-thaad-week/</link>
+      <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kglabo.com/blog/til-201807-thaad-week/</guid>
+      <description>
+
+&lt;h1 id=&#34;今週-知った-学んだこと&#34;&gt;今週、知った/学んだこと&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;数日間、海外に行っていたので抜けておりまする。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- tags = [&#34;Linux Command&#34;] --&gt;
+
+&lt;h2 id=&#34;2018-07-19-learned&#34;&gt;2018/07/19 - Learned&lt;/h2&gt;
+
+&lt;p&gt;7月19日（木）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;tail-head-command&#34;&gt;tail/head Command&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ファイルの内容を部分的に閲覧する事が可能。
+
+&lt;ul&gt;
+&lt;li&gt;「tail（尾）」がファイルの末尾10行（default）だけを表示する&lt;/li&gt;
+&lt;li&gt;「head(頭)」がファイルの先頭10行（default）だけを表示する&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;（tailは前にも書いたけど復習もこめて）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;head-command&#34;&gt;head Command&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;head {オプション} {ファイル名}&lt;/code&gt;の形で実行。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;head -n {行数} {ファイル名}&lt;/code&gt; で 取得・表示する行数を指定する事が可能。
+
+&lt;ul&gt;
+&lt;li&gt;他に -c / -q / -v などのオプションも存在するが使い所はあんまりわからなかった。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{他のコマンド} | head&lt;/code&gt; とかみたいにパイプでつないでコマンド実行時の最初のログだけ確認したい時などに使える模様。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;tail-command&#34;&gt;tail Command&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;tail {オプション} {ファイル名}&lt;/code&gt;の形で実行。&lt;/li&gt;
+&lt;li&gt;こちらも同じく、 &lt;code&gt;tail -n {行数} {ファイル名}&lt;/code&gt; で取得する行数を指定する事が可能。
+
+&lt;ul&gt;
+&lt;li&gt;head同様に、 -c / -q / -v などのオプションが存在するがry&lt;/li&gt;
+&lt;li&gt;tailだけ &lt;code&gt;-f&lt;/code&gt;/ &lt;code&gt;-F&lt;/code&gt;などのファイルを監視して変更があったら追加表示していくオプションが存在する。&lt;/li&gt;
+&lt;li&gt;違いとしては、監視するファイル名が変更された際に再度オープンするのが &lt;code&gt;-F&lt;/code&gt;で、そのまま開き続けるのが &lt;code&gt;-f&lt;/code&gt;。基本的に&lt;code&gt;-F&lt;/code&gt;で良い気がする。
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;wc-command&#34;&gt;wc Command&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;word countの略。テキストファイルの行数や単語数をカウント。&lt;code&gt;wc {オプション} {ファイル名}&lt;/code&gt; で記載する。&lt;/li&gt;
+&lt;li&gt;単語数とか行数とかバイト数を取得するときに使う&lt;/li&gt;
+&lt;li&gt;オプションの種類は…
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-c （--bytes）&lt;/code&gt; / バイト数を表示する&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-m（--chars）&lt;/code&gt; / 文字数を表示する（マルチバイト文字に対応）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-l（--lines）&lt;/code&gt; / 改行の数を表示する&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-w（--words）&lt;/code&gt; / 単語数を表示する&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-L（--max-line-length）&lt;/code&gt; / 最も長い行の長さを表示する&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;若干オプション名が覚えづらい感ある。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;grep-command&#34;&gt;grep Command&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Global Regular Expression Print（グローバル正規表現の表示）の略らしい。&lt;code&gt;grep {検索したい文字列} {検索したいテキストファイル}&lt;/code&gt;で検索する事が可能。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/kamorits/items/db814666a133fb9ae892&#34;&gt;参考:grepってなあに？&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2018-07-20-learned&#34;&gt;2018/07/20 - Learned&lt;/h2&gt;
+
+&lt;p&gt;7月20日（金）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;正規表現&#34;&gt;正規表現&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/{検索ワード}/g&lt;/code&gt;で膨大なデータの中から指定文字を検索する事が可能。基本的には「文字列」と「メタ文字」の組み合わせである。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://anagrams.jp/blog/basic-of-regular-expression-for-ppc-account-manager/&#34;&gt;参考:運用型広告の運用者がおさえておきたい正規表現、基本の「き」&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;尚、全部&lt;a href=&#34;https://regexr.com/&#34;&gt;regexr.com&lt;/a&gt;で試してみた。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;一文字にマッチング&#34;&gt;一文字にマッチング&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;\d&lt;/code&gt; - 0~9の数字 / &lt;code&gt;[0-9]に相当&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;活用例としては、 &lt;code&gt;\d+&lt;/code&gt;とか &lt;code&gt;\d*&lt;/code&gt;とか &lt;code&gt;\d?&lt;/code&gt;とか&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\D&lt;/code&gt; - 数字以外の文字 / &lt;code&gt;[^0-9]&lt;/code&gt;に相当&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\s&lt;/code&gt; - 空白文字・タブ・改行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\S&lt;/code&gt; - 空白文字・タブ・改行 以外の文字&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\w&lt;/code&gt; - アルファベット・数字・アンダースコア / &lt;code&gt;[A-Za-z0-9]&lt;/code&gt;に相当
+
+&lt;ul&gt;
+&lt;li&gt;活用例としては、 &lt;code&gt;\w+&lt;/code&gt;とか &lt;code&gt;\w*&lt;/code&gt;とか &lt;code&gt;\w?&lt;/code&gt;とか&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\W&lt;/code&gt; - アルファベット・数字・アンダースコア 以外 / &lt;code&gt;[^A-Za-z0-9]&lt;/code&gt;に相当&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;メタ文字&#34;&gt;メタ文字&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;.&lt;/code&gt; - 任意の一文字
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/AKB4./g&lt;/code&gt;とすると、AKB4の次の1文字に何かが入った単語を検索してくれる。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/ALB../g&lt;/code&gt;とすると、AKBの次の2文字に何かが入った単語を検索してくれる。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.&lt;/code&gt;自体を検索したい場合は、&lt;code&gt;\.&lt;/code&gt;という形でエスケープする必要がある。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[]&lt;/code&gt;内のいずれかの文字
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;[bc]at&lt;/code&gt;とした場合、 &lt;code&gt;bat&lt;/code&gt;,&lt;code&gt;cat&lt;/code&gt; でマッチする&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[^bc]at&lt;/code&gt;とした場合は、指定した複数の文字のどれか1文字とマッチさせたくない場合なので、 &lt;code&gt;aat&lt;/code&gt;, &lt;code&gt;dat&lt;/code&gt;でマッチする&lt;/li&gt;
+&lt;li&gt;文字の範囲指定も可能&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[0-9]&lt;/code&gt;で、0から9まで / &lt;code&gt;\d&lt;/code&gt;に相当&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[a-z]&lt;/code&gt;で、aからz（小文字） /&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[A-Z]&lt;/code&gt;で、AからZまで（大文字）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[a-zA-Z]&lt;/code&gt;で、aからz &amp;amp; AからZまで&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[0-9a-zA-Z]&lt;/code&gt;で、0から9、aからz、AからZまで / &lt;code&gt;\w&lt;/code&gt;に相当&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;?&lt;/code&gt; - 0回か1回の繰り返し / 直前の文字が全く無い or 1つだけ存在する場合にマッチ&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;+&lt;/code&gt; - 1回以上の繰り返し / 直前の文字が1個以上連続するものにマッチ&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*&lt;/code&gt; - 0回以上の繰り返し / 直前の文字が無い or 直前の文字が1個以上連続するものにマッチする&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{m,n}&lt;/code&gt; - 最小m回で最大n回&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;^&lt;/code&gt; - 文字列の先頭
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;^hoge&lt;/code&gt; - 行頭から始まるhogeという単語を検索する&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$&lt;/code&gt; - 文字列の末尾
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hoge$&lt;/code&gt; - 行末からhogeという単語を検索する&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;|&lt;/code&gt; - いづれかにマッチさせたい場合
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cat|dog|bird&lt;/code&gt; - &lt;code&gt;cat&lt;/code&gt;, &lt;code&gt;dog&lt;/code&gt;, &lt;code&gt;bird&lt;/code&gt;のいづれか単語にマッチする&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;()&lt;/code&gt; - &lt;code&gt;()&lt;/code&gt;で囲む事でグルーピングする事ができる。下記のような感じで利用
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/item/(cat|dog|bird)&lt;/code&gt; - &lt;code&gt;/item/&lt;/code&gt;以降に&lt;code&gt;cat&lt;/code&gt;または&lt;code&gt;dog&lt;/code&gt;または&lt;code&gt;bird&lt;/code&gt;がある場合にマッチ&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/(item/)*cat/&lt;/code&gt; - &lt;code&gt;item/&lt;/code&gt;が存在しないか存在する。かつ、&lt;code&gt;cat&lt;/code&gt;がある場合にマッチ&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{n}&lt;/code&gt; - 直前の文字列がn個連続である場合にマッチ
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;(ca){2}&lt;/code&gt;の場合は、cacaaという単語の&lt;code&gt;caca&lt;/code&gt;にマッチ&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ca{2}&lt;/code&gt;の場合は、cacaaという単語の&lt;code&gt;caa&lt;/code&gt;にマッチ&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;react&#34;&gt;React&lt;/h3&gt;
+
+&lt;h4 id=&#34;設計時に考える事&#34;&gt;設計時に考える事&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;何を&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
     
     <item>
       <title>2018/07 - Second week I Learned</title>
@@ -3611,299 +3789,6 @@ Host github.com
 * クライアント / ユーザ 次の二週間後にフィードバックがかえってくる。という信頼感につながる。&lt;/p&gt;
 
 &lt;p&gt;手を動かす人が、自分で見積もる。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>TIL - プロジェクトマネジメント研修 ~WBSについて~</title>
-      <link>https://kglabo.com/blog/project-management-study-02/</link>
-      <pubDate>Tue, 21 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://kglabo.com/blog/project-management-study-02/</guid>
-      <description>
-
-&lt;h2 id=&#34;なにこれ&#34;&gt;なにこれ？&lt;/h2&gt;
-
-&lt;p&gt;社内で、 &lt;em&gt;プロジェクトマネジメント研修 ~WBS編~&lt;/em&gt; に参加してきた為、&lt;br /&gt;
-そちらの内容に関してのメモと、個人的に学習した内容を合わせた備忘録。&lt;/p&gt;
-
-&lt;h2 id=&#34;wbsとは&#34;&gt;WBSとは&lt;/h2&gt;
-
-&lt;p&gt;&lt;em&gt;Work Breakdown Structure&lt;/em&gt; の略で、&lt;br /&gt;
-プロジェクトマネジメントで計画を立てる際に用いられる手法の一つ。&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;自転車の開発&lt;/em&gt; で例えると&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;デザイン&lt;/li&gt;
-&lt;li&gt;車体作成
-
-&lt;ul&gt;
-&lt;li&gt;フレーム
-
-&lt;ul&gt;
-&lt;li&gt;部品制作&lt;/li&gt;
-&lt;li&gt;組み立て&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;サドル
-
-&lt;ul&gt;
-&lt;li&gt;部品制作&lt;/li&gt;
-&lt;li&gt;組み立て&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;ペダルとギア
-
-&lt;ul&gt;
-&lt;li&gt;部品制作&lt;/li&gt;
-&lt;li&gt;組み立て&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;ハンドル
-
-&lt;ul&gt;
-&lt;li&gt;部品制作&lt;/li&gt;
-&lt;li&gt;組み立て&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;上記のように作業に必要な工程を&lt;em&gt;要素分解&lt;/em&gt; する事で、&lt;br /&gt;
-&lt;strong&gt;プロジェクト全体で必要な作業を把握出来るようにする手法&lt;/strong&gt;。&lt;/p&gt;
-
-&lt;p&gt;このように要素分解を行う事で、&lt;br /&gt;
-各作業に必要な人員の確保・リソースの計算を行う事ができるようになる為、&lt;br /&gt;
-&lt;em&gt;責任分担が明確化される&lt;/em&gt; 。&lt;/p&gt;
-
-&lt;h2 id=&#34;wbs作成時のポイント&#34;&gt;WBS作成時のポイント&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;作業内容がもれなく記載されている事&lt;/li&gt;
-&lt;li&gt;作業単位が適正に分解されて、分かりやすくなっている事&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;分割する際の軸&#34;&gt;分割する際の軸&lt;/h3&gt;
-
-&lt;p&gt;WEBプロジェクトで主に使いそうなものは以下の3種類が多い。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;成果物&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;時系列&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;場所(担当)&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;成果物-を軸とした場合&#34;&gt;&lt;em&gt;成果物&lt;/em&gt; を軸とした場合&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;仕様&lt;/li&gt;
-&lt;li&gt;デザイン&lt;/li&gt;
-&lt;li&gt;システム&lt;/li&gt;
-&lt;li&gt;プロジェクトマネジメント&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;時系列-を軸とした場合の例&#34;&gt;&lt;em&gt;時系列&lt;/em&gt; を軸とした場合の例&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;要件定義&lt;/li&gt;
-&lt;li&gt;設計フェーズ&lt;/li&gt;
-&lt;li&gt;実装フェーズ&lt;/li&gt;
-&lt;li&gt;検収フェーズ&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;場所-担当-を軸とした場合の例&#34;&gt;&lt;em&gt;場所(担当)&lt;/em&gt; を軸とした場合の例&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;クライアント&lt;/li&gt;
-&lt;li&gt;社内&lt;/li&gt;
-&lt;li&gt;外注&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;など。&lt;/p&gt;
-
-&lt;h2 id=&#34;wbsの型&#34;&gt;WBSの型&lt;/h2&gt;
-
-&lt;h3 id=&#34;ツリー型構造&#34;&gt;ツリー型構造&lt;/h3&gt;
-
-&lt;h4 id=&#34;メリット&#34;&gt;メリット&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;構造や因果関係が理解し易い&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;デメリット&#34;&gt;デメリット&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;詳細を記述しにくい&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;備考&#34;&gt;備考&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;チャート型（Chart form）とも呼ぶ&lt;/li&gt;
-&lt;li&gt;大項目を洗い出す時や、初期タスクの洗い出しやすい&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;一覧型構造&#34;&gt;一覧型構造&lt;/h3&gt;
-
-&lt;h4 id=&#34;メリット-1&#34;&gt;メリット&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;詳細が記述し易い&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;デメリット-1&#34;&gt;デメリット&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;構造がわかりにくい&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;備考-1&#34;&gt;備考&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;表型（Tabular form）とも呼ぶ&lt;/li&gt;
-&lt;li&gt;ある程度大項目がわかっている場合、責任分担やスケジュールを盛り込みやすい&lt;/li&gt;
-&lt;li&gt;WEBプロジェクトでは、こちらが利用されるケースか多い&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;分割された項目&#34;&gt;分割された項目&lt;/h2&gt;
-
-&lt;p&gt;どういった軸で分解するか決めた後、&lt;br /&gt;
-更に細分化して項目を分解していく必要がある。&lt;/p&gt;
-
-&lt;h3 id=&#34;レベル毎の分解&#34;&gt;レベル毎の分解&lt;/h3&gt;
-
-&lt;p&gt;分割された項目は、&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;大項目（1レベル）&lt;/em&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;中項目（2レベル）&lt;/em&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;小項目（3レベル）&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;といった階層構造で整理していく。&lt;/p&gt;
-
-&lt;h3 id=&#34;各担当の必要な分解レベル&#34;&gt;各担当の必要な分解レベル&lt;/h3&gt;
-
-&lt;p&gt;WBSを閲覧する担当者によって、&lt;em&gt;「分割された項目」&lt;/em&gt; つまり、&lt;br /&gt;
-WBSの分解が必要なレベルは異なる。&lt;/p&gt;
-
-&lt;p&gt;オーナーレベル（事業責任者等）であれば、2レベル程度で良いが、&lt;br /&gt;
-作業者レベルの場合は、6レベルあたり(作業単位で分解されている方が良い)&lt;/p&gt;
-
-&lt;h3 id=&#34;ワーク-パッケージ&#34;&gt;ワーク・パッケージ&lt;/h3&gt;
-
-&lt;p&gt;尚、最小単位まで分解された作業単位は「&lt;strong&gt;ワーク・パッケージ&lt;/strong&gt;」と呼ばれて、&lt;br /&gt;
-PMBOKでは「&lt;strong&gt;最下位レベルの要素成果物&lt;/strong&gt;」と定義されている。&lt;/p&gt;
-
-&lt;p&gt;どこまで分解するかの指標としては、以下のような形が良いとされている。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;経験が浅い・新規プロジェクト など&lt;/em&gt;
-
-&lt;ul&gt;
-&lt;li&gt;不確実性な要素が存在しているケースは、なるべく細かくブレークダウンしたほうが良い&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;経験がある・スキルが高いメンバーがアサインしている など&lt;/em&gt;
-
-&lt;ul&gt;
-&lt;li&gt;安定している場合はそこまで細かくブレークダウンしなくても良い&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;ワーク-パッケージの内容が適切かどうか&#34;&gt;ワーク・パッケージの内容が適切かどうか&lt;/h3&gt;
-
-&lt;p&gt;分解されたワーク・パッケージの内容が適切かどうか確認するには、&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ひとつのワーク・パッケージに複数の人が担当者に任命されている
-
-&lt;ul&gt;
-&lt;li&gt;適切な作業分解ができていない&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;ワーク・パッケージ内の &lt;em&gt;各作業間に長い空き時間にある&lt;/em&gt;
-
-&lt;ul&gt;
-&lt;li&gt;待機工数が発生している&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;ワーク・パッケージ内の &lt;em&gt;作業の一部に特化したリスクがあり、切り分けが必要&lt;/em&gt;
-
-&lt;ul&gt;
-&lt;li&gt;適切な作業分解ができていない&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;ワーク・パッケージの &lt;em&gt;内容を明確に理解していないステークホルダーがいる&lt;/em&gt;
-
-&lt;ul&gt;
-&lt;li&gt;追加項目が発生する可能性がある&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;などを確認すると良い。&lt;/p&gt;
-
-&lt;h2 id=&#34;作成時の注意点&#34;&gt;作成時の注意点&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;WBSで最重要のものは「チーム全員でレビューをおこなう事」
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;不確実性の程度認識&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;管理の強弱を知る&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;不確実性とは&#34;&gt;不確実性とは&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;時間に制約がある&lt;/li&gt;
-&lt;li&gt;特殊なリソース調達が必要&lt;/li&gt;
-&lt;li&gt;アウトプット結果が具体的に見えないタスク&lt;/li&gt;
-&lt;li&gt;アウトプットの完成度が不透明&lt;/li&gt;
-&lt;li&gt;技術麺での新規性が高い&lt;/li&gt;
-&lt;li&gt;経験者がいない技術&lt;/li&gt;
-&lt;li&gt;前提、仮定が狂いやすい作業&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;管理の強弱とは&#34;&gt;管理の強弱とは&lt;/h3&gt;
-
-&lt;p&gt;内製で行う作業なのか、ベンダーに発注を行う作業なのか？&lt;br /&gt;
-ベンター作業との細かい &lt;em&gt;依存関係を明確に認識&lt;/em&gt; しておく為。&lt;/p&gt;
-
-&lt;h3 id=&#34;レビュー時の観点&#34;&gt;レビュー時の観点&lt;/h3&gt;
-
-&lt;p&gt;以下の点に注意して内容を確認する。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;要素成果物に抜けがないか&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;ブレークダウンは適切か&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;責任は明確化されているか&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;wbs更新時のルール策定&#34;&gt;WBS更新時のルール策定&lt;/h2&gt;
-
-&lt;p&gt;メンバーの解釈・裁量で期限設定やチケットの追加等を行われた場合、&lt;br /&gt;
-WBSの管理が難しくなりWBSの信用性がなくなる。&lt;br /&gt;
-結果として円滑なプロジェクト進行が難しくなる為、以下の点に注意する。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;WBSの管理者・更新者をチームで決めてルール化する&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;更新後の周知ルールを定める&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;備考-2&#34;&gt;備考&lt;/h2&gt;
-
-&lt;p&gt;一般的にはWBSは、&lt;em&gt;4つ程度の1レベルが存在&lt;/em&gt; している程度が適正だと言われている。&lt;/p&gt;
-
-&lt;p&gt;既に利用しているWBSのテンプレートが存在している場合は、&lt;br /&gt;
-&lt;em&gt;新たにWBSを作成するプロジェクトがそのフォーマットに適しているのか&lt;/em&gt; を考えて引っ張られないようにする。&lt;/p&gt;
-
-&lt;p&gt;WBSは作成した後、その情報を元として後々の作業で利用される事が多い。&lt;br /&gt;
-主にスケジュール管理に使用される事が多いため、&lt;em&gt;各要素にユニークな識別子&lt;/em&gt; を振り分ける事が一般的。&lt;br /&gt;
-&lt;em&gt;識別子&lt;/em&gt; は、&lt;em&gt;スケジュール&lt;/em&gt; / &lt;em&gt;予算見積書&lt;/em&gt; など、&lt;em&gt;様々な文書に利用できる&lt;/em&gt; 為、&lt;br /&gt;
-識別子が一致していれば会計処理がスムーズにする事も可能。&lt;br /&gt;
-コスト削減する場合にも、どの作業を削れば良いかが分かりやすくメリットがある。&lt;/p&gt;
 </description>
     </item>
     

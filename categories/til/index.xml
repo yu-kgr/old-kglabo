@@ -6,8 +6,186 @@
     <description>Recent content in TIL on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 13 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Jul 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kglabo.com/categories/til/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2018/07 - thaad week I Learned</title>
+      <link>https://kglabo.com/blog/til-201807-thaad-week/</link>
+      <pubDate>Fri, 20 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kglabo.com/blog/til-201807-thaad-week/</guid>
+      <description>
+
+&lt;h1 id=&#34;今週-知った-学んだこと&#34;&gt;今週、知った/学んだこと&lt;/h1&gt;
+
+&lt;ul&gt;
+&lt;li&gt;数日間、海外に行っていたので抜けておりまする。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;!-- tags = [&#34;Linux Command&#34;] --&gt;
+
+&lt;h2 id=&#34;2018-07-19-learned&#34;&gt;2018/07/19 - Learned&lt;/h2&gt;
+
+&lt;p&gt;7月19日（木）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;tail-head-command&#34;&gt;tail/head Command&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ファイルの内容を部分的に閲覧する事が可能。
+
+&lt;ul&gt;
+&lt;li&gt;「tail（尾）」がファイルの末尾10行（default）だけを表示する&lt;/li&gt;
+&lt;li&gt;「head(頭)」がファイルの先頭10行（default）だけを表示する&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;（tailは前にも書いたけど復習もこめて）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;head-command&#34;&gt;head Command&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;head {オプション} {ファイル名}&lt;/code&gt;の形で実行。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;head -n {行数} {ファイル名}&lt;/code&gt; で 取得・表示する行数を指定する事が可能。
+
+&lt;ul&gt;
+&lt;li&gt;他に -c / -q / -v などのオプションも存在するが使い所はあんまりわからなかった。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{他のコマンド} | head&lt;/code&gt; とかみたいにパイプでつないでコマンド実行時の最初のログだけ確認したい時などに使える模様。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;tail-command&#34;&gt;tail Command&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;tail {オプション} {ファイル名}&lt;/code&gt;の形で実行。&lt;/li&gt;
+&lt;li&gt;こちらも同じく、 &lt;code&gt;tail -n {行数} {ファイル名}&lt;/code&gt; で取得する行数を指定する事が可能。
+
+&lt;ul&gt;
+&lt;li&gt;head同様に、 -c / -q / -v などのオプションが存在するがry&lt;/li&gt;
+&lt;li&gt;tailだけ &lt;code&gt;-f&lt;/code&gt;/ &lt;code&gt;-F&lt;/code&gt;などのファイルを監視して変更があったら追加表示していくオプションが存在する。&lt;/li&gt;
+&lt;li&gt;違いとしては、監視するファイル名が変更された際に再度オープンするのが &lt;code&gt;-F&lt;/code&gt;で、そのまま開き続けるのが &lt;code&gt;-f&lt;/code&gt;。基本的に&lt;code&gt;-F&lt;/code&gt;で良い気がする。
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;wc-command&#34;&gt;wc Command&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;word countの略。テキストファイルの行数や単語数をカウント。&lt;code&gt;wc {オプション} {ファイル名}&lt;/code&gt; で記載する。&lt;/li&gt;
+&lt;li&gt;単語数とか行数とかバイト数を取得するときに使う&lt;/li&gt;
+&lt;li&gt;オプションの種類は…
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;-c （--bytes）&lt;/code&gt; / バイト数を表示する&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-m（--chars）&lt;/code&gt; / 文字数を表示する（マルチバイト文字に対応）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-l（--lines）&lt;/code&gt; / 改行の数を表示する&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-w（--words）&lt;/code&gt; / 単語数を表示する&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;-L（--max-line-length）&lt;/code&gt; / 最も長い行の長さを表示する&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;若干オプション名が覚えづらい感ある。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;grep-command&#34;&gt;grep Command&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Global Regular Expression Print（グローバル正規表現の表示）の略らしい。&lt;code&gt;grep {検索したい文字列} {検索したいテキストファイル}&lt;/code&gt;で検索する事が可能。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/kamorits/items/db814666a133fb9ae892&#34;&gt;参考:grepってなあに？&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2018-07-20-learned&#34;&gt;2018/07/20 - Learned&lt;/h2&gt;
+
+&lt;p&gt;7月20日（金）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;正規表現&#34;&gt;正規表現&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/{検索ワード}/g&lt;/code&gt;で膨大なデータの中から指定文字を検索する事が可能。基本的には「文字列」と「メタ文字」の組み合わせである。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://anagrams.jp/blog/basic-of-regular-expression-for-ppc-account-manager/&#34;&gt;参考:運用型広告の運用者がおさえておきたい正規表現、基本の「き」&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;尚、全部&lt;a href=&#34;https://regexr.com/&#34;&gt;regexr.com&lt;/a&gt;で試してみた。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;一文字にマッチング&#34;&gt;一文字にマッチング&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;\d&lt;/code&gt; - 0~9の数字 / &lt;code&gt;[0-9]に相当&lt;/code&gt;
+
+&lt;ul&gt;
+&lt;li&gt;活用例としては、 &lt;code&gt;\d+&lt;/code&gt;とか &lt;code&gt;\d*&lt;/code&gt;とか &lt;code&gt;\d?&lt;/code&gt;とか&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\D&lt;/code&gt; - 数字以外の文字 / &lt;code&gt;[^0-9]&lt;/code&gt;に相当&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\s&lt;/code&gt; - 空白文字・タブ・改行&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\S&lt;/code&gt; - 空白文字・タブ・改行 以外の文字&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\w&lt;/code&gt; - アルファベット・数字・アンダースコア / &lt;code&gt;[A-Za-z0-9]&lt;/code&gt;に相当
+
+&lt;ul&gt;
+&lt;li&gt;活用例としては、 &lt;code&gt;\w+&lt;/code&gt;とか &lt;code&gt;\w*&lt;/code&gt;とか &lt;code&gt;\w?&lt;/code&gt;とか&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;\W&lt;/code&gt; - アルファベット・数字・アンダースコア 以外 / &lt;code&gt;[^A-Za-z0-9]&lt;/code&gt;に相当&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;メタ文字&#34;&gt;メタ文字&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;.&lt;/code&gt; - 任意の一文字
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/AKB4./g&lt;/code&gt;とすると、AKB4の次の1文字に何かが入った単語を検索してくれる。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/ALB../g&lt;/code&gt;とすると、AKBの次の2文字に何かが入った単語を検索してくれる。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;.&lt;/code&gt;自体を検索したい場合は、&lt;code&gt;\.&lt;/code&gt;という形でエスケープする必要がある。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[]&lt;/code&gt;内のいずれかの文字
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;[bc]at&lt;/code&gt;とした場合、 &lt;code&gt;bat&lt;/code&gt;,&lt;code&gt;cat&lt;/code&gt; でマッチする&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[^bc]at&lt;/code&gt;とした場合は、指定した複数の文字のどれか1文字とマッチさせたくない場合なので、 &lt;code&gt;aat&lt;/code&gt;, &lt;code&gt;dat&lt;/code&gt;でマッチする&lt;/li&gt;
+&lt;li&gt;文字の範囲指定も可能&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[0-9]&lt;/code&gt;で、0から9まで / &lt;code&gt;\d&lt;/code&gt;に相当&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[a-z]&lt;/code&gt;で、aからz（小文字） /&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[A-Z]&lt;/code&gt;で、AからZまで（大文字）&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[a-zA-Z]&lt;/code&gt;で、aからz &amp;amp; AからZまで&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;[0-9a-zA-Z]&lt;/code&gt;で、0から9、aからz、AからZまで / &lt;code&gt;\w&lt;/code&gt;に相当&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;?&lt;/code&gt; - 0回か1回の繰り返し / 直前の文字が全く無い or 1つだけ存在する場合にマッチ&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;+&lt;/code&gt; - 1回以上の繰り返し / 直前の文字が1個以上連続するものにマッチ&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;*&lt;/code&gt; - 0回以上の繰り返し / 直前の文字が無い or 直前の文字が1個以上連続するものにマッチする&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{m,n}&lt;/code&gt; - 最小m回で最大n回&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;^&lt;/code&gt; - 文字列の先頭
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;^hoge&lt;/code&gt; - 行頭から始まるhogeという単語を検索する&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;$&lt;/code&gt; - 文字列の末尾
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;hoge$&lt;/code&gt; - 行末からhogeという単語を検索する&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;|&lt;/code&gt; - いづれかにマッチさせたい場合
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cat|dog|bird&lt;/code&gt; - &lt;code&gt;cat&lt;/code&gt;, &lt;code&gt;dog&lt;/code&gt;, &lt;code&gt;bird&lt;/code&gt;のいづれか単語にマッチする&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;()&lt;/code&gt; - &lt;code&gt;()&lt;/code&gt;で囲む事でグルーピングする事ができる。下記のような感じで利用
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;/item/(cat|dog|bird)&lt;/code&gt; - &lt;code&gt;/item/&lt;/code&gt;以降に&lt;code&gt;cat&lt;/code&gt;または&lt;code&gt;dog&lt;/code&gt;または&lt;code&gt;bird&lt;/code&gt;がある場合にマッチ&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;/(item/)*cat/&lt;/code&gt; - &lt;code&gt;item/&lt;/code&gt;が存在しないか存在する。かつ、&lt;code&gt;cat&lt;/code&gt;がある場合にマッチ&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;{n}&lt;/code&gt; - 直前の文字列がn個連続である場合にマッチ
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;(ca){2}&lt;/code&gt;の場合は、cacaaという単語の&lt;code&gt;caca&lt;/code&gt;にマッチ&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;ca{2}&lt;/code&gt;の場合は、cacaaという単語の&lt;code&gt;caa&lt;/code&gt;にマッチ&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;react&#34;&gt;React&lt;/h3&gt;
+
+&lt;h4 id=&#34;設計時に考える事&#34;&gt;設計時に考える事&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;何を&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
     
     <item>
       <title>2018/07 - Second week I Learned</title>
@@ -3448,259 +3626,6 @@ WBSの管理が難しくなりWBSの信用性がなくなる。&lt;br /&gt;
 &lt;em&gt;識別子&lt;/em&gt; は、&lt;em&gt;スケジュール&lt;/em&gt; / &lt;em&gt;予算見積書&lt;/em&gt; など、&lt;em&gt;様々な文書に利用できる&lt;/em&gt; 為、&lt;br /&gt;
 識別子が一致していれば会計処理がスムーズにする事も可能。&lt;br /&gt;
 コスト削減する場合にも、どの作業を削れば良いかが分かりやすくメリットがある。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>TIL - ReactStudy#01</title>
-      <link>https://kglabo.com/blog/react-study-01/</link>
-      <pubDate>Sat, 18 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://kglabo.com/blog/react-study-01/</guid>
-      <description>
-
-&lt;h2 id=&#34;概要&#34;&gt;概要&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&#34;http://basic-react.axlight.com/html/&#34;&gt;React基礎&lt;/a&gt;を参考にしての学習。&lt;/p&gt;
-
-&lt;h2 id=&#34;参考にしたサイト&#34;&gt;参考にしたサイト&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://basic-react.axlight.com/html/&#34;&gt;React基礎&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://postd.cc/learn-raw-react-no-jsx-flux-es6-webpack/&#34;&gt;生のReactを知ろう – JSX、Flux、ES6、Webpackを使わず…&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;学習内容&#34;&gt;学習内容&lt;/h2&gt;
-
-&lt;p&gt;以下、&lt;a href=&#34;http://basic-react.axlight.com/html/&#34;&gt;React基礎&lt;/a&gt;より引用（個人用メモ）&lt;/p&gt;
-
-&lt;h3 id=&#34;前置き&#34;&gt;前置き&lt;/h3&gt;
-
-&lt;p&gt;Reactでコーディングする先は、&lt;strong&gt;ES2015(ES6)&lt;/strong&gt;を使うと便利になる。&lt;br /&gt;
-んで、ES2015を利用する際は&lt;strong&gt;トランスパイル&lt;/strong&gt;が必要。&lt;br /&gt;
-後々、&lt;strong&gt;JSX&lt;/strong&gt; を使うし相対的にES2015の敷居下がるよね？ 覚えよ？って記載されてた。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;ES2015(ES6)&lt;/strong&gt; - &lt;a href=&#34;http://qiita.com/tuno-tky/items/74ca595a9232bcbcd727&#34;&gt;コチラ&lt;/a&gt;によると、&lt;em&gt;ECMAScript6thEdition&lt;/em&gt; == &lt;em&gt;ES6&lt;/em&gt; の事。
-
-&lt;ul&gt;
-&lt;li&gt;当初は ES6の名前で発表されたらしいが、正式名称が*ECMAScript2015*になった事もあり、ES2015と呼ばれているとの事&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;トランスパイル&lt;/strong&gt; - ソースコードからソースコードへのコンパイル&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;JSX&lt;/strong&gt; - &lt;a href=&#34;http://qiita.com/ConquestArrow/items/29fc478f48862a4d14fb&#34;&gt;コチラ&lt;/a&gt;によると、ReactのJXSとAltJSのJSXとAdobeJSXがあるらしい
-
-&lt;ul&gt;
-&lt;li&gt;つまりどういうことだってばよ？&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;es2015について&#34;&gt;ES2015について&lt;/h3&gt;
-
-&lt;p&gt;ES2015でよく使う文法についての解説されていた。&lt;/p&gt;
-
-&lt;h4 id=&#34;const-let&#34;&gt;const/let&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;const&lt;/code&gt; - 再代入しない&lt;br /&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;let&lt;/code&gt; - 再代入できる&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;const x = 1;
-let y = 2;
-y = 3;
-
-const z = { a: 4, b: 5 };
-z.a = 6;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;var&lt;/code&gt;は消えた模様。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&#34;object-shorthand&#34;&gt;object shorthand&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;オブジェクトのプロパティ名と値の変数名が同じ場合、省略記法を使える&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;const foo = &#39;abc&#39;;
-const bar = { foo }; // same as { foo: foo }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&#34;destructuring-object&#34;&gt;destructuring object&lt;/h4&gt;
-
-&lt;p&gt;&lt;em&gt;destructuring assignment&lt;/em&gt; という簡便な記法が利用できる&lt;br /&gt;
-特にオブジェクトについての記法を紹介されていた。&lt;br /&gt;
-変数への代入だけでなく、関数のパラメータ宣言でも用いられるとの事。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;const obj = { first: &#39;Ebisu&#39;, last: &#39;JS&#39; };
-const { first, last } = obj;
-// first === &#39;Ebisu&#39;, last === &#39;JS&#39;
-
-function printName({ first, last }) { console.log(first, last); }
-printName(obj);
-
-// same as
-// function printName(name) { console.log(name.first, name.last); }
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&#34;アロー関数&#34;&gt;アロー関数&lt;/h4&gt;
-
-&lt;p&gt;アロー関数
-&lt;code&gt;() =&amp;gt; ...&lt;/code&gt; って言う記法。詳しくは&lt;a href=&#34;https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/arrow_functions&#34;&gt;こちら&lt;/a&gt;&lt;br /&gt;
-&lt;code&gt;this&lt;/code&gt;を一旦置いとくと、アロー関数は通常の関数の省力記法と考える事ができるとの事。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;const f1 = function(x) { console.log(x); };
-const f2 = (x) =&amp;gt; { console.log(x); };
-// f1 and f2 is almost the same
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;&lt;code&gt;return&lt;/code&gt; 文が一つだけの場合は、文そのものを省略できる&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;const f3 = (x) =&amp;gt; { return (x + 1); };
-const f4 = (x) =&amp;gt; (x + 1);
-// f3 and f4 is the same
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;カッコの省略も可能（任意）&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;const f5 = x =&amp;gt; x + 1;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;Coffee Script&lt;/code&gt;で言うと、 &lt;code&gt;hoge = -&amp;gt;&lt;/code&gt;みたいなもん？&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;関数型のコーディングについて&#34;&gt;関数型のコーディングについて&lt;/h3&gt;
-
-&lt;p&gt;Reactでコンポーネントを書く際には、&lt;strong&gt;関数型コーディング&lt;/strong&gt; の方が楽らしい。&lt;br /&gt;
-その前提を前置きした上で、このプログラム中によく使う文法について説明されている。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;関数型コーディング&lt;/strong&gt;  - &lt;a href=&#34;http://qiita.com/stkdev/items/5c021d4e5d54d56b927c&#34;&gt;関数型プログラミングはまず考え方から理解しよう&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;pure-function&#34;&gt;pure function&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;一般的に副作用がない関数&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;const pureFunc = (x) =&amp;gt; { let y = x + 1; return y; };
-
-let y;
-const notPure = (x) =&amp;gt; { y = x + 1; return y; };
-
-const notPure2 = (x) =&amp;gt; { console.log(&#39;foo&#39;); return x + 1; };
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&#34;logical-operators&#34;&gt;logical operators&lt;/h4&gt;
-
-&lt;p&gt;論理演算子には &lt;code&gt;&amp;amp;&amp;amp;&lt;/code&gt; , &lt;code&gt;||&lt;/code&gt; , &lt;code&gt;!&lt;/code&gt; の3つがある。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;x &amp;amp;&amp;amp; y&lt;/code&gt; は、xが &lt;strong&gt;falsy&lt;/strong&gt; の場合はx、違う場合はyになる
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;falsy&lt;/strong&gt;とは、 &lt;code&gt;false&lt;/code&gt; , &lt;code&gt;null&lt;/code&gt; , &lt;code&gt;0&lt;/code&gt; , &lt;code&gt;&#39;&#39;&lt;/code&gt; などの値。詳しくは&lt;a href=&#34;https://developer.mozilla.org/ja/docs/Glossary/Falsy&#34;&gt;こちら&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;x || y&lt;/code&gt; という表現は、 &lt;code&gt;x&lt;/code&gt; が &lt;code&gt;falsy&lt;/code&gt; の場合は &lt;code&gt;y&lt;/code&gt; 、違う場合は &lt;code&gt;x&lt;/code&gt; になる&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;!x&lt;/code&gt; という表現は、 &lt;code&gt;x&lt;/code&gt; が &lt;code&gt;falsy&lt;/code&gt; の場合は &lt;code&gt;true&lt;/code&gt; 、違う場合は &lt;code&gt;false&lt;/code&gt; になる
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;x&lt;/code&gt; は真偽値(boolean)でなくてもよいです&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code&gt;0 &amp;amp;&amp;amp; 1
-// 0
-
-1 &amp;amp;&amp;amp; 2
-// 2
-
-0 || 1
-// 1
-
-1 || 2
-// 1
-
-!0
-// true
-
-!1
-// false
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&#34;ternary-operator&#34;&gt;ternary operator&lt;/h4&gt;
-
-&lt;p&gt;三項演算子はよく使うとの事&lt;br /&gt;
-&lt;code&gt;x ? y : z&lt;/code&gt; は &lt;code&gt;x&lt;/code&gt; がfalsyの場合はzであり、そうでない場合はyになります。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;0 ? 1 : 2
-// 2
-
-3 ? 4 : 5
-// 4
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&#34;filter&#34;&gt;filter&lt;/h4&gt;
-
-&lt;p&gt;Array.filterは配列から部分配列を作る関数&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/filter&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;引数で与えたテスト関数がtruthy(つまりfalsyでない)を返す要素の配列を返す。&lt;br /&gt;
-配列は新しく作られますが、要素はコピーされない。&lt;br /&gt;
-テスト関数にはアロー関数を使うと簡便に書くことができます。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[1, 2, 3, 4].filter((x) =&amp;gt; (x &amp;gt; 2))
-// [3, 4]
-
-[&#39;a&#39;, &#39;ab&#39;, &#39;abc&#39;, &#39;abcd&#39;].filter((x) =&amp;gt; (x.length &amp;lt;= 2))
-// [&#39;a&#39;, &#39;ab&#39;]
-
-[0, 1, 2, &#39;&#39;, &#39;a&#39;, false, true].filter((x) =&amp;gt; (x));
-// [1, 2, &#39;a&#39;, true]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h4 id=&#34;map&#34;&gt;map&lt;/h4&gt;
-
-&lt;p&gt;Array.mapは配列から要素ごとに変換して新しい配列を作る関数&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/Array/map&#34;&gt;参考&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;引数で与えられた変換関数で返される値を要素にもつ配列を返します。&lt;br /&gt;
-配列は新しく作られる。要素数は変化しない。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;[1, 2, 3, 4].map((x) =&amp;gt; (x * 2))
-// [2, 4, 6, 8]
-
-[&#39;a&#39;, &#39;ab&#39;, &#39;abc&#39;, &#39;abcd&#39;].map((x) =&amp;gt; (x.length))
-// [1, 2, 3, 4]
-
-[1, 2, &#39;a&#39;, &#39;b&#39;].map((x) =&amp;gt; (&#39;あ&#39; + x))
-// [&#39;あ1&#39;, &#39;あ2&#39;, &#39;あa&#39;, &#39;あb&#39;]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
 </description>
     </item>
     
