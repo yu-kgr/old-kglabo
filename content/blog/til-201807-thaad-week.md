@@ -15,7 +15,7 @@ draft = "false"
 
 - 数日間、海外に行っていたので抜けておりまする。
 
-<!-- tags = ["Linux Command"] -->
+<!-- tags = ["Linux Command", "正規表現", "React"] -->
 
 ## 2018/07/19 - Learned
 
