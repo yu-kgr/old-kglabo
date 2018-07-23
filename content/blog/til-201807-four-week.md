@@ -1,0 +1,59 @@
++++
+author = "@yu-kgr"
+categories = ["TIL"]
+date = "2018-07-23"
+description = "2018/07 - four week I Learned | 一週間で知った事・学んだ事の個人的な備忘録"
+featured = "/img/til/til.jpg"
+featuredalt = "til"
+featuredpath = "https://kglabo.com"
+title = "2018/07 - four week I Learned"
+type = "post"
+draft = "true"
++++
+
+# 今週、知った/学んだこと
+
+<!-- tags = ["PullRequest", "React"] -->
+
+## 2018/07/23 - Learned
+
+7月23日（月）のToday I Leaned.
+
+### GithubのPRについて
+
+GithubのPRについてあんまり理解していなかったので、改めて備忘録。  
+[参考:GitHubのReview機能が強化された](https://qiita.com/terra_yucco/items/fa08bd2a4b498963a313)
+
+![githubのPRに対しての総評Review](/img/2018/07/github-pr-1.png)
+
+- PR自体に `Review changes` より総評のような形でReviewを記載する事ができる
+  - `Comment` / PRに対して承認などはせず、コメントのみを記載する際に利用。
+  - `Approve` / PRに対して承認する事ができる。
+  - `Request changes` / PRに対して修正依頼を出すことができる。（これを修正しないとマージする事ができない）
+  - 感覚的には「Comment（見たよ）」「Approve（イイね）」「Request changes（ダメ）」
+
+![PRの特定行のコードに対するコメント](/img/2018/07/github-pr-2.png)
+
+- 特定行を指定し、コメントをいれる事も可能。（これは従来からある形らしい）
+
+#### 備考
+
+- とりあえず慣れるため、適当にCommentから入れていくことにしようかと思た。
+
+#### 中カテゴリ
+
+## 2018/07/24 - Learned
+
+7月24日（火）のToday I Leaned.
+
+### 大カテゴリ
+
+#### 中カテゴリ
+
+## 2018/07/25 - Learned
+
+7月25日（水）のToday I Leaned.
+
+### 大カテゴリ
+
+#### 中カテゴリ
