@@ -42,17 +42,20 @@ GithubのPRについてあんまり理解していなかったので、改めて
 
 #### 中カテゴリ
 
-## 2018/07/24 - Learned
+## 2018/07/26 - Learned
 
-7月24日（火）のToday I Leaned.
+7月26日（木）のToday I Leaned.
 
-### 大カテゴリ
+### packge.json
 
-#### 中カテゴリ
+- dependenciesは全てで利用するもの
+- devDependenciesは開発はている時のみ利用するもの
+  - Linterやビルド関係のパッケージなど / ちなみにdevに追加する場合は「yarn add --dev」で追加する
 
-## 2018/07/25 - Learned
 
-7月25日（水）のToday I Leaned.
+## 2018/07/27 - Learned
+
+7月27日（金）のToday I Leaned.
 
 ### 大カテゴリ
 
