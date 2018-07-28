@@ -8,12 +8,12 @@ featuredalt = "til"
 featuredpath = "https://kglabo.com"
 title = "2018/07 - four week I Learned"
 type = "post"
-draft = "true"
+draft = "false"
 +++
 
 # 今週、知った/学んだこと
 
-<!-- tags = ["PullRequest", "React"] -->
+<!-- tags = ["PullRequest", "React", "JavaScript"] -->
 
 ## 2018/07/23 - Learned
 
@@ -92,8 +92,3 @@ const hoge = () => {
 
 - `apply()`は使わない
 - スプレッド演算子 `...` 使う。
-
-
-### 大カテゴリ
-
-#### 中カテゴリ
