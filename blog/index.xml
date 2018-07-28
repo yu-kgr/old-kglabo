@@ -6,8 +6,133 @@
     <description>Recent content in Blog on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 20 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Jul 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kglabo.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2018/07 - four week I Learned</title>
+      <link>https://kglabo.com/blog/til-201807-four-week/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kglabo.com/blog/til-201807-four-week/</guid>
+      <description>
+
+&lt;h1 id=&#34;今週-知った-学んだこと&#34;&gt;今週、知った/学んだこと&lt;/h1&gt;
+
+&lt;!-- tags = [&#34;PullRequest&#34;, &#34;React&#34;, &#34;JavaScript&#34;] --&gt;
+
+&lt;h2 id=&#34;2018-07-23-learned&#34;&gt;2018/07/23 - Learned&lt;/h2&gt;
+
+&lt;p&gt;7月23日（月）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;githubのprについて&#34;&gt;GithubのPRについて&lt;/h3&gt;
+
+&lt;p&gt;GithubのPRについてあんまり理解していなかったので、改めて備忘録。&lt;br /&gt;
+&lt;a href=&#34;https://qiita.com/terra_yucco/items/fa08bd2a4b498963a313&#34;&gt;参考:GitHubのReview機能が強化された&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://kglabo.com/img/2018/07/github-pr-1.png&#34; alt=&#34;githubのPRに対しての総評Review&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;PR自体に &lt;code&gt;Review changes&lt;/code&gt; より総評のような形でReviewを記載する事ができる
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Comment&lt;/code&gt; / PRに対して承認などはせず、コメントのみを記載する際に利用。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Approve&lt;/code&gt; / PRに対して承認する事ができる。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Request changes&lt;/code&gt; / PRに対して修正依頼を出すことができる。（これを修正しないとマージする事ができない）&lt;/li&gt;
+&lt;li&gt;感覚的には「Comment（見たよ）」「Approve（イイね）」「Request changes（ダメ）」&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://kglabo.com/img/2018/07/github-pr-2.png&#34; alt=&#34;PRの特定行のコードに対するコメント&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;特定行を指定し、コメントをいれる事も可能。（これは従来からある形らしい）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;備考&#34;&gt;備考&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;とりあえず慣れるため、適当にCommentから入れていくことにしようかと思た。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;中カテゴリ&#34;&gt;中カテゴリ&lt;/h4&gt;
+
+&lt;h2 id=&#34;2018-07-26-learned&#34;&gt;2018/07/26 - Learned&lt;/h2&gt;
+
+&lt;p&gt;7月26日（木）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;packge-json&#34;&gt;packge.json&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;dependenciesは全てで利用するもの&lt;/li&gt;
+&lt;li&gt;devDependenciesは開発はている時のみ利用するもの
+
+&lt;ul&gt;
+&lt;li&gt;Linterやビルド関係のパッケージなど / ちなみにdevに追加する場合は「yarn add &amp;ndash;dev」で追加する&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2018-07-27-learned&#34;&gt;2018/07/27 - Learned&lt;/h2&gt;
+
+&lt;p&gt;7月27日（金）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;javascript&#34;&gt;JavaScript&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/shibukawa/items/19ab5c381bbb2e09d0d9&#34;&gt;参考:イマドキのJavaScriptの書き方2018&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;もう覚えなくても良い書き方を解説されている為、学習計画上、無駄が減って非常にありがたい。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;部分的に掻い摘んでメモしたい所のみ記載。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;babel&#34;&gt;babel&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;現状は &lt;code&gt;preset-env&lt;/code&gt; 使っておきゃいい&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;変数&#34;&gt;変数&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;こまけー事はいいから &lt;code&gt;const&lt;/code&gt; 使っときゃいい&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;関数宣言&#34;&gt;関数宣言&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;こまけー事はいいから &lt;code&gt;アロー関数&lt;/code&gt; 使っとけばいい。
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;function&lt;/code&gt; は殺す&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;const hoge = () =&amp;gt; {
+  
+};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;非同期処理&#34;&gt;非同期処理&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;こまけー事はいいから、 &lt;code&gt;async / await&lt;/code&gt; 使っときやいい。
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;then()&lt;/code&gt;も殺す&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;async&lt;/code&gt;つけたら、&lt;code&gt;await&lt;/code&gt;ついてるやつが待ってくれるようになる。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;関数に引数セットを配列で渡す場合&#34;&gt;関数に引数セットを配列で渡す場合&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;apply()&lt;/code&gt;は使わない&lt;/li&gt;
+&lt;li&gt;スプレッド演算子 &lt;code&gt;...&lt;/code&gt; 使う。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>2018/07 - thaad week I Learned</title>
@@ -3660,43 +3785,6 @@ Googleの&lt;a href=&#34;https://rework.withgoogle.com/guides/understanding-team
 &lt;p&gt;期間と作業割合がわかっているタスクに関しては、&lt;br /&gt;
 逆算して初期見積入れておいても良い。
 ※ 単純にタスクに何時間かけるか分かるようになるだけだが‥&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>リポジトリにssh接続でgit cloneする為にssh-keygen -f hogehogeで、別名pubファイルを作ったら永遠にcloneできなかった話</title>
-      <link>https://kglabo.com/blog/another-name-ssh-keygen/</link>
-      <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://kglabo.com/blog/another-name-ssh-keygen/</guid>
-      <description>
-
-&lt;h2 id=&#34;発生した問題&#34;&gt;発生した問題&lt;/h2&gt;
-
-&lt;p&gt;githubの既存リポジトリから、sshでgit cloneしたかったので、&lt;br /&gt;
-&lt;a href=&#34;http://qiita.com/suthio/items/2760e4cff0e185fe2db9&#34;&gt;お前らのSSH Keysの作り方は間違っている&lt;/a&gt;を参考にして暗号強度を高めつつ、&lt;br /&gt;
-&lt;code&gt;ssh-keygen -f github_id_rsa&lt;/code&gt; で別名のpubファイルを作成してcloneした所、&lt;br /&gt;
-下記のようなエラーが発生した。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Warning: Permanently added the RSA host key for IP address &#39;***.***.***.**&#39; to the list of known hosts.
-Permission denied (publickey).
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;対処方法&#34;&gt;対処方法&lt;/h2&gt;
-
-&lt;p&gt;GitHub へのアクセス時に、 &lt;code&gt;~/.ssh/id_rsa&lt;/code&gt; や &lt;code&gt;~/.ssh/id_dsa&lt;/code&gt; ではなく、&lt;br /&gt;
-別名で認証鍵を作成した場合は、 &lt;code&gt;~/.ssh/config&lt;/code&gt; ファイルを作成して、&lt;br /&gt;
-下記設定を記述する必要がある。&lt;/p&gt;
-
-&lt;p&gt;また、configファイルに関しては、Permissionを600にする必要がある。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# ~/.ssh/config
-
-Host github.com
-    IdentityFile ~/.ssh/github_id_rsa
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;上記の設定を加える事で、無事問題なくcloneする事ができた。&lt;/p&gt;
 </description>
     </item>
     

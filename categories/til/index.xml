@@ -6,8 +6,133 @@
     <description>Recent content in TIL on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 20 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Jul 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kglabo.com/categories/til/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2018/07 - four week I Learned</title>
+      <link>https://kglabo.com/blog/til-201807-four-week/</link>
+      <pubDate>Mon, 23 Jul 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kglabo.com/blog/til-201807-four-week/</guid>
+      <description>
+
+&lt;h1 id=&#34;今週-知った-学んだこと&#34;&gt;今週、知った/学んだこと&lt;/h1&gt;
+
+&lt;!-- tags = [&#34;PullRequest&#34;, &#34;React&#34;, &#34;JavaScript&#34;] --&gt;
+
+&lt;h2 id=&#34;2018-07-23-learned&#34;&gt;2018/07/23 - Learned&lt;/h2&gt;
+
+&lt;p&gt;7月23日（月）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;githubのprについて&#34;&gt;GithubのPRについて&lt;/h3&gt;
+
+&lt;p&gt;GithubのPRについてあんまり理解していなかったので、改めて備忘録。&lt;br /&gt;
+&lt;a href=&#34;https://qiita.com/terra_yucco/items/fa08bd2a4b498963a313&#34;&gt;参考:GitHubのReview機能が強化された&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://kglabo.com/img/2018/07/github-pr-1.png&#34; alt=&#34;githubのPRに対しての総評Review&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;PR自体に &lt;code&gt;Review changes&lt;/code&gt; より総評のような形でReviewを記載する事ができる
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Comment&lt;/code&gt; / PRに対して承認などはせず、コメントのみを記載する際に利用。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Approve&lt;/code&gt; / PRに対して承認する事ができる。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Request changes&lt;/code&gt; / PRに対して修正依頼を出すことができる。（これを修正しないとマージする事ができない）&lt;/li&gt;
+&lt;li&gt;感覚的には「Comment（見たよ）」「Approve（イイね）」「Request changes（ダメ）」&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&#34;https://kglabo.com/img/2018/07/github-pr-2.png&#34; alt=&#34;PRの特定行のコードに対するコメント&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;特定行を指定し、コメントをいれる事も可能。（これは従来からある形らしい）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;備考&#34;&gt;備考&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;とりあえず慣れるため、適当にCommentから入れていくことにしようかと思た。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;中カテゴリ&#34;&gt;中カテゴリ&lt;/h4&gt;
+
+&lt;h2 id=&#34;2018-07-26-learned&#34;&gt;2018/07/26 - Learned&lt;/h2&gt;
+
+&lt;p&gt;7月26日（木）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;packge-json&#34;&gt;packge.json&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;dependenciesは全てで利用するもの&lt;/li&gt;
+&lt;li&gt;devDependenciesは開発はている時のみ利用するもの
+
+&lt;ul&gt;
+&lt;li&gt;Linterやビルド関係のパッケージなど / ちなみにdevに追加する場合は「yarn add &amp;ndash;dev」で追加する&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2018-07-27-learned&#34;&gt;2018/07/27 - Learned&lt;/h2&gt;
+
+&lt;p&gt;7月27日（金）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;javascript&#34;&gt;JavaScript&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/shibukawa/items/19ab5c381bbb2e09d0d9&#34;&gt;参考:イマドキのJavaScriptの書き方2018&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;もう覚えなくても良い書き方を解説されている為、学習計画上、無駄が減って非常にありがたい。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;部分的に掻い摘んでメモしたい所のみ記載。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;babel&#34;&gt;babel&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;現状は &lt;code&gt;preset-env&lt;/code&gt; 使っておきゃいい&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;変数&#34;&gt;変数&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;こまけー事はいいから &lt;code&gt;const&lt;/code&gt; 使っときゃいい&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;関数宣言&#34;&gt;関数宣言&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;こまけー事はいいから &lt;code&gt;アロー関数&lt;/code&gt; 使っとけばいい。
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;function&lt;/code&gt; は殺す&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;const hoge = () =&amp;gt; {
+  
+};
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;非同期処理&#34;&gt;非同期処理&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;こまけー事はいいから、 &lt;code&gt;async / await&lt;/code&gt; 使っときやいい。
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;then()&lt;/code&gt;も殺す&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;async&lt;/code&gt;つけたら、&lt;code&gt;await&lt;/code&gt;ついてるやつが待ってくれるようになる。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;関数に引数セットを配列で渡す場合&#34;&gt;関数に引数セットを配列で渡す場合&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;apply()&lt;/code&gt;は使わない&lt;/li&gt;
+&lt;li&gt;スプレッド演算子 &lt;code&gt;...&lt;/code&gt; 使う。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>2018/07 - thaad week I Learned</title>
@@ -3241,257 +3366,6 @@ Host github.com
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;上記の設定を加える事で、無事問題なくcloneする事ができた。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>TIL - スクラムマスターについての勉強</title>
-      <link>https://kglabo.com/blog/scrum-master-study-01/</link>
-      <pubDate>Fri, 24 Feb 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://kglabo.com/blog/scrum-master-study-01/</guid>
-      <description>
-
-&lt;h1 id=&#34;スクラムの基礎知識&#34;&gt;スクラムの基礎知識&lt;/h1&gt;
-
-&lt;h2 id=&#34;なにこれ&#34;&gt;なにこれ？&lt;/h2&gt;
-
-&lt;p&gt;Schooで「はじめてのスクラムマスター」という講座があったので、&lt;br /&gt;
-そちらの講座での学習した内容の備忘録。&lt;/p&gt;
-
-&lt;h2 id=&#34;前置き&#34;&gt;前置き&lt;/h2&gt;
-
-&lt;p&gt;スクラムの生みの親、Jeff Sutherland と Ken Schwaberによるスクラムのガイドがある。&lt;br /&gt;
-&lt;strong&gt;現在も更新されているので、スクラムに関わる機会がある方はかならず読むこと。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://www.scrumguides.org/docs/scrumguide/v2016/2016-Scrum-Guide-Japanese.pdf&#34;&gt;スクラムガイド 2016（PDF）&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;スクラムの定義&#34;&gt;スクラムの定義&lt;/h2&gt;
-
-&lt;h3 id=&#34;スクラムとは&#34;&gt;スクラムとは&lt;/h3&gt;
-
-&lt;p&gt;スクラムとは &lt;em&gt;開発プロセスではなく問題に対応する為のフレームワーク&lt;/em&gt; であり、&lt;br /&gt;
-価値の高いプロダクトやサービスを、&lt;br /&gt;
-&lt;strong&gt;生産性高く、クリエイティブに届ける為のフレームワーク&lt;/strong&gt; です。&lt;/p&gt;
-
-&lt;h3 id=&#34;スクラムの定義-1&#34;&gt;スクラムの定義&lt;/h3&gt;
-
-&lt;p&gt;スクラムとは、以下の様なものである。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;軽量&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;理解が容易&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;習得は困難&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;スクラムを採用するべき開発プロセスモデル&#34;&gt;スクラムを採用するべき開発プロセスモデル&lt;/h2&gt;
-
-&lt;p&gt;採用すべき対象としては、&lt;br /&gt;
-今まで経験した内容で開発全体が安定しているものではなく、&lt;br /&gt;
-今まで経験した事がなく、 &lt;em&gt;試行・検査・適応&lt;/em&gt; していくしかないものに対して有効。&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;複雑で変化があるようなものに対して最適&lt;/strong&gt; だと言われている。&lt;/p&gt;
-
-&lt;h2 id=&#34;スクラムの理論と柱&#34;&gt;スクラムの理論と柱&lt;/h2&gt;
-
-&lt;p&gt;スクラムの理論としては、
-実際に経験していく事によって判断を繰り返し行う事になるので、&lt;br /&gt;
-結果として知識が蓄積されて行き、リスクの予測ができるようになっていく。&lt;/p&gt;
-
-&lt;h3 id=&#34;抑えるべき要点&#34;&gt;抑えるべき要点&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;実際の経験 - A&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;即知に基づく判断 - B&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;知識 - C&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;予測可能性の最適化 - D&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;リスクマネジメント - E&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;具体的な理論&#34;&gt;具体的な理論&lt;/h3&gt;
-
-&lt;p&gt;&lt;strong&gt;経験に基づいて（A）、&lt;br /&gt;
-わかったことに対して対処していき（B/C）、&lt;br /&gt;
-リスクに対応できるように行く（D/E）&lt;/strong&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;守るべき柱&#34;&gt;守るべき柱&lt;/h3&gt;
-
-&lt;p&gt;スクラムを行う上で、大切な柱は以下の3点。&lt;/p&gt;
-
-&lt;h4 id=&#34;透明性&#34;&gt;&lt;em&gt;透明性&lt;/em&gt;&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;コンセンサスをとって認識齟齬を起こさないようにする。&lt;/li&gt;
-&lt;li&gt;物事に対して共通認識を持つ。&lt;/li&gt;
-&lt;li&gt;達成すべきゴールを一致させる。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;検査&#34;&gt;&lt;em&gt;検査&lt;/em&gt;&lt;/h4&gt;
-
-&lt;h4 id=&#34;適応&#34;&gt;&lt;em&gt;適応&lt;/em&gt;&lt;/h4&gt;
-
-&lt;h2 id=&#34;スクラムのスプリント&#34;&gt;スクラムのスプリント&lt;/h2&gt;
-
-&lt;p&gt;タイムボックスと呼ぶ。&lt;br /&gt;
-開発の反復を行う期間を固定する。これがとても大事
-ウォーターフォールはそのまま流れ作業を行う。&lt;/p&gt;
-
-&lt;p&gt;一度決めたタイムボックスを仮に2週間で決めた場合は、
-タイムボックス毎にフィードバックが出るのでメリットとして、&lt;br /&gt;
-ユーザや発注者に対しての期待値をコントロールできる。&lt;/p&gt;
-
-&lt;p&gt;開発にリズムができるので利害関係者に対して、&lt;br /&gt;
-次のスプリントに結果が確認できるという結果が提供できる。&lt;br /&gt;
-この事により、横槍が入りづらくなるメリットがある。&lt;/p&gt;
-
-&lt;h2 id=&#34;スクラムのイベント&#34;&gt;スクラムのイベント&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;検査&lt;/li&gt;
-&lt;li&gt;適用&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;何かを行って開発を進めていくにあたって、&lt;br /&gt;
-状況を確認する為のチェックポイントを作る。&lt;/p&gt;
-
-&lt;p&gt;うまくいっている所は引き続きやっていく。
-何か問題が発生している場合は改善する。&lt;/p&gt;
-
-&lt;p&gt;それを行う為の仕組みとして、&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;スプリントプランニング&lt;/li&gt;
-&lt;li&gt;デイリースクラム&lt;/li&gt;
-&lt;li&gt;スプリントレビュー&lt;/li&gt;
-&lt;li&gt;レトロスペクティブ（振り返り）&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;タイムボックスで回した作業にて成果物が出来る。&lt;/p&gt;
-
-&lt;h3 id=&#34;1-スプリントプランニング-スプリント計画会議&#34;&gt;1.スプリントプランニング（スプリント計画会議）&lt;/h3&gt;
-
-&lt;p&gt;期間が決められたプロジェクトにあたる為、計画を行う。
-* 何を作るのか
-* それによって今の価値のあるプロダクトがどう変わるのか？&lt;/p&gt;
-
-&lt;p&gt;期間を固定する。&lt;/p&gt;
-
-&lt;h3 id=&#34;2-デイリースクラム&#34;&gt;2.デイリースクラム&lt;/h3&gt;
-
-&lt;h4 id=&#34;参加するロール&#34;&gt;参加するロール&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;毎日、会議を行う（朝会とも言う）&lt;/li&gt;
-&lt;li&gt;開発チーム内で毎日行う作業。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;期間を固定する。&lt;/p&gt;
-
-&lt;p&gt;スプリントのゴールに対して&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;昨日、何をしたのか。&lt;/li&gt;
-&lt;li&gt;今日、何をするのか&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;デイリースクラム自体もタイムボックスに入っているので、15分で終わらせる。
-開発は難しいので、2週間という計画を立ててもその通りになるとは限らないので、
-軌道修正・調整の為にデイリースクラムを行う。
-朝じゃなくてもいいが、毎日同じ時間に同じ場所で同じメンバーで行うのが良い。&lt;/p&gt;
-
-&lt;h3 id=&#34;3-スプリントレビュー&#34;&gt;3. スプリントレビュー&lt;/h3&gt;
-
-&lt;p&gt;どういった機能を作るのか？という所に対して、&lt;br /&gt;
-ちゃんと機能を満たしているかどうかについて共有する。&lt;/p&gt;
-
-&lt;h3 id=&#34;4-レトロスペクティブ-ふりかえり&#34;&gt;4. レトロスペクティブ（ふりかえり）&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;良かった事を共有して継続する&lt;/li&gt;
-&lt;li&gt;悪かった事は改善点を考えて共有する&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;期間を固定する。&lt;/p&gt;
-
-&lt;h2 id=&#34;スクラムチーム&#34;&gt;スクラムチーム&lt;/h2&gt;
-
-&lt;p&gt;以下のロールの人員が集まって、スクラムチームと呼ぶ。&lt;/p&gt;
-
-&lt;h3 id=&#34;ロール&#34;&gt;ロール&lt;/h3&gt;
-
-&lt;p&gt;大前提として、下記のロールには上下関係はなく全員が同じ立場である。
-注意点として、プロダクトオーナー・スクラムマスターが従来のマネージャーやリーダーが行うケースが行う場合が多く、&lt;/p&gt;
-
-&lt;h4 id=&#34;スクラムマスター-sm-1名&#34;&gt;スクラムマスター（SM）- 1名&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;全体を俯瞰して、スクラムが逸脱していないか・横槍が入らないかを確認・調整する&lt;/li&gt;
-&lt;li&gt;スクラムとはどういうやり方なのかを説明して理解してもらう&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;プロダクトオーナー-po-1名&#34;&gt;プロダクトオーナー（PO）- 1名&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;プロダクトバックログで何をどの優先度で作るのか？という事を決定する&lt;/li&gt;
-&lt;li&gt;開発チームが成果を出して、プロダクトをリリースするまでの責務を追う&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;開発チーム-devterm-6-3名&#34;&gt;開発チーム（DevTerm） - 6±3名&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;スプリントの中で実際に開発を行う&lt;/li&gt;
-&lt;li&gt;スプリントのプランニングにも関わり、実際に作業の見積もりを行う。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;スクラムチームの特徴として&lt;br /&gt;
-&lt;em&gt;自己組織化チーム&lt;/em&gt; であり、&lt;br /&gt;
-&lt;em&gt;機能横断的チーム&lt;/em&gt; である。&lt;/p&gt;
-
-&lt;h3 id=&#34;自己組織化チームとは&#34;&gt;自己組織化チームとは&lt;/h3&gt;
-
-&lt;p&gt;スクラムチームに関しては&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;em&gt;やり方の問題を解決したり&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;em&gt;うまくいくように立ち向かっていく事に関しては、外部の支援なしで行う自立したチーム&lt;/em&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;機能横断的チームとは&#34;&gt;機能横断的チームとは&lt;/h3&gt;
-
-&lt;p&gt;&lt;em&gt;開発に必要な全ての事が行えるチーム&lt;/em&gt; でいる事。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;データベースの専門家がいない為、データベースの機能が実装ができません。&lt;/li&gt;
-&lt;li&gt;チーム内では実装できないので、他から専門家を借りてくる。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;というケースはNG。&lt;/p&gt;
-
-&lt;p&gt;いろんなスキルセットのメンバーが色々な知恵を出して保管し合って、&lt;br /&gt;
-&lt;strong&gt;チームの中だけで完結して物事を達成していくチーム&lt;/strong&gt; である事。&lt;/p&gt;
-
-&lt;p&gt;ただし個々が、スペシャリストである必要はない。
-大事なのはチームで保管し合う事。&lt;/p&gt;
-
-&lt;h3 id=&#34;チームの人員について&#34;&gt;チームの人員について&lt;/h3&gt;
-
-&lt;p&gt;開発チームはできるだけ、 6±3名が良い。&lt;/p&gt;
-
-&lt;h4 id=&#34;理由&#34;&gt;理由&lt;/h4&gt;
-
-&lt;p&gt;&lt;em&gt;3人未満だと、相互作用がおきづらい。&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;9人を超えると自己組織的に動きづらい。&lt;/em&gt;
-* 理由としては同じマインドじゃない方がいたり、MTGの予定をあわせるのが難しくなったりする為。&lt;/p&gt;
-
-&lt;p&gt;人数が超える場合は、2つのチームに分ける等をしたほうが良い。&lt;/p&gt;
-
-&lt;p&gt;期間を2週間（仮）と区切る事で、期待をコントロールできる。
-* クライアント / ユーザ 次の二週間後にフィードバックがかえってくる。という信頼感につながる。&lt;/p&gt;
-
-&lt;p&gt;手を動かす人が、自分で見積もる。&lt;/p&gt;
 </description>
     </item>
     
