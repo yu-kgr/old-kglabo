@@ -19,6 +19,19 @@ draft = "true"
 
 7月30日（月）のToday I Leaned.
 
-### main
+### ES2015について
 
-#### sub
+#### ESLint
+
+- Unexpected block statement surrounding arrow body (arrow-body-style)
+- 関数がreturn分しか含まない場合は、ブレース（`{}`）とretun文とセミコロンを省略できる。
+
+```JavaScript
+() => {
+  return 1;
+}
+
+// 省略したケース
+() => 1
+```
+
