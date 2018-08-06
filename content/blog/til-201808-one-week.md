@@ -8,7 +8,7 @@ featuredalt = "til"
 featuredpath = "https://kglabo.com"
 title = "2018/08 - one week I Learned"
 type = "post"
-draft = "true"
+draft = "false"
 +++
 
 # 今週、知った/学んだこと
@@ -85,7 +85,7 @@ for (const value of iterable) {
 
 ## 2018/08/01- Learned
 
-8月1日（火）のToday I Leaned.
+8月1日（水）のToday I Leaned.
 
 ### JavaScript
 
@@ -110,7 +110,6 @@ for (const value of iterable) {
   - パフォーマンスを向上させるために設定を動的に変更する。
   - クラスタリングを制御する
 
----
 
 ### 今週の詰まった所
 
@@ -118,7 +117,7 @@ for (const value of iterable) {
   - 基本的に日本語で説明されている内容が古い事が多い
 2. やたら書き方が変わる.babelrc
 3. ぶっちゃけ覚えなくていいprototype（黙ってES2015のクラス宣言覚えとけばOK
-4. jestを導入したらエラーが出る
+4. jestを導入したら依存ライブラリ周りでエラーが出る
   - 1に関係する内容だけど、モジュールが独自の進化を遂げてるケースがあるのでissueとか見に行く必要がある
 5. Editer自体のユーザ設定に「この設定がおすすめやで！」みたいなのを脳停止で入れると後々ボディブローしてくる
 6. flowで依存ライブラリがRequired module not found返して来るので、flow-typedで定義済みの型ファイルを使おうとしたら、ちょいちょいなくて自分で型定義ファイルを書けと言われる。
