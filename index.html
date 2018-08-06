@@ -573,7 +573,7 @@ ga('send', 'pageview');
 <li>こういうのは古いらしい</li>
 </ul>
 
-<pre><code># 古いコード
+<pre><code class="language-JavaScript"># 古いコード
 var iterable = [10, 20, 30];
 
 for (var i = 0; i &lt; iterable.length; i++) {
@@ -639,8 +639,7 @@ for (const value of iterable) {
 <li>Node.jsで開発するとき、ソース修正後、手動でnode.jsプロセスを再起動しないと反映されないという問題がある。
 
 <ul>
-<li>Node.jsで読み込まれたJavascriptファイルがキャッシュされるため、ソースコードを更新しても、Node.jsの再起動をしないとソースが反映されない為。
-<br /></li>
+<li>Node.jsで読み込まれたJavascriptファイルがキャッシュされるため、ソースコードを更新しても、Node.jsの再起動をしないとソースが反映されない為。</li>
 </ul></li>
 </ul>
 
@@ -663,17 +662,11 @@ for (const value of iterable) {
 
 <ol>
 <li>フロントエンド環境、どれが最新情報なのかわからない問題
-
-<ul>
-<li>基本的に日本語で説明されている内容が古い事が多い</li>
-</ul></li>
+a. 基本的に日本語で説明されている内容が古い事が多い</li>
 <li>やたら書き方が変わる.babelrc</li>
 <li>ぶっちゃけ覚えなくていいprototype（黙ってES2015のクラス宣言覚えとけばOK</li>
 <li>jestを導入したら依存ライブラリ周りでエラーが出る
-
-<ul>
-<li>1に関係する内容だけど、モジュールが独自の進化を遂げてるケースがあるのでissueとか見に行く必要がある</li>
-</ul></li>
+a. 1に関係する内容だけど、モジュールが独自の進化を遂げてるケースがあるのでissueとか見に行く必要がある</li>
 <li>Editer自体のユーザ設定に「この設定がおすすめやで！」みたいなのを脳停止で入れると後々ボディブローしてくる</li>
 <li>flowで依存ライブラリがRequired module not found返して来るので、flow-typedで定義済みの型ファイルを使おうとしたら、ちょいちょいなくて自分で型定義ファイルを書けと言われる。</li>
 </ol>

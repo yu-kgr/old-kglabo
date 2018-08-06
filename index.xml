@@ -59,7 +59,7 @@
 &lt;li&gt;こういうのは古いらしい&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code&gt;# 古いコード
+&lt;pre&gt;&lt;code class=&#34;language-JavaScript&#34;&gt;# 古いコード
 var iterable = [10, 20, 30];
 
 for (var i = 0; i &amp;lt; iterable.length; i++) {
@@ -125,8 +125,7 @@ for (const value of iterable) {
 &lt;li&gt;Node.jsで開発するとき、ソース修正後、手動でnode.jsプロセスを再起動しないと反映されないという問題がある。
 
 &lt;ul&gt;
-&lt;li&gt;Node.jsで読み込まれたJavascriptファイルがキャッシュされるため、ソースコードを更新しても、Node.jsの再起動をしないとソースが反映されない為。
-&lt;br /&gt;&lt;/li&gt;
+&lt;li&gt;Node.jsで読み込まれたJavascriptファイルがキャッシュされるため、ソースコードを更新しても、Node.jsの再起動をしないとソースが反映されない為。&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
@@ -149,17 +148,11 @@ for (const value of iterable) {
 
 &lt;ol&gt;
 &lt;li&gt;フロントエンド環境、どれが最新情報なのかわからない問題
-
-&lt;ul&gt;
-&lt;li&gt;基本的に日本語で説明されている内容が古い事が多い&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+a. 基本的に日本語で説明されている内容が古い事が多い&lt;/li&gt;
 &lt;li&gt;やたら書き方が変わる.babelrc&lt;/li&gt;
 &lt;li&gt;ぶっちゃけ覚えなくていいprototype（黙ってES2015のクラス宣言覚えとけばOK&lt;/li&gt;
 &lt;li&gt;jestを導入したら依存ライブラリ周りでエラーが出る
-
-&lt;ul&gt;
-&lt;li&gt;1に関係する内容だけど、モジュールが独自の進化を遂げてるケースがあるのでissueとか見に行く必要がある&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+a. 1に関係する内容だけど、モジュールが独自の進化を遂げてるケースがあるのでissueとか見に行く必要がある&lt;/li&gt;
 &lt;li&gt;Editer自体のユーザ設定に「この設定がおすすめやで！」みたいなのを脳停止で入れると後々ボディブローしてくる&lt;/li&gt;
 &lt;li&gt;flowで依存ライブラリがRequired module not found返して来るので、flow-typedで定義済みの型ファイルを使おうとしたら、ちょいちょいなくて自分で型定義ファイルを書けと言われる。&lt;/li&gt;
 &lt;/ol&gt;
