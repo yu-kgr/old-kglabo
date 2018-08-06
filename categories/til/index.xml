@@ -6,8 +6,165 @@
     <description>Recent content in TIL on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 23 Jul 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 03 Aug 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kglabo.com/categories/til/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2018/08 - one week I Learned</title>
+      <link>https://kglabo.com/blog/til-201808-one-week/</link>
+      <pubDate>Fri, 03 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kglabo.com/blog/til-201808-one-week/</guid>
+      <description>
+
+&lt;h1 id=&#34;今週-知った-学んだこと&#34;&gt;今週、知った/学んだこと&lt;/h1&gt;
+
+&lt;!-- tags = [&#34;&#34;] --&gt;
+
+&lt;h2 id=&#34;2018-07-30-learned&#34;&gt;2018/07/30- Learned&lt;/h2&gt;
+
+&lt;p&gt;7月30日（月）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;javascript&#34;&gt;JavaScript&lt;/h3&gt;
+
+&lt;h4 id=&#34;eslint&#34;&gt;ESLint&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;拡張子無しの.eslintrcはJSON,YAMLで記述可能ですが現在は非推奨です&lt;/li&gt;
+&lt;li&gt;こんな感じのエラーを出してくれる
+
+&lt;ul&gt;
+&lt;li&gt;Unexpected block statement surrounding arrow body (arrow-body-style)&lt;/li&gt;
+&lt;li&gt;関数がreturn分しか含まない場合は、ブレース（&lt;code&gt;{}&lt;/code&gt;）とretun文とセミコロンを省略できる。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-JavaScript&#34;&gt;() =&amp;gt; {
+  return 1;
+}
+
+// 省略したケース
+() =&amp;gt; 1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&#34;2018-07-31-learned&#34;&gt;2018/07/31- Learned&lt;/h2&gt;
+
+&lt;p&gt;7月31日（火）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;javascript-1&#34;&gt;JavaScript&lt;/h3&gt;
+
+&lt;h4 id=&#34;ループ処理&#34;&gt;ループ処理&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;こういうのは古いらしい&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;# 古いコード
+var iterable = [10, 20, 30];
+
+for (var i = 0; i &amp;lt; iterable.length; i++) {
+  var value = iterable[i];
+  console.log(value);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ループを回して、要素をひとつずつ取り出す・・・というコードは &lt;code&gt;for ... of&lt;/code&gt;を使う。
+
+&lt;ul&gt;
+&lt;li&gt;イテレータプロトコル（反復処理プロトコル）というらしい。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;# ナウいコード
+const iterable = [10, 20, 30];
+
+for (const value of iterable) {
+  console.log(value);
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h4 id=&#34;flow&#34;&gt;Flow&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Facebook制の静的型チェッカー&lt;/li&gt;
+&lt;li&gt;rootで&lt;code&gt;flow init&lt;/code&gt;で利用可能&lt;/li&gt;
+&lt;li&gt;動作させたいファイルの先頭に &lt;code&gt;// @flow&lt;/code&gt;とか&lt;code&gt;/* @flow */&lt;/code&gt;とかいれると動作する&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;jest&#34;&gt;Jest&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;FacebookによるJavaScriptテストライブラリ / &lt;a href=&#34;https://jestjs.io/ja/&#34;&gt;Jest/快適なJavaScriptのテスト&lt;/a&gt;
+
+&lt;ul&gt;
+&lt;li&gt;他にもjasmine, mocha+chaiとか色々あったらしいが、これから触るマンとしてはよく知らん。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;1パッケージいれるだけで「テストランナー/アサーション/モック/カバレッジ」の機能が利用可能&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/karak/items/9d0ebf7bc50085624913&#34;&gt;参考:ついに jest の軍門に降った&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;__tests__&lt;/code&gt;ディレクトリ作ってその中にファイルを入れるか、 &lt;code&gt;.spec.js&lt;/code&gt;または&lt;code&gt;.test.js&lt;/code&gt;をつけると勝手にファイル見つけて実行してくれる。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2018-08-01-learned&#34;&gt;2018/08/01- Learned&lt;/h2&gt;
+
+&lt;p&gt;8月1日（水）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;javascript-2&#34;&gt;JavaScript&lt;/h3&gt;
+
+&lt;h4 id=&#34;express&#34;&gt;Express&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Nodeを利用したWebApplicationFramework。割とシンプルかつ最小限のAPIを提供するとの事&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;express-generator&lt;/code&gt; とか使うとてっとり早くスケルトンを作成可能。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;nodemon&#34;&gt;Nodemon&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ディレクトリ内でファイルの変更が発生したら、ノードサーバーを自動的に再起動するユーティリティ。&lt;/li&gt;
+&lt;li&gt;Node.jsで開発するとき、ソース修正後、手動でnode.jsプロセスを再起動しないと反映されないという問題がある。
+
+&lt;ul&gt;
+&lt;li&gt;Node.jsで読み込まれたJavascriptファイルがキャッシュされるため、ソースコードを更新しても、Node.jsの再起動をしないとソースが反映されない為。
+&lt;br /&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;pm2&#34;&gt;pm2&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Node Process Manager 2 の略らしい&lt;/li&gt;
+&lt;li&gt;Nodeプログラムを常時デーモンで稼働させる際に利用したりする。&lt;/li&gt;
+&lt;li&gt;具体的には常時起動させつつ、こんな事させたり
+
+&lt;ul&gt;
+&lt;li&gt;アプリケーションが異常終了した場合に自動的に再始動する。&lt;/li&gt;
+&lt;li&gt;ランタイム・パフォーマンスとリソース使用量に関するインサイトを得る。&lt;/li&gt;
+&lt;li&gt;パフォーマンスを向上させるために設定を動的に変更する。&lt;/li&gt;
+&lt;li&gt;クラスタリングを制御する&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;今週の詰まった所&#34;&gt;今週の詰まった所&lt;/h3&gt;
+
+&lt;ol&gt;
+&lt;li&gt;フロントエンド環境、どれが最新情報なのかわからない問題
+
+&lt;ul&gt;
+&lt;li&gt;基本的に日本語で説明されている内容が古い事が多い&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;やたら書き方が変わる.babelrc&lt;/li&gt;
+&lt;li&gt;ぶっちゃけ覚えなくていいprototype（黙ってES2015のクラス宣言覚えとけばOK&lt;/li&gt;
+&lt;li&gt;jestを導入したら依存ライブラリ周りでエラーが出る
+
+&lt;ul&gt;
+&lt;li&gt;1に関係する内容だけど、モジュールが独自の進化を遂げてるケースがあるのでissueとか見に行く必要がある&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Editer自体のユーザ設定に「この設定がおすすめやで！」みたいなのを脳停止で入れると後々ボディブローしてくる&lt;/li&gt;
+&lt;li&gt;flowで依存ライブラリがRequired module not found返して来るので、flow-typedで定義済みの型ファイルを使おうとしたら、ちょいちょいなくて自分で型定義ファイルを書けと言われる。&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
     
     <item>
       <title>2018/07 - four week I Learned</title>
@@ -3329,43 +3486,6 @@ npx: 10個のパッケージを2.106秒でインストールしました。
 &lt;p&gt;期間と作業割合がわかっているタスクに関しては、&lt;br /&gt;
 逆算して初期見積入れておいても良い。
 ※ 単純にタスクに何時間かけるか分かるようになるだけだが‥&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>リポジトリにssh接続でgit cloneする為にssh-keygen -f hogehogeで、別名pubファイルを作ったら永遠にcloneできなかった話</title>
-      <link>https://kglabo.com/blog/another-name-ssh-keygen/</link>
-      <pubDate>Mon, 08 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://kglabo.com/blog/another-name-ssh-keygen/</guid>
-      <description>
-
-&lt;h2 id=&#34;発生した問題&#34;&gt;発生した問題&lt;/h2&gt;
-
-&lt;p&gt;githubの既存リポジトリから、sshでgit cloneしたかったので、&lt;br /&gt;
-&lt;a href=&#34;http://qiita.com/suthio/items/2760e4cff0e185fe2db9&#34;&gt;お前らのSSH Keysの作り方は間違っている&lt;/a&gt;を参考にして暗号強度を高めつつ、&lt;br /&gt;
-&lt;code&gt;ssh-keygen -f github_id_rsa&lt;/code&gt; で別名のpubファイルを作成してcloneした所、&lt;br /&gt;
-下記のようなエラーが発生した。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;Warning: Permanently added the RSA host key for IP address &#39;***.***.***.**&#39; to the list of known hosts.
-Permission denied (publickey).
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h2 id=&#34;対処方法&#34;&gt;対処方法&lt;/h2&gt;
-
-&lt;p&gt;GitHub へのアクセス時に、 &lt;code&gt;~/.ssh/id_rsa&lt;/code&gt; や &lt;code&gt;~/.ssh/id_dsa&lt;/code&gt; ではなく、&lt;br /&gt;
-別名で認証鍵を作成した場合は、 &lt;code&gt;~/.ssh/config&lt;/code&gt; ファイルを作成して、&lt;br /&gt;
-下記設定を記述する必要がある。&lt;/p&gt;
-
-&lt;p&gt;また、configファイルに関しては、Permissionを600にする必要がある。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# ~/.ssh/config
-
-Host github.com
-    IdentityFile ~/.ssh/github_id_rsa
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;上記の設定を加える事で、無事問題なくcloneする事ができた。&lt;/p&gt;
 </description>
     </item>
     
