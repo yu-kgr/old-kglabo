@@ -8,7 +8,7 @@ featuredalt = "til"
 featuredpath = "https://kglabo.com"
 title = "2018/08 - second week I Learned"
 type = "post"
-draft = "true"
+draft = "false"
 +++
 
 # 今週、知った/学んだこと
@@ -23,7 +23,8 @@ draft = "true"
 
 ### ノーマルモード時
 - 複数行を削除する場合 - {n}ddでカーソルがある行を含めて、n列分を削除
-- nyy
+- 複数行をコピー（ヤンク）する場合、{n}yyでカーソルがある行を含めて、n列分をコピー（ヤンク）する。
+  - ヤンクはぐいっと引っ張る意味らしい。
 
 ## 2018/08/07- Learned
 
@@ -58,5 +59,16 @@ draft = "true"
 - センサデータの集約
 - 簡単なリアルタイム集計
 - 汎用データ処理プロセッサとして
+
+
+## 2018/08/10- Learned
+
+8月10日（金）のToday I Leaned.
+
+### JavaScript
+
+#### module
+
+- styled-jsx - jsxで構成された仮想DOM要素に対して、そこでスコープが完結する形でCSSを反映する事が可能なnode_modules
 
 
