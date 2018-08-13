@@ -6,8 +6,98 @@
     <description>Recent content in Blog on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 03 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Aug 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kglabo.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2018/08 - second week I Learned</title>
+      <link>https://kglabo.com/blog/til-201808-second-week/</link>
+      <pubDate>Fri, 10 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kglabo.com/blog/til-201808-second-week/</guid>
+      <description>
+
+&lt;h1 id=&#34;今週-知った-学んだこと&#34;&gt;今週、知った/学んだこと&lt;/h1&gt;
+
+&lt;!-- tags = [&#34;&#34;] --&gt;
+
+&lt;h2 id=&#34;2018-08-06-learned&#34;&gt;2018/08/06- Learned&lt;/h2&gt;
+
+&lt;p&gt;8月6日（月）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;vim&#34;&gt;Vim&lt;/h3&gt;
+
+&lt;h3 id=&#34;ノーマルモード時&#34;&gt;ノーマルモード時&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;複数行を削除する場合 - {n}ddでカーソルがある行を含めて、n列分を削除&lt;/li&gt;
+&lt;li&gt;複数行をコピー（ヤンク）する場合、{n}yyでカーソルがある行を含めて、n列分をコピー（ヤンク）する。
+
+&lt;ul&gt;
+&lt;li&gt;ヤンクはぐいっと引っ張る意味らしい。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2018-08-07-learned&#34;&gt;2018/08/07- Learned&lt;/h2&gt;
+
+&lt;p&gt;8月7日（火）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;fluentd&#34;&gt;Fluentd&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;データのやりとりを管理するSoftwareで、デーモンとして動作する。&lt;/li&gt;
+&lt;li&gt;Linuxで動く。データの中身は何でも良いが、ログの場合が多い。&lt;/li&gt;
+&lt;li&gt;Fluentd自体は、Rubyで動いている / pluginもRubyで書く&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;できる事&#34;&gt;できる事&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;必要な所からデータを取り出す(input)
+
+&lt;ul&gt;
+&lt;li&gt;必要に応じてパース（分解）する事&lt;/li&gt;
+&lt;li&gt;データのタイムスタンプを管理する&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;必要な所にデータを届ける（output）
+
+&lt;ul&gt;
+&lt;li&gt;そのデータを必要に応じて整形（フォーマット）して保存する
+-　データを紛失しないように管理する（buffer）&lt;/li&gt;
+&lt;li&gt;やりとりの途中で何かエラーが起きたらリトライする&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;出力先&#34;&gt;出力先&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;AWS S3、Hadoop HDFS、MongoDB、Cassandra、MySQL、PostgreSQL、Redis など&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;頻出ユースケース&#34;&gt;頻出ユースケース&lt;/h4&gt;
+
+&lt;p&gt;基本的に、流れているデータを処理する仕事なら何でもできるらしい。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ログの収集&lt;/li&gt;
+&lt;li&gt;センサデータの集約&lt;/li&gt;
+&lt;li&gt;簡単なリアルタイム集計&lt;/li&gt;
+&lt;li&gt;汎用データ処理プロセッサとして&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2018-08-10-learned&#34;&gt;2018/08/10- Learned&lt;/h2&gt;
+
+&lt;p&gt;8月10日（金）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;javascript&#34;&gt;JavaScript&lt;/h3&gt;
+
+&lt;h4 id=&#34;module&#34;&gt;module&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;styled-jsx - jsxで構成された仮想DOM要素に対して、そこでスコープが完結する形でCSSを反映する事が可能なnode_modules&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>2018/08 - one week I Learned</title>
@@ -3646,238 +3736,6 @@ Googleの&lt;a href=&#34;https://rework.withgoogle.com/guides/understanding-team
 
 &lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;p&amp;gt;hogefuga&amp;lt;/p&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>TIL - UX研修 - 他社UI調査/インタビュー設計</title>
-      <link>https://kglabo.com/blog/til-user-experience-training-02/</link>
-      <pubDate>Mon, 16 Oct 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://kglabo.com/blog/til-user-experience-training-02/</guid>
-      <description>
-
-&lt;h2 id=&#34;なにこれ&#34;&gt;なにこれ&lt;/h2&gt;
-
-&lt;p&gt;社内でのUX研修で学んだ事のメモ&lt;/p&gt;
-
-&lt;h2 id=&#34;研修内容&#34;&gt;研修内容&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;他社UI調査&lt;/li&gt;
-&lt;li&gt;インタビュー設計&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;問いを立てる&#34;&gt;問いを立てる&lt;/h2&gt;
-
-&lt;p&gt;実際に競合他社と比較して問いを立てる（20分）&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;こうだと思うけど（仮説）&lt;/li&gt;
-&lt;li&gt;こうなっているのは（現実）&lt;/li&gt;
-&lt;li&gt;なぜだろう（問い）&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;仮説ではなく問いを立てる&#34;&gt;仮説ではなく問いを立てる&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;仮説では質問者の考え（バイアス）が掛かるため、純粋に知りたい問いを探す&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;定量調査と定性調査&#34;&gt;定量調査と定性調査&lt;/h2&gt;
-
-&lt;h3 id=&#34;定量調査&#34;&gt;定量調査&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ログ重視/結果重視&lt;/li&gt;
-&lt;li&gt;広く浅い情報を取り扱う&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;定性調査&#34;&gt;定性調査&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ログ化されていない情報の収集&lt;/li&gt;
-&lt;li&gt;新しい価値の発見/狭く深い情報を取り扱う&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;定量調査と定性調査の組み合わせが大事&#34;&gt;定量調査と定性調査の組み合わせが大事&lt;/h4&gt;
-
-&lt;p&gt;現状何が起きているのかを定量調査で確認して、&lt;br /&gt;
-定性調査でどうしてそうなっているのかプロセスを確認して行って施策の成果を定量調査で確認する。&lt;/p&gt;
-
-&lt;h4 id=&#34;定性調査の種類&#34;&gt;定性調査の種類&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;エスノグラフィ
-
-&lt;ul&gt;
-&lt;li&gt;被験者の実際の利用現場に赴きも場合によっては調査者自身も被験者と一体となり調査する&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;コンテクスチュアルインクワイアリー
-
-&lt;ul&gt;
-&lt;li&gt;被験者が自分の行動や思いを説明しながら、サービスやプロダクトを普段通りに利用してもらう&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;オブザベーション
-
-&lt;ul&gt;
-&lt;li&gt;調査側が用意した手順に沿ってサービスやプロダクトを利用してもらい、観察をする&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;インタビュー
-
-&lt;ul&gt;
-&lt;li&gt;双方向のやり取りを交えて、被験者に話を聞く&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;アンケート
-
-&lt;ul&gt;
-&lt;li&gt;一方的に示した問に対して、情報を収集する&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;インタビューの種類&#34;&gt;インタビューの種類&lt;/h4&gt;
-
-&lt;p&gt;今回はインタビューについて深掘り・学習する。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;非構造化インタビュー
-
-&lt;ul&gt;
-&lt;li&gt;事前に設問を決めずに、その場に合わせて質問する。予想だにしてなかった発見があるが、時間がかかる。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;半構造化インタビュー
-
-&lt;ul&gt;
-&lt;li&gt;事前に決めた設問に沿って進めつつ、必要な箇所は深掘りをしていく。時間的に効率よく進められ深掘りもできるが、バイアスがかかる懸念。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;構造化インタビュー
-
-&lt;ul&gt;
-&lt;li&gt;事前に決めておいた設問のみ質問する。短時間で終わるが深掘りができない。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;インタビュー設計&#34;&gt;インタビュー設計&lt;/h2&gt;
-
-&lt;p&gt;インタビューをどうやって行うかの設計。&lt;/p&gt;
-
-&lt;h2 id=&#34;調査の目的を明らかにする&#34;&gt;調査の目的を明らかにする&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;調査で、何を明らかにしたいのかを決める&lt;/li&gt;
-&lt;li&gt;調査結果を何に、どのように使うのかを決める&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;被験者集め-リクルーティング&#34;&gt;被験者集め（リクルーティング）&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;被験者の条件を決定&lt;/li&gt;
-&lt;li&gt;話を聞くべき人の条件を洗い出す ※複数のセグメントを設定することもできる&lt;/li&gt;
-&lt;li&gt;被験者の数を決定
-
-&lt;ul&gt;
-&lt;li&gt;最低でも３人、一般的には５人&lt;/li&gt;
-&lt;li&gt;※ただしセグメントごとにこの人数が必要&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;被験者候補の抽出
-
-&lt;ul&gt;
-&lt;li&gt;人づて（知り合い、知り合いの知り合い）&lt;/li&gt;
-&lt;li&gt;スクリーニングアンケート&lt;/li&gt;
-&lt;li&gt;外部の調査会社に依頼&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;実査の調整
-
-&lt;ul&gt;
-&lt;li&gt;セグメントと照合しているか直接確認&lt;/li&gt;
-&lt;li&gt;日程調整&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;インタビュー設計-1&#34;&gt;インタビュー設計&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ラポールの形成
-
-&lt;ul&gt;
-&lt;li&gt;リラックスしてもらい、本音を言いやすい空気を作る ※挨拶の応答や雑談で会話をし、被験者にも声を出してもらう&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;インフォームドコンセント
-
-&lt;ul&gt;
-&lt;li&gt;安心して意見を言えるように、調査について伝える ※調査目的、個人情報の取り扱い、任意参加である点などを伝える&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;基本情報の質問
-
-&lt;ul&gt;
-&lt;li&gt;本題に入る前に、周辺状況や利用の背景について質問する&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;本題の質問&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;本題の質問&#34;&gt;本題の質問&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;インタビュー内容の設計手順
-
-&lt;ul&gt;
-&lt;li&gt;知りたいことを答えてもらえる質問にする&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-&lt;li&gt;明らかにしたいことを洗い出す&lt;/li&gt;
-&lt;li&gt;明らかにしたいことを精査し優先度をつけ、高いものをピックアップする&lt;/li&gt;
-&lt;li&gt;明らかにしたいことを知るために、何をどのように聞くべきかを検討する&lt;/li&gt;
-&lt;li&gt;設問を並べ、答えが得られやすいような順番を検討する&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;インタビュー内容の設計tips&#34;&gt;インタビュー内容の設計TIPS&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;被験者が「はい / いいえ」で答えられない、回答が膨らむような質問にしましょう
-
-&lt;ul&gt;
-&lt;li&gt;はい、いいえで終わるとそれ以上の情報が得られません。被験者が自ら説明してくれるような質問が理想です。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;被験者が利用する状況や背景、理由などが明らかになる質問をしましょう
-
-&lt;ul&gt;
-&lt;li&gt;被験者の行為や結果だけではなく、なぜその結果に至ったのかという点が最も重要です。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;答えやすい質問を先に、答えにくい質問を後に回しましょう
-
-&lt;ul&gt;
-&lt;li&gt;被験者が話しやすい順序を工夫しましょう。場合によっては用意した順序を入れ替えてもかまいません。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;質問者の思い込みが入り、被験者の答えが偏るような質問はやめましょう
-
-&lt;ul&gt;
-&lt;li&gt;自分が持っている仮説を検証するような質問ではなく、被験者のありのままの情報を収集すると理解が深まります。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;情報が引き出せない場合、初めての利用や直近の利用を質問してみましょう
-
-&lt;ul&gt;
-&lt;li&gt;初めての利用や直近の利用は記憶に残りやすいです。足がかりとして被験者の情報を引き出すことができます。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;インタビュー項目の設計&#34;&gt;インタビュー項目の設計&lt;/h2&gt;
-
-&lt;p&gt;インタビュー項目の設計を実際に行う（20分）&lt;br /&gt;
-設計する際の順番は、先に作成した問いに対して下記の事を意識して作成する。&lt;/p&gt;
-
-&lt;ol&gt;
-&lt;li&gt;優先度をつける&lt;/li&gt;
-&lt;li&gt;何をどのように聞くべきか検討する&lt;/li&gt;
-&lt;li&gt;答えが得られやすいような順番を検討する&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;ul&gt;
-&lt;li&gt;10分程度のインタビューだと適正数は3~4つの問い&lt;/li&gt;
-&lt;/ul&gt;
 </description>
     </item>
     

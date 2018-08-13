@@ -6,8 +6,98 @@
     <description>Recent content in TIL on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 03 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Aug 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kglabo.com/categories/til/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2018/08 - second week I Learned</title>
+      <link>https://kglabo.com/blog/til-201808-second-week/</link>
+      <pubDate>Fri, 10 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kglabo.com/blog/til-201808-second-week/</guid>
+      <description>
+
+&lt;h1 id=&#34;今週-知った-学んだこと&#34;&gt;今週、知った/学んだこと&lt;/h1&gt;
+
+&lt;!-- tags = [&#34;&#34;] --&gt;
+
+&lt;h2 id=&#34;2018-08-06-learned&#34;&gt;2018/08/06- Learned&lt;/h2&gt;
+
+&lt;p&gt;8月6日（月）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;vim&#34;&gt;Vim&lt;/h3&gt;
+
+&lt;h3 id=&#34;ノーマルモード時&#34;&gt;ノーマルモード時&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;複数行を削除する場合 - {n}ddでカーソルがある行を含めて、n列分を削除&lt;/li&gt;
+&lt;li&gt;複数行をコピー（ヤンク）する場合、{n}yyでカーソルがある行を含めて、n列分をコピー（ヤンク）する。
+
+&lt;ul&gt;
+&lt;li&gt;ヤンクはぐいっと引っ張る意味らしい。&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2018-08-07-learned&#34;&gt;2018/08/07- Learned&lt;/h2&gt;
+
+&lt;p&gt;8月7日（火）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;fluentd&#34;&gt;Fluentd&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;データのやりとりを管理するSoftwareで、デーモンとして動作する。&lt;/li&gt;
+&lt;li&gt;Linuxで動く。データの中身は何でも良いが、ログの場合が多い。&lt;/li&gt;
+&lt;li&gt;Fluentd自体は、Rubyで動いている / pluginもRubyで書く&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;できる事&#34;&gt;できる事&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;必要な所からデータを取り出す(input)
+
+&lt;ul&gt;
+&lt;li&gt;必要に応じてパース（分解）する事&lt;/li&gt;
+&lt;li&gt;データのタイムスタンプを管理する&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;必要な所にデータを届ける（output）
+
+&lt;ul&gt;
+&lt;li&gt;そのデータを必要に応じて整形（フォーマット）して保存する
+-　データを紛失しないように管理する（buffer）&lt;/li&gt;
+&lt;li&gt;やりとりの途中で何かエラーが起きたらリトライする&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;出力先&#34;&gt;出力先&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;AWS S3、Hadoop HDFS、MongoDB、Cassandra、MySQL、PostgreSQL、Redis など&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;頻出ユースケース&#34;&gt;頻出ユースケース&lt;/h4&gt;
+
+&lt;p&gt;基本的に、流れているデータを処理する仕事なら何でもできるらしい。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;ログの収集&lt;/li&gt;
+&lt;li&gt;センサデータの集約&lt;/li&gt;
+&lt;li&gt;簡単なリアルタイム集計&lt;/li&gt;
+&lt;li&gt;汎用データ処理プロセッサとして&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2018-08-10-learned&#34;&gt;2018/08/10- Learned&lt;/h2&gt;
+
+&lt;p&gt;8月10日（金）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;javascript&#34;&gt;JavaScript&lt;/h3&gt;
+
+&lt;h4 id=&#34;module&#34;&gt;module&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;styled-jsx - jsxで構成された仮想DOM要素に対して、そこでスコープが完結する形でCSSを反映する事が可能なnode_modules&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>2018/08 - one week I Learned</title>
@@ -3422,63 +3512,6 @@ npx: 10個のパッケージを2.106秒でインストールしました。
 &lt;ul&gt;
 &lt;li&gt;10分程度のインタビューだと適正数は3~4つの問い&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>TIL - エンジニアの稼働率と工数管理について</title>
-      <link>https://kglabo.com/blog/til-man-hour-managa/</link>
-      <pubDate>Thu, 13 Jul 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://kglabo.com/blog/til-man-hour-managa/</guid>
-      <description>
-
-&lt;h2 id=&#34;なにこれ&#34;&gt;なにこれ&lt;/h2&gt;
-
-&lt;p&gt;主にウォーターフォール時に各タスクの工数を算出したり作業分解したタスクをどう割り振るのか考える時に役に立つであろう情報。&lt;/p&gt;
-
-&lt;h2 id=&#34;稼働率&#34;&gt;稼働率&lt;/h2&gt;
-
-&lt;p&gt;稼働率 is 働ける割合。&lt;/p&gt;
-
-&lt;p&gt;稼働率は、1日あたり8時間となるので、&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;8h ＝ 480min ＝ 100%&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;60min = 12.5%&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;て、1hにつき &lt;code&gt;12.5%&lt;/code&gt; となる。&lt;/p&gt;
-
-&lt;h3 id=&#34;例&#34;&gt;例&lt;/h3&gt;
-
-&lt;p&gt;5時間掛かる作業の場合は、&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;12.5*5 = 62.5%&lt;/code&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;これを「何日かけて対応するか」で日数分で割る。&lt;br /&gt;
-「何日かけて対応するか」はメンバーの空き稼働率の状況で判断する。&lt;/p&gt;
-
-&lt;h2 id=&#34;役割毎の稼働率の違い&#34;&gt;役割毎の稼働率の違い&lt;/h2&gt;
-
-&lt;p&gt;末端作業者と管理層では一日の作業に費やすことができる稼働率が異なる。&lt;br /&gt;
-一般的には末端作業者は &lt;code&gt;70~80%&lt;/code&gt; が限度。&lt;/p&gt;
-
-&lt;p&gt;例えば、会議や雑務の割合が多くて、&lt;br /&gt;
-1日あたり4hは管理系業務で時間が取られている場合は、&lt;/p&gt;
-
-&lt;p&gt;8hのうち、4hしか作業時間を確保できない為、&lt;br /&gt;
-&lt;code&gt;8h - 4h = 4h&lt;/code&gt; で、作業割合 &lt;code&gt;50%（12.5 ✕ 4）&lt;/code&gt; が上限となる。&lt;/p&gt;
-
-&lt;p&gt;管理者は自分自身の稼働率がどの程度なのか確認しておくと良い。&lt;/p&gt;
-
-&lt;h2 id=&#34;補足&#34;&gt;補足&lt;/h2&gt;
-
-&lt;p&gt;期間と作業割合がわかっているタスクに関しては、&lt;br /&gt;
-逆算して初期見積入れておいても良い。
-※ 単純にタスクに何時間かけるか分かるようになるだけだが‥&lt;/p&gt;
 </description>
     </item>
     
