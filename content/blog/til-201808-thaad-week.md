@@ -15,35 +15,17 @@ draft = "true"
 
 <!-- tags = [""] -->
 
-## 2018/08/13- Learned
-
-8月13日（月）のToday I Leaned.
-
-- aaa
-
-## 2018/08/14- Learned
-
-8月14日（火）のToday I Leaned.
-
-- bbb
-
-## 2018/08/15- Learned
-
-8月15日（水）のToday I Leaned.
-
-- ccc
-
-## 2018/08/14- Learned
-
-8月14日（木）のToday I Leaned.
-
-- ddd
-
 ## 2018/08/15- Learned
 
 8月15日（金）のToday I Leaned.
 
-- eee
+### Webpack
+
+#### Hot Module Replacement
+
+- [参考:Hot Module Replacementの設定と仕組みを理解する](https://qiita.com/haradakunihiko/items/40486ec2b6b9aea119bb)
+- webpackの提供する仕組みで、画面の再描画を行わなくても「変更したモジュール」だけを変更してくれる機能
+- webSocketとRentimeと呼ばれるスクリプトで実行される。Reactに関わらず利用する事が可能。
 
 ---
 
