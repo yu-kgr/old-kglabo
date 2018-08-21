@@ -13,19 +13,34 @@ draft = "true"
 
 # 今週、知った/学んだこと
 
-<!-- tags = [""] -->
+<!-- tags = ["vue-cli", "vue", ""] -->
 
 ## 2018/08/20- Learned
 
 08月20日（月）のToday I Leaned.
 
-- aaa
+### vue-cliが糞便利
+
+- `yarn global add vue-cli` でinstall。
+- `vue init {template-name}` で環境が用意されたProjectが作成される
+  - templateの種類はいくつかある。
+    - browserify
+    - browserify-simple
+    - pwa
+    - simple
+    - webpack
+    - webpack-simple
+- 超便利そう
 
 ## 2018/08/21- Learned
 
 08月21日（火）のToday I Leaned.
 
-- bbb
+### npxでcli名刺を公開してみた
+
+- [参考:名刺の代わりにCLIアプリを書く ](https://qiita.com/akameco/items/e0af9e3cdf1cdb6fca61)
+- 上記を参考にしつつ、作成してみた。
+  - `npx yu-kgr` で表示されるようになったよ！
 
 ## 2018/08/22- Learned
 
