@@ -8,12 +8,12 @@ featuredalt = "til"
 featuredpath = "https://kglabo.com"
 title = "2018/08 - four week I Learned"
 type = "post"
-draft = "true"
+draft = "false"
 +++
 
 # 今週、知った/学んだこと
 
-<!-- tags = ["vue-cli", "vue", ""] -->
+<!-- tags = ["vue-cli", "vue", "npx", "vim"] -->
 
 ## 2018/08/20- Learned
 
@@ -56,21 +56,3 @@ VIMになれる為、このmdもvimで記載するようにしている。
 ### TIPS
 
 - `minc` とは / miscellaneousの略で `汎用的な` という意味で使われる単語らしい
-
-## 2018/08/23- Learned
-
-08月23日（木）のToday I Leaned.
-
-- ddd
-
-## 2018/08/24- Learned
-
-08月24日（金）のToday I Leaned.
-
-- eee
-
----
-
-## 今週の感想
-
-- fff
