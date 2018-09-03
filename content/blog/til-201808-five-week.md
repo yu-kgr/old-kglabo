@@ -13,7 +13,7 @@ draft = "true"
 
 # 今週、知った/学んだこと
 
-<!-- tags = ["", "", ""] -->
+<!-- tags = ["監視ツール", "kibana", "new relic"] -->
 
 ## 2018/08/29 - Learned
 
@@ -30,21 +30,3 @@ draft = "true"
 
 -  「Error.log」の塊を見やすくしてくれるもの
 - Errorとか様々なログ状況を分析しやすくする
-
-
-## 2018/08/30 - Learned
-
-08月30日（木）のToday I Leaned.
-
-
-## 2018/08/31 - Learned
-
-08月31日（金）のToday I Leaned.
-
-- eee
-
----
-
-## 今週の感想
-
-- fff
