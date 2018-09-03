@@ -6,8 +6,140 @@
     <description>Recent content in Blog on kglabo.com</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 10 Aug 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Aug 2018 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://kglabo.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>2018/08 - five week I Learned</title>
+      <link>https://kglabo.com/blog/til-201808-five-week/</link>
+      <pubDate>Fri, 31 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kglabo.com/blog/til-201808-five-week/</guid>
+      <description>
+
+&lt;h1 id=&#34;今週-知った-学んだこと&#34;&gt;今週、知った/学んだこと&lt;/h1&gt;
+
+&lt;!-- tags = [&#34;監視ツール&#34;, &#34;kibana&#34;, &#34;new relic&#34;] --&gt;
+
+&lt;h2 id=&#34;2018-08-29-learned&#34;&gt;2018/08/29 - Learned&lt;/h2&gt;
+
+&lt;p&gt;08月29日（水）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;監視系ツールに関する雑な理解&#34;&gt;監視系ツールに関する雑な理解&lt;/h3&gt;
+
+&lt;h4 id=&#34;newrelic&#34;&gt;newrelic&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Macで例えると「アクティビティモニタ」みたいなもの&lt;/li&gt;
+&lt;li&gt;CPUやらのマシンの状況を見える化する&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&#34;kibana&#34;&gt;kibana&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;「Error.log」の塊を見やすくしてくれるもの&lt;/li&gt;
+&lt;li&gt;Errorとか様々なログ状況を分析しやすくする&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2018/08 - four week I Learned</title>
+      <link>https://kglabo.com/blog/til-201808-four-week/</link>
+      <pubDate>Fri, 24 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kglabo.com/blog/til-201808-four-week/</guid>
+      <description>
+
+&lt;h1 id=&#34;今週-知った-学んだこと&#34;&gt;今週、知った/学んだこと&lt;/h1&gt;
+
+&lt;!-- tags = [&#34;vue-cli&#34;, &#34;vue&#34;, &#34;npx&#34;, &#34;vim&#34;] --&gt;
+
+&lt;h2 id=&#34;2018-08-20-learned&#34;&gt;2018/08/20- Learned&lt;/h2&gt;
+
+&lt;p&gt;08月20日（月）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;vue-cliが糞便利&#34;&gt;vue-cliが糞便利&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;yarn global add vue-cli&lt;/code&gt; でinstall。&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;vue init {template-name}&lt;/code&gt; で環境が用意されたProjectが作成される
+
+&lt;ul&gt;
+&lt;li&gt;templateの種類はいくつかある。&lt;/li&gt;
+&lt;li&gt;browserify&lt;/li&gt;
+&lt;li&gt;browserify-simple&lt;/li&gt;
+&lt;li&gt;pwa&lt;/li&gt;
+&lt;li&gt;simple&lt;/li&gt;
+&lt;li&gt;webpack&lt;/li&gt;
+&lt;li&gt;webpack-simple&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;超便利そう&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2018-08-21-learned&#34;&gt;2018/08/21- Learned&lt;/h2&gt;
+
+&lt;p&gt;08月21日（火）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;npxでcli名刺を公開してみた&#34;&gt;npxでcli名刺を公開してみた&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/akameco/items/e0af9e3cdf1cdb6fca61&#34;&gt;参考:名刺の代わりにCLIアプリを書く &lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;上記を参考にしつつ、作成してみた。
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;npx yu-kgr&lt;/code&gt; で表示されるようになったよ！&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;2018-08-22-learned&#34;&gt;2018/08/22- Learned&lt;/h2&gt;
+
+&lt;p&gt;08月22日（水）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;vim&#34;&gt;VIM&lt;/h3&gt;
+
+&lt;p&gt;VIMになれる為、このmdもvimで記載するようにしている。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;通常時 / &lt;code&gt;^&lt;/code&gt;は行頭に移動する（厳密に言うと文字の先端あたりだけど）&lt;/li&gt;
+&lt;li&gt;通常時 / &lt;code&gt;$&lt;/code&gt;は行末に移動する（厳密に言うとry）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&#34;tips&#34;&gt;TIPS&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;minc&lt;/code&gt; とは / miscellaneousの略で &lt;code&gt;汎用的な&lt;/code&gt; という意味で使われる単語らしい&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>2018/08 - thaad week I Learned</title>
+      <link>https://kglabo.com/blog/til-201808-thaad-week/</link>
+      <pubDate>Fri, 17 Aug 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://kglabo.com/blog/til-201808-thaad-week/</guid>
+      <description>
+
+&lt;h1 id=&#34;今週-知った-学んだこと&#34;&gt;今週、知った/学んだこと&lt;/h1&gt;
+
+&lt;!-- tags = [&#34;&#34;] --&gt;
+
+&lt;h2 id=&#34;2018-08-15-learned&#34;&gt;2018/08/15- Learned&lt;/h2&gt;
+
+&lt;p&gt;8月15日（金）のToday I Leaned.&lt;/p&gt;
+
+&lt;h3 id=&#34;webpack&#34;&gt;Webpack&lt;/h3&gt;
+
+&lt;h4 id=&#34;hot-module-replacement&#34;&gt;Hot Module Replacement&lt;/h4&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://qiita.com/haradakunihiko/items/40486ec2b6b9aea119bb&#34;&gt;参考:Hot Module Replacementの設定と仕組みを理解する&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;webpackの提供する仕組みで、画面の再描画を行わなくても「変更したモジュール」だけを変更してくれる機能&lt;/li&gt;
+&lt;li&gt;webSocketとRentimeと呼ばれるスクリプトで実行される。Reactに関わらず利用する事が可能。&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
     
     <item>
       <title>2018/08 - second week I Learned</title>
@@ -3048,694 +3180,6 @@ npx: 10個のパッケージを2.106秒でインストールしました。
 &lt;li&gt;サービス利用に至った背景や、テスト開始時点での状況説明を適切に行う必要がある。&lt;/li&gt;
 &lt;li&gt;その説明を怠ると、そもそも把握している前提条件の元でテストを行っているつもりが、違う所で躓いてしまって求める問いと異なるテスト結果になりそうな為。&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>TIL - ReactStudy#02</title>
-      <link>https://kglabo.com/blog/react-study-02/</link>
-      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://kglabo.com/blog/react-study-02/</guid>
-      <description>
-
-&lt;h2 id=&#34;やった事&#34;&gt;やった事&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;create-react-app
-
-&lt;ul&gt;
-&lt;li&gt;テンプレ作成&lt;/li&gt;
-&lt;li&gt;テンプレ編集&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;Babel
-
-&lt;ul&gt;
-&lt;li&gt;es2015からの変換(トランスパイル)&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;必要なパッケージのインストール
-
-&lt;ul&gt;
-&lt;li&gt;babel-cli&lt;/li&gt;
-&lt;li&gt;babel-preset-env&lt;/li&gt;
-&lt;li&gt;babel-preset-react&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;わかった事&#34;&gt;わかった事&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Babel使うとコードの記述がものすごい楽。&lt;/li&gt;
-&lt;li&gt;JSX使わなくてもReactは書けるけど、クソ面倒くさいから使ったほうが楽。というか普通は使う。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;次にやること&#34;&gt;次にやること&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ReactでComponentを作成する&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
-
-&lt;h2 id=&#34;備考&#34;&gt;備考&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;babel-preset-env&lt;/code&gt;がECMAScriptのサポート環境に応じたプラグインを設定するプリセットパッケージ。という説明だったがあんまりピンと来てないのでそのうち調べる。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;リポジトリ&#34;&gt;リポジトリ&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/yu-kgr/learn-react-app&#34;&gt;yu-kgr/learn-react-app&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/yu-kgr/learn-react-app/commit/eb59019dd89bae478e4db7494b6adff278ec66f2&#34;&gt;該当コミットログ&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>良いモノを創る為にチームビルドを頑張る話</title>
-      <link>https://kglabo.com/blog/team-bilding/</link>
-      <pubDate>Sun, 10 Dec 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://kglabo.com/blog/team-bilding/</guid>
-      <description>
-
-&lt;p&gt;これは、&lt;a href=&#34;https://qiita.com/advent-calendar/2017/dmm&#34;&gt;DMM.com #1 Advent Calendar 2017&lt;/a&gt; - 10日目の記事です。&lt;/p&gt;
-
-&lt;p&gt;どうもこんにちわ。
-普段はメンバーやプロジェクト関係者等、&lt;br /&gt;
-色々な所で関わる方々が気持ちよく仕事が出来るように交通整理やディレクション等 etc&amp;hellip;&lt;br /&gt;
-いわゆるサーヴァントリーダー的な事をやっております &lt;a href=&#34;https://twitter.com/yu_kgr&#34;&gt;@yu-kgr&lt;/a&gt; です。&lt;/p&gt;
-
-&lt;h2 id=&#34;目次&#34;&gt;目次&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#はじめに&#34;&gt;はじめに&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#考えたコト&#34;&gt;考えたコト&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#やること-やってる事&#34;&gt;やること/やってる事&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#効果&#34;&gt;効果&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#まとめ&#34;&gt;まとめ&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;はじめに&#34;&gt;はじめに&lt;/h2&gt;
-
-&lt;p&gt;これまで自分は数回、勤務地のロケーションが変わったり、&lt;br /&gt;
-管轄チームの変更があったりして、色々な立場の方と関わる機会があったんですが、&lt;/p&gt;
-
-&lt;p&gt;その場所その場所で、&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;チームの置かれている状況&lt;/li&gt;
-&lt;li&gt;チームの進め方や方針&lt;/li&gt;
-&lt;li&gt;リーダーとメンバーの関係性 …etc&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;これらのいろんな条件によって、&lt;br /&gt;
-チーム毎の雰囲気だったり、パフォーマンスに結構違いがあるなぁ。&lt;br /&gt;
-と思いながら、良くも悪くも学ばせてもらってたんですが、&lt;/p&gt;
-
-&lt;p&gt;最近、新たなチームに配属されて、&lt;br /&gt;
-リーダーという役割でチームを作り上げる事になったので、&lt;/p&gt;
-
-&lt;p&gt;今年度の自分の棚卸しも兼ねて、&lt;br /&gt;
-今まで学んで来た事・これからやっていこうと思っている事について、&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;創る人を支える為に行っている技術&lt;/strong&gt;として、&lt;br /&gt;
-&lt;code&gt;「良いチーム」を作る為に現在進行系で色々と試行錯誤してるよ！&lt;/code&gt;というエモい話を書きたいと思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;考えたコト&#34;&gt;考えたコト&lt;/h2&gt;
-
-&lt;p&gt;チームを作り上げて行く上で、はじめに考えた事はこんな感じです。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;1. チームとは何か？  
-2. チームみんなの ”共通の目的 / 達成するべき目標” は何か？  
-3. 組織や事業の求めている事は何か？  
-4. それをチームで実現していくためには何が必要なのか？  
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;1-チームとは何か&#34;&gt;1.チームとは何か？&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kglabo.com/img/2017/12/img01.png&#34; alt=&#34;img01&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;まず、&lt;a href=&#34;https://kotobank.jp/word/%E3%83%81%E3%83%BC%E3%83%A0-565023#E3.83.87.E3.82.B8.E3.82.BF.E3.83.AB.E5.A4.A7.E8.BE.9E.E6.B3.89&#34;&gt;チーム&lt;/a&gt;とは何なのか？を調べました。&lt;br /&gt;
-同じような人の集合体に&lt;a href=&#34;https://kotobank.jp/word/%E3%83%AF%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%B0%E3%82%B0%E3%83%AB%E3%83%BC%E3%83%97-664202&#34;&gt;ワーキンググループ&lt;/a&gt;もあるので。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# ワーキンググループ【working group】
-- 特定の任務や作業のために設けられる集団。作業部会。
-
-# チーム（team）
-- ある目的のために協力して行動するグループ。組。スポーツや共同作業についていわれる。「チームを組む」「野球チーム」
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;調べた感じだと、&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;ワーキンググループ&lt;/strong&gt;は、&lt;strong&gt;明確に定義された問題に対して、&lt;br /&gt;
-個々で問題解決をして報告をし合う集団。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;チーム&lt;/strong&gt;は、&lt;strong&gt;定義まではされていない抽象的な目的・目標に対して、&lt;br /&gt;
-問題・課題はなんなのかを試行錯誤しながら、協業する集団。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;今回作り上げたいものは協業して目標の立ち向かうチーム。&lt;br /&gt;
-じゃあチームを作り上げるには何が必要なのか。&lt;/p&gt;
-
-&lt;p&gt;いわゆる&lt;a href=&#34;https://kotobank.jp/word/%E3%83%81%E3%83%BC%E3%83%A0%E3%83%93%E3%83%AB%E3%83%87%E3%82%A3%E3%83%B3%E3%82%B0-802145#E4.BA.BA.E4.BA.8B.E5.8A.B4.E5.8B.99.E7.94.A8.E8.AA.9E.E8.BE.9E.E5.85.B8&#34;&gt;チームビルディング&lt;/a&gt;はどうすればいいのか？&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# チームビルディング
-
-- 同じ一つのゴールを目指し、複数のメンバーが個々の能力を最大限に発揮しつつ一丸となって進んでいく――そうした効果的な組織づくりや、チームをまとめる手法を「チームビルディング」といいます。コーチングやファシリテーションなどとともに、リーダーに求められるマネジメント能力の一つとして注目を集めています。(2009/5/25掲載)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;チームとして集められた人員がチームとして出来上がるまでに関しては、&lt;br /&gt;
-&lt;a href=&#34;https://kotobank.jp/word/%E3%82%BF%E3%83%83%E3%82%AF%E3%83%9E%E3%83%B3%E3%83%A2%E3%83%87%E3%83%AB-1125636&#34;&gt;タックマンモデル&lt;/a&gt;を参考にしようと思った。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;
-# タックマンモデル
-
-「タックマンモデル」とは、チームビルディング(組織進化)モデルの5段階を指す
-
-- ①Froming 形成:メンバーはお互いのことを知らない。また共通の目的等も分からず模索している状態。
-- ②Storming 混乱:目的、各自の役割と責任等について意見を発するようになり対立が生まれる。
-- ③Norming 統一:行動規範が確立。他人の考え方を受容し、目的、役割期待等が一致しチーム内の関係性が安定する。
-- ④Performing;機能:チームに結束力と一体感が生まれ、チームの力が目標達成に向けられる。
-- ⑤Adjourning 散会:時間的な制約、事態の急変、目的の達成等の理由によりメンバー間の相互関係を終結させる。
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;チームとは何かと、タックマンモデルについて調べた事で、&lt;br /&gt;
-下記の2点が必要なんじゃないのか？という所をふんわりと考える事が出来た。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;- チームが達成すべきゴールを考える。
-- 複数のメンバーが個々の能力を最大限に発揮できる環境をつくる。
-	- タックマンモデルにおける「Performing」の状態に出来る限り効率的に持っていきたい。
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;2-チームみんなの-共通の目的-達成するべき目標-は何か&#34;&gt;2. チームみんなの ”共通の目的 / 達成するべき目標” は何か？&lt;/h3&gt;
-
-&lt;pre&gt;&lt;code&gt;1. チームとは何か？  
-2. チームみんなの ”共通の目的 / 達成するべき目標” は何か？ ← 【イマココ】  
-3. それをチームで実現していくためには何が必要なのか？  
-4. 複数のメンバーが個々の能力を最大限に発揮できる環境をつくる。
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h4 id=&#34;チームが達成すべきゴールを考える&#34;&gt;チームが達成すべきゴールを考える。&lt;/h4&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kglabo.com/img/2017/12/img02.png&#34; alt=&#34;img01&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;これのために考えた事は、&lt;br /&gt;
-チームにとって、何を目的として何を達成すればいいのか。&lt;/p&gt;
-
-&lt;p&gt;達成しても、それは事業や組織にとって貢献できる内容じゃないと、&lt;br /&gt;
-チーム内で完結したり個人の自己満足になる。&lt;/p&gt;
-
-&lt;p&gt;これを解決するには、&lt;br /&gt;
-個人・チーム・組織共に納得できる目的・目標を設定する必要がありそう。&lt;/p&gt;
-
-&lt;p&gt;頑張っても個人とチーム・組織の向き先が違っていた場合は、&lt;br /&gt;
-頑張りが認められず、不満を抱えて人材の流出を起こす可能性もある。&lt;/p&gt;
-
-&lt;p&gt;誰も幸せじゃないのでWIN-WINにしたい。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kglabo.com/img/2017/12/img03.png&#34; alt=&#34;img01&#34; /&gt;&lt;/p&gt;
-
-&lt;h3 id=&#34;3-組織や事業の求めている事とは&#34;&gt;3. 組織や事業の求めている事とは？&lt;/h3&gt;
-
-&lt;p&gt;最終的にはどの会社も利益を稼ぐ事だと思います。&lt;/p&gt;
-
-&lt;p&gt;ただ、ココらへんに関しては、&lt;br /&gt;
-こちらが良いと思った事でも、他の視点から見ると問題があったりする可能性もあるので、他の人の考えを聞いての相談や、&lt;br /&gt;
-組織・事業のKPIやKGI、掲げている目標などがなんなのかを認識する必要がありそう。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kglabo.com/img/2017/12/img04.png&#34; alt=&#34;img01&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;その場所場所で抱えている問題は違うので、都度見定める必要がある。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;- 自分たちの関わる事業にはどういう目的・目標があるのか？
-- 事業の掲げる目的・目標を達成するにはどういった過程があるか？
-	- 自分たちのチームがその過程の何処に繋げる事ができるのか？
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;この辺は理想論を言うのであれば &lt;code&gt;各自で常に意識していく必要がある&lt;/code&gt; けど、&lt;br /&gt;
-それを考える余裕がないような場所もあると思うので現実的ではないかなと思う。(個人的には)&lt;br /&gt;
-考える余裕がある人が中心となって、主体的に考えられるような環境・文化にする事が一番健全だと思った。&lt;/p&gt;
-
-&lt;p&gt;がんばれ俺。&lt;/p&gt;
-
-&lt;h3 id=&#34;4-それをチームで実現していくためには何が必要なのか&#34;&gt;4. それをチームで実現していくためには何が必要なのか？&lt;/h3&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kglabo.com/img/2017/12/img05.png&#34; alt=&#34;img01&#34; /&gt;&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;事業の目的・目標に紐付いたチーム目標を定める必要がありそう。&lt;/li&gt;
-&lt;li&gt;そして、それをチームで共有・認識していく必要がある。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;さっきチームとは、&lt;br /&gt;
- &lt;code&gt;定義まではされていない抽象的な目的・目標に対して、問題・課題はなんなのかを試行錯誤しながら、協業する集団。&lt;/code&gt; だと思ったので、&lt;/p&gt;
-
-&lt;p&gt;いろいろな不確実性の高い事象が発生した時に、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;「なんかよくわからんけど、これどうしたらいいの。」
-「俺はこう思うけどお前どう思う？」
-「個人的にはこの方法がいいと追うけど、俺たちの達成目標ってコレだからこれを選択するべきでは？」
-「方向性としては多分それ。ただやってみないとわからん所もあるからとりあえずやってみよ。」
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;という感じで、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;- 率直に思ったことを話し合う事が出来る
-- 失敗を恐れず、挑戦する事で学習が出来る
-    - 失敗ではなく学びだと思えるチーム文化づくり
-- 結果、各々が主体的に動く事が出来る
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;こんな話し合いが出来る状態が個人的にはいいと思う。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kglabo.com/img/2017/12/img06.png&#34; alt=&#34;img01&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;そんな事を思ってる時に &lt;code&gt;心理的安全性&lt;/code&gt; というワードが、&lt;br /&gt;
-社内から聞こえて気になったので調べてたら、&lt;br /&gt;
-Googleの&lt;a href=&#34;https://rework.withgoogle.com/guides/understanding-team-effectiveness/steps/introduction/&#34;&gt;re:Work - Guide: Understand team effectiveness&lt;/a&gt;という記事を見つけたので色々と参考にさせて頂きました！&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;心理的安全性を高める事で、上記の話し合いが行える文化が形成されそう&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;じゃあ、そのために何をするのかを考えて進めていこう。&lt;br /&gt;
-という事で行っていった事が下記です。&lt;/p&gt;
-
-&lt;h2 id=&#34;やること-やってる事&#34;&gt;やること/やってる事&lt;/h2&gt;
-
-&lt;h4 id=&#34;複数のメンバーが個々の能力を最大限に発揮できる環境をつくる&#34;&gt;複数のメンバーが個々の能力を最大限に発揮できる環境をつくる。&lt;/h4&gt;
-
-&lt;ol&gt;
-&lt;li&gt;まずは色々知る&lt;/li&gt;
-&lt;li&gt;目的・目標の明確化・共有&lt;/li&gt;
-&lt;li&gt;心理的に安全な場をつくる
-
-&lt;ul&gt;
-&lt;li&gt;率直に話せるようにする&lt;/li&gt;
-&lt;li&gt;挑戦できる /  失敗が咎められない文化の形成&lt;/li&gt;
-&lt;li&gt;学習できる枠組みを作る /  物事の捉え方を変える&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;p&gt;&lt;strong&gt;・・・ほぼ、コミュニケーションです。&lt;/strong&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;まずは色々知る&#34;&gt;まずは色々知る&lt;/h3&gt;
-
-&lt;h4 id=&#34;相手を知る-自分を伝える-ひたすら関係値を築く&#34;&gt;相手を知る・自分を伝える・ひたすら関係値を築く&lt;/h4&gt;
-
-&lt;p&gt;&lt;strong&gt;個人のモチベーションが何処にあるのか把握して、それをサポートしたい！&lt;/strong&gt;&lt;br /&gt;
-でもどこの馬の骨ともしれぬ輩に、なんでもかんでも話したくないよね！&lt;br /&gt;
-&lt;em&gt;(自分はイヤです！)&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;と、いう事で…。&lt;/p&gt;
-
-&lt;h5 id=&#34;自分の良いところも悪いところも伝える&#34;&gt;自分の良いところも悪いところも伝える&lt;/h5&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kglabo.com/img/2017/12/img07.png&#34; alt=&#34;img01&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;まずは「自分の出来ること」や「出来ない事・苦手な事」&lt;br /&gt;
-「俺ってこんな考え方なんです」「間違ってる事も言うと思う」&lt;br /&gt;
-「やる事（役割）が異なるだけで、立場は一緒（気にしないでくれ頼む！）」&lt;br /&gt;
-という事を伝える努力をしました。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;- 緊張すると顔面から汗が吹き出ます！まだ慣れてない場合は汗出てるので生暖かい目で見守ってください！必死なんです！
-- 「◯◯」は得意だと思ってます！ただ◯◯は苦手です！苦手な事はタスケテ！めっちゃ聞くから！
-- 自分の意見は上司の命令・指示ではなく、対等な立場での意見だと思って！お願い！
-- 多分、間違ってる事も言うよ！人間だもの！ディスカッションしようぜ！
-- 「とりあえず話してから考えるタイプです！(ﾄﾞﾔｧ)」
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;h5 id=&#34;スキルマップ作成&#34;&gt;スキルマップ作成&lt;/h5&gt;
-
-&lt;p&gt;根気良く伝えるのも大事だけど、
-すぐ忘れちゃう事もあるのでスキルマップも作ったりしました。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kglabo.com/img/2017/12/img08.png&#34; alt=&#34;img01&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;（ちなみに自分 &lt;code&gt;なかなか人の顔と名前が一致しない&lt;/code&gt; という深刻なエラーがあるので、&lt;br /&gt;
-それを補う為に社内外問わず一緒に何かする事になる場合は作成するようにしています…）&lt;/p&gt;
-
-&lt;p&gt;これによって「自分はこれが得意」「自分はこれ苦手」&lt;br /&gt;
-「趣味はコレ」というのを共有・紐付けする事ができるので、&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;- 「（なんかよくわからん事聞かれたけど、俺のスキルが低いのか！？よくわかんない答えを返してガッカリされたらどうしよう…！）」
-- 「一回、誰かに◯◯について話された気がするけど誰だったっけ…！？」
-  - 例えるならこんな悲劇。
-    - 「あ、昔ここデートでいったよね」  
-    - 「多分それ私じゃないよ（ニッコリ）」
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;みたいな事に消耗しなくて済むかなと。&lt;/p&gt;
-
-&lt;p&gt;個人的には&lt;strong&gt;「とりあえずお互いの事を知るためのコミュニケーションのきっかけ」&lt;/strong&gt;&lt;br /&gt;
-として利用できれば役割を達成しているのではないかと思います。&lt;/p&gt;
-
-&lt;p&gt;ちゃんと保守・更新していけば、チーム内のスキルが可視化される事で、&lt;br /&gt;
-どこにリスクがあるのか等も把握する事ができそうですね。&lt;/p&gt;
-
-&lt;h5 id=&#34;一緒にご飯食べる-飲みに行く&#34;&gt;一緒にご飯食べる・飲みに行く&lt;/h5&gt;
-
-&lt;p&gt;メンバーの入退室などのチームの状態に変化がある時にやる！&lt;br /&gt;
-身内だけで盛り上がらない事！ひたすら質問攻めにします！&lt;br /&gt;
-&lt;em&gt;（相手の名前を覚える為にあだ名つけていいですか？って聞いたり。）&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kglabo.com/img/2017/12/img09.png&#34; alt=&#34;img01&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ちなみに心理学では&lt;strong&gt;「ランチョンテクニック」&lt;/strong&gt;といわれて、&lt;br /&gt;
-美味しいものを食べながら話をする事で食事に対するポジティブ印象が相手にもひも付き、&lt;br /&gt;
-好意的な印象を持ってもらえる。という効果があるそうです。&lt;/p&gt;
-
-&lt;h5 id=&#34;1on1&#34;&gt;1on1&lt;/h5&gt;
-
-&lt;p&gt;お互いの事を知る為に、2週間に1回のペースで一対一で、&lt;br /&gt;
-フランクな面談をしてます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kglabo.com/img/2017/12/img10.png&#34; alt=&#34;img01&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;これに関しては、事前にアンケートを用意して回答してもらった上で、&lt;br /&gt;
-「最近どうですか？」からたわいもない話まで。&lt;br /&gt;
-最近思ったこととか困った事がないか？等の話をしています。&lt;/p&gt;
-
-&lt;p&gt;基本的にはメンバーが主役なので、聞きに徹する形をとってます。&lt;br /&gt;
-&lt;strong&gt;コーチングとかよくわかんないですけど、がんばって傾聴します！&lt;/strong&gt;&lt;br /&gt;
-&lt;em&gt;（たまに熱い思いを語りだしちゃう事がありますが）&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;あと意識している事は、座る位置。&lt;br /&gt;
-対面に座ると面接みたいな形になってしまうので、&lt;br /&gt;
-上下関係が生まれやすく緊張しやすい・対立的な形になってしまうとの事なので、&lt;br /&gt;
-テーブルに対して、斜めに座ったりL時型に座るように気をつけています。&lt;br /&gt;
-(対面だと自分がビビっちゃうって事もあるんですが)&lt;br /&gt;
-&lt;em&gt;※心理学的な効果もあるみたいです&lt;/em&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;del&gt;相手を論破してボッコボコにしたい方は対面に座るのオススメかもしれないです&lt;/del&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;2-目的-目標の明確化-共有&#34;&gt;2. 目的・目標の明確化・共有&lt;/h3&gt;
-
-&lt;p&gt;この辺はザックリと…！&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;個々が達成するべきミッションは何なのか&lt;/li&gt;
-&lt;li&gt;我々がチームで果たすべきミッションが何なのか&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h4 id=&#34;関係するステークホルダーの考えを知る&#34;&gt;関係するステークホルダーの考えを知る&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;過程が違うだけで最終的に繋がる所は同じはず（多分）&lt;/li&gt;
-&lt;li&gt;他のチームの目標や、事業自体の目標を調べたり聞いたりする。&lt;/li&gt;
-&lt;li&gt;その他、今ある問題や課題はなんなのか聞いて回る。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kglabo.com/img/2017/12/img11.png&#34; alt=&#34;img01&#34; /&gt;&lt;/p&gt;
-
-&lt;h4 id=&#34;チームのミッション-方針を考える&#34;&gt;チームのミッション・方針を考える&lt;/h4&gt;
-
-&lt;ul&gt;
-&lt;li&gt;自分たちのチームのミッションは何処に紐づくのかを考える&lt;/li&gt;
-&lt;li&gt;ルール （規則）ではなくポリシー（ポリシー）を考える&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;チームルール （規則）だと「だってそれがルールだし（思考停止）」になりそうなので、&lt;br /&gt;
-常に考えて改善できるポリシー （方針）にしたい。&lt;/p&gt;
-
-&lt;h4 id=&#34;個人が働くモチベーションを知る&#34;&gt;個人が働くモチベーションを知る&lt;/h4&gt;
-
-&lt;p&gt;チームメンバーのモチベーションがどこにあるのかを知る。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;トレンドの技術を追いたい&lt;/li&gt;
-&lt;li&gt;ユーザーに喜んでもらいたい&lt;/li&gt;
-&lt;li&gt;お金がいっぱい欲しい&lt;/li&gt;
-&lt;li&gt;自分の市場価値をあげたい&lt;/li&gt;
-&lt;li&gt;早く帰りたい&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kglabo.com/img/2017/12/img12.png&#34; alt=&#34;img01&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;これを聞くには、メンバーとの関係値は必須だと思う。&lt;br /&gt;
-聞いた上で、それを達成出来るようにする場合、&lt;br /&gt;
-どうしたらいいかを一緒に考える。&lt;/p&gt;
-
-&lt;h4 id=&#34;個人の働くモチベーションとチームのミッションを繋げる&#34;&gt;個人の働くモチベーションとチームのミッションを繋げる&lt;/h4&gt;
-
-&lt;p&gt;チームのミッションに対して、&lt;br /&gt;
-個々のモチベーションと繋がる所が何処なのかをひたすら考える。&lt;/p&gt;
-
-&lt;p&gt;ココとココってつながってくよね！？違う！？みたいな所を模索してます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kglabo.com/img/2017/12/img13.png&#34; alt=&#34;img01&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;実際にやってみた結果、&lt;br /&gt;
-&lt;strong&gt;もっとこういう所に興味が出た！&lt;/strong&gt;って事もあると思うので、&lt;br /&gt;
-ここらへんは都度変わっていくもんだと思っているので、&lt;br /&gt;
-臨機応変に「どうしたらテンションあがるかなー？」って考える。&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&#34;3-心理的に安全な場をつくる&#34;&gt;3. 心理的に安全な場をつくる&lt;/h3&gt;
-
-&lt;p&gt;コレに関しては、自分自身まだまだ模索中です。&lt;br /&gt;
-色々やりながら試してます。&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;https://kglabo.com/img/2017/12/img14.png&#34; alt=&#34;img01&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;ただ、リーダーがどのように場を捉えているのかという所は、&lt;br /&gt;
-結構重要だと思っていて、自分はこういった事を意識するようにしています。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;一人ひとりを信頼する・全力で守る&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;個々が最善だと思って下した判断に委ねる&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;判断に対して、横から指示・口出しをしない&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;助言を求められたら、思った事を言う&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;失敗した場合は、経験を得ることができたと捉える&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;なんかあったら俺が責任取る&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;ちなみに現在、下記の本を読んで勉強中です。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://amzn.asia/axhXJz6&#34;&gt;チームが機能するとはどういうことか ― 「学習力」と「実行力」を高める実践アプローチ | エイミー・Ｃ・エドモンドソン, 野津智子 | ビジネス・経済 | Kindleストア | Amazon&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;チームの能力だったり、心理的安全性については、&lt;br /&gt;
-パッと定量的に見えるものではないので、&lt;br /&gt;
-&lt;strong&gt;積み重ねを行った結果として、成果の数値が徐々に上がっていった。&lt;/strong&gt;&lt;br /&gt;
-という感じになるのかなと思っています。&lt;/p&gt;
-
-&lt;p&gt;ちなみに追々、その辺も見える化していきたい気持ちがあるので、&lt;br /&gt;
-&lt;a href=&#34;http://jitsuzon.hatenablog.com/entry/2016/12/07/150717&#34;&gt;チームの良さを確認するためにやったこと - Web錯誤&lt;/a&gt;を参考にさせてもらって、&lt;br /&gt;
-数ヶ月に一度アンケートを送ったりもしたりしてます。&lt;br /&gt;
-（アンケートまみれですね…）&lt;/p&gt;
-
-&lt;p&gt;まだ、比較できるほどのデータが溜まっていないのでアレですが、&lt;br /&gt;
-やっている取り組みがどういう方向に作用しているのか、&lt;br /&gt;
-把握する為のバロメーターとして見ていきたいと思います。&lt;/p&gt;
-
-&lt;h2 id=&#34;効果&#34;&gt;効果&lt;/h2&gt;
-
-&lt;p&gt;具体的に◯◯でめっちゃ効果が出てる！っていうのは言いづらいですが、&lt;br /&gt;
-各々思ったことを言える状態になってきてる感じはあります。&lt;/p&gt;
-
-&lt;p&gt;最初は「隣の人が何やってるのか知らん」って状況でしたが、&lt;br /&gt;
-最近はチームの目標に対して、我々がどこに位置するのか。&lt;br /&gt;
-って所を少しずつ意識して話し合いができるようになってきた気がします（自分も）&lt;/p&gt;
-
-&lt;p&gt;ちょっと関わる人が多いので色々と大変な所がありますが、&lt;br /&gt;
-最近は組織自体も「とりあえずやってみようぜ！」ってノリがあるので、&lt;br /&gt;
-それも追い風になってて良い感じです。&lt;/p&gt;
-
-&lt;p&gt;&lt;em&gt;（実際、この&lt;a href=&#34;https://qiita.com/usagi-f/items/8a6b9ee123cf4a1803c2&#34;&gt;Advent Calendarが生まれたのも Do Sorry形式&lt;/a&gt;ですし。）&lt;/em&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;まとめ&#34;&gt;まとめ&lt;/h2&gt;
-
-&lt;p&gt;こうして改めて文章にしてみると、&lt;br /&gt;
-ただ当たり前な事をやってるだけな内容になってしまいました。&lt;/p&gt;
-
-&lt;p&gt;現状、一部の方としかこういった情報交換を行えていないですが、&lt;br /&gt;
-社外の方や、社内の他の方々の考えも聞きたいなと思う今日このごろ。&lt;/p&gt;
-
-&lt;p&gt;最終的には、&lt;br /&gt;
-&lt;strong&gt;「全員、能動的に動くからリーダーなんていらんよね！(ニッコリ)」&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;って言われるのが目標なので、がんばりたいと思います。&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>TIL - JavaScript - DOMオブジェクトについて</title>
-      <link>https://kglabo.com/blog/javascript-study-01/</link>
-      <pubDate>Thu, 30 Nov 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://kglabo.com/blog/javascript-study-01/</guid>
-      <description>
-
-&lt;h2 id=&#34;javascript-domオブジェクトについて&#34;&gt;JavaScript - DOMオブジェクトについて&lt;/h2&gt;
-
-&lt;p&gt;JavaScriptでWebサイトを動的に書き換えるには、Document Object Model（DOM）という仕組みを利用する&lt;/p&gt;
-
-&lt;h2 id=&#34;document-object-model-dom-とは&#34;&gt;Document Object Model（DOM）とは&lt;/h2&gt;
-
-&lt;p&gt;JavaScriptで記述されたプログラムから、HTMLページにアクセスして、HTMLページを操作する方法を提供している。&lt;/p&gt;
-
-&lt;h2 id=&#34;domツリー&#34;&gt;DOMツリー&lt;/h2&gt;
-
-&lt;p&gt;DOMツリーとは、HTMLドキュメントやXMLドキュメントをツリー構造として表現したもの。&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;!DOCTYPE html&amp;gt;
-&amp;lt;head&amp;gt;
-  &amp;lt;title&amp;gt;Document&amp;lt;/title&amp;gt;
-&amp;lt;/head&amp;gt;
-&amp;lt;body&amp;gt;
-&amp;lt;h1&amp;gt;大見出し&amp;lt;/h1&amp;gt;
-&amp;lt;h2&amp;gt;中見出し&amp;lt;/h2&amp;gt;
-&amp;lt;p&amp;gt;DOMツリーとは、HTMLドキュメントやXMLドキュメントを&amp;lt;strong&amp;gt;ツリー構造&amp;lt;/strong&amp;gt;として表現したもの。&amp;lt;/p&amp;gt;
-&amp;lt;/body&amp;gt;
-&amp;lt;/html&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Document
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;html&amp;gt;&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;head&amp;gt;&lt;/code&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;title&amp;gt;&lt;/code&gt; - Document&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;body&amp;gt;&lt;/code&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; - 見出し&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;h2&amp;gt;&lt;/code&gt; - 見出し&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;p&amp;gt;&lt;/code&gt; - DOMツリーとは、HTMLドキュメントやXMLドキュメントをツリー構造として表現したもの。&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt; - ツリー構造&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;ノード&#34;&gt;ノード&lt;/h2&gt;
-
-&lt;p&gt;文章を構成する要素、属性、テキストといったオブジェクトをノードと呼ぶ。&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;要素ノード&lt;/li&gt;
-&lt;li&gt;属性ノード&lt;/li&gt;
-&lt;li&gt;テキストノード&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;dom仕様策定について&#34;&gt;DOM仕様策定について&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;DOMの仕様は、Level1~4がW3Cにより策定。
-
-&lt;ul&gt;
-&lt;li&gt;W3Cとは、WEBで使用される各種技術の標準化を推進する為に設立された団体。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;最新版は、WHATWG（Web Hypertext Application Technology Working Group）というコミュニティーがLiving Standardとして定義。
-
-&lt;ul&gt;
-&lt;li&gt;Living Standardとは常に改良が加えられているゆるい規格のようなもの。&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;ブラウザオブジェクトの階層構造&#34;&gt;ブラウザオブジェクトの階層構造&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;window
-
-&lt;ul&gt;
-&lt;li&gt;screen&lt;/li&gt;
-&lt;li&gt;document&lt;/li&gt;
-&lt;li&gt;location&lt;/li&gt;
-&lt;li&gt;form
-
-&lt;ul&gt;
-&lt;li&gt;Element&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;anchor&lt;/li&gt;
-&lt;li&gt;Images&lt;/li&gt;
-&lt;li&gt;navigator&lt;/li&gt;
-&lt;li&gt;history&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;window-オブジェクト&#34;&gt;window オブジェクト&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ブラウザを操作するための機能を集めたオブジェクト&lt;/li&gt;
-&lt;li&gt;ブラウザオブジェクトの階層構造の最上位に位置する&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;document-オブジェクト&#34;&gt;document オブジェクト&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Windowオブジェクト内に表示された、HTMLで表現されているコンテンツを保持しているオブジェクト&lt;/li&gt;
-&lt;li&gt;Window内に表示されたドキュメントを操作するのは、Documentオブジェクトの役割。&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;location-オブジェクト&#34;&gt;Location オブジェクト&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;現在表示されているページのロケーションに関する情報を提供する&lt;/li&gt;
-&lt;li&gt;現在の表示URLアドレスに関する情報を取得できる&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;history-オブジェクト&#34;&gt;history オブジェクト&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ブラウザの履歴の操作&lt;/li&gt;
-&lt;li&gt;画面上に表示しているページの移動などの操作&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;navigator-オブジェクト&#34;&gt;Navigator オブジェクト&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ブラウザ名やバージョンなど、ブラウザ固有の情報を提供する&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;screen-オブジェクト&#34;&gt;screen オブジェクト&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ディスプレイに関する情報を提供する&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;form-オブジェクト&#34;&gt;form オブジェクト&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Formに関する情報を提供&lt;/li&gt;
-&lt;li&gt;Formの操作&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;anchor-オブジェクト&#34;&gt;Anchor オブジェクト&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;ページ上のアンカー（&lt;code&gt;&amp;lt;a&amp;gt;&lt;/code&gt;）に関する情報を取得できる&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;images-オブジェクト&#34;&gt;Images オブジェクト&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;画像に関する情報の提供&lt;/li&gt;
-&lt;li&gt;画像を操作する機能の提供&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;elements-オブジェクト&#34;&gt;Elements オブジェクト&lt;/h2&gt;
-
-&lt;ul&gt;
-&lt;li&gt;HTMLドキュメントやXMLドキュメントにおける、要素（タグ）の事&lt;/li&gt;
-&lt;li&gt;例&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;p&amp;gt;hogefuga&amp;lt;/p&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
     
