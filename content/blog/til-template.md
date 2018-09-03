@@ -1,7 +1,7 @@
 +++
 author = "@yu-kgr"
 categories = ["TIL"]
-date = "YYYY-MM-DD"
+date = "2018-01-01"
 description = "YYYY/MM - {N} week I Learned | 一週間で知った事・学んだ事の個人的な備忘録"
 featured = "/img/til/til.jpg"
 featuredalt = "til"
