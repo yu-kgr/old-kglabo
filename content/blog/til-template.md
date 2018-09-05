@@ -19,8 +19,6 @@ draft = "true"
 
 MM月DD日（月）のToday I Leaned.
 
-
-
 ## YYYY/MM/DD- Learned
 
 MM月DD日（火）のToday I Leaned.
