@@ -13,13 +13,13 @@ draft = "true"
 
 # 今週、知った/学んだこと
 
-<!-- tags = [""] -->
+<!-- tags = ["サーバ監視ツール"] -->
 
 ## YYYY/MM/DD- Learned
 
 MM月DD日（月）のToday I Leaned.
 
-- aaa
+
 
 ## YYYY/MM/DD- Learned
 
