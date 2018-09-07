@@ -13,7 +13,7 @@ draft = "false"
 
 # CircleCIからNetlifyに移行した記録
 
-そういえば、社内の方がパワープッシュしたり、[kanazawa.rb#72](https://kzrb.org/meetup/72/report.html)に参加した時にステッカーをもらったNetlify。  
+そういえば、社内の方がパワープッシュしたり、[kanazawa.rb#72](https://kzrb.org/meetup/72/report.html)に参加した時にステッカーをもらった[Netlify](https://www.netlify.com/)。  
 なんか良さげなものだと聞いてたいたものの、ほー、ふーん。で終わっておりました。
 
 今回、ちょうどCircleCi@1.0から2.0への移行が諸事情でめんどくさすぎたので、思い切ってNetlifyに変えてみた記録。
