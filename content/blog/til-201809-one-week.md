@@ -215,13 +215,45 @@ Day2 - VPCを使ってネットワークを構築する
   - このサブネットはグローバルに利用するものだよ/このサブネットはDB用に利用するのでグローバルに晒したくないよみたいな事を指定できる
   - AZごとにサブネットを作ったほうが、障害時にひとつのサブネットが死んでも対処できる為、AWSはマルチサブネットを推奨している。
 
-
-<!--
 ## 2019/09/07- Learned
 
 09月07日（金）のToday I Leaned.
 
-- eee
+### AWS IAMサービスについて
+
+- [AWSを安全に使うために（IAMのベストプラクティス）](http://bit.ly/2NmwMMG)の内容が非常にわかりやすかった。
+
+#### パスワードポリシーは適切に決める事
+
+ポリシーのルールに迷う場合はPCIDSSのルールを参照すると良さそう
+
+```
+
+```
+
+### APIまわりのあれこれ
+
+- 後ほど詳細を調べて記事にまとめる事にする。
+
+#### 登場人物
+
+- Rest
+- RESTful
+- GraphQL
+
+#### 参考文献
+
+- [5分で絶対に分かるAPI設計の考え方とポイント (1/6)](http://www.atmarkit.co.jp/ait/articles/1511/19/news022.html)
+- [RESTful APIとは何なのか](https://qiita.com/NagaokaKenichi/items/0647c30ef596cedf4bf2)
+- [RESTful APIのURI設計(エンドポイント設計)](https://qiita.com/NagaokaKenichi/items/6298eb8960570c7ad2e9)
+
+<blockquote class="twitter-tweet" data-lang="ja"><p lang="en" dir="ltr">GraphQL and Rest Differences explained with burgers 🍔 <a href="https://t.co/uNm3sJ8JY4">pic.twitter.com/uNm3sJ8JY4</a></p>&mdash; Sara Vieira @ 🇵🇱 (@NikkitaFTW) <a href="https://twitter.com/NikkitaFTW/status/1011928066816462848?ref_src=twsrc%5Etfw">2018年6月27日</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<blockquote class="twitter-tweet" data-conversation="none" data-lang="ja"><p lang="en" dir="ltr">I do a similar REST vs. GraphQL comparison with pizza. With REST, you can only choose from three kinds of pizza (resources). If you want something custom, you have to manually combine the toppings from the available pizzas.<br><br>With GraphQL, you can order any custom pizza you want! <a href="https://t.co/dcbVFpmjSu">pic.twitter.com/dcbVFpmjSu</a></p>&mdash; Peggy Rayzis 👩🏼‍💻 (@peggyrayzis) <a href="https://twitter.com/peggyrayzis/status/1011981410465468416?ref_src=twsrc%5Etfw">2018年6月27日</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
 
 ---
 
