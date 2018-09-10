@@ -13,7 +13,7 @@ draft = "false"
 
 # 今週、知った/学んだこと
 
-<!-- tags = ["IAM", "CloudTrail", "料金アラート", "料金の見積"] -->
+<!-- tags = ["IAM", "CloudTrail", "料金アラート", "料金の見積", "lightsail", "IAM", "IPアドレス", "EC2", "サブネット", ""CIDR"] -->
 
 ## 2018/09/03- Learned
 
