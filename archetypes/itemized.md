@@ -1,6 +1,7 @@
 +++
 author = ""
 categories = [""]
+tags = [""]
 date = ""
 description = ""
 featured = ""

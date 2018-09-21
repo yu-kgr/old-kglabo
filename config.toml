@@ -2,7 +2,7 @@ baseurl = "https://kglabo.com/"
 languageCode = "ja"
 hasCJKLanguage = "true"
 title = "kglabo.com"
-theme = "hugo_theme_robust"
+theme = "hugo-future-imperfect"
 preserveTaxonomyNames = true
 paginate = 3
 disqusShortname = "kglabo-com"
@@ -11,7 +11,7 @@ pluralizeListTitles = false
 
 [params]
   # メタタグの説明を設定します
-  description          = "金沢のWebDev.yu-kgrのチラシの裏。学んだ事をアウトプットしてます。座右の銘は「みんなで楽したい」"
+  description          = "金沢在住の@yu-kgrのチラシの裏。知った事をアウトプットしたりしてます。座右の銘は「みんなで楽したい」"
   # ナビゲーションバーの左上に表示されるnavbarTitleを設定します
   navbarTitle          = "kglabo.com"
   #「投稿をもっと見る」リンクの設定
@@ -43,7 +43,6 @@ pluralizeListTitles = false
   # ファイルに "default"という値を追加します。
   # customCSS            = ["default", "/path/to/file"]
   # customJS             = ["default", "/path/to/file"]
-  customJS             = ["default", "/js/add-on.js"]
 
 # DisqusはStaticman（github.com/eduardoboucas/staticman）よりも優先されます。
 # その使いやすさのために。両方をチェックして、あなたが何をするか決めるのはどうぞ
@@ -60,10 +59,8 @@ pluralizeListTitles = false
   # 適切な機能が必要です。 HTMLはparams内でサポートされています。
 [params.intro]
   header    = "KGLABO.COM"
-
-  paragraph = "なんとなく気になった事や、学習した内容のメモなど置いてあります。"
-
-  about     = "金沢に生息している@yu_kgrのチラシの裏です。<br>最近はコードを書く機会が減ってきてディレションやマネジメントの割合が多め。<br>座右の銘は「みんなで楽(ラク)したい」。<br>どうすれば楽を出来るのか日々、模索してます。"
+  paragraph = "みんなで楽したい"
+  about     = "金沢在住の@yu_kgrのチラシの裏です。<br>学んだ事をアウトプットしたりしてます"
 
   # params.intro.headerの上のサイドバーの上部に表示されます。
   # デザインの観点からは、100px未満の幅が推奨されます。
