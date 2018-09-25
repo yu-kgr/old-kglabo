@@ -111,10 +111,16 @@ pluralizeListTitles = false
   weight = 4
 
 [[menu.main]]
+  name = "Tags"
+  url = "/tags/"
+  identifier = "fa fa-tags"
+  weight = 5
+
+[[menu.main]]
   name = "Contact"
   url = "https://twitter.com/yu_kgr"
   identifier = "fa fa-twitter"
-  weight = 5
+  weight = 6
 
 # ソーシャルメディアアイコンを表示し、あなたのアカウントにリンクするよう設定します。値はあなたのものでなければなりません。
 # 特に指定のない限り、#usernameの形で入力します。
