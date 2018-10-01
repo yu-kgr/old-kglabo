@@ -61,14 +61,14 @@ git周りのコマンドは毎回忘れるので、何でもメモ📝
 まだコミットしていないファイルを一時的に退避（stash）する事が可能  
 作業途中でコミットできない状態だけど、ブランチを変更したい時などに利用。
 
-|したい事|コマンド|備考|
+|コマンド|説明|
 |---|---|
-|一時的に退避したい| `git stash save` |saveは省力可能|
-|退避された変更の一覧を表示したい| `git stash list` | `<stash名>: WIP on <stashを行ったブランチ名>: <ハッシュ> <コミットコメント>` ※stashを行った時のHEADのもの / `list -p`とすると変更内容も見れる|
-|退避された変更の一覧を表示したい| `git stash show <stash名>`| 各変更内容（ファイルなど）の一覧が見れる|
-|一次退避した変更を復活したい|`git stash apply <stash名>`|指定した変更を復活しただけの場合は削除されていない|
-|一次退避した変更を削除したい|`git stash drop <消したいstash名>`||
-|一次退避した変更を復活&削除したい|`git stash pop <stash名>`||
+| `$ git stash save` | 一時的に退避する<br>`save` は省力可能 |
+| `$ git stash list` | 退避された変更内容の一覧を表示。表示形式は、<br>`<stashName>: WIP on <stashを行ったブランチ名>: <Hash> <CommitComment>`<br> `list -p`とすると変更内容も見れる|
+| `$ git stash show <stashName>`| 退避された変更の一覧を表示する |
+| `$ git stash apply <stashName>`| 一次退避した変更内容を復活したい<br>applyで復活した後は`stash save`した内容は削除されていない|
+| `$ git stash drop <stashName>`| 一次退避した変更内容を削除する |
+| `$ git stash pop <stashName>`| 一次退避した変更内容を復活&削除したい |
 
 変更範囲のの粒度が大きな場合はWIPコミットを行ってしまい、後ほどrebaseで整理するのも手かもしれない。
 
