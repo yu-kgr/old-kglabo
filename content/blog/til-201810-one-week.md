@@ -121,7 +121,15 @@ IllustratorとかPhotoshopと比較してのSketchの概念の📝
 
 09月04日（木）のToday I Leaned.
 
-- ddd
+### どういうUIにしたいのか迷ったときにみるもの
+
+| しりたい事 | URL |
+|---|---|
+| スマホのUIをアクション毎にみたい | <https://pttrns.com/> |
+| スマホのUIの動きをみたい | <https://uimovement.com/> |
+| 他の方が作成したSketchデータがみたい | <https://www.sketchappsources.com/> |
+| レスポンシブデザインのサイトがみたい | <http://responsive-jp.com/> |
+| ベースカラー以外の色をきめたい | <https://www.materialpalette.com/> |
 
 ## 2018/10/05- Learned
 
