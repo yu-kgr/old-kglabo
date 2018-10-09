@@ -117,6 +117,15 @@ IllustratorとかPhotoshopと比較してのSketchの概念の📝
 2. Sketch + inVision + Abstract / 横展開する場合
 3. inVisionStudio / 詳細がわからんが思い切る場合
 
+#### 影響要素
+
+上記が必要なのかどうかを判断する材料としては、下記のものあ考えられる。
+
+- チーム編成 / チーム開発を行っている場合は、実際にモックアップ作成を担当する人員が何名いるのか
+- 企業文化 / 企業の体制上、気軽に成果物をリリースできるかどうかでプロトタイプ共有がどのレベルまで求められるか
+- 協業体制 / 各メンバーがどこまでのの作業領域なのか、どこまで協業するのか
+
+
 ## 2018/10/04- Learned
 
 09月04日（木）のToday I Leaned.
@@ -131,14 +140,3 @@ IllustratorとかPhotoshopと比較してのSketchの概念の📝
 | レスポンシブデザインのサイトがみたい | <http://responsive-jp.com/> |
 | ベースカラー以外の色をきめたい | <https://www.materialpalette.com/> |
 
-## 2018/10/05- Learned
-
-09月05日（金）のToday I Leaned.
-
-- eee
-
----
-
-## 今週の感想
-
-- fff
