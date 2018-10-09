@@ -1,22 +1,22 @@
 +++
 author = "@yu-kgr"
 categories = ["TIL"]
-tags = [""]
+tags = ["Java", "UI/Design", "Sketch", "Workflow"]
 date = "2018-10-05"
-description = "2018/09 - One week I Learned | 一週間で知った事・学んだ事の個人的な備忘録"
+description = "2018/10 - One week I Learned | 一週間で知った事・学んだ事の個人的な備忘録"
 featured = "/img/til/til.jpg"
 featuredalt = "til"
 featuredpath = "https://kglabo.com"
-title = "2018/09 - One week I Learned"
+title = "2018/10 - One week I Learned"
 type = "post"
-draft = "true"
+draft = "false"
 +++
 
 # 今週、知った/学んだこと
 
 ## 2018/10/01- Learned
 
-09月01日（月）のToday I Leaned.
+10月01日（月）のToday I Leaned.
 
 ### Java
 
@@ -49,7 +49,7 @@ class クラス名(){
 
 ## 2018/10/02- Learned
 
-09月02日（火）のToday I Leaned.
+10月02日（火）のToday I Leaned.
 
 ### Java
 
@@ -78,7 +78,7 @@ class クラス名(){
 
 ## 2018/10/03- Learned
 
-09月03日（水）のToday I Leaned.
+10月03日（水）のToday I Leaned.
 
 ### Sketch
 
@@ -128,7 +128,7 @@ IllustratorとかPhotoshopと比較してのSketchの概念の📝
 
 ## 2018/10/04- Learned
 
-09月04日（木）のToday I Leaned.
+10月04日（木）のToday I Leaned.
 
 ### どういうUIにしたいのか迷ったときにみるもの
 
