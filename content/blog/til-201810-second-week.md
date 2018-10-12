@@ -89,17 +89,20 @@ $ cat message.log | grep 'tanaka' | grep 'You are stupid' >! result.txt
 ```
 
 こんな感じの使い方ができる。
-
-## 2018/10/10- Learned
-
-10月10日（水）のToday I Leaned.
-
-
-## 2018/10/11- Learned
-
-10月11日（木）のToday I Leaned.
+```
 
 ## 2018/10/12- Learned
 
 10月12日（金）のToday I Leaned.
 
+### globalなgitignore
+
+- 
+
+### .npmrc / .yarnrc
+
+- 
+
+### figmaについて
+
+- 
