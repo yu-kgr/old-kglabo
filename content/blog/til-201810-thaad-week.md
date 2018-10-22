@@ -1,7 +1,7 @@
 +++
 author = "@yu-kgr"
 categories = ["TIL"]
-tags = [""]
+tags = ["MVC", "テスト", "figma"]
 date = "2018-10-13"
 description = "2018/10 - Thaad week I Learned | 一週間で知った事・学んだ事の個人的な備忘録"
 featured = "/img/til/til.jpg"
@@ -9,7 +9,7 @@ featuredalt = "til"
 featuredpath = "https://kglabo.com"
 title = "2018/10 - Thaad week I Learned"
 type = "post"
-draft = "true"
+draft = "false"
 +++
 
 # 今週、知った/学んだこと
@@ -86,8 +86,4 @@ draft = "true"
 3. パスをいじってベクターベータを編集できる  ![fagma-vectorEdit](/blog/til-201810-thaad-week/images/fagma-vectorEdit.gif)
 4. デバイスサイズに乗じたフレームを作成（任意サイズも可）できる  ![fagma-frameCreate](/blog/til-201810-thaad-week/images/fagma-frameCreate.gif)
 
-## 2018/10/19- Learned
-
-10月19日（金）のToday I Leaned.
-
-### hoge
+つづく

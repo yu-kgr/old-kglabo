@@ -1,7 +1,7 @@
 +++
 author = "@yu-kgr"
 categories = ["TIL"]
-tags = ["Chrome", "Linux Command"]
+tags = ["iOS/Chrome", "Linux Command"]
 date = "2018-10-12"
 description = "2018/10 - Second week I Learned | 一週間で知った事・学んだ事の個人的な備忘録"
 featured = "/img/til/til.jpg"
@@ -40,12 +40,17 @@ draft = "false"
 html上で、<input type="file">を利用する or JS側で関連するメソッドを利用した場合、  
 Chromeが高確率でクラッシュする事がわかった。Chromeさん頑張って…！
 
+## 2018/10/10- Learned
+
+10月10日（水）のToday I Leaned.
+
+
 ### Linux Command / Pipe
 
 - こいつをパイプと呼ぶ → `|`
 - 何かしらの処理の後に `|` を挟む事で、前で行った処理の内容を後の処理にわたす事ができる
 
-たええば、下記のようなファイルがあったとした場合
+たとえば、下記のようなファイルがあったとした場合
 
 ```
 # message.log
