@@ -1,6 +1,7 @@
 +++
 author = "@yu-kgr"
 categories = ["TIL"]
+tags = [""]
 date = "2018-01-01"
 description = "YYYY/MM - {N} week I Learned | 一週間で知った事・学んだ事の個人的な備忘録"
 featured = "/img/til/til.jpg"
@@ -12,8 +13,6 @@ draft = "true"
 +++
 
 # 今週、知った/学んだこと
-
-<!-- tags = ["サーバ監視ツール"] -->
 
 ## YYYY/MM/DD- Learned
 
